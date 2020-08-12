@@ -7,7 +7,7 @@ namespace Aohost.Blog.Web
     {
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddApplication<BlogWebModule>();
+            services.AddApplication<HttpApiHostingModule>();
         }
 
         public void Configure(IApplicationBuilder app)

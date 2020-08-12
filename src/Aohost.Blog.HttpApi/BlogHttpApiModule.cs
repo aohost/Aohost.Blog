@@ -8,12 +8,8 @@ using Volo.Abp.TenantManagement;
 namespace Aohost.Blog
 {
     [DependsOn(
-        typeof(BlogApplicationContractsModule),
-        typeof(AbpAccountHttpApiModule),
         typeof(AbpIdentityHttpApiModule),
-        typeof(AbpPermissionManagementHttpApiModule),
-        typeof(AbpTenantManagementHttpApiModule),
-        typeof(AbpFeatureManagementHttpApiModule)
+        typeof(BlogApplicationModule)
         )]
     public class BlogHttpApiModule : AbpModule
     {

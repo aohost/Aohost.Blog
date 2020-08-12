@@ -9,22 +9,16 @@ using Volo.Abp.TenantManagement;
 namespace Aohost.Blog
 {
     [DependsOn(
-        typeof(BlogDomainModule),
-        typeof(AbpAccountApplicationModule),
-        typeof(BlogApplicationContractsModule),
-        typeof(AbpIdentityApplicationModule),
-        typeof(AbpPermissionManagementApplicationModule),
-        typeof(AbpTenantManagementApplicationModule),
-        typeof(AbpFeatureManagementApplicationModule)
+        typeof(AbpIdentityApplicationModule)
         )]
     public class BlogApplicationModule : AbpModule
     {
         public override void ConfigureServices(ServiceConfigurationContext context)
         {
-            Configure<AbpAutoMapperOptions>(options =>
-            {
-                options.AddMaps<BlogApplicationModule>();
-            });
+            //Configure<AbpAutoMapperOptions>(options =>
+            //{
+            //    options.AddMaps<BlogApplicationModule>();
+            //});
         }
     }
 }

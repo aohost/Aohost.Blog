@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Aohost.Blog.Application.Contracts\Aohost.Blog.Application.Contracts.csproj" />
+    <ProjectReference Include="..\Aohost.Blog.Application\Aohost.Blog.Application.csproj" />
   </ItemGroup>
 
   <ItemGroup>
