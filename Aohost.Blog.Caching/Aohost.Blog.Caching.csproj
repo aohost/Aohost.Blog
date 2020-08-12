@@ -4,4 +4,13 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="Volo.Abp.Caching">
+      <HintPath>C:\Users\wyuntao\.nuget\packages\volo.abp.caching\3.0.5\lib\netstandard2.0\Volo.Abp.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="Volo.Abp.Core">
+      <HintPath>C:\Users\wyuntao\.nuget\packages\volo.abp.core\3.0.5\lib\netstandard2.0\Volo.Abp.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

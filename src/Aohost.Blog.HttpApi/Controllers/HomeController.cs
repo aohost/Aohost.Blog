@@ -6,17 +6,17 @@ namespace Aohost.Blog.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class HelloWorldController:AbpController
+    public class HomeController:AbpController
     {
         private readonly IHelloWorldService _helloWorldService;
 
-        public HelloWorldController(IHelloWorldService helloWorldService)
+        public HomeController(IHelloWorldService helloWorldService)
         {
             _helloWorldService = helloWorldService;
         }
 
         [HttpGet]
-        public string HelloWorld()
+        public string Index()
         {
             return _helloWorldService.HelloWorld();
         }

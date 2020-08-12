@@ -8,8 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Aohost.Blog.Domain\Aohost.Blog.Domain.csproj" />
+    <ProjectReference Include="..\..\Aohost.Blog.Caching\Aohost.Blog.Caching.csproj" />
     <ProjectReference Include="..\Aohost.Blog.Application.Contracts\Aohost.Blog.Application.Contracts.csproj" />
+    <ProjectReference Include="..\Aohost.Blog.Domain.Shared\Aohost.Blog.Domain.Shared.csproj" />
   </ItemGroup>
 
   <ItemGroup>

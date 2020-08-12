@@ -1,5 +1,4 @@
-﻿using Aohost.Blog.Localization;
-using Volo.Abp.AspNetCore.Mvc;
+﻿using Volo.Abp.AspNetCore.Mvc;
 
 namespace Aohost.Blog.Controllers
 {
@@ -9,7 +8,7 @@ namespace Aohost.Blog.Controllers
     {
         protected BlogController()
         {
-            LocalizationResource = typeof(BlogResource);
+            //LocalizationResource = typeof(BlogResource);
         }
     }
 }

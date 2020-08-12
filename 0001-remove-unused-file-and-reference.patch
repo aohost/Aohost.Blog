@@ -1,0 +1,971 @@
+From 8aeee848a884b69769b9a1aca04053df7c014722 Mon Sep 17 00:00:00 2001
+From: DaiAohan <137313395@qq.com>
+Date: Wed, 12 Aug 2020 15:20:06 +0800
+Subject: [PATCH] remove unused file and reference
+
+---
+ .../BlogApplicationModule.cs                  |  16 +-
+ .../BlogApplicationServiceBase.cs             |   9 +
+ .../Services/HelloWorldService.cs             |  10 +
+ .../Services/IHelloWorldService.cs            |   7 +
+ .../Aohost.Blog.HttpApi.Hosting.csproj        |   9 -
+ .../BlogBrandingProvider.cs                   |  11 -
+ .../BlogWebAutoMapperProfile.cs               |  12 -
+ .../HttpApiHostingModule.cs                   |  41 ++
+ src/Aohost.Blog.HttpApi.Hosting/Logs/logs.txt | 503 ++++++++++++++++++
+ .../Menus/BlogMenuContributor.cs              |  34 --
+ .../Pages/BlogPageModel.cs                    |  15 -
+ .../Pages/Index.cshtml                        |  31 --
+ .../Pages/Index.cshtml.cs                     |  10 -
+ .../Pages/Index.css                           |   3 -
+ .../Pages/Index.js                            |   3 -
+ .../Pages/_ViewImports.cshtml                 |   4 -
+ src/Aohost.Blog.HttpApi.Hosting/Startup.cs    |   2 +-
+ .../Views/_ViewImports.cshtml                 |   4 -
+ .../Aohost.Blog.HttpApi.csproj                |   1 +
+ src/Aohost.Blog.HttpApi/BlogHttpApiModule.cs  |   6 +-
+ .../Controllers/HelloWorldController.cs       |  24 +
+ 21 files changed, 602 insertions(+), 153 deletions(-)
+ create mode 100644 src/Aohost.Blog.Application/BlogApplicationServiceBase.cs
+ create mode 100644 src/Aohost.Blog.Application/Services/HelloWorldService.cs
+ create mode 100644 src/Aohost.Blog.Application/Services/IHelloWorldService.cs
+ delete mode 100644 src/Aohost.Blog.HttpApi.Hosting/BlogBrandingProvider.cs
+ delete mode 100644 src/Aohost.Blog.HttpApi.Hosting/BlogWebAutoMapperProfile.cs
+ create mode 100644 src/Aohost.Blog.HttpApi.Hosting/HttpApiHostingModule.cs
+ create mode 100644 src/Aohost.Blog.HttpApi.Hosting/Logs/logs.txt
+ delete mode 100644 src/Aohost.Blog.HttpApi.Hosting/Menus/BlogMenuContributor.cs
+ delete mode 100644 src/Aohost.Blog.HttpApi.Hosting/Pages/BlogPageModel.cs
+ delete mode 100644 src/Aohost.Blog.HttpApi.Hosting/Pages/Index.cshtml
+ delete mode 100644 src/Aohost.Blog.HttpApi.Hosting/Pages/Index.cshtml.cs
+ delete mode 100644 src/Aohost.Blog.HttpApi.Hosting/Pages/Index.css
+ delete mode 100644 src/Aohost.Blog.HttpApi.Hosting/Pages/Index.js
+ delete mode 100644 src/Aohost.Blog.HttpApi.Hosting/Pages/_ViewImports.cshtml
+ delete mode 100644 src/Aohost.Blog.HttpApi.Hosting/Views/_ViewImports.cshtml
+ create mode 100644 src/Aohost.Blog.HttpApi/Controllers/HelloWorldController.cs
+
+diff --git a/src/Aohost.Blog.Application/BlogApplicationModule.cs b/src/Aohost.Blog.Application/BlogApplicationModule.cs
+index 7ea687b..7a5ea20 100644
+--- a/src/Aohost.Blog.Application/BlogApplicationModule.cs
++++ b/src/Aohost.Blog.Application/BlogApplicationModule.cs
+@@ -9,22 +9,16 @@ using Volo.Abp.TenantManagement;
+ namespace Aohost.Blog
+ {
+     [DependsOn(
+-        typeof(BlogDomainModule),
+-        typeof(AbpAccountApplicationModule),
+-        typeof(BlogApplicationContractsModule),
+-        typeof(AbpIdentityApplicationModule),
+-        typeof(AbpPermissionManagementApplicationModule),
+-        typeof(AbpTenantManagementApplicationModule),
+-        typeof(AbpFeatureManagementApplicationModule)
++        typeof(AbpIdentityApplicationModule)
+         )]
+     public class BlogApplicationModule : AbpModule
+     {
+         public override void ConfigureServices(ServiceConfigurationContext context)
+         {
+-            Configure<AbpAutoMapperOptions>(options =>
+-            {
+-                options.AddMaps<BlogApplicationModule>();
+-            });
++            //Configure<AbpAutoMapperOptions>(options =>
++            //{
++            //    options.AddMaps<BlogApplicationModule>();
++            //});
+         }
+     }
+ }
+diff --git a/src/Aohost.Blog.Application/BlogApplicationServiceBase.cs b/src/Aohost.Blog.Application/BlogApplicationServiceBase.cs
+new file mode 100644
+index 0000000..b0cfb9a
+--- /dev/null
++++ b/src/Aohost.Blog.Application/BlogApplicationServiceBase.cs
+@@ -0,0 +1,9 @@
++﻿using Volo.Abp.Application.Services;
++
++namespace Aohost.Blog
++{
++    public class BlogApplicationServiceBase:ApplicationService
++    {
++        
++    }
++}
+\ No newline at end of file
+diff --git a/src/Aohost.Blog.Application/Services/HelloWorldService.cs b/src/Aohost.Blog.Application/Services/HelloWorldService.cs
+new file mode 100644
+index 0000000..fb4a7af
+--- /dev/null
++++ b/src/Aohost.Blog.Application/Services/HelloWorldService.cs
+@@ -0,0 +1,10 @@
++﻿namespace Aohost.Blog.Services
++{
++    public class HelloWorldService:IHelloWorldService
++    {
++        public string HelloWorld()
++        {
++            return "Hello World!";
++        }
++    }
++}
+\ No newline at end of file
+diff --git a/src/Aohost.Blog.Application/Services/IHelloWorldService.cs b/src/Aohost.Blog.Application/Services/IHelloWorldService.cs
+new file mode 100644
+index 0000000..5e88911
+--- /dev/null
++++ b/src/Aohost.Blog.Application/Services/IHelloWorldService.cs
+@@ -0,0 +1,7 @@
++﻿namespace Aohost.Blog.Services
++{
++    public interface IHelloWorldService
++    {
++        string HelloWorld();
++    }
++}
+\ No newline at end of file
+diff --git a/src/Aohost.Blog.HttpApi.Hosting/Aohost.Blog.HttpApi.Hosting.csproj b/src/Aohost.Blog.HttpApi.Hosting/Aohost.Blog.HttpApi.Hosting.csproj
+index a13f66a..007178d 100644
+--- a/src/Aohost.Blog.HttpApi.Hosting/Aohost.Blog.HttpApi.Hosting.csproj
++++ b/src/Aohost.Blog.HttpApi.Hosting/Aohost.Blog.HttpApi.Hosting.csproj
+@@ -22,15 +22,6 @@
+     <None Remove="Logs\**" />
+   </ItemGroup>
+ 
+-  <ItemGroup>
+-    <None Update="Pages\**\*.js">
+-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+-    </None>
+-    <None Update="Pages\**\*.css">
+-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+-    </None>
+-  </ItemGroup>
+-
+   <ItemGroup>
+     <PackageReference Include="Serilog.AspNetCore" Version="3.2.0" />
+     <PackageReference Include="Serilog.Sinks.File" Version="4.1.0" />
+diff --git a/src/Aohost.Blog.HttpApi.Hosting/BlogBrandingProvider.cs b/src/Aohost.Blog.HttpApi.Hosting/BlogBrandingProvider.cs
+deleted file mode 100644
+index df78dca..0000000
+--- a/src/Aohost.Blog.HttpApi.Hosting/BlogBrandingProvider.cs
++++ /dev/null
+@@ -1,11 +0,0 @@
+-﻿using Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.Components;
+-using Volo.Abp.DependencyInjection;
+-
+-namespace Aohost.Blog.Web
+-{
+-    [Dependency(ReplaceServices = true)]
+-    public class BlogBrandingProvider : DefaultBrandingProvider
+-    {
+-        public override string AppName => "Blog";
+-    }
+-}
+diff --git a/src/Aohost.Blog.HttpApi.Hosting/BlogWebAutoMapperProfile.cs b/src/Aohost.Blog.HttpApi.Hosting/BlogWebAutoMapperProfile.cs
+deleted file mode 100644
+index af8dc72..0000000
+--- a/src/Aohost.Blog.HttpApi.Hosting/BlogWebAutoMapperProfile.cs
++++ /dev/null
+@@ -1,12 +0,0 @@
+-﻿using AutoMapper;
+-
+-namespace Aohost.Blog.Web
+-{
+-    public class BlogWebAutoMapperProfile : Profile
+-    {
+-        public BlogWebAutoMapperProfile()
+-        {
+-            //Define your AutoMapper configuration here for the Web project.
+-        }
+-    }
+-}
+diff --git a/src/Aohost.Blog.HttpApi.Hosting/HttpApiHostingModule.cs b/src/Aohost.Blog.HttpApi.Hosting/HttpApiHostingModule.cs
+new file mode 100644
+index 0000000..270af80
+--- /dev/null
++++ b/src/Aohost.Blog.HttpApi.Hosting/HttpApiHostingModule.cs
+@@ -0,0 +1,41 @@
++﻿using Microsoft.AspNetCore.Builder;
++using Microsoft.Extensions.Hosting;
++using Volo.Abp;
++using Volo.Abp.AspNetCore.Mvc;
++using Volo.Abp.Autofac;
++using Volo.Abp.Modularity;
++
++namespace Aohost.Blog.Web
++{
++    [DependsOn(typeof(AbpAspNetCoreMvcModule),
++        typeof(BlogHttpApiModule),
++        typeof(AbpAutofacModule))]
++    public class HttpApiHostingModule:AbpModule
++    {
++        public override void ConfigureServices(ServiceConfigurationContext context)
++        {
++            base.ConfigureServices(context);
++        }
++
++        public override void OnApplicationInitialization(ApplicationInitializationContext context)
++        {
++            var app = context.GetApplicationBuilder();
++            var env = context.GetEnvironment();
++
++            if (env.IsDevelopment())
++            {
++                app.UseDeveloperExceptionPage();
++            }
++
++            app.UseRouting();
++
++            app.UseEndpoints(endpoints =>
++            {
++                endpoints.MapControllerRoute(
++                    name: "default",
++                    pattern: "{controller=Home}/{action=Index}/{id?}"
++                );
++            });
++        }
++    }
++}
+\ No newline at end of file
+diff --git a/src/Aohost.Blog.HttpApi.Hosting/Logs/logs.txt b/src/Aohost.Blog.HttpApi.Hosting/Logs/logs.txt
+new file mode 100644
+index 0000000..93cf8be
+--- /dev/null
++++ b/src/Aohost.Blog.HttpApi.Hosting/Logs/logs.txt
+@@ -0,0 +1,503 @@
++2020-08-12 09:36:26.730 +08:00 [INF] Starting web host.
++2020-08-12 09:36:29.822 +08:00 [INF] User profile is available. Using 'C:\Users\wyuntao\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
++2020-08-12 09:36:29.902 +08:00 [INF] Loaded ABP modules:
++2020-08-12 09:36:29.902 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
++2020-08-12 09:36:29.902 +08:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
++2020-08-12 09:36:29.902 +08:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
++2020-08-12 09:36:29.902 +08:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
++2020-08-12 09:36:29.902 +08:00 [INF] - Volo.Abp.Data.AbpDataModule
++2020-08-12 09:36:29.902 +08:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
++2020-08-12 09:36:29.902 +08:00 [INF] - Volo.Abp.Security.AbpSecurityModule
++2020-08-12 09:36:29.902 +08:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
++2020-08-12 09:36:29.902 +08:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
++2020-08-12 09:36:29.902 +08:00 [INF] - Volo.Abp.Timing.AbpTimingModule
++2020-08-12 09:36:29.902 +08:00 [INF] - Volo.Abp.Json.AbpJsonModule
++2020-08-12 09:36:29.902 +08:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
++2020-08-12 09:36:29.902 +08:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
++2020-08-12 09:36:29.902 +08:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
++2020-08-12 09:36:29.902 +08:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
++2020-08-12 09:36:29.902 +08:00 [INF] - Volo.Abp.Http.AbpHttpModule
++2020-08-12 09:36:29.902 +08:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
++2020-08-12 09:36:29.902 +08:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
++2020-08-12 09:36:29.902 +08:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
++2020-08-12 09:36:29.902 +08:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
++2020-08-12 09:36:29.902 +08:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
++2020-08-12 09:36:29.902 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
++2020-08-12 09:36:29.902 +08:00 [INF] - Volo.Abp.UI.AbpUiModule
++2020-08-12 09:36:29.902 +08:00 [INF] - Volo.Abp.Validation.AbpValidationModule
++2020-08-12 09:36:29.902 +08:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
++2020-08-12 09:36:29.902 +08:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
++2020-08-12 09:36:29.902 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
++2020-08-12 09:36:29.902 +08:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
++2020-08-12 09:36:29.902 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
++2020-08-12 09:36:29.902 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
++2020-08-12 09:36:29.902 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
++2020-08-12 09:36:29.902 +08:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
++2020-08-12 09:36:29.902 +08:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
++2020-08-12 09:36:29.902 +08:00 [INF] - Aohost.Blog.Web.HttpApiHostingModule
++2020-08-12 09:36:30.649 +08:00 [INF] Initialized all ABP modules.
++2020-08-12 09:36:30.660 +08:00 [INF] Application started. Press Ctrl+C to shut down.
++2020-08-12 09:36:30.660 +08:00 [INF] Hosting environment: Development
++2020-08-12 09:36:30.660 +08:00 [INF] Content root path: E:\Aohost\Aohost.Blog\aspnet-core\src\Aohost.Blog.HttpApi.Hosting
++2020-08-12 09:36:30.735 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44350/  
++2020-08-12 09:36:30.790 +08:00 [INF] Request finished in 56.7912ms 404 
++2020-08-12 09:36:39.770 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44350/hellowrld  
++2020-08-12 09:36:39.773 +08:00 [INF] Request finished in 2.7909ms 404 
++2020-08-12 09:37:26.300 +08:00 [INF] Starting web host.
++2020-08-12 09:37:26.775 +08:00 [INF] User profile is available. Using 'C:\Users\wyuntao\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
++2020-08-12 09:37:26.820 +08:00 [INF] Loaded ABP modules:
++2020-08-12 09:37:26.820 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
++2020-08-12 09:37:26.820 +08:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
++2020-08-12 09:37:26.820 +08:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
++2020-08-12 09:37:26.820 +08:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
++2020-08-12 09:37:26.820 +08:00 [INF] - Volo.Abp.Data.AbpDataModule
++2020-08-12 09:37:26.820 +08:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
++2020-08-12 09:37:26.820 +08:00 [INF] - Volo.Abp.Security.AbpSecurityModule
++2020-08-12 09:37:26.820 +08:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
++2020-08-12 09:37:26.820 +08:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
++2020-08-12 09:37:26.820 +08:00 [INF] - Volo.Abp.Timing.AbpTimingModule
++2020-08-12 09:37:26.820 +08:00 [INF] - Volo.Abp.Json.AbpJsonModule
++2020-08-12 09:37:26.820 +08:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
++2020-08-12 09:37:26.820 +08:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
++2020-08-12 09:37:26.820 +08:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
++2020-08-12 09:37:26.820 +08:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
++2020-08-12 09:37:26.820 +08:00 [INF] - Volo.Abp.Http.AbpHttpModule
++2020-08-12 09:37:26.820 +08:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
++2020-08-12 09:37:26.820 +08:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
++2020-08-12 09:37:26.820 +08:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
++2020-08-12 09:37:26.820 +08:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
++2020-08-12 09:37:26.820 +08:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
++2020-08-12 09:37:26.820 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
++2020-08-12 09:37:26.820 +08:00 [INF] - Volo.Abp.UI.AbpUiModule
++2020-08-12 09:37:26.820 +08:00 [INF] - Volo.Abp.Validation.AbpValidationModule
++2020-08-12 09:37:26.820 +08:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
++2020-08-12 09:37:26.820 +08:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
++2020-08-12 09:37:26.820 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
++2020-08-12 09:37:26.820 +08:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
++2020-08-12 09:37:26.820 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
++2020-08-12 09:37:26.820 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
++2020-08-12 09:37:26.820 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
++2020-08-12 09:37:26.820 +08:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
++2020-08-12 09:37:26.820 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
++2020-08-12 09:37:26.820 +08:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
++2020-08-12 09:37:26.820 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
++2020-08-12 09:37:26.820 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
++2020-08-12 09:37:26.820 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
++2020-08-12 09:37:26.820 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityHttpApiModule
++2020-08-12 09:37:26.820 +08:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
++2020-08-12 09:37:26.820 +08:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
++2020-08-12 09:37:26.820 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
++2020-08-12 09:37:26.820 +08:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
++2020-08-12 09:37:26.820 +08:00 [INF] - Volo.Abp.Caching.AbpCachingModule
++2020-08-12 09:37:26.820 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
++2020-08-12 09:37:26.820 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
++2020-08-12 09:37:26.821 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationModule
++2020-08-12 09:37:26.821 +08:00 [INF] - Aohost.Blog.BlogApplicationModule
++2020-08-12 09:37:26.821 +08:00 [INF] - Aohost.Blog.BlogHttpApiModule
++2020-08-12 09:37:26.821 +08:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
++2020-08-12 09:37:26.821 +08:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
++2020-08-12 09:37:26.821 +08:00 [INF] - Aohost.Blog.Web.HttpApiHostingModule
++2020-08-12 09:37:27.180 +08:00 [INF] Initialized all ABP modules.
++2020-08-12 09:37:27.187 +08:00 [INF] Application started. Press Ctrl+C to shut down.
++2020-08-12 09:37:27.187 +08:00 [INF] Hosting environment: Development
++2020-08-12 09:37:27.187 +08:00 [INF] Content root path: E:\Aohost\Aohost.Blog\aspnet-core\src\Aohost.Blog.HttpApi.Hosting
++2020-08-12 09:37:27.201 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44350/  
++2020-08-12 09:37:27.232 +08:00 [INF] Request finished in 32.5184ms 404 
++2020-08-12 09:37:29.108 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44350/  
++2020-08-12 09:37:29.109 +08:00 [INF] Request finished in 0.908ms 404 
++2020-08-12 09:39:41.201 +08:00 [INF] Starting web host.
++2020-08-12 09:39:43.702 +08:00 [INF] User profile is available. Using 'C:\Users\wyuntao\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
++2020-08-12 09:39:43.767 +08:00 [INF] Loaded ABP modules:
++2020-08-12 09:39:43.767 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
++2020-08-12 09:39:43.768 +08:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
++2020-08-12 09:39:43.768 +08:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
++2020-08-12 09:39:43.768 +08:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
++2020-08-12 09:39:43.768 +08:00 [INF] - Volo.Abp.Data.AbpDataModule
++2020-08-12 09:39:43.768 +08:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
++2020-08-12 09:39:43.768 +08:00 [INF] - Volo.Abp.Security.AbpSecurityModule
++2020-08-12 09:39:43.768 +08:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
++2020-08-12 09:39:43.768 +08:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
++2020-08-12 09:39:43.768 +08:00 [INF] - Volo.Abp.Timing.AbpTimingModule
++2020-08-12 09:39:43.768 +08:00 [INF] - Volo.Abp.Json.AbpJsonModule
++2020-08-12 09:39:43.768 +08:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
++2020-08-12 09:39:43.768 +08:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
++2020-08-12 09:39:43.768 +08:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
++2020-08-12 09:39:43.768 +08:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
++2020-08-12 09:39:43.768 +08:00 [INF] - Volo.Abp.Http.AbpHttpModule
++2020-08-12 09:39:43.768 +08:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
++2020-08-12 09:39:43.768 +08:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
++2020-08-12 09:39:43.768 +08:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
++2020-08-12 09:39:43.768 +08:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
++2020-08-12 09:39:43.768 +08:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
++2020-08-12 09:39:43.768 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
++2020-08-12 09:39:43.768 +08:00 [INF] - Volo.Abp.UI.AbpUiModule
++2020-08-12 09:39:43.768 +08:00 [INF] - Volo.Abp.Validation.AbpValidationModule
++2020-08-12 09:39:43.768 +08:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
++2020-08-12 09:39:43.768 +08:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
++2020-08-12 09:39:43.768 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
++2020-08-12 09:39:43.768 +08:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
++2020-08-12 09:39:43.768 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
++2020-08-12 09:39:43.768 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
++2020-08-12 09:39:43.768 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
++2020-08-12 09:39:43.768 +08:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
++2020-08-12 09:39:43.768 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
++2020-08-12 09:39:43.768 +08:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
++2020-08-12 09:39:43.768 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
++2020-08-12 09:39:43.768 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
++2020-08-12 09:39:43.768 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
++2020-08-12 09:39:43.768 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityHttpApiModule
++2020-08-12 09:39:43.768 +08:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
++2020-08-12 09:39:43.768 +08:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
++2020-08-12 09:39:43.768 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
++2020-08-12 09:39:43.768 +08:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
++2020-08-12 09:39:43.768 +08:00 [INF] - Volo.Abp.Caching.AbpCachingModule
++2020-08-12 09:39:43.768 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
++2020-08-12 09:39:43.768 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
++2020-08-12 09:39:43.768 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationModule
++2020-08-12 09:39:43.768 +08:00 [INF] - Aohost.Blog.BlogApplicationModule
++2020-08-12 09:39:43.768 +08:00 [INF] - Aohost.Blog.BlogHttpApiModule
++2020-08-12 09:39:43.768 +08:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
++2020-08-12 09:39:43.768 +08:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
++2020-08-12 09:39:43.768 +08:00 [INF] - Aohost.Blog.Web.HttpApiHostingModule
++2020-08-12 09:39:44.288 +08:00 [INF] Initialized all ABP modules.
++2020-08-12 09:39:44.296 +08:00 [INF] Application started. Press Ctrl+C to shut down.
++2020-08-12 09:39:44.296 +08:00 [INF] Hosting environment: Development
++2020-08-12 09:39:44.296 +08:00 [INF] Content root path: E:\Aohost\Aohost.Blog\aspnet-core\src\Aohost.Blog.HttpApi.Hosting
++2020-08-12 09:39:44.348 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44350/  
++2020-08-12 09:39:44.398 +08:00 [INF] Request finished in 51.706ms 404 
++2020-08-12 09:39:49.639 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44350/helloworld  
++2020-08-12 09:39:49.641 +08:00 [INF] Executing endpoint 'Aohost.Blog.Controllers.HelloWorldController.HelloWorld (Aohost.Blog.HttpApi)'
++2020-08-12 09:39:49.706 +08:00 [INF] Route matched with {action = "HelloWorld", controller = "HelloWorld", area = "", page = ""}. Executing controller action with signature System.String HelloWorld() on controller Aohost.Blog.Controllers.HelloWorldController (Aohost.Blog.HttpApi).
++2020-08-12 09:39:49.835 +08:00 [ERR] ---------- RemoteServiceErrorInfo ----------
++2020-08-12 09:39:49.857 +08:00 [ERR] {
++  "code": null,
++  "message": "An internal error occurred during your request!",
++  "details": null,
++  "validationErrors": null
++}
++2020-08-12 09:39:49.857 +08:00 [ERR] An exception was thrown while activating Aohost.Blog.Controllers.HelloWorldController.
++Autofac.Core.DependencyResolutionException: An exception was thrown while activating Aohost.Blog.Controllers.HelloWorldController.
++ ---> Autofac.Core.DependencyResolutionException: None of the constructors found with 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder' on type 'Aohost.Blog.Controllers.HelloWorldController' can be invoked with the available services and parameters:
++Cannot resolve parameter 'Aohost.Blog.Services.IHelloWorldService helloWorldService' of constructor 'Void .ctor(Aohost.Blog.Services.IHelloWorldService)'.
++   at Autofac.Core.Activators.Reflection.ReflectionActivator.GetValidConstructorBindings(ConstructorInfo[] availableConstructors, IComponentContext context, IEnumerable`1 parameters)
++   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
++   at Autofac.Core.Resolving.InstanceLookup.CreateInstance(IEnumerable`1 parameters)
++   --- End of inner exception stack trace ---
++   at Autofac.Core.Resolving.InstanceLookup.CreateInstance(IEnumerable`1 parameters)
++   at Autofac.Core.Resolving.InstanceLookup.Execute()
++   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
++   at Autofac.Core.Resolving.ResolveOperation.ResolveComponent(ResolveRequest request)
++   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
++   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
++   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
++   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
++   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
++   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType)
++   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetRequiredService(Type serviceType)
++   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
++   at Microsoft.AspNetCore.Mvc.Controllers.ServiceBasedControllerActivator.Create(ControllerContext actionContext)
++   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
++   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
++   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
++--- End of stack trace from previous location where exception was thrown ---
++   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
++2020-08-12 09:39:49.858 +08:00 [ERR] ---------- Exception Data ----------
++2020-08-12 09:39:49.859 +08:00 [ERR] ActivatorChain = Aohost.Blog.Controllers.HelloWorldController
++2020-08-12 09:39:49.864 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Http.RemoteServiceErrorResponse'.
++2020-08-12 09:39:49.893 +08:00 [INF] Executed action Aohost.Blog.Controllers.HelloWorldController.HelloWorld (Aohost.Blog.HttpApi) in 183.7197ms
++2020-08-12 09:39:49.893 +08:00 [INF] Executed endpoint 'Aohost.Blog.Controllers.HelloWorldController.HelloWorld (Aohost.Blog.HttpApi)'
++2020-08-12 09:39:49.894 +08:00 [INF] Request finished in 255.2208ms 500 application/json; charset=utf-8
++2020-08-12 09:39:49.934 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44350/favicon.ico  
++2020-08-12 09:39:49.936 +08:00 [INF] Request finished in 1.4647ms 404 
++2020-08-12 09:40:02.758 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44350/helloworld  
++2020-08-12 09:40:02.758 +08:00 [INF] Executing endpoint 'Aohost.Blog.Controllers.HelloWorldController.HelloWorld (Aohost.Blog.HttpApi)'
++2020-08-12 09:40:02.759 +08:00 [INF] Route matched with {action = "HelloWorld", controller = "HelloWorld", area = "", page = ""}. Executing controller action with signature System.String HelloWorld() on controller Aohost.Blog.Controllers.HelloWorldController (Aohost.Blog.HttpApi).
++2020-08-12 09:40:02.761 +08:00 [ERR] ---------- RemoteServiceErrorInfo ----------
++2020-08-12 09:40:02.761 +08:00 [ERR] {
++  "code": null,
++  "message": "An internal error occurred during your request!",
++  "details": null,
++  "validationErrors": null
++}
++2020-08-12 09:40:02.761 +08:00 [ERR] An exception was thrown while activating Aohost.Blog.Controllers.HelloWorldController.
++Autofac.Core.DependencyResolutionException: An exception was thrown while activating Aohost.Blog.Controllers.HelloWorldController.
++ ---> Autofac.Core.DependencyResolutionException: None of the constructors found with 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder' on type 'Aohost.Blog.Controllers.HelloWorldController' can be invoked with the available services and parameters:
++Cannot resolve parameter 'Aohost.Blog.Services.IHelloWorldService helloWorldService' of constructor 'Void .ctor(Aohost.Blog.Services.IHelloWorldService)'.
++   at Autofac.Core.Activators.Reflection.ReflectionActivator.GetValidConstructorBindings(ConstructorInfo[] availableConstructors, IComponentContext context, IEnumerable`1 parameters)
++   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
++   at Autofac.Core.Resolving.InstanceLookup.CreateInstance(IEnumerable`1 parameters)
++   --- End of inner exception stack trace ---
++   at Autofac.Core.Resolving.InstanceLookup.CreateInstance(IEnumerable`1 parameters)
++   at Autofac.Core.Resolving.InstanceLookup.Execute()
++   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
++   at Autofac.Core.Resolving.ResolveOperation.ResolveComponent(ResolveRequest request)
++   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
++   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
++   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
++   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
++   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
++   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType)
++   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetRequiredService(Type serviceType)
++   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
++   at Microsoft.AspNetCore.Mvc.Controllers.ServiceBasedControllerActivator.Create(ControllerContext actionContext)
++   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
++   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
++   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
++--- End of stack trace from previous location where exception was thrown ---
++   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
++2020-08-12 09:40:02.761 +08:00 [ERR] ---------- Exception Data ----------
++2020-08-12 09:40:02.761 +08:00 [ERR] ActivatorChain = Aohost.Blog.Controllers.HelloWorldController
++2020-08-12 09:40:02.762 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Http.RemoteServiceErrorResponse'.
++2020-08-12 09:40:02.762 +08:00 [INF] Executed action Aohost.Blog.Controllers.HelloWorldController.HelloWorld (Aohost.Blog.HttpApi) in 3.2744ms
++2020-08-12 09:40:02.762 +08:00 [INF] Executed endpoint 'Aohost.Blog.Controllers.HelloWorldController.HelloWorld (Aohost.Blog.HttpApi)'
++2020-08-12 09:40:02.762 +08:00 [INF] Request finished in 5.1301ms 500 application/json; charset=utf-8
++2020-08-12 09:40:04.067 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44350/helloworld  
++2020-08-12 09:40:04.068 +08:00 [INF] Executing endpoint 'Aohost.Blog.Controllers.HelloWorldController.HelloWorld (Aohost.Blog.HttpApi)'
++2020-08-12 09:40:04.069 +08:00 [INF] Route matched with {action = "HelloWorld", controller = "HelloWorld", area = "", page = ""}. Executing controller action with signature System.String HelloWorld() on controller Aohost.Blog.Controllers.HelloWorldController (Aohost.Blog.HttpApi).
++2020-08-12 09:40:04.071 +08:00 [ERR] ---------- RemoteServiceErrorInfo ----------
++2020-08-12 09:40:04.071 +08:00 [ERR] {
++  "code": null,
++  "message": "An internal error occurred during your request!",
++  "details": null,
++  "validationErrors": null
++}
++2020-08-12 09:40:04.071 +08:00 [ERR] An exception was thrown while activating Aohost.Blog.Controllers.HelloWorldController.
++Autofac.Core.DependencyResolutionException: An exception was thrown while activating Aohost.Blog.Controllers.HelloWorldController.
++ ---> Autofac.Core.DependencyResolutionException: None of the constructors found with 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder' on type 'Aohost.Blog.Controllers.HelloWorldController' can be invoked with the available services and parameters:
++Cannot resolve parameter 'Aohost.Blog.Services.IHelloWorldService helloWorldService' of constructor 'Void .ctor(Aohost.Blog.Services.IHelloWorldService)'.
++   at Autofac.Core.Activators.Reflection.ReflectionActivator.GetValidConstructorBindings(ConstructorInfo[] availableConstructors, IComponentContext context, IEnumerable`1 parameters)
++   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
++   at Autofac.Core.Resolving.InstanceLookup.CreateInstance(IEnumerable`1 parameters)
++   --- End of inner exception stack trace ---
++   at Autofac.Core.Resolving.InstanceLookup.CreateInstance(IEnumerable`1 parameters)
++   at Autofac.Core.Resolving.InstanceLookup.Execute()
++   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
++   at Autofac.Core.Resolving.ResolveOperation.ResolveComponent(ResolveRequest request)
++   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
++   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
++   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
++   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
++   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
++   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType)
++   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetRequiredService(Type serviceType)
++   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
++   at Microsoft.AspNetCore.Mvc.Controllers.ServiceBasedControllerActivator.Create(ControllerContext actionContext)
++   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
++   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
++   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
++--- End of stack trace from previous location where exception was thrown ---
++   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
++2020-08-12 09:40:04.071 +08:00 [ERR] ---------- Exception Data ----------
++2020-08-12 09:40:04.071 +08:00 [ERR] ActivatorChain = Aohost.Blog.Controllers.HelloWorldController
++2020-08-12 09:40:04.071 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Http.RemoteServiceErrorResponse'.
++2020-08-12 09:40:04.072 +08:00 [INF] Executed action Aohost.Blog.Controllers.HelloWorldController.HelloWorld (Aohost.Blog.HttpApi) in 3.338ms
++2020-08-12 09:40:04.072 +08:00 [INF] Executed endpoint 'Aohost.Blog.Controllers.HelloWorldController.HelloWorld (Aohost.Blog.HttpApi)'
++2020-08-12 09:40:04.072 +08:00 [INF] Request finished in 5.1121ms 500 application/json; charset=utf-8
++2020-08-12 09:46:06.541 +08:00 [INF] Starting web host.
++2020-08-12 09:46:09.134 +08:00 [INF] User profile is available. Using 'C:\Users\wyuntao\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
++2020-08-12 09:46:09.200 +08:00 [INF] Loaded ABP modules:
++2020-08-12 09:46:09.200 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
++2020-08-12 09:46:09.200 +08:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
++2020-08-12 09:46:09.200 +08:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
++2020-08-12 09:46:09.200 +08:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
++2020-08-12 09:46:09.200 +08:00 [INF] - Volo.Abp.Data.AbpDataModule
++2020-08-12 09:46:09.200 +08:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
++2020-08-12 09:46:09.200 +08:00 [INF] - Volo.Abp.Security.AbpSecurityModule
++2020-08-12 09:46:09.200 +08:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
++2020-08-12 09:46:09.200 +08:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
++2020-08-12 09:46:09.200 +08:00 [INF] - Volo.Abp.Timing.AbpTimingModule
++2020-08-12 09:46:09.200 +08:00 [INF] - Volo.Abp.Json.AbpJsonModule
++2020-08-12 09:46:09.200 +08:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
++2020-08-12 09:46:09.200 +08:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
++2020-08-12 09:46:09.200 +08:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
++2020-08-12 09:46:09.200 +08:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
++2020-08-12 09:46:09.200 +08:00 [INF] - Volo.Abp.Http.AbpHttpModule
++2020-08-12 09:46:09.200 +08:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
++2020-08-12 09:46:09.200 +08:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
++2020-08-12 09:46:09.200 +08:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
++2020-08-12 09:46:09.200 +08:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
++2020-08-12 09:46:09.200 +08:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
++2020-08-12 09:46:09.200 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
++2020-08-12 09:46:09.200 +08:00 [INF] - Volo.Abp.UI.AbpUiModule
++2020-08-12 09:46:09.200 +08:00 [INF] - Volo.Abp.Validation.AbpValidationModule
++2020-08-12 09:46:09.200 +08:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
++2020-08-12 09:46:09.200 +08:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
++2020-08-12 09:46:09.200 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
++2020-08-12 09:46:09.200 +08:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
++2020-08-12 09:46:09.200 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
++2020-08-12 09:46:09.200 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
++2020-08-12 09:46:09.200 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
++2020-08-12 09:46:09.200 +08:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
++2020-08-12 09:46:09.200 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
++2020-08-12 09:46:09.200 +08:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
++2020-08-12 09:46:09.200 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
++2020-08-12 09:46:09.200 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
++2020-08-12 09:46:09.200 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
++2020-08-12 09:46:09.200 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityHttpApiModule
++2020-08-12 09:46:09.200 +08:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
++2020-08-12 09:46:09.200 +08:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
++2020-08-12 09:46:09.200 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
++2020-08-12 09:46:09.200 +08:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
++2020-08-12 09:46:09.200 +08:00 [INF] - Volo.Abp.Caching.AbpCachingModule
++2020-08-12 09:46:09.200 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
++2020-08-12 09:46:09.200 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
++2020-08-12 09:46:09.200 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationModule
++2020-08-12 09:46:09.200 +08:00 [INF] - Aohost.Blog.BlogApplicationModule
++2020-08-12 09:46:09.200 +08:00 [INF] - Aohost.Blog.BlogHttpApiModule
++2020-08-12 09:46:09.200 +08:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
++2020-08-12 09:46:09.200 +08:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
++2020-08-12 09:46:09.200 +08:00 [INF] - Aohost.Blog.Web.HttpApiHostingModule
++2020-08-12 09:46:09.712 +08:00 [INF] Initialized all ABP modules.
++2020-08-12 09:46:09.720 +08:00 [INF] Application started. Press Ctrl+C to shut down.
++2020-08-12 09:46:09.720 +08:00 [INF] Hosting environment: Development
++2020-08-12 09:46:09.720 +08:00 [INF] Content root path: E:\Aohost\Aohost.Blog\aspnet-core\src\Aohost.Blog.HttpApi.Hosting
++2020-08-12 09:46:09.786 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44350/  
++2020-08-12 09:46:09.832 +08:00 [INF] Request finished in 48.1158ms 404 
++2020-08-12 09:46:20.303 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44350/helloworld  
++2020-08-12 09:46:20.306 +08:00 [INF] Executing endpoint 'Aohost.Blog.Controllers.HelloWorldController.HelloWorld (Aohost.Blog.HttpApi)'
++2020-08-12 09:46:20.369 +08:00 [INF] Route matched with {action = "HelloWorld", controller = "HelloWorld", area = "", page = ""}. Executing controller action with signature System.String HelloWorld() on controller Aohost.Blog.Controllers.HelloWorldController (Aohost.Blog.HttpApi).
++2020-08-12 09:46:20.485 +08:00 [ERR] ---------- RemoteServiceErrorInfo ----------
++2020-08-12 09:46:20.507 +08:00 [ERR] {
++  "code": null,
++  "message": "An internal error occurred during your request!",
++  "details": null,
++  "validationErrors": null
++}
++2020-08-12 09:46:20.508 +08:00 [ERR] An exception was thrown while activating Aohost.Blog.Controllers.HelloWorldController.
++Autofac.Core.DependencyResolutionException: An exception was thrown while activating Aohost.Blog.Controllers.HelloWorldController.
++ ---> Autofac.Core.DependencyResolutionException: None of the constructors found with 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder' on type 'Aohost.Blog.Controllers.HelloWorldController' can be invoked with the available services and parameters:
++Cannot resolve parameter 'Aohost.Blog.Services.IHelloWorldService helloWorldService' of constructor 'Void .ctor(Aohost.Blog.Services.IHelloWorldService)'.
++   at Autofac.Core.Activators.Reflection.ReflectionActivator.GetValidConstructorBindings(ConstructorInfo[] availableConstructors, IComponentContext context, IEnumerable`1 parameters)
++   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
++   at Autofac.Core.Resolving.InstanceLookup.CreateInstance(IEnumerable`1 parameters)
++   --- End of inner exception stack trace ---
++   at Autofac.Core.Resolving.InstanceLookup.CreateInstance(IEnumerable`1 parameters)
++   at Autofac.Core.Resolving.InstanceLookup.Execute()
++   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
++   at Autofac.Core.Resolving.ResolveOperation.ResolveComponent(ResolveRequest request)
++   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
++   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
++   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
++   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
++   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
++   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType)
++   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetRequiredService(Type serviceType)
++   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
++   at Microsoft.AspNetCore.Mvc.Controllers.ServiceBasedControllerActivator.Create(ControllerContext actionContext)
++   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
++   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
++   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
++--- End of stack trace from previous location where exception was thrown ---
++   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
++2020-08-12 09:46:20.510 +08:00 [ERR] ---------- Exception Data ----------
++2020-08-12 09:46:20.510 +08:00 [ERR] ActivatorChain = Aohost.Blog.Controllers.HelloWorldController
++2020-08-12 09:46:20.527 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Http.RemoteServiceErrorResponse'.
++2020-08-12 09:46:20.548 +08:00 [INF] Executed action Aohost.Blog.Controllers.HelloWorldController.HelloWorld (Aohost.Blog.HttpApi) in 175.3279ms
++2020-08-12 09:46:20.548 +08:00 [INF] Executed endpoint 'Aohost.Blog.Controllers.HelloWorldController.HelloWorld (Aohost.Blog.HttpApi)'
++2020-08-12 09:46:20.548 +08:00 [INF] Request finished in 245.7679ms 500 application/json; charset=utf-8
++2020-08-12 09:46:28.652 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44350/helloworld/helloworld  
++2020-08-12 09:46:28.654 +08:00 [INF] Request finished in 2.1337ms 404 
++2020-08-12 09:46:34.033 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44350/helloworld/helloworld  
++2020-08-12 09:46:34.035 +08:00 [INF] Request finished in 1.2086ms 404 
++2020-08-12 09:57:02.446 +08:00 [INF] Starting web host.
++2020-08-12 09:57:02.909 +08:00 [INF] User profile is available. Using 'C:\Users\wyuntao\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
++2020-08-12 09:57:02.953 +08:00 [INF] Loaded ABP modules:
++2020-08-12 09:57:02.953 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
++2020-08-12 09:57:02.953 +08:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
++2020-08-12 09:57:02.953 +08:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
++2020-08-12 09:57:02.953 +08:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
++2020-08-12 09:57:02.953 +08:00 [INF] - Volo.Abp.Data.AbpDataModule
++2020-08-12 09:57:02.953 +08:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
++2020-08-12 09:57:02.953 +08:00 [INF] - Volo.Abp.Security.AbpSecurityModule
++2020-08-12 09:57:02.953 +08:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
++2020-08-12 09:57:02.953 +08:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
++2020-08-12 09:57:02.953 +08:00 [INF] - Volo.Abp.Timing.AbpTimingModule
++2020-08-12 09:57:02.953 +08:00 [INF] - Volo.Abp.Json.AbpJsonModule
++2020-08-12 09:57:02.953 +08:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
++2020-08-12 09:57:02.953 +08:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
++2020-08-12 09:57:02.953 +08:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
++2020-08-12 09:57:02.953 +08:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
++2020-08-12 09:57:02.953 +08:00 [INF] - Volo.Abp.Http.AbpHttpModule
++2020-08-12 09:57:02.953 +08:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
++2020-08-12 09:57:02.953 +08:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
++2020-08-12 09:57:02.953 +08:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
++2020-08-12 09:57:02.953 +08:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
++2020-08-12 09:57:02.953 +08:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
++2020-08-12 09:57:02.953 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
++2020-08-12 09:57:02.953 +08:00 [INF] - Volo.Abp.UI.AbpUiModule
++2020-08-12 09:57:02.953 +08:00 [INF] - Volo.Abp.Validation.AbpValidationModule
++2020-08-12 09:57:02.953 +08:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
++2020-08-12 09:57:02.953 +08:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
++2020-08-12 09:57:02.953 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
++2020-08-12 09:57:02.953 +08:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
++2020-08-12 09:57:02.953 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
++2020-08-12 09:57:02.953 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
++2020-08-12 09:57:02.953 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
++2020-08-12 09:57:02.953 +08:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
++2020-08-12 09:57:02.953 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
++2020-08-12 09:57:02.953 +08:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
++2020-08-12 09:57:02.953 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
++2020-08-12 09:57:02.953 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
++2020-08-12 09:57:02.953 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
++2020-08-12 09:57:02.953 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityHttpApiModule
++2020-08-12 09:57:02.953 +08:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
++2020-08-12 09:57:02.953 +08:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
++2020-08-12 09:57:02.953 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
++2020-08-12 09:57:02.953 +08:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
++2020-08-12 09:57:02.954 +08:00 [INF] - Volo.Abp.Caching.AbpCachingModule
++2020-08-12 09:57:02.954 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
++2020-08-12 09:57:02.954 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
++2020-08-12 09:57:02.954 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationModule
++2020-08-12 09:57:02.954 +08:00 [INF] - Aohost.Blog.BlogApplicationModule
++2020-08-12 09:57:02.954 +08:00 [INF] - Aohost.Blog.BlogHttpApiModule
++2020-08-12 09:57:02.954 +08:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
++2020-08-12 09:57:02.954 +08:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
++2020-08-12 09:57:02.954 +08:00 [INF] - Aohost.Blog.Web.HttpApiHostingModule
++2020-08-12 09:57:03.303 +08:00 [INF] Initialized all ABP modules.
++2020-08-12 09:57:03.310 +08:00 [INF] Application started. Press Ctrl+C to shut down.
++2020-08-12 09:57:03.310 +08:00 [INF] Hosting environment: Development
++2020-08-12 09:57:03.310 +08:00 [INF] Content root path: E:\Aohost\Aohost.Blog\aspnet-core\src\Aohost.Blog.HttpApi.Hosting
++2020-08-12 09:57:03.324 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44350/  
++2020-08-12 09:57:03.354 +08:00 [INF] Request finished in 32.1197ms 404 
++2020-08-12 09:57:12.844 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44350/helloworld  
++2020-08-12 09:57:12.846 +08:00 [INF] Executing endpoint 'Aohost.Blog.Controllers.HelloWorldController.HelloWorld (Aohost.Blog.HttpApi)'
++2020-08-12 09:57:12.905 +08:00 [INF] Route matched with {action = "HelloWorld", controller = "HelloWorld", area = "", page = ""}. Executing controller action with signature System.String HelloWorld() on controller Aohost.Blog.Controllers.HelloWorldController (Aohost.Blog.HttpApi).
++2020-08-12 09:57:12.997 +08:00 [ERR] ---------- RemoteServiceErrorInfo ----------
++2020-08-12 09:57:13.017 +08:00 [ERR] {
++  "code": null,
++  "message": "An internal error occurred during your request!",
++  "details": null,
++  "validationErrors": null
++}
++2020-08-12 09:57:13.018 +08:00 [ERR] An exception was thrown while activating Aohost.Blog.Controllers.HelloWorldController.
++Autofac.Core.DependencyResolutionException: An exception was thrown while activating Aohost.Blog.Controllers.HelloWorldController.
++ ---> Autofac.Core.DependencyResolutionException: None of the constructors found with 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder' on type 'Aohost.Blog.Controllers.HelloWorldController' can be invoked with the available services and parameters:
++Cannot resolve parameter 'Aohost.Blog.Services.IHelloWorldService helloWorldService' of constructor 'Void .ctor(Aohost.Blog.Services.IHelloWorldService)'.
++   at Autofac.Core.Activators.Reflection.ReflectionActivator.GetValidConstructorBindings(ConstructorInfo[] availableConstructors, IComponentContext context, IEnumerable`1 parameters)
++   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
++   at Autofac.Core.Resolving.InstanceLookup.CreateInstance(IEnumerable`1 parameters)
++   --- End of inner exception stack trace ---
++   at Autofac.Core.Resolving.InstanceLookup.CreateInstance(IEnumerable`1 parameters)
++   at Autofac.Core.Resolving.InstanceLookup.Execute()
++   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
++   at Autofac.Core.Resolving.ResolveOperation.ResolveComponent(ResolveRequest request)
++   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
++   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
++   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
++   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
++   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
++   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType)
++   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetRequiredService(Type serviceType)
++   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
++   at Microsoft.AspNetCore.Mvc.Controllers.ServiceBasedControllerActivator.Create(ControllerContext actionContext)
++   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
++   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
++   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
++--- End of stack trace from previous location where exception was thrown ---
++   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
++2020-08-12 09:57:13.019 +08:00 [ERR] ---------- Exception Data ----------
++2020-08-12 09:57:13.019 +08:00 [ERR] ActivatorChain = Aohost.Blog.Controllers.HelloWorldController
++2020-08-12 09:57:13.024 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Http.RemoteServiceErrorResponse'.
++2020-08-12 09:57:13.043 +08:00 [INF] Executed action Aohost.Blog.Controllers.HelloWorldController.HelloWorld (Aohost.Blog.HttpApi) in 134.6646ms
++2020-08-12 09:57:13.043 +08:00 [INF] Executed endpoint 'Aohost.Blog.Controllers.HelloWorldController.HelloWorld (Aohost.Blog.HttpApi)'
++2020-08-12 09:57:13.044 +08:00 [INF] Request finished in 199.8584ms 500 application/json; charset=utf-8
+diff --git a/src/Aohost.Blog.HttpApi.Hosting/Menus/BlogMenuContributor.cs b/src/Aohost.Blog.HttpApi.Hosting/Menus/BlogMenuContributor.cs
+deleted file mode 100644
+index 8e6840f..0000000
+--- a/src/Aohost.Blog.HttpApi.Hosting/Menus/BlogMenuContributor.cs
++++ /dev/null
+@@ -1,34 +0,0 @@
+-﻿using System.Threading.Tasks;
+-using Microsoft.Extensions.DependencyInjection;
+-using Microsoft.Extensions.Localization;
+-using Aohost.Blog.Localization;
+-using Aohost.Blog.MultiTenancy;
+-using Volo.Abp.TenantManagement.Web.Navigation;
+-using Volo.Abp.UI.Navigation;
+-
+-namespace Aohost.Blog.Web.Menus
+-{
+-    public class BlogMenuContributor : IMenuContributor
+-    {
+-        public async Task ConfigureMenuAsync(MenuConfigurationContext context)
+-        {
+-            if (context.Menu.Name == StandardMenus.Main)
+-            {
+-                await ConfigureMainMenuAsync(context);
+-            }
+-        }
+-
+-        private async Task ConfigureMainMenuAsync(MenuConfigurationContext context)
+-        {
+-            if (!MultiTenancyConsts.IsEnabled)
+-            {
+-                var administration = context.Menu.GetAdministration();
+-                administration.TryRemoveMenuItem(TenantManagementMenuNames.GroupName);
+-            }
+-
+-            var l = context.GetLocalizer<BlogResource>();
+-
+-            context.Menu.Items.Insert(0, new ApplicationMenuItem("Blog.Home", l["Menu:Home"], "~/"));
+-        }
+-    }
+-}
+diff --git a/src/Aohost.Blog.HttpApi.Hosting/Pages/BlogPageModel.cs b/src/Aohost.Blog.HttpApi.Hosting/Pages/BlogPageModel.cs
+deleted file mode 100644
+index c974948..0000000
+--- a/src/Aohost.Blog.HttpApi.Hosting/Pages/BlogPageModel.cs
++++ /dev/null
+@@ -1,15 +0,0 @@
+-﻿using Aohost.Blog.Localization;
+-using Volo.Abp.AspNetCore.Mvc.UI.RazorPages;
+-
+-namespace Aohost.Blog.Web.Pages
+-{
+-    /* Inherit your PageModel classes from this class.
+-     */
+-    public abstract class BlogPageModel : AbpPageModel
+-    {
+-        protected BlogPageModel()
+-        {
+-            LocalizationResourceType = typeof(BlogResource);
+-        }
+-    }
+-}
+\ No newline at end of file
+diff --git a/src/Aohost.Blog.HttpApi.Hosting/Pages/Index.cshtml b/src/Aohost.Blog.HttpApi.Hosting/Pages/Index.cshtml
+deleted file mode 100644
+index 5e8758b..0000000
+--- a/src/Aohost.Blog.HttpApi.Hosting/Pages/Index.cshtml
++++ /dev/null
+@@ -1,31 +0,0 @@
+-﻿@page
+-@using Microsoft.AspNetCore.Mvc.Localization
+-@using Aohost.Blog.Localization
+-@using Volo.Abp.Users
+-@model Aohost.Blog.Web.Pages.IndexModel
+-@inject IHtmlLocalizer<BlogResource> L
+-@inject ICurrentUser CurrentUser
+-@section styles {
+-    <abp-style-bundle>
+-        <abp-style src="/Pages/Index.css" />
+-    </abp-style-bundle>
+-}
+-@section scripts {
+-    <abp-script-bundle>
+-        <abp-script src="/Pages/Index.js" />
+-    </abp-script-bundle>
+-}
+-<div class="jumbotron text-center">
+-    <h1>@L["Welcome"]</h1>
+-    <div class="row">
+-        <div class="col-md-6 mx-auto">
+-            <p>@L["LongWelcomeMessage"]</p>
+-            <hr class="my-4"/>
+-        </div>
+-    </div>
+-    <a href="https://abp.io?ref=tmpl" target="_blank" class="btn btn-primary px-4">abp.io</a>
+-    @if (!CurrentUser.IsAuthenticated)
+-    {
+-        <a abp-button="Primary" href="~/Account/Login" class="px-4"><i class="fa fa-sign-in"></i> @L["Login"]</a>
+-    }
+-</div>
+\ No newline at end of file
+diff --git a/src/Aohost.Blog.HttpApi.Hosting/Pages/Index.cshtml.cs b/src/Aohost.Blog.HttpApi.Hosting/Pages/Index.cshtml.cs
+deleted file mode 100644
+index cb21145..0000000
+--- a/src/Aohost.Blog.HttpApi.Hosting/Pages/Index.cshtml.cs
++++ /dev/null
+@@ -1,10 +0,0 @@
+-﻿namespace Aohost.Blog.Web.Pages
+-{
+-    public class IndexModel : BlogPageModel
+-    {
+-        public void OnGet()
+-        {
+-            
+-        }
+-    }
+-}
+\ No newline at end of file
+diff --git a/src/Aohost.Blog.HttpApi.Hosting/Pages/Index.css b/src/Aohost.Blog.HttpApi.Hosting/Pages/Index.css
+deleted file mode 100644
+index 3f73b78..0000000
+--- a/src/Aohost.Blog.HttpApi.Hosting/Pages/Index.css
++++ /dev/null
+@@ -1,3 +0,0 @@
+-﻿body {
+-    
+-}
+diff --git a/src/Aohost.Blog.HttpApi.Hosting/Pages/Index.js b/src/Aohost.Blog.HttpApi.Hosting/Pages/Index.js
+deleted file mode 100644
+index 46f089b..0000000
+--- a/src/Aohost.Blog.HttpApi.Hosting/Pages/Index.js
++++ /dev/null
+@@ -1,3 +0,0 @@
+-﻿$(function () {
+-    abp.log.debug('Index.js initialized!');
+-});
+\ No newline at end of file
+diff --git a/src/Aohost.Blog.HttpApi.Hosting/Pages/_ViewImports.cshtml b/src/Aohost.Blog.HttpApi.Hosting/Pages/_ViewImports.cshtml
+deleted file mode 100644
+index c1da1f5..0000000
+--- a/src/Aohost.Blog.HttpApi.Hosting/Pages/_ViewImports.cshtml
++++ /dev/null
+@@ -1,4 +0,0 @@
+-﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+-@addTagHelper *, Volo.Abp.AspNetCore.Mvc.UI
+-@addTagHelper *, Volo.Abp.AspNetCore.Mvc.UI.Bootstrap
+-@addTagHelper *, Volo.Abp.AspNetCore.Mvc.UI.Bundling
+\ No newline at end of file
+diff --git a/src/Aohost.Blog.HttpApi.Hosting/Startup.cs b/src/Aohost.Blog.HttpApi.Hosting/Startup.cs
+index 8dd4c15..27cde41 100644
+--- a/src/Aohost.Blog.HttpApi.Hosting/Startup.cs
++++ b/src/Aohost.Blog.HttpApi.Hosting/Startup.cs
+@@ -7,7 +7,7 @@ namespace Aohost.Blog.Web
+     {
+         public void ConfigureServices(IServiceCollection services)
+         {
+-            services.AddApplication<BlogWebModule>();
++            services.AddApplication<HttpApiHostingModule>();
+         }
+ 
+         public void Configure(IApplicationBuilder app)
+diff --git a/src/Aohost.Blog.HttpApi.Hosting/Views/_ViewImports.cshtml b/src/Aohost.Blog.HttpApi.Hosting/Views/_ViewImports.cshtml
+deleted file mode 100644
+index c1da1f5..0000000
+--- a/src/Aohost.Blog.HttpApi.Hosting/Views/_ViewImports.cshtml
++++ /dev/null
+@@ -1,4 +0,0 @@
+-﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+-@addTagHelper *, Volo.Abp.AspNetCore.Mvc.UI
+-@addTagHelper *, Volo.Abp.AspNetCore.Mvc.UI.Bootstrap
+-@addTagHelper *, Volo.Abp.AspNetCore.Mvc.UI.Bundling
+\ No newline at end of file
+diff --git a/src/Aohost.Blog.HttpApi/Aohost.Blog.HttpApi.csproj b/src/Aohost.Blog.HttpApi/Aohost.Blog.HttpApi.csproj
+index 8f4e3e9..384e649 100644
+--- a/src/Aohost.Blog.HttpApi/Aohost.Blog.HttpApi.csproj
++++ b/src/Aohost.Blog.HttpApi/Aohost.Blog.HttpApi.csproj
+@@ -9,6 +9,7 @@
+ 
+   <ItemGroup>
+     <ProjectReference Include="..\Aohost.Blog.Application.Contracts\Aohost.Blog.Application.Contracts.csproj" />
++    <ProjectReference Include="..\Aohost.Blog.Application\Aohost.Blog.Application.csproj" />
+   </ItemGroup>
+ 
+   <ItemGroup>
+diff --git a/src/Aohost.Blog.HttpApi/BlogHttpApiModule.cs b/src/Aohost.Blog.HttpApi/BlogHttpApiModule.cs
+index 42956c9..3c9202a 100644
+--- a/src/Aohost.Blog.HttpApi/BlogHttpApiModule.cs
++++ b/src/Aohost.Blog.HttpApi/BlogHttpApiModule.cs
+@@ -8,12 +8,8 @@ using Volo.Abp.TenantManagement;
+ namespace Aohost.Blog
+ {
+     [DependsOn(
+-        typeof(BlogApplicationContractsModule),
+-        typeof(AbpAccountHttpApiModule),
+         typeof(AbpIdentityHttpApiModule),
+-        typeof(AbpPermissionManagementHttpApiModule),
+-        typeof(AbpTenantManagementHttpApiModule),
+-        typeof(AbpFeatureManagementHttpApiModule)
++        typeof(BlogApplicationModule)
+         )]
+     public class BlogHttpApiModule : AbpModule
+     {
+diff --git a/src/Aohost.Blog.HttpApi/Controllers/HelloWorldController.cs b/src/Aohost.Blog.HttpApi/Controllers/HelloWorldController.cs
+new file mode 100644
+index 0000000..3fef8d3
+--- /dev/null
++++ b/src/Aohost.Blog.HttpApi/Controllers/HelloWorldController.cs
+@@ -0,0 +1,24 @@
++﻿using Aohost.Blog.Services;
++using Microsoft.AspNetCore.Mvc;
++using Volo.Abp.AspNetCore.Mvc;
++
++namespace Aohost.Blog.Controllers
++{
++    [ApiController]
++    [Route("[controller]")]
++    public class HelloWorldController:AbpController
++    {
++        private readonly IHelloWorldService _helloWorldService;
++
++        public HelloWorldController(IHelloWorldService helloWorldService)
++        {
++            _helloWorldService = helloWorldService;
++        }
++
++        [HttpGet]
++        public string HelloWorld()
++        {
++            return _helloWorldService.HelloWorld();
++        }
++    }
++}
+\ No newline at end of file
+-- 
+2.27.0.windows.1
+
