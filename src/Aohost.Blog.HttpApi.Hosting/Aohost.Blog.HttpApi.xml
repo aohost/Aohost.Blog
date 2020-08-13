@@ -4,5 +4,39 @@
         <name>Aohost.Blog.HttpApi</name>
     </assembly>
     <members>
+        <member name="T:Aohost.Blog.HttpApi.Controllers.BlogController">
+            <summary>
+            博客
+            </summary>
+        </member>
+        <member name="M:Aohost.Blog.HttpApi.Controllers.BlogController.InsertPostAsync(Aohost.Blog.Application.Contracts.Blog.PostDto)">
+            <summary>
+            插入博客
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Aohost.Blog.HttpApi.Controllers.BlogController.DeletePostAsync(System.Int32)">
+            <summary>
+            删除博客
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Aohost.Blog.HttpApi.Controllers.BlogController.UpdatePostAsync(System.Int32,Aohost.Blog.Application.Contracts.Blog.PostDto)">
+            <summary>
+            更新博客
+            </summary>
+            <param name="id"></param>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Aohost.Blog.HttpApi.Controllers.BlogController.GetPostAsync(System.Int32)">
+            <summary>
+            获取博客
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
     </members>
 </doc>

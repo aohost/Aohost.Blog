@@ -2,7 +2,7 @@
 
 namespace Aohost.Blog.Application
 {
-    public class BlogApplicationServiceBase: ApplicationService
+    public class ServiceBase: ApplicationService
     {
     }
 }

@@ -11,6 +11,8 @@ namespace Aohost.Blog.Domain.Configuration
         {
             var builder = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("appsettings.json", true, true);
+
+            _config = builder.Build();
         }
 
         public static string EnableDb => _config["ConnectionStrings:Enable"];

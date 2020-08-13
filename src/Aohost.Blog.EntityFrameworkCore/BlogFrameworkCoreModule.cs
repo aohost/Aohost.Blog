@@ -11,7 +11,7 @@ namespace Aohost.Blog.EntityFrameworkCore
         typeof(AbpEntityFrameworkCoreModule),
         //typeof(AbpEntityFrameworkCoreMySQLModule),
         typeof(AbpEntityFrameworkCoreSqlServerModule))]
-    public class BlogFrameworkCoreModule: AbpModule
+    public class BlogFrameworkCoreModule : AbpModule
     {
         public override void ConfigureServices(ServiceConfigurationContext context)
         {
@@ -27,7 +27,9 @@ namespace Aohost.Blog.EntityFrameworkCore
                     case "SqlServer":
                         options.UseSqlServer();
                         break;
-
+                    default:
+                        options.UseSqlServer();
+                        break;
                 }
             });
         }

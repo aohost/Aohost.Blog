@@ -15,9 +15,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.5">
+	    <PrivateAssets>all</PrivateAssets>
+	    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  </PackageReference>
 	  <PackageReference Include="Volo.Abp.Autofac" Version="3.0.5" />
 
     <ProjectReference Include="..\Aohost.Blog.Application\Aohost.Blog.Application.csproj" />
+
+    <ProjectReference Include="..\Aohost.Blog.EntityFrameworkCore.DbMigrations\Aohost.Blog.EntityFrameworkCore.DbMigrations.csproj" />
     <ProjectReference Include="..\Aohost.Blog.EntityFrameworkCore\Aohost.Blog.EntityFrameworkCore.csproj" />
     <ProjectReference Include="..\Aohost.Blog.HttpApi\Aohost.Blog.HttpApi.csproj" />
     <ProjectReference Include="..\Aohost.Blog.Swagger\Aohost.Blog.Swagger.csproj" />

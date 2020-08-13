@@ -4,5 +4,94 @@
         <name>Aohost.Blog.Domain</name>
     </assembly>
     <members>
+        <member name="P:Aohost.Blog.Domain.Blog.Category.CategoryName">
+            <summary>
+            分类名称
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Domain.Blog.Category.DisplayName">
+            <summary>
+            展示名称
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Domain.Blog.FriendLink.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Domain.Blog.FriendLink.LinkUrl">
+            <summary>
+            链接
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Domain.Blog.Post.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Domain.Blog.Post.Author">
+            <summary>
+            作者
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Domain.Blog.Post.Url">
+            <summary>
+            链接
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Domain.Blog.Post.Html">
+            <summary>
+            HTML
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Domain.Blog.Post.Markdown">
+            <summary>
+            Markdown
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Domain.Blog.Post.CategoryId">
+            <summary>
+            分类ID
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Domain.Blog.Post.CreationTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Domain.Blog.PostTag.PostId">
+            <summary>
+            文章ID
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Domain.Blog.PostTag.TagId">
+            <summary>
+            标签ID
+            </summary>
+        </member>
+        <member name="M:Aohost.Blog.Domain.Blog.Repositories.IPostTagRepository.BulkInsertAsync(System.Collections.Generic.IEnumerable{Aohost.Blog.Domain.Blog.PostTag})">
+            <summary>
+            批量插入
+            </summary>
+            <param name="postTags"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Aohost.Blog.Domain.Blog.Repositories.ITagRepository.BulkInsertAsync(System.Collections.Generic.IEnumerable{Aohost.Blog.Domain.Blog.Tag})">
+            <summary>
+            批量插入
+            </summary>
+            <param name="tags"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Aohost.Blog.Domain.Blog.Tag.TagName">
+            <summary>
+            标签名称
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Domain.Blog.Tag.DisplayName">
+            <summary>
+            展示名称
+            </summary>
+        </member>
     </members>
 </doc>
