@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Aohost.Blog.Web
+namespace Aohost.Blog.HttpApi.Hosting
 {
     public class Startup
     {

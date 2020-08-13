@@ -4,15 +4,18 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>Aohost.Blog</RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+	  <DocumentationFile>..\Aohost.Blog.HttpApi.Hosting\Aohost.Blog.HttpApi.xml</DocumentationFile>
+  </PropertyGroup>
+
+	<ItemGroup>
     <PackageReference Include="Volo.Abp.Identity.HttpApi" Version="3.0.5" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Aohost.Blog.Application\Aohost.Blog.Application.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\Aohost.Blog.Application\Aohost.Blog.Application.csproj" />
+	</ItemGroup>
 
 </Project>

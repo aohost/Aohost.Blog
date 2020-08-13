@@ -5,11 +5,12 @@ using Volo.Abp.AspNetCore.Mvc;
 using Volo.Abp.Autofac;
 using Volo.Abp.Modularity;
 
-namespace Aohost.Blog.Web
+namespace Aohost.Blog.HttpApi.Hosting
 {
     [DependsOn(typeof(AbpAspNetCoreMvcModule),
         typeof(BlogHttpApiModule),
-        typeof(AbpAutofacModule))]
+        typeof(AbpAutofacModule), 
+        typeof(BlogSwaggerModule))]
     public class HttpApiHostingModule:AbpModule
     {
         public override void ConfigureServices(ServiceConfigurationContext context)
@@ -29,13 +30,14 @@ namespace Aohost.Blog.Web
 
             app.UseRouting();
 
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}"
-                );
-            });
+            //app.UseEndpoints(endpoints =>
+            //{
+            //    endpoints.MapControllerRoute(
+            //        name: "default",
+            //        pattern: "{controller=Home}/{action=Index}/{id?}"
+            //    );
+            //});
+            app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
         }
     }
 }

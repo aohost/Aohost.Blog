@@ -1,6 +1,4 @@
-﻿using Volo.Abp.Application.Services;
-
-namespace Aohost.Blog.Services
+﻿namespace Aohost.Blog.Application
 {
     public class HelloWorldService: BlogApplicationServiceBase, IHelloWorldService
     {

@@ -6,7 +6,7 @@ using Volo.Abp.ObjectExtending;
 using Volo.Abp.PermissionManagement;
 using Volo.Abp.TenantManagement;
 
-namespace Aohost.Blog
+namespace Aohost.Blog.Application.Contracts
 {
     [DependsOn(
         typeof(BlogDomainSharedModule),

@@ -1,8 +1,6 @@
-﻿using Volo.Abp.Identity;
-using Volo.Abp.ObjectExtending;
-using Volo.Abp.Threading;
+﻿using Volo.Abp.Threading;
 
-namespace Aohost.Blog
+namespace Aohost.Blog.Application.Contracts
 {
     public static class BlogDtoExtensions
     {
