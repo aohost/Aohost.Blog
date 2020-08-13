@@ -1,21 +1,19 @@
 <Project Sdk="Microsoft.NET.Sdk">
+	<Import Project="..\..\common.props" />
 
-  <Import Project="..\..\common.props" />
+	<PropertyGroup>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+	</PropertyGroup>
 
-  <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-	  <DocumentationFile>..\Aohost.Blog.HttpApi.Hosting\Aohost.Blog.HttpApi.xml</DocumentationFile>
-  </PropertyGroup>
-
-	<ItemGroup>
-    <PackageReference Include="Volo.Abp.Identity.HttpApi" Version="3.0.5" />
-  </ItemGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<DocumentationFile>..\Aohost.Blog.HttpApi.Hosting\Aohost.Blog.HttpApi.xml</DocumentationFile>
+	</PropertyGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\Aohost.Blog.Application\Aohost.Blog.Application.csproj" />
+		<ProjectReference Include="..\Aohost.Blog.Application\Aohost.Blog.Application.csproj" />
 	</ItemGroup>
 
+	<ItemGroup>
+		<PackageReference Include="Volo.Abp.Identity.HttpApi" Version="3.0.5" />
+	</ItemGroup>
 </Project>

@@ -17,10 +17,10 @@
   <ItemGroup>
 	  <PackageReference Include="Volo.Abp.Autofac" Version="3.0.5" />
 
-	  <ProjectReference Include="..\..\Aohost.Blog.Swagger\Aohost.Blog.Swagger.csproj" />
     <ProjectReference Include="..\Aohost.Blog.Application\Aohost.Blog.Application.csproj" />
     <ProjectReference Include="..\Aohost.Blog.EntityFrameworkCore\Aohost.Blog.EntityFrameworkCore.csproj" />
     <ProjectReference Include="..\Aohost.Blog.HttpApi\Aohost.Blog.HttpApi.csproj" />
+    <ProjectReference Include="..\Aohost.Blog.Swagger\Aohost.Blog.Swagger.csproj" />
   </ItemGroup>
 
 </Project>

@@ -7,10 +7,10 @@ using Volo.Abp.Modularity;
 
 namespace Aohost.Blog.HttpApi.Hosting
 {
-    [DependsOn(typeof(AbpAspNetCoreMvcModule),
-        typeof(BlogHttpApiModule),
-        typeof(AbpAutofacModule), 
-        typeof(BlogSwaggerModule))]
+    [DependsOn(
+        typeof(AbpAspNetCoreMvcModule),
+        typeof(AbpAutofacModule)
+    )]
     public class HttpApiHostingModule:AbpModule
     {
         public override void ConfigureServices(ServiceConfigurationContext context)
