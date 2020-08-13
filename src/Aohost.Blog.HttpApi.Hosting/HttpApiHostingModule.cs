@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using Aohost.Blog.EntityFrameworkCore;
+using Aohost.Blog.Swagger;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Hosting;
 using Volo.Abp;
 using Volo.Abp.AspNetCore.Mvc;
@@ -9,7 +11,10 @@ namespace Aohost.Blog.HttpApi.Hosting
 {
     [DependsOn(
         typeof(AbpAspNetCoreMvcModule),
-        typeof(AbpAutofacModule)
+        typeof(AbpAutofacModule),
+        typeof(BlogHttpApiModule),
+        typeof(BlogSwaggerModule),
+        typeof(BlogFrameworkCoreModule)
     )]
     public class HttpApiHostingModule:AbpModule
     {
@@ -30,13 +35,6 @@ namespace Aohost.Blog.HttpApi.Hosting
 
             app.UseRouting();
 
-            //app.UseEndpoints(endpoints =>
-            //{
-            //    endpoints.MapControllerRoute(
-            //        name: "default",
-            //        pattern: "{controller=Home}/{action=Index}/{id?}"
-            //    );
-            //});
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
         }
     }

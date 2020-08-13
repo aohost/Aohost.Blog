@@ -16,9 +16,9 @@ namespace Aohost.Blog
         }
 
         [HttpGet]
-        public string HelloWorld()
+        public IActionResult HelloWorld()
         {
-            return _helloWorldService.HelloWorld();
+            return Ok(_helloWorldService.HelloWorld());
         }
     }
 }

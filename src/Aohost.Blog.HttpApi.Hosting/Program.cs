@@ -19,6 +19,6 @@ namespace Aohost.Blog.HttpApi.Hosting
                     webBuilder.UseStartup<Startup>();
                 })
                 .UseAutofac();
-                //seSerilog();
+                //.UseSerilog();
     }
 }
