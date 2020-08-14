@@ -1,7 +1,12 @@
-﻿using Aohost.Blog.EntityFrameworkCore;
+﻿using System;
+using Aohost.Blog.Domain.Configuration;
+using Aohost.Blog.EntityFrameworkCore;
 using Aohost.Blog.Swagger;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.IdentityModel.Tokens;
 using Volo.Abp;
 using Volo.Abp.AspNetCore.Mvc;
 using Volo.Abp.Autofac;
@@ -20,6 +25,26 @@ namespace Aohost.Blog.HttpApi.Hosting
     {
         public override void ConfigureServices(ServiceConfigurationContext context)
         {
+            // 身份验证
+            context.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                .AddJwtBearer(options =>
+                {
+                    options.TokenValidationParameters = new TokenValidationParameters
+                    {
+                        ValidateIssuer = true,
+                        ValidateAudience = true,
+                        ValidateLifetime = true,
+                        ClockSkew = TimeSpan.FromMinutes(30),
+                        ValidateIssuerSigningKey = true,
+                        ValidAudience = AppSettings.JWT.Domain,
+                        ValidIssuer = AppSettings.JWT.Domain,
+                        IssuerSigningKey = new SymmetricSecurityKey(AppSettings.JWT.SecurityKey.GetBytes())
+                    };
+                });
+            // 认证授权
+            context.Services.AddAuthorization();
+            context.Services.AddHttpClient();
+
             base.ConfigureServices(context);
         }
 

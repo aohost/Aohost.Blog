@@ -15,6 +15,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Aohost.Blog.Application.Contracts.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
 	  <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.5">
 	    <PrivateAssets>all</PrivateAssets>
 	    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -27,6 +31,19 @@
     <ProjectReference Include="..\Aohost.Blog.EntityFrameworkCore\Aohost.Blog.EntityFrameworkCore.csproj" />
     <ProjectReference Include="..\Aohost.Blog.HttpApi\Aohost.Blog.HttpApi.csproj" />
     <ProjectReference Include="..\Aohost.Blog.Swagger\Aohost.Blog.Swagger.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Aohost.Blog.Application.Contracts.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Aohost.Blog.Domain.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Aohost.Blog.HttpApi.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

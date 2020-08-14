@@ -15,7 +15,7 @@ namespace Aohost.Blog.Swagger
         private static readonly string version = $"v{AppSettings.ApiVersion}";
 
         private static readonly string description =
-            @"<b>Blog</b>：<a target=""_blank"" href=""https://meowv.com"">https://meowv.com</a> <b>GitHub</b>：<a target=""_blank"" href=""https://github.com/Meowv/Blog"">https://github.com/Meowv/Blog</a> <b>Hangfire</b>：<a target=""_blank"" href=""/hangfire"">任务调度中心</a> <code>Powered by .NET Core 3.1 on Linux</code>";
+            @"<b>Blog</b>：<a target=""_blank"" href=""https://meowv.com"">https://meowv.com</a> <b>GitHub</b>：<a target=""_blank"" href=""https://github.com/aohost/Aohost.Blog"">https://github.com/aohost/Aohost.Blog</a> <b>Hangfire</b>：<a target=""_blank"" href=""/hangfire"">任务调度中心</a> <code>Powered by .NET Core 3.1 on Linux</code>";
 
         private static readonly List<SwaggerApiInfo> ApiInfos = new List<SwaggerApiInfo>
         {
@@ -71,12 +71,6 @@ namespace Aohost.Blog.Swagger
         {
             return services.AddSwaggerGen(options =>
             {
-                //options.SwaggerDoc("v1", new OpenApiInfo
-                //{
-                //    Version = "1.0.0",
-                //    Title = "My Api",
-                //    Description = "Api Desc"
-                //});
                 ApiInfos.ForEach(x => { options.SwaggerDoc(x.UrlPrefix, x.OpenApiInfo); });
 
                 var security = new OpenApiSecurityScheme
