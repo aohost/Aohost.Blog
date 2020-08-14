@@ -23,6 +23,12 @@ namespace Aohost.Blog.ToolKits
             Code = ServiceResultCode.Succeed;
         }
 
+        public void IsFailed(string message = "")
+        {
+            Message = message;
+            Code = ServiceResultCode.Failed;
+        }
+
         /// <summary>
         /// 响应失败
         /// </summary>

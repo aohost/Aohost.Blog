@@ -1,4 +1,5 @@
 ﻿using System.IO;
+using System.Security;
 using Microsoft.Extensions.Configuration;
 
 namespace Aohost.Blog.Domain.Configuration
@@ -16,6 +17,8 @@ namespace Aohost.Blog.Domain.Configuration
         }
 
         public static string EnableDb => _config["ConnectionStrings:Enable"];
+
+        public static string ApiVersion => _config["ApiVersion"];
 
         public static string ConnectionStrings => _config.GetConnectionString(EnableDb);
     }

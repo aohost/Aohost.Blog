@@ -38,5 +38,11 @@
             <param name="id"></param>
             <returns></returns>
         </member>
+        <member name="M:Aohost.Blog.HttpApi.Controllers.HelloWorldController.HelloWorld">
+            <summary>
+            HelloWorld
+            </summary>
+            <returns></returns>
+        </member>
     </members>
 </doc>

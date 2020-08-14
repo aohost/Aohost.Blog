@@ -1,4 +1,4 @@
-﻿namespace Aohost.Blog.Application
+﻿namespace Aohost.Blog.Application.HelloWorld
 {
     public interface IHelloWorldService
     {

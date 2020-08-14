@@ -2,6 +2,7 @@
 using Aohost.Blog.Application.Contracts.Blog;
 using Aohost.Blog.Domain.Blog;
 using Aohost.Blog.Domain.Blog.Repositories;
+using Aohost.Blog.ToolKits;
 
 namespace Aohost.Blog.Application.Blog.Impl
 {
@@ -14,8 +15,10 @@ namespace Aohost.Blog.Application.Blog.Impl
             _postRepository = postRepository;
         }
 
-        public async Task<bool> InsertPostAsync(PostDto dto)
+        public async Task<ServiceResult<string>> InsertPostAsync(PostDto dto)
         {
+            var result = new ServiceResult<string>();
+
             var entity = new Post
             {
                 Title = dto.Title,
@@ -28,18 +31,29 @@ namespace Aohost.Blog.Application.Blog.Impl
             };
 
             var post = await _postRepository.InsertAsync(entity, true);
-            return post != null;
+            if (post == null)
+            {
+                result.IsFailed("添加失败");
+                return result;
+            }
+
+            result.IsSuccess("添加成功");
+            return result;
         }
 
-        public async Task<bool> DeletePostAsync(int id)
+        public async Task<ServiceResult> DeletePostAsync(int id)
         {
+            var result = new ServiceResult();
+
             await _postRepository.DeleteAsync(id);
 
-            return true;
+            return result;
         }
 
-        public async Task<bool> UpdatePostAsync(int id, PostDto dto)
+        public async Task<ServiceResult<string>> UpdatePostAsync(int id, PostDto dto)
         {
+            var result = new ServiceResult<string>();
+
             var post = await _postRepository.GetAsync(id);
 
             post.Title = dto.Title;
@@ -51,13 +65,14 @@ namespace Aohost.Blog.Application.Blog.Impl
             post.Url = dto.Url;
 
             await _postRepository.UpdateAsync(post);
-            return true;
+            result.IsSuccess("更新成功");
+            return result;
         }
 
-        public async Task<PostDto> GetPostAsync(int id)
+        public async Task<ServiceResult<PostDto>> GetPostAsync(int id)
         {
             var entity = await _postRepository.GetAsync(id);
-            return new PostDto
+            var dto = new PostDto
             {
                 Title = entity.Title,
                 Author = entity.Author,
@@ -66,6 +81,10 @@ namespace Aohost.Blog.Application.Blog.Impl
                 Html = entity.Html,
                 Markdown = entity.Markdown
             };
+
+            var result = new ServiceResult<PostDto>();
+            result.IsSuccess(dto);
+            return result;
         }
     }
 }

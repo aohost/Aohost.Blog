@@ -2,7 +2,7 @@
 
 namespace Aohost.Blog.ToolKits
 {
-    public class ServiceResultOfT<T>:ServiceResult where T : class
+    public class ServiceResult<T>:ServiceResult where T : class
     {
         public T Result { get; set; }
 

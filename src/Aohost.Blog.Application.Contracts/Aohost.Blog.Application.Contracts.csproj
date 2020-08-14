@@ -6,7 +6,11 @@
 	  <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
-  <ItemGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+	  <DocumentationFile>..\Aohost.Blog.HttpApi.Hosting\Aohost.Blog.Application.Contracts.xml</DocumentationFile>
+  </PropertyGroup>
+
+	<ItemGroup>
     <ProjectReference Include="..\Aohost.Blog.Domain.Shared\Aohost.Blog.Domain.Shared.csproj" />
   </ItemGroup>
 
