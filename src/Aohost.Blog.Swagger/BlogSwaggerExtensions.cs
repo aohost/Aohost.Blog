@@ -12,6 +12,11 @@ namespace Aohost.Blog.Swagger
 {
     public static class BlogSwaggerExtensions
     {
+        private static readonly string version = $"v{AppSettings.ApiVersion}";
+
+        private static readonly string description =
+            @"<b>Blog</b>：<a target=""_blank"" href=""https://meowv.com"">https://meowv.com</a> <b>GitHub</b>：<a target=""_blank"" href=""https://github.com/Meowv/Blog"">https://github.com/Meowv/Blog</a> <b>Hangfire</b>：<a target=""_blank"" href=""/hangfire"">任务调度中心</a> <code>Powered by .NET Core 3.1 on Linux</code>";
+
         private static readonly List<SwaggerApiInfo> ApiInfos = new List<SwaggerApiInfo>
         {
             new SwaggerApiInfo
@@ -20,9 +25,9 @@ namespace Aohost.Blog.Swagger
                 Name = "博客前台接口",
                 OpenApiInfo = new OpenApiInfo
                 {
-                    Version = AppSettings.ApiVersion,
+                    Version = version,
                     Title = "Ahost - 博客前台接口",
-                    Description = "博客前台接口"
+                    Description = description
                 }
             },
             new SwaggerApiInfo
@@ -31,9 +36,9 @@ namespace Aohost.Blog.Swagger
                 Name = "博客后台接口",
                 OpenApiInfo = new OpenApiInfo
                 {
-                    Version = AppSettings.ApiVersion,
+                    Version = version,
                     Title = "Aohost - 博客后台接口",
-                    Description = "博客后台接口"
+                    Description = description
                 }
             },
             new SwaggerApiInfo
@@ -42,9 +47,9 @@ namespace Aohost.Blog.Swagger
                 Name = "其他通用接口",
                 OpenApiInfo = new OpenApiInfo
                 {
-                    Version = AppSettings.ApiVersion,
+                    Version = version,
                     Title = "Aohost - 其他通用接口",
-                    Description = "其他通用接口"
+                    Description = description
                 }
             },
             new SwaggerApiInfo
@@ -53,9 +58,9 @@ namespace Aohost.Blog.Swagger
                 Name = "JWT授权接口",
                 OpenApiInfo = new OpenApiInfo
                 {
-                    Version = AppSettings.ApiVersion,
+                    Version = version,
                     Title = "Aohost - JWT授权接口",
-                    Description = "JWT授权接口"
+                    Description = description
                 }
             }
         };
@@ -73,6 +78,16 @@ namespace Aohost.Blog.Swagger
                 //    Description = "Api Desc"
                 //});
                 ApiInfos.ForEach(x => { options.SwaggerDoc(x.UrlPrefix, x.OpenApiInfo); });
+
+                var security = new OpenApiSecurityScheme
+                {
+                    Description = "JWT模式授权，请输入 Bearer {Token} 进行身份验证",
+                    Name = "Authorization",
+                    In = ParameterLocation.Header,
+                    Type = SecuritySchemeType.ApiKey
+                };
+                options.AddSecurityDefinition("JWT", security);
+                options.AddSecurityRequirement(new OpenApiSecurityRequirement {{security, new List<string>()}});
 
                 options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "Aohost.Blog.HttpApi.xml"));
                 options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "Aohost.Blog.Domain.xml"));
