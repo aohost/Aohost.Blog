@@ -23,7 +23,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aohost.Blog.HttpApi.Hosting
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aohost.Blog.BackgroundJobs", "src\Aohost.Blog.BackgroundJobs\Aohost.Blog.BackgroundJobs.csproj", "{C86B3B88-4C8F-4A54-A416-48550A026EF2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aohost.Blog.Caching", "src\Aohost.Blog.Caching\Aohost.Blog.Caching.csproj", "{3BA17D0D-68CE-4E48-8C56-94D42A692051}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aohost.BlogApplication.Caching", "src\Aohost.Blog.Caching\Aohost.BlogApplication.Caching.csproj", "{3BA17D0D-68CE-4E48-8C56-94D42A692051}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aohost.Blog.Swagger", "src\Aohost.Blog.Swagger\Aohost.Blog.Swagger.csproj", "{2EBA1E05-9C94-427B-8984-E88C497EFDC8}"
 EndProject

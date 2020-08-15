@@ -93,5 +93,80 @@
             展示名称
             </summary>
         </member>
+        <member name="T:Aohost.Blog.Domain.Configuration.AppSettings.GitHub">
+            <summary>
+            GitHub 第三方登录相关配置
+            </summary>
+        </member>
+        <member name="T:Aohost.Blog.Domain.Configuration.AppSettings.JWT">
+            <summary>
+            JWT 认证相关配置
+            </summary>
+        </member>
+        <member name="T:Aohost.Blog.Domain.Configuration.AppSettings.Caching">
+            <summary>
+            Caching
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Domain.Configuration.AppSettings.Caching.RedisConnectionString">
+            <summary>
+            Redis Connection String
+            </summary>
+        </member>
+        <member name="T:Aohost.Blog.Domain.Configuration.AppSettings.HangFire">
+            <summary>
+            HangFire配置
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Domain.Configuration.AppSettings.HangFire.Login">
+            <summary>
+            登录名
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Domain.Configuration.AppSettings.HangFire.Password">
+            <summary>
+            登录密码
+            </summary>
+        </member>
+        <member name="F:Aohost.Blog.Domain.Configuration.GitHubConfig.API_Authorize">
+            <summary>
+            GET请求，跳转GitHub登录界面，获取用户授权，得到code
+            </summary>
+        </member>
+        <member name="F:Aohost.Blog.Domain.Configuration.GitHubConfig.API_AccessToken">
+            <summary>
+            POST请求，根据code得到access_token
+            </summary>
+        </member>
+        <member name="F:Aohost.Blog.Domain.Configuration.GitHubConfig.API_User">
+            <summary>
+            GET请求，根据access_token得到用户信息
+            </summary>
+        </member>
+        <member name="F:Aohost.Blog.Domain.Configuration.GitHubConfig.UserId">
+            <summary>
+            GitHub UserID
+            </summary>
+        </member>
+        <member name="F:Aohost.Blog.Domain.Configuration.GitHubConfig.ClientId">
+            <summary>
+            Client ID
+            </summary>
+        </member>
+        <member name="F:Aohost.Blog.Domain.Configuration.GitHubConfig.ClientSecret">
+            <summary>
+            Client Secret
+            </summary>
+        </member>
+        <member name="F:Aohost.Blog.Domain.Configuration.GitHubConfig.RedirectUri">
+            <summary>
+            Authorization callback URL
+            </summary>
+        </member>
+        <member name="F:Aohost.Blog.Domain.Configuration.GitHubConfig.ApplicationName">
+            <summary>
+            Application Name
+            </summary>
+        </member>
     </members>
 </doc>

@@ -13,6 +13,8 @@
             public const string PostTags = "PostTags";
 
             public const string FriendLinks = "Friendlinks";
+
+            public const string Wallpapers = "Wallpapers";
         }
     }
 }

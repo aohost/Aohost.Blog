@@ -9,7 +9,6 @@ namespace Aohost.Blog.EntityFrameworkCore
 {
     [DependsOn(typeof(BlogDomainModule),
         typeof(AbpEntityFrameworkCoreModule),
-        //typeof(AbpEntityFrameworkCoreMySQLModule),
         typeof(AbpEntityFrameworkCoreSqlServerModule))]
     public class BlogFrameworkCoreModule : AbpModule
     {

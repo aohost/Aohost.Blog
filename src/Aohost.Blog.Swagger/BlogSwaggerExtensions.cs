@@ -73,6 +73,13 @@ namespace Aohost.Blog.Swagger
             {
                 ApiInfos.ForEach(x => { options.SwaggerDoc(x.UrlPrefix, x.OpenApiInfo); });
 
+                options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "Aohost.Blog.HttpApi.xml"));
+                options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "Aohost.Blog.Domain.xml"));
+                options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory,
+                    "Aohost.Blog.Application.Contracts.xml"));
+
+                #region 小绿锁
+
                 var security = new OpenApiSecurityScheme
                 {
                     Description = "JWT模式授权，请输入 Bearer {Token} 进行身份验证",
@@ -80,13 +87,11 @@ namespace Aohost.Blog.Swagger
                     In = ParameterLocation.Header,
                     Type = SecuritySchemeType.ApiKey
                 };
-                options.AddSecurityDefinition("JWT", security);
+                options.AddSecurityDefinition("oauth2", security);
                 options.AddSecurityRequirement(new OpenApiSecurityRequirement {{security, new List<string>()}});
 
-                options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "Aohost.Blog.HttpApi.xml"));
-                options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "Aohost.Blog.Domain.xml"));
-                options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory,
-                    "Aohost.Blog.Application.Contracts.xml"));
+                #endregion
+
             });
         }
 

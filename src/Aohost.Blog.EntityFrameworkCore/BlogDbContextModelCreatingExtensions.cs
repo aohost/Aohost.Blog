@@ -1,5 +1,6 @@
 ﻿using Aohost.Blog.Domain.Blog;
 using Aohost.Blog.Domain.Shared;
+using Aohost.Blog.Domain.Wallpaper;
 using Microsoft.EntityFrameworkCore;
 using Volo.Abp;
 using static Aohost.Blog.Domain.Shared.BlogDbConsts;
@@ -60,6 +61,16 @@ namespace Aohost.Blog.EntityFrameworkCore
                 b.HasKey(x => x.Id);
                 b.Property(x => x.Title).HasMaxLength(20).IsRequired();
                 b.Property(x => x.LinkUrl).HasMaxLength(100).IsRequired();
+            });
+
+            builder.Entity<Wallpaper>(b =>
+            {
+                b.ToTable(BlogConsts.DbTablePrefix + DbTableName.Wallpapers);
+
+                b.HasKey(x => x.Id);
+                b.Property(x => x.Id).HasMaxLength(50);
+                b.Property(x => x.Title).HasMaxLength(50).IsRequired();
+                b.Property(x => x.Type).HasMaxLength(20).IsRequired();
             });
         }
     }

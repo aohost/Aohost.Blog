@@ -1,13 +1,17 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <Import Project="..\..\common.props" />
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="Caching.CSRedis" Version="3.6.5" />
+    <PackageReference Include="CSRedisCore" Version="3.6.5" />
     <PackageReference Include="Volo.Abp.Caching" Version="3.0.5" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Aohost.Blog.Application.Contracts\Aohost.Blog.Application.Contracts.csproj" />
     <ProjectReference Include="..\Aohost.Blog.Domain\Aohost.Blog.Domain.csproj" />
+    <ProjectReference Include="..\Aohost.Blog.ToolKits\Aohost.Blog.ToolKits.csproj" />
   </ItemGroup>
 
   <ItemGroup>

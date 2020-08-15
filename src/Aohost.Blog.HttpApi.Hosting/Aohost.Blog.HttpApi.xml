@@ -4,6 +4,19 @@
         <name>Aohost.Blog.HttpApi</name>
     </assembly>
     <members>
+        <member name="M:Aohost.Blog.HttpApi.Controllers.AuthController.GetLoginAddressAsync">
+            <summary>
+            获取登录地址(GitHub)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Aohost.Blog.HttpApi.Controllers.AuthController.GenerateTokenAsync(System.String)">
+            <summary>
+            登录成功，生成token
+            </summary>
+            <param name="access_token"></param>
+            <returns></returns>
+        </member>
         <member name="T:Aohost.Blog.HttpApi.Controllers.BlogController">
             <summary>
             博客

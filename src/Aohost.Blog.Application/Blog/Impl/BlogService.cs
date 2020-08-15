@@ -19,17 +19,7 @@ namespace Aohost.Blog.Application.Blog.Impl
         {
             var result = new ServiceResult<string>();
 
-            var entity = new Post
-            {
-                Title = dto.Title,
-                Author = dto.Author,
-                Url = dto.Url,
-                Html = dto.Html,
-                Markdown = dto.Markdown,
-                CategoryId = dto.CategoryId,
-                CreationTime = dto.CreationTime
-            };
-
+            var entity = ObjectMapper.Map<PostDto, Post>(dto);
             var post = await _postRepository.InsertAsync(entity, true);
             if (post == null)
             {
@@ -72,17 +62,20 @@ namespace Aohost.Blog.Application.Blog.Impl
         public async Task<ServiceResult<PostDto>> GetPostAsync(int id)
         {
             var entity = await _postRepository.GetAsync(id);
-            var dto = new PostDto
-            {
-                Title = entity.Title,
-                Author = entity.Author,
-                CategoryId = entity.Id,
-                CreationTime = entity.CreationTime,
-                Html = entity.Html,
-                Markdown = entity.Markdown
-            };
+            //var dto = new PostDto
+            //{
+            //    Title = entity.Title,
+            //    Author = entity.Author,
+            //    CategoryId = entity.Id,
+            //    CreationTime = entity.CreationTime,
+            //    Html = entity.Html,
+            //    Markdown = entity.Markdown
+            //};
 
             var result = new ServiceResult<PostDto>();
+
+            var dto = ObjectMapper.Map<Post, PostDto>(entity);
+
             result.IsSuccess(dto);
             return result;
         }

@@ -1,4 +1,5 @@
-﻿using Aohost.Blog.Application.HelloWorld;
+﻿using System;
+using Aohost.Blog.Application.HelloWorld;
 using Aohost.Blog.Domain.Shared;
 using Microsoft.AspNetCore.Mvc;
 using Volo.Abp.AspNetCore.Mvc;
@@ -24,7 +25,7 @@ namespace Aohost.Blog.HttpApi.Controllers
         [HttpGet]
         public string HelloWorld()
         {
-            return _helloWorldService.HelloWorld();
+            throw new Exception("This is a exception");
         }
     }
 }

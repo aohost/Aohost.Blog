@@ -21,7 +21,7 @@ namespace Aohost.Blog.Domain.Configuration
 
         public static string ApiVersion => _config["ApiVersion"];
 
-        public static string ConnectionStrings => _config.GetConnectionString(EnableDb);
+        public static string ConnectionStrings => _config.GetConnectionString("Default");
 
         /// <summary>
         /// GitHub 第三方登录相关配置
@@ -39,6 +39,9 @@ namespace Aohost.Blog.Domain.Configuration
             public static string ApplicationName => _config["GitHub:ApplicationName"];
         }
 
+        /// <summary>
+        /// JWT 认证相关配置
+        /// </summary>
         public static class JWT
         {
             public static string Domain => _config["JWT:Domain"];
@@ -46,6 +49,33 @@ namespace Aohost.Blog.Domain.Configuration
             public static string SecurityKey => _config["JWT:SecurityKey"];
 
             public static int Expires => Convert.ToInt32(_config["JWT:Expires"]);
+        }
+
+        /// <summary>
+        /// Caching
+        /// </summary>
+        public static class Caching
+        {
+            /// <summary>
+            /// Redis Connection String
+            /// </summary>
+            public static string RedisConnectionString => _config["Caching:RedisConnectionString"];
+        }
+
+        /// <summary>
+        /// HangFire配置
+        /// </summary>
+        public static class HangFire
+        {
+            /// <summary>
+            /// 登录名
+            /// </summary>
+            public static string Login => _config["HangFire:Login"];
+
+            /// <summary>
+            /// 登录密码
+            /// </summary>
+            public static string Password => _config["HangFire:Password"];
         }
     }
 }

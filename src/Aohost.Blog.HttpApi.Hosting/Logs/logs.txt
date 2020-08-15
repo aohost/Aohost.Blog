@@ -1,0 +1,1798 @@
+2020-08-15 09:37:06.883 +08:00 [INF] Starting web host.
+2020-08-15 09:37:10.848 +08:00 [INF] User profile is available. Using 'C:\Users\aohost\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-15 09:37:10.966 +08:00 [INF] Loaded ABP modules:
+2020-08-15 09:37:10.966 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Aohost.Blog.Application.BlogApplicationModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Aohost.Blog.BlogHttpApiModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Aohost.Blog.Domain.Shared.BlogDomainSharedModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Aohost.Blog.Domain.BlogDomainModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Aohost.Blog.Swagger.BlogSwaggerModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Aohost.Blog.EntityFrameworkCore.BlogFrameworkCoreModule
+2020-08-15 09:37:10.966 +08:00 [INF] - Aohost.Blog.HttpApi.Hosting.HttpApiHostingModule
+2020-08-15 09:37:11.609 +08:00 [INF] Initialized all ABP modules.
+2020-08-15 09:37:11.636 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-15 09:37:11.636 +08:00 [INF] Hosting environment: Development
+2020-08-15 09:37:11.636 +08:00 [INF] Content root path: E:\Blog\Aohost.Blog\src\Aohost.Blog.HttpApi.Hosting
+2020-08-15 09:37:11.692 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44350/index.html  
+2020-08-15 09:37:11.817 +08:00 [INF] Request finished in 127.2137ms 200 text/html;charset=utf-8
+2020-08-15 09:37:12.046 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44350/swagger/v1/swagger.json  
+2020-08-15 09:37:12.180 +08:00 [INF] Request finished in 134.4943ms 200 application/json;charset=utf-8
+2020-08-15 09:37:15.651 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44350/swagger/v4/swagger.json  
+2020-08-15 09:37:15.661 +08:00 [INF] Request finished in 10.2844ms 200 application/json;charset=utf-8
+2020-08-15 09:37:19.467 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44350/Auth  
+2020-08-15 09:37:19.569 +08:00 [INF] Executing endpoint 'Aohost.Blog.HttpApi.Controllers.AuthController.GetLoginAddressAsync (Aohost.Blog.HttpApi)'
+2020-08-15 09:37:19.648 +08:00 [INF] Route matched with {action = "GetLoginAddress", controller = "Auth", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Aohost.Blog.ToolKits.ServiceResult`1[System.String]] GetLoginAddressAsync() on controller Aohost.Blog.HttpApi.Controllers.AuthController (Aohost.Blog.HttpApi).
+2020-08-15 09:37:19.744 +08:00 [INF] Executing ObjectResult, writing value of type 'Aohost.Blog.ToolKits.ServiceResult`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2020-08-15 09:37:19.856 +08:00 [INF] Executed action Aohost.Blog.HttpApi.Controllers.AuthController.GetLoginAddressAsync (Aohost.Blog.HttpApi) in 203.7871ms
+2020-08-15 09:37:19.856 +08:00 [INF] Executed endpoint 'Aohost.Blog.HttpApi.Controllers.AuthController.GetLoginAddressAsync (Aohost.Blog.HttpApi)'
+2020-08-15 09:37:19.856 +08:00 [INF] Request finished in 391.5889ms 200 application/json; charset=utf-8
+2020-08-15 09:37:29.592 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44350/account/auth?code=f98fa0bdec77340f259b&state=56707445c1d24fffb820113d2f24ee12  
+2020-08-15 09:37:29.603 +08:00 [INF] Request finished in 11.537ms 404 application/json;charset=utf-8
+2020-08-15 09:37:30.224 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44350/favicon.ico  
+2020-08-15 09:37:30.238 +08:00 [INF] Request finished in 14.5054ms 404 application/json;charset=utf-8
+2020-08-15 09:37:46.068 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44350/Auth/access_token?code=f98fa0bdec77340f259b  
+2020-08-15 09:37:46.070 +08:00 [INF] Executing endpoint 'Aohost.Blog.HttpApi.Controllers.AuthController.GetAccessTokenAsync (Aohost.Blog.HttpApi)'
+2020-08-15 09:37:46.084 +08:00 [INF] Route matched with {action = "GetAccessToken", controller = "Auth", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Aohost.Blog.ToolKits.ServiceResult`1[System.String]] GetAccessTokenAsync(System.String) on controller Aohost.Blog.HttpApi.Controllers.AuthController (Aohost.Blog.HttpApi).
+2020-08-15 09:37:46.132 +08:00 [INF] Start processing HTTP request POST "https://github.com/login/oauth/access_token"
+2020-08-15 09:37:46.133 +08:00 [INF] Sending HTTP request POST "https://github.com/login/oauth/access_token"
+2020-08-15 09:37:49.735 +08:00 [INF] Received HTTP response after 3599.4561ms - "OK"
+2020-08-15 09:37:49.736 +08:00 [INF] End processing HTTP request after 3606.5937ms - "OK"
+2020-08-15 09:37:49.749 +08:00 [INF] Executing ObjectResult, writing value of type 'Aohost.Blog.ToolKits.ServiceResult`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2020-08-15 09:37:49.751 +08:00 [INF] Executed action Aohost.Blog.HttpApi.Controllers.AuthController.GetAccessTokenAsync (Aohost.Blog.HttpApi) in 3666.7039ms
+2020-08-15 09:37:49.752 +08:00 [INF] Executed endpoint 'Aohost.Blog.HttpApi.Controllers.AuthController.GetAccessTokenAsync (Aohost.Blog.HttpApi)'
+2020-08-15 09:37:49.755 +08:00 [INF] Request finished in 3686.7116ms 200 application/json; charset=utf-8
+2020-08-15 09:38:03.822 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44350/Auth/token?access_token=25be470dd26c92caca7c46d136c4757a9ab7c1b7  
+2020-08-15 09:38:03.823 +08:00 [INF] Executing endpoint 'Aohost.Blog.HttpApi.Controllers.AuthController.GenerateTokenAsync (Aohost.Blog.HttpApi)'
+2020-08-15 09:38:03.827 +08:00 [INF] Route matched with {action = "GenerateToken", controller = "Auth", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Aohost.Blog.ToolKits.ServiceResult`1[System.String]] GenerateTokenAsync(System.String) on controller Aohost.Blog.HttpApi.Controllers.AuthController (Aohost.Blog.HttpApi).
+2020-08-15 09:38:03.832 +08:00 [INF] Start processing HTTP request GET "https://api.github.com/user?access_token=25be470dd26c92caca7c46d136c4757a9ab7c1b7"
+2020-08-15 09:38:03.832 +08:00 [INF] Sending HTTP request GET "https://api.github.com/user?access_token=25be470dd26c92caca7c46d136c4757a9ab7c1b7"
+2020-08-15 09:38:07.675 +08:00 [INF] Received HTTP response after 3842.9996ms - "OK"
+2020-08-15 09:38:07.675 +08:00 [INF] End processing HTTP request after 3843.4646ms - "OK"
+2020-08-15 09:38:12.680 +08:00 [INF] Executing ObjectResult, writing value of type 'Aohost.Blog.ToolKits.ServiceResult`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2020-08-15 09:38:12.680 +08:00 [INF] Executed action Aohost.Blog.HttpApi.Controllers.AuthController.GenerateTokenAsync (Aohost.Blog.HttpApi) in 8853.4076ms
+2020-08-15 09:38:12.681 +08:00 [INF] Executed endpoint 'Aohost.Blog.HttpApi.Controllers.AuthController.GenerateTokenAsync (Aohost.Blog.HttpApi)'
+2020-08-15 09:38:12.681 +08:00 [INF] Request finished in 8859.1077ms 200 application/json; charset=utf-8
+2020-08-15 09:38:22.583 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44350/swagger/v1/swagger.json  
+2020-08-15 09:38:22.590 +08:00 [INF] Request finished in 7.2901ms 200 application/json;charset=utf-8
+2020-08-15 09:38:56.330 +08:00 [INF] Request starting HTTP/2.0 POST https://localhost:44350/Blog application/json-patch+json 201
+2020-08-15 09:38:56.340 +08:00 [INF] Authorization failed.
+2020-08-15 09:38:56.345 +08:00 [INF] AuthenticationScheme: Bearer was challenged.
+2020-08-15 09:38:56.345 +08:00 [INF] Request finished in 17.5078ms 200 application/json;charset=utf-8
+2020-08-15 09:39:05.878 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44350/swagger-ui-bundle.js.map  
+2020-08-15 09:39:05.878 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44350/swagger-ui-standalone-preset.js.map  
+2020-08-15 09:39:05.880 +08:00 [INF] Request finished in 2.1167ms 404 application/json;charset=utf-8
+2020-08-15 09:39:05.880 +08:00 [INF] Request finished in 2.1807ms 404 application/json;charset=utf-8
+2020-08-15 09:39:05.888 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44350/swagger-ui.css.map  
+2020-08-15 09:39:05.890 +08:00 [INF] Request finished in 1.48ms 404 application/json;charset=utf-8
+2020-08-15 09:39:09.868 +08:00 [INF] Request starting HTTP/2.0 POST https://localhost:44350/Blog application/json-patch+json 201
+2020-08-15 09:39:09.869 +08:00 [INF] Authorization failed.
+2020-08-15 09:39:09.871 +08:00 [INF] AuthenticationScheme: Bearer was challenged.
+2020-08-15 09:39:09.871 +08:00 [INF] Request finished in 3.3309ms 200 application/json;charset=utf-8
+2020-08-15 09:40:19.344 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44350/swagger/v3/swagger.json  
+2020-08-15 09:40:19.346 +08:00 [INF] Request finished in 1.8274ms 200 application/json;charset=utf-8
+2020-08-15 09:40:23.559 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44350/HelloWorld  
+2020-08-15 09:40:23.560 +08:00 [INF] Executing endpoint 'Aohost.Blog.HttpApi.Controllers.HelloWorldController.HelloWorld (Aohost.Blog.HttpApi)'
+2020-08-15 09:40:23.562 +08:00 [INF] Route matched with {action = "HelloWorld", controller = "HelloWorld", area = ""}. Executing controller action with signature System.String HelloWorld() on controller Aohost.Blog.HttpApi.Controllers.HelloWorldController (Aohost.Blog.HttpApi).
+2020-08-15 09:40:28.150 +08:00 [INF] Executed action Aohost.Blog.HttpApi.Controllers.HelloWorldController.HelloWorld (Aohost.Blog.HttpApi) in 4588.0078ms
+2020-08-15 09:40:28.151 +08:00 [INF] Executed endpoint 'Aohost.Blog.HttpApi.Controllers.HelloWorldController.HelloWorld (Aohost.Blog.HttpApi)'
+2020-08-15 09:40:28.182 +08:00 [INF] Request finished in 4622.8785ms 200 application/json;charset=utf-8
+2020-08-15 11:12:44.768 +08:00 [INF] Starting web host.
+2020-08-15 11:12:53.575 +08:00 [INF] User profile is available. Using 'C:\Users\aohost\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-15 11:12:53.653 +08:00 [INF] Loaded ABP modules:
+2020-08-15 11:12:53.653 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Aohost.Blog.Domain.Shared.BlogDomainSharedModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Aohost.Blog.Domain.BlogDomainModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Aohost.Blog.Caching.BlogApplicationCachingModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Aohost.Blog.Application.BlogApplicationModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Aohost.Blog.BlogHttpApiModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Aohost.Blog.Swagger.BlogSwaggerModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Aohost.Blog.EntityFrameworkCore.BlogFrameworkCoreModule
+2020-08-15 11:12:53.653 +08:00 [INF] - Aohost.Blog.HttpApi.Hosting.HttpApiHostingModule
+2020-08-15 11:12:54.234 +08:00 [INF] Initialized all ABP modules.
+2020-08-15 11:12:54.257 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-15 11:12:54.257 +08:00 [INF] Hosting environment: Development
+2020-08-15 11:12:54.257 +08:00 [INF] Content root path: E:\Blog\Aohost.Blog\src\Aohost.Blog.HttpApi.Hosting
+2020-08-15 11:12:54.312 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44350/index.html  
+2020-08-15 11:12:54.421 +08:00 [INF] Request finished in 111.1559ms 200 text/html;charset=utf-8
+2020-08-15 11:12:55.235 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44350/swagger/v1/swagger.json  
+2020-08-15 11:12:55.376 +08:00 [INF] Request finished in 139.2598ms 200 application/json;charset=utf-8
+2020-08-15 11:13:26.177 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44350/swagger/v4/swagger.json  
+2020-08-15 11:13:26.188 +08:00 [INF] Request finished in 13.8118ms 200 application/json;charset=utf-8
+2020-08-15 11:13:30.209 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44350/Auth  
+2020-08-15 11:13:30.304 +08:00 [INF] Executing endpoint 'Aohost.Blog.HttpApi.Controllers.AuthController.GetLoginAddressAsync (Aohost.Blog.HttpApi)'
+2020-08-15 11:13:30.382 +08:00 [INF] Route matched with {action = "GetLoginAddress", controller = "Auth", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Aohost.Blog.ToolKits.ServiceResult`1[System.String]] GetLoginAddressAsync() on controller Aohost.Blog.HttpApi.Controllers.AuthController (Aohost.Blog.HttpApi).
+2020-08-15 11:13:30.742 +08:00 [INF] Executed action Aohost.Blog.HttpApi.Controllers.AuthController.GetLoginAddressAsync (Aohost.Blog.HttpApi) in 356.583ms
+2020-08-15 11:13:30.743 +08:00 [INF] Executed endpoint 'Aohost.Blog.HttpApi.Controllers.AuthController.GetLoginAddressAsync (Aohost.Blog.HttpApi)'
+2020-08-15 11:13:30.860 +08:00 [INF] Request finished in 651.5175ms 200 application/json;charset=utf-8
+2020-08-15 11:14:38.510 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44350/Auth  
+2020-08-15 11:14:38.512 +08:00 [INF] Executing endpoint 'Aohost.Blog.HttpApi.Controllers.AuthController.GetLoginAddressAsync (Aohost.Blog.HttpApi)'
+2020-08-15 11:14:38.513 +08:00 [INF] Route matched with {action = "GetLoginAddress", controller = "Auth", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Aohost.Blog.ToolKits.ServiceResult`1[System.String]] GetLoginAddressAsync() on controller Aohost.Blog.HttpApi.Controllers.AuthController (Aohost.Blog.HttpApi).
+2020-08-15 11:14:45.854 +08:00 [INF] Executed action Aohost.Blog.HttpApi.Controllers.AuthController.GetLoginAddressAsync (Aohost.Blog.HttpApi) in 7341.129ms
+2020-08-15 11:14:45.854 +08:00 [INF] Executed endpoint 'Aohost.Blog.HttpApi.Controllers.AuthController.GetLoginAddressAsync (Aohost.Blog.HttpApi)'
+2020-08-15 11:14:45.879 +08:00 [INF] Request finished in 7369.4216ms 200 application/json;charset=utf-8
+2020-08-15 11:15:01.134 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44350/Auth  
+2020-08-15 11:15:01.135 +08:00 [INF] Executing endpoint 'Aohost.Blog.HttpApi.Controllers.AuthController.GetLoginAddressAsync (Aohost.Blog.HttpApi)'
+2020-08-15 11:15:01.135 +08:00 [INF] Route matched with {action = "GetLoginAddress", controller = "Auth", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Aohost.Blog.ToolKits.ServiceResult`1[System.String]] GetLoginAddressAsync() on controller Aohost.Blog.HttpApi.Controllers.AuthController (Aohost.Blog.HttpApi).
+2020-08-15 11:15:04.816 +08:00 [INF] Executed action Aohost.Blog.HttpApi.Controllers.AuthController.GetLoginAddressAsync (Aohost.Blog.HttpApi) in 3680.2654ms
+2020-08-15 11:15:04.816 +08:00 [INF] Executed endpoint 'Aohost.Blog.HttpApi.Controllers.AuthController.GetLoginAddressAsync (Aohost.Blog.HttpApi)'
+2020-08-15 11:15:04.838 +08:00 [INF] Request finished in 3706.4989ms 200 application/json;charset=utf-8
+2020-08-15 11:21:05.498 +08:00 [INF] Starting web host.
+2020-08-15 11:21:24.497 +08:00 [INF] User profile is available. Using 'C:\Users\aohost\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-15 11:21:24.570 +08:00 [INF] Loaded ABP modules:
+2020-08-15 11:21:24.570 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-08-15 11:21:24.570 +08:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2020-08-15 11:21:24.570 +08:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2020-08-15 11:21:24.570 +08:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-08-15 11:21:24.570 +08:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-08-15 11:21:24.570 +08:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-08-15 11:21:24.570 +08:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-08-15 11:21:24.570 +08:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-08-15 11:21:24.570 +08:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-08-15 11:21:24.570 +08:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-08-15 11:21:24.570 +08:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-08-15 11:21:24.570 +08:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-08-15 11:21:24.570 +08:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-08-15 11:21:24.570 +08:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-08-15 11:21:24.570 +08:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-08-15 11:21:24.570 +08:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-08-15 11:21:24.570 +08:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-08-15 11:21:24.570 +08:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-08-15 11:21:24.570 +08:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-08-15 11:21:24.570 +08:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-08-15 11:21:24.570 +08:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-08-15 11:21:24.570 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-08-15 11:21:24.570 +08:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-08-15 11:21:24.570 +08:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-08-15 11:21:24.570 +08:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-08-15 11:21:24.570 +08:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-08-15 11:21:24.570 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-08-15 11:21:24.570 +08:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-08-15 11:21:24.570 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-08-15 11:21:24.570 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-08-15 11:21:24.570 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-08-15 11:21:24.571 +08:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-08-15 11:21:24.571 +08:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-08-15 11:21:24.571 +08:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2020-08-15 11:21:24.571 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2020-08-15 11:21:24.571 +08:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2020-08-15 11:21:24.571 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-08-15 11:21:24.571 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2020-08-15 11:21:24.571 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2020-08-15 11:21:24.571 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2020-08-15 11:21:24.571 +08:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2020-08-15 11:21:24.571 +08:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-08-15 11:21:24.571 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2020-08-15 11:21:24.571 +08:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-08-15 11:21:24.571 +08:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-08-15 11:21:24.571 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2020-08-15 11:21:24.571 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2020-08-15 11:21:24.571 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationModule
+2020-08-15 11:21:24.571 +08:00 [INF] - Aohost.Blog.Domain.Shared.BlogDomainSharedModule
+2020-08-15 11:21:24.571 +08:00 [INF] - Aohost.Blog.Domain.BlogDomainModule
+2020-08-15 11:21:24.571 +08:00 [INF] - Aohost.Blog.Caching.BlogApplicationCachingModule
+2020-08-15 11:21:24.571 +08:00 [INF] - Aohost.Blog.Application.BlogApplicationModule
+2020-08-15 11:21:24.571 +08:00 [INF] - Aohost.Blog.BlogHttpApiModule
+2020-08-15 11:21:24.571 +08:00 [INF] - Aohost.Blog.Swagger.BlogSwaggerModule
+2020-08-15 11:21:24.571 +08:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-08-15 11:21:24.571 +08:00 [INF] - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2020-08-15 11:21:24.571 +08:00 [INF] - Aohost.Blog.EntityFrameworkCore.BlogFrameworkCoreModule
+2020-08-15 11:21:24.571 +08:00 [INF] - Aohost.Blog.HttpApi.Hosting.HttpApiHostingModule
+2020-08-15 11:21:25.099 +08:00 [INF] Initialized all ABP modules.
+2020-08-15 11:21:25.120 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-15 11:21:25.120 +08:00 [INF] Hosting environment: Development
+2020-08-15 11:21:25.120 +08:00 [INF] Content root path: E:\Blog\Aohost.Blog\src\Aohost.Blog.HttpApi.Hosting
+2020-08-15 11:21:25.168 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44350/index.html  
+2020-08-15 11:21:25.266 +08:00 [INF] Request finished in 99.7037ms 200 text/html;charset=utf-8
+2020-08-15 11:21:25.509 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44350/swagger/v1/swagger.json  
+2020-08-15 11:21:25.676 +08:00 [INF] Request finished in 167.4327ms 200 application/json;charset=utf-8
+2020-08-15 11:21:28.350 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44350/swagger/v4/swagger.json  
+2020-08-15 11:21:28.361 +08:00 [INF] Request finished in 10.6787ms 200 application/json;charset=utf-8
+2020-08-15 11:21:32.967 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44350/Auth  
+2020-08-15 11:21:33.066 +08:00 [INF] Executing endpoint 'Aohost.Blog.HttpApi.Controllers.AuthController.GetLoginAddressAsync (Aohost.Blog.HttpApi)'
+2020-08-15 11:21:33.138 +08:00 [INF] Route matched with {action = "GetLoginAddress", controller = "Auth", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Aohost.Blog.ToolKits.ServiceResult`1[System.String]] GetLoginAddressAsync() on controller Aohost.Blog.HttpApi.Controllers.AuthController (Aohost.Blog.HttpApi).
+2020-08-15 11:21:37.434 +08:00 [INF] Executed action Aohost.Blog.HttpApi.Controllers.AuthController.GetLoginAddressAsync (Aohost.Blog.HttpApi) in 4291.4671ms
+2020-08-15 11:21:37.434 +08:00 [INF] Executed endpoint 'Aohost.Blog.HttpApi.Controllers.AuthController.GetLoginAddressAsync (Aohost.Blog.HttpApi)'
+2020-08-15 11:21:37.543 +08:00 [INF] Request finished in 4576.2289ms 200 application/json;charset=utf-8
+2020-08-15 11:29:33.738 +08:00 [INF] Starting web host.
+2020-08-15 11:29:36.689 +08:00 [INF] User profile is available. Using 'C:\Users\aohost\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-15 11:29:36.752 +08:00 [INF] Loaded ABP modules:
+2020-08-15 11:29:36.752 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Aohost.Blog.Domain.Shared.BlogDomainSharedModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Aohost.Blog.Domain.BlogDomainModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Aohost.Blog.Caching.BlogApplicationCachingModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Aohost.Blog.Application.BlogApplicationModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Aohost.Blog.BlogHttpApiModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Aohost.Blog.Swagger.BlogSwaggerModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Aohost.Blog.EntityFrameworkCore.BlogFrameworkCoreModule
+2020-08-15 11:29:36.752 +08:00 [INF] - Aohost.Blog.HttpApi.Hosting.HttpApiHostingModule
+2020-08-15 11:29:37.285 +08:00 [INF] Initialized all ABP modules.
+2020-08-15 11:29:37.306 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-15 11:29:37.306 +08:00 [INF] Hosting environment: Development
+2020-08-15 11:29:37.306 +08:00 [INF] Content root path: E:\Blog\Aohost.Blog\src\Aohost.Blog.HttpApi.Hosting
+2020-08-15 11:29:37.353 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44350/index.html  
+2020-08-15 11:29:37.456 +08:00 [INF] Request finished in 105.3282ms 200 text/html;charset=utf-8
+2020-08-15 11:29:37.718 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44350/swagger/v1/swagger.json  
+2020-08-15 11:29:37.870 +08:00 [INF] Request finished in 151.7129ms 200 application/json;charset=utf-8
+2020-08-15 11:29:42.891 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44350/swagger/v4/swagger.json  
+2020-08-15 11:29:42.901 +08:00 [INF] Request finished in 10.5437ms 200 application/json;charset=utf-8
+2020-08-15 11:29:52.412 +08:00 [INF] Request starting HTTP/2.0 GET https://localhost:44350/Auth  
+2020-08-15 11:29:52.504 +08:00 [INF] Executing endpoint 'Aohost.Blog.HttpApi.Controllers.AuthController.GetLoginAddressAsync (Aohost.Blog.HttpApi)'
+2020-08-15 11:29:52.577 +08:00 [INF] Route matched with {action = "GetLoginAddress", controller = "Auth", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Aohost.Blog.ToolKits.ServiceResult`1[System.String]] GetLoginAddressAsync() on controller Aohost.Blog.HttpApi.Controllers.AuthController (Aohost.Blog.HttpApi).
+2020-08-15 11:29:52.931 +08:00 [INF] Executed action Aohost.Blog.HttpApi.Controllers.AuthController.GetLoginAddressAsync (Aohost.Blog.HttpApi) in 349.783ms
+2020-08-15 11:29:52.932 +08:00 [INF] Executed endpoint 'Aohost.Blog.HttpApi.Controllers.AuthController.GetLoginAddressAsync (Aohost.Blog.HttpApi)'
+2020-08-15 11:29:53.040 +08:00 [INF] Request finished in 627.899ms 200 application/json;charset=utf-8
+2020-08-15 11:30:21.574 +08:00 [INF] Starting web host.
+2020-08-15 11:30:24.799 +08:00 [INF] User profile is available. Using 'C:\Users\aohost\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-15 11:30:24.882 +08:00 [INF] Loaded ABP modules:
+2020-08-15 11:30:24.882 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Aohost.Blog.Domain.Shared.BlogDomainSharedModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Aohost.Blog.Domain.BlogDomainModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Aohost.Blog.Caching.BlogApplicationCachingModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Aohost.Blog.Application.BlogApplicationModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Aohost.Blog.BlogHttpApiModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Aohost.Blog.Swagger.BlogSwaggerModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Aohost.Blog.EntityFrameworkCore.BlogFrameworkCoreModule
+2020-08-15 11:30:24.882 +08:00 [INF] - Aohost.Blog.HttpApi.Hosting.HttpApiHostingModule
+2020-08-15 11:30:25.452 +08:00 [INF] Initialized all ABP modules.
+2020-08-15 11:30:25.567 +08:00 [INF] Now listening on: https://localhost:44350
+2020-08-15 11:30:25.568 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-15 11:30:25.568 +08:00 [INF] Hosting environment: Development
+2020-08-15 11:30:25.568 +08:00 [INF] Content root path: E:\Blog\Aohost.Blog\src\Aohost.Blog.HttpApi.Hosting
+2020-08-15 11:30:26.745 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/index.html  
+2020-08-15 11:30:26.817 +08:00 [INF] Request finished in 73.6912ms 200 text/html;charset=utf-8
+2020-08-15 11:30:27.027 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/swagger/v1/swagger.json  
+2020-08-15 11:30:27.174 +08:00 [INF] Request finished in 147.653ms 200 application/json;charset=utf-8
+2020-08-15 11:33:30.869 +08:00 [INF] Starting web host.
+2020-08-15 11:33:33.850 +08:00 [INF] User profile is available. Using 'C:\Users\aohost\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-15 11:33:33.928 +08:00 [INF] Loaded ABP modules:
+2020-08-15 11:33:33.928 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Aohost.Blog.Domain.Shared.BlogDomainSharedModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Aohost.Blog.Domain.BlogDomainModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Aohost.Blog.Caching.BlogApplicationCachingModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Aohost.Blog.Application.BlogApplicationModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Aohost.Blog.BlogHttpApiModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Aohost.Blog.Swagger.BlogSwaggerModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Aohost.Blog.EntityFrameworkCore.BlogFrameworkCoreModule
+2020-08-15 11:33:33.928 +08:00 [INF] - Aohost.Blog.HttpApi.Hosting.HttpApiHostingModule
+2020-08-15 11:33:34.458 +08:00 [INF] Initialized all ABP modules.
+2020-08-15 11:33:34.567 +08:00 [INF] Now listening on: https://localhost:44350
+2020-08-15 11:33:34.567 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-15 11:33:34.567 +08:00 [INF] Hosting environment: Development
+2020-08-15 11:33:34.567 +08:00 [INF] Content root path: E:\Blog\Aohost.Blog\src\Aohost.Blog.HttpApi.Hosting
+2020-08-15 11:33:35.286 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/index.html  
+2020-08-15 11:33:35.376 +08:00 [INF] Request finished in 94.1912ms 200 text/html;charset=utf-8
+2020-08-15 11:33:35.588 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/swagger/v1/swagger.json  
+2020-08-15 11:33:35.727 +08:00 [INF] Request finished in 139.1262ms 200 application/json;charset=utf-8
+2020-08-15 11:33:49.575 +08:00 [INF] Starting web host.
+2020-08-15 11:33:52.498 +08:00 [INF] User profile is available. Using 'C:\Users\aohost\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-15 11:33:52.597 +08:00 [INF] Loaded ABP modules:
+2020-08-15 11:33:52.597 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Aohost.Blog.Domain.Shared.BlogDomainSharedModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Aohost.Blog.Domain.BlogDomainModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Aohost.Blog.Caching.BlogApplicationCachingModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Aohost.Blog.Application.BlogApplicationModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Aohost.Blog.BlogHttpApiModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Aohost.Blog.Swagger.BlogSwaggerModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Aohost.Blog.EntityFrameworkCore.BlogFrameworkCoreModule
+2020-08-15 11:33:52.597 +08:00 [INF] - Aohost.Blog.HttpApi.Hosting.HttpApiHostingModule
+2020-08-15 11:33:53.227 +08:00 [INF] Initialized all ABP modules.
+2020-08-15 11:33:53.333 +08:00 [INF] Now listening on: https://localhost:44350
+2020-08-15 11:33:53.337 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-15 11:33:53.337 +08:00 [INF] Hosting environment: Development
+2020-08-15 11:33:53.337 +08:00 [INF] Content root path: E:\Blog\Aohost.Blog\src\Aohost.Blog.HttpApi.Hosting
+2020-08-15 11:33:54.333 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/index.html  
+2020-08-15 11:33:54.418 +08:00 [INF] Request finished in 86.5797ms 200 text/html;charset=utf-8
+2020-08-15 11:34:48.288 +08:00 [INF] Starting web host.
+2020-08-15 11:34:51.365 +08:00 [INF] User profile is available. Using 'C:\Users\aohost\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-15 11:34:51.447 +08:00 [INF] Loaded ABP modules:
+2020-08-15 11:34:51.447 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-08-15 11:34:51.447 +08:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2020-08-15 11:34:51.447 +08:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2020-08-15 11:34:51.447 +08:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-08-15 11:34:51.447 +08:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-08-15 11:34:51.447 +08:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-08-15 11:34:51.447 +08:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-08-15 11:34:51.447 +08:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-08-15 11:34:51.447 +08:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-08-15 11:34:51.447 +08:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-08-15 11:34:51.447 +08:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-08-15 11:34:51.447 +08:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-08-15 11:34:51.447 +08:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-08-15 11:34:51.447 +08:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-08-15 11:34:51.447 +08:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-08-15 11:34:51.447 +08:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-08-15 11:34:51.447 +08:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-08-15 11:34:51.447 +08:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-08-15 11:34:51.447 +08:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-08-15 11:34:51.447 +08:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-08-15 11:34:51.447 +08:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-08-15 11:34:51.447 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-08-15 11:34:51.447 +08:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-08-15 11:34:51.447 +08:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-08-15 11:34:51.447 +08:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-08-15 11:34:51.447 +08:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-08-15 11:34:51.447 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-08-15 11:34:51.447 +08:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-08-15 11:34:51.447 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-08-15 11:34:51.447 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-08-15 11:34:51.447 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-08-15 11:34:51.447 +08:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-08-15 11:34:51.447 +08:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-08-15 11:34:51.447 +08:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2020-08-15 11:34:51.447 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2020-08-15 11:34:51.447 +08:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2020-08-15 11:34:51.447 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-08-15 11:34:51.447 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2020-08-15 11:34:51.447 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2020-08-15 11:34:51.448 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2020-08-15 11:34:51.448 +08:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2020-08-15 11:34:51.448 +08:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-08-15 11:34:51.448 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2020-08-15 11:34:51.448 +08:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-08-15 11:34:51.448 +08:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-08-15 11:34:51.448 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2020-08-15 11:34:51.448 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2020-08-15 11:34:51.448 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationModule
+2020-08-15 11:34:51.448 +08:00 [INF] - Aohost.Blog.Domain.Shared.BlogDomainSharedModule
+2020-08-15 11:34:51.448 +08:00 [INF] - Aohost.Blog.Domain.BlogDomainModule
+2020-08-15 11:34:51.448 +08:00 [INF] - Aohost.Blog.Caching.BlogApplicationCachingModule
+2020-08-15 11:34:51.448 +08:00 [INF] - Aohost.Blog.Application.BlogApplicationModule
+2020-08-15 11:34:51.448 +08:00 [INF] - Aohost.Blog.BlogHttpApiModule
+2020-08-15 11:34:51.448 +08:00 [INF] - Aohost.Blog.Swagger.BlogSwaggerModule
+2020-08-15 11:34:51.448 +08:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-08-15 11:34:51.448 +08:00 [INF] - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2020-08-15 11:34:51.448 +08:00 [INF] - Aohost.Blog.EntityFrameworkCore.BlogFrameworkCoreModule
+2020-08-15 11:34:51.448 +08:00 [INF] - Aohost.Blog.HttpApi.Hosting.HttpApiHostingModule
+2020-08-15 11:34:51.985 +08:00 [INF] Initialized all ABP modules.
+2020-08-15 11:34:52.092 +08:00 [INF] Now listening on: https://localhost:44350
+2020-08-15 11:34:52.092 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-15 11:34:52.092 +08:00 [INF] Hosting environment: Development
+2020-08-15 11:34:52.092 +08:00 [INF] Content root path: E:\Blog\Aohost.Blog\src\Aohost.Blog.HttpApi.Hosting
+2020-08-15 11:34:52.731 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/index.html  
+2020-08-15 11:34:52.801 +08:00 [INF] Request finished in 73.2675ms 200 text/html;charset=utf-8
+2020-08-15 11:34:53.017 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/swagger/v1/swagger.json  
+2020-08-15 11:34:53.144 +08:00 [INF] Request finished in 127.0881ms 200 application/json;charset=utf-8
+2020-08-15 11:35:16.280 +08:00 [INF] Starting web host.
+2020-08-15 11:35:27.272 +08:00 [INF] User profile is available. Using 'C:\Users\aohost\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-15 11:35:27.352 +08:00 [INF] Loaded ABP modules:
+2020-08-15 11:35:27.352 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Aohost.Blog.Domain.Shared.BlogDomainSharedModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Aohost.Blog.Domain.BlogDomainModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Aohost.Blog.Caching.BlogApplicationCachingModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Aohost.Blog.Application.BlogApplicationModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Aohost.Blog.BlogHttpApiModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Aohost.Blog.Swagger.BlogSwaggerModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Aohost.Blog.EntityFrameworkCore.BlogFrameworkCoreModule
+2020-08-15 11:35:27.352 +08:00 [INF] - Aohost.Blog.HttpApi.Hosting.HttpApiHostingModule
+2020-08-15 11:35:27.876 +08:00 [INF] Initialized all ABP modules.
+2020-08-15 11:35:28.005 +08:00 [INF] Now listening on: https://localhost:44350
+2020-08-15 11:35:28.005 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-15 11:35:28.006 +08:00 [INF] Hosting environment: Development
+2020-08-15 11:35:28.006 +08:00 [INF] Content root path: E:\Blog\Aohost.Blog\src\Aohost.Blog.HttpApi.Hosting
+2020-08-15 11:35:28.827 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/index.html  
+2020-08-15 11:35:28.899 +08:00 [INF] Request finished in 73.7018ms 200 text/html;charset=utf-8
+2020-08-15 11:35:29.115 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/swagger/v1/swagger.json  
+2020-08-15 11:35:29.244 +08:00 [INF] Request finished in 129.0348ms 200 application/json;charset=utf-8
+2020-08-15 11:35:32.100 +08:00 [INF] Application is shutting down...
+2020-08-15 11:38:08.351 +08:00 [INF] Starting web host.
+2020-08-15 11:38:11.358 +08:00 [INF] User profile is available. Using 'C:\Users\aohost\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-15 11:38:11.442 +08:00 [INF] Loaded ABP modules:
+2020-08-15 11:38:11.442 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Aohost.Blog.Domain.Shared.BlogDomainSharedModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Aohost.Blog.Domain.BlogDomainModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Aohost.Blog.Caching.BlogApplicationCachingModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Aohost.Blog.Application.BlogApplicationModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Aohost.Blog.BlogHttpApiModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Aohost.Blog.Swagger.BlogSwaggerModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Aohost.Blog.EntityFrameworkCore.BlogFrameworkCoreModule
+2020-08-15 11:38:11.442 +08:00 [INF] - Aohost.Blog.HttpApi.Hosting.HttpApiHostingModule
+2020-08-15 11:38:11.978 +08:00 [INF] Initialized all ABP modules.
+2020-08-15 11:38:12.100 +08:00 [INF] Now listening on: https://localhost:44350
+2020-08-15 11:38:12.101 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-15 11:38:12.101 +08:00 [INF] Hosting environment: Development
+2020-08-15 11:38:12.101 +08:00 [INF] Content root path: E:\Blog\Aohost.Blog\src\Aohost.Blog.HttpApi.Hosting
+2020-08-15 11:38:12.820 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/index.html  
+2020-08-15 11:38:12.890 +08:00 [INF] Request finished in 72.9509ms 200 text/html;charset=utf-8
+2020-08-15 11:38:13.112 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/swagger/v1/swagger.json  
+2020-08-15 11:38:13.242 +08:00 [INF] Request finished in 129.7122ms 200 application/json;charset=utf-8
+2020-08-15 11:38:17.173 +08:00 [INF] Application is shutting down...
+2020-08-15 11:42:06.831 +08:00 [INF] Starting web host.
+2020-08-15 11:42:10.049 +08:00 [INF] User profile is available. Using 'C:\Users\aohost\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-15 11:42:10.134 +08:00 [INF] Loaded ABP modules:
+2020-08-15 11:42:10.134 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Aohost.Blog.Domain.Shared.BlogDomainSharedModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Aohost.Blog.Domain.BlogDomainModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Aohost.Blog.Caching.BlogApplicationCachingModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Aohost.Blog.Application.BlogApplicationModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Aohost.Blog.BlogHttpApiModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Aohost.Blog.Swagger.BlogSwaggerModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Aohost.Blog.EntityFrameworkCore.BlogFrameworkCoreModule
+2020-08-15 11:42:10.134 +08:00 [INF] - Aohost.Blog.HttpApi.Hosting.HttpApiHostingModule
+2020-08-15 11:42:10.678 +08:00 [INF] Initialized all ABP modules.
+2020-08-15 11:42:10.781 +08:00 [INF] Now listening on: https://localhost:44350
+2020-08-15 11:42:10.782 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-15 11:42:10.782 +08:00 [INF] Hosting environment: Development
+2020-08-15 11:42:10.782 +08:00 [INF] Content root path: E:\Blog\Aohost.Blog\src\Aohost.Blog.HttpApi.Hosting
+2020-08-15 11:42:11.780 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/index.html  
+2020-08-15 11:42:11.855 +08:00 [INF] Request finished in 78.8221ms 200 text/html;charset=utf-8
+2020-08-15 11:42:12.072 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/swagger/v1/swagger.json  
+2020-08-15 11:42:12.210 +08:00 [INF] Request finished in 138.6016ms 200 application/json;charset=utf-8
+2020-08-15 11:42:19.809 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/swagger/v4/swagger.json  
+2020-08-15 11:42:19.823 +08:00 [INF] Request finished in 14.169ms 200 application/json;charset=utf-8
+2020-08-15 11:42:25.357 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/Auth  
+2020-08-15 11:42:25.450 +08:00 [INF] Executing endpoint 'Aohost.Blog.HttpApi.Controllers.AuthController.GetLoginAddressAsync (Aohost.Blog.HttpApi)'
+2020-08-15 11:42:25.527 +08:00 [INF] Route matched with {action = "GetLoginAddress", controller = "Auth", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Aohost.Blog.ToolKits.ServiceResult`1[System.String]] GetLoginAddressAsync() on controller Aohost.Blog.HttpApi.Controllers.AuthController (Aohost.Blog.HttpApi).
+2020-08-15 11:42:25.729 +08:00 [INF] Executing ObjectResult, writing value of type 'Aohost.Blog.ToolKits.ServiceResult`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2020-08-15 11:42:25.757 +08:00 [INF] Executed action Aohost.Blog.HttpApi.Controllers.AuthController.GetLoginAddressAsync (Aohost.Blog.HttpApi) in 225.8359ms
+2020-08-15 11:42:25.757 +08:00 [INF] Executed endpoint 'Aohost.Blog.HttpApi.Controllers.AuthController.GetLoginAddressAsync (Aohost.Blog.HttpApi)'
+2020-08-15 11:42:25.757 +08:00 [INF] Request finished in 400.5717ms 200 application/json; charset=utf-8
+2020-08-15 11:55:42.978 +08:00 [INF] Application is shutting down...
+2020-08-15 16:03:25.761 +08:00 [INF] Starting web host.
+2020-08-15 16:03:29.263 +08:00 [INF] User profile is available. Using 'C:\Users\aohost\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-15 16:03:29.352 +08:00 [INF] Loaded ABP modules:
+2020-08-15 16:03:29.352 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Aohost.Blog.Domain.Shared.BlogDomainSharedModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Aohost.Blog.Domain.BlogDomainModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Aohost.Blog.Caching.BlogApplicationCachingModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Aohost.Blog.Application.BlogApplicationModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Aohost.Blog.BlogHttpApiModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Aohost.Blog.Swagger.BlogSwaggerModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Aohost.Blog.EntityFrameworkCore.BlogFrameworkCoreModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Volo.Abp.Hangfire.AbpHangfireModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Volo.Abp.BackgroundJobs.Hangfire.AbpBackgroundJobsHangfireModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Aohost.Blog.BackgroundJobs.BlogBackgroundJobsModule
+2020-08-15 16:03:29.352 +08:00 [INF] - Aohost.Blog.HttpApi.Hosting.HttpApiHostingModule
+2020-08-15 16:06:15.732 +08:00 [INF] Starting web host.
+2020-08-15 16:06:19.435 +08:00 [INF] User profile is available. Using 'C:\Users\aohost\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-15 16:06:19.513 +08:00 [INF] Loaded ABP modules:
+2020-08-15 16:06:19.513 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Aohost.Blog.Domain.Shared.BlogDomainSharedModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Aohost.Blog.Domain.BlogDomainModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Aohost.Blog.Caching.BlogApplicationCachingModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Aohost.Blog.Application.BlogApplicationModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Aohost.Blog.BlogHttpApiModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Aohost.Blog.Swagger.BlogSwaggerModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Aohost.Blog.EntityFrameworkCore.BlogFrameworkCoreModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Volo.Abp.Hangfire.AbpHangfireModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Volo.Abp.BackgroundJobs.Hangfire.AbpBackgroundJobsHangfireModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Aohost.Blog.BackgroundJobs.BlogBackgroundJobsModule
+2020-08-15 16:06:19.513 +08:00 [INF] - Aohost.Blog.HttpApi.Hosting.HttpApiHostingModule
+2020-08-15 16:07:38.610 +08:00 [INF] Starting web host.
+2020-08-15 16:07:42.233 +08:00 [INF] User profile is available. Using 'C:\Users\aohost\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-15 16:07:42.319 +08:00 [INF] Loaded ABP modules:
+2020-08-15 16:07:42.319 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Aohost.Blog.Domain.Shared.BlogDomainSharedModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Aohost.Blog.Domain.BlogDomainModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Aohost.Blog.Caching.BlogApplicationCachingModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Aohost.Blog.Application.BlogApplicationModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Aohost.Blog.BlogHttpApiModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Aohost.Blog.Swagger.BlogSwaggerModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Aohost.Blog.EntityFrameworkCore.BlogFrameworkCoreModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Volo.Abp.Hangfire.AbpHangfireModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Volo.Abp.BackgroundJobs.Hangfire.AbpBackgroundJobsHangfireModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Aohost.Blog.BackgroundJobs.BlogBackgroundJobsModule
+2020-08-15 16:07:42.319 +08:00 [INF] - Aohost.Blog.HttpApi.Hosting.HttpApiHostingModule
+2020-08-15 16:08:13.560 +08:00 [INF] Starting web host.
+2020-08-15 16:08:17.356 +08:00 [INF] User profile is available. Using 'C:\Users\aohost\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-15 16:08:17.439 +08:00 [INF] Loaded ABP modules:
+2020-08-15 16:08:17.439 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-08-15 16:08:17.439 +08:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2020-08-15 16:08:17.439 +08:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2020-08-15 16:08:17.439 +08:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-08-15 16:08:17.439 +08:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-08-15 16:08:17.439 +08:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Aohost.Blog.Domain.Shared.BlogDomainSharedModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Aohost.Blog.Domain.BlogDomainModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Aohost.Blog.Caching.BlogApplicationCachingModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Aohost.Blog.Application.BlogApplicationModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Aohost.Blog.BlogHttpApiModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Aohost.Blog.Swagger.BlogSwaggerModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Aohost.Blog.EntityFrameworkCore.BlogFrameworkCoreModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Volo.Abp.Hangfire.AbpHangfireModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Volo.Abp.BackgroundJobs.Hangfire.AbpBackgroundJobsHangfireModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Aohost.Blog.BackgroundJobs.BlogBackgroundJobsModule
+2020-08-15 16:08:17.440 +08:00 [INF] - Aohost.Blog.HttpApi.Hosting.HttpApiHostingModule
+2020-08-15 16:08:17.636 +08:00 [INF] Start installing Hangfire SQL objects...
+2020-08-15 16:08:19.848 +08:00 [INF] Hangfire SQL objects installed.
+2020-08-15 16:08:19.864 +08:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: (LocalDb)\MSSQLLocalDB@Blog'
+2020-08-15 16:08:19.864 +08:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+2020-08-15 16:08:19.864 +08:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2020-08-15 16:08:19.880 +08:00 [DBG] Execution loop BackgroundServerProcess:46cd972f has started in 7.8855 ms
+2020-08-15 16:08:19.892 +08:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: (LocalDb)\MSSQLLocalDB@Blog'
+2020-08-15 16:08:19.892 +08:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+2020-08-15 16:08:19.892 +08:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2020-08-15 16:08:19.896 +08:00 [DBG] Execution loop BackgroundServerProcess:09daefcd has started in 3.8408 ms
+2020-08-15 16:08:20.144 +08:00 [INF] Server desktop-rdf49fi:29424:0ae19451 successfully announced in 246.8801 ms
+2020-08-15 16:08:20.144 +08:00 [INF] Server desktop-rdf49fi:29424:9f6540ee successfully announced in 247.5642 ms
+2020-08-15 16:08:20.151 +08:00 [DBG] Execution loop ServerHeartbeatProcess:ba9d03b7 has started in 5.9264 ms
+2020-08-15 16:08:20.153 +08:00 [DBG] Execution loop ServerHeartbeatProcess:f565c5e2 has started in 8.2877 ms
+2020-08-15 16:08:20.153 +08:00 [INF] Server desktop-rdf49fi:29424:9f6540ee is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2020-08-15 16:08:20.153 +08:00 [INF] Server desktop-rdf49fi:29424:0ae19451 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2020-08-15 16:08:20.162 +08:00 [DBG] Execution loop ServerWatchdog:81aebb3d has started in 8.197 ms
+2020-08-15 16:08:20.165 +08:00 [DBG] Execution loop ServerJobCancellationWatcher:ce50a9ac has started in 8.5517 ms
+2020-08-15 16:08:20.168 +08:00 [DBG] Execution loop ServerJobCancellationWatcher:60427e18 has started in 11.1833 ms
+2020-08-15 16:08:20.184 +08:00 [DBG] Execution loop ServerWatchdog:605a91cb has started in 30.1786 ms
+2020-08-15 16:08:20.194 +08:00 [DBG] Execution loop ExpirationManager:762da2d6 has started in 32.0827 ms
+2020-08-15 16:08:20.194 +08:00 [DBG] Execution loop CountersAggregator:bb286e06 has started in 9.0496 ms
+2020-08-15 16:08:20.194 +08:00 [DBG] Execution loop ExpirationManager:6d2f2520 has started in 32.0255 ms
+2020-08-15 16:08:20.197 +08:00 [DBG] Execution loop CountersAggregator:c652ac9e has started in 11.9474 ms
+2020-08-15 16:08:20.198 +08:00 [DBG] Aggregating records in 'Counter' table...
+2020-08-15 16:08:20.198 +08:00 [DBG] Aggregating records in 'Counter' table...
+2020-08-15 16:08:20.199 +08:00 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2020-08-15 16:08:20.199 +08:00 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2020-08-15 16:08:20.203 +08:00 [DBG] Execution loop Worker:0bf98f86 has started in 9.6703 ms
+2020-08-15 16:08:20.206 +08:00 [DBG] Execution loop Worker:938c8c52 has started in 20.8437 ms
+2020-08-15 16:08:20.211 +08:00 [DBG] Execution loop Worker:1de3b622 has started in 26.2189 ms
+2020-08-15 16:08:20.216 +08:00 [DBG] Execution loop Worker:efd7f0fd has started in 30.4623 ms
+2020-08-15 16:08:20.222 +08:00 [DBG] Execution loop Worker:f991c299 has started in 28.981 ms
+2020-08-15 16:08:20.231 +08:00 [DBG] Execution loop Worker:12602003 has started in 37.9275 ms
+2020-08-15 16:08:20.234 +08:00 [DBG] Execution loop Worker:106a2908 has started in 49.0643 ms
+2020-08-15 16:08:20.242 +08:00 [DBG] Execution loop Worker:009c3e37 has started in 57.3337 ms
+2020-08-15 16:08:20.246 +08:00 [DBG] Execution loop Worker:2343ff78 has started in 52.8218 ms
+2020-08-15 16:08:20.249 +08:00 [DBG] Execution loop Worker:90ed5151 has started in 64.1791 ms
+2020-08-15 16:08:20.255 +08:00 [DBG] Execution loop Worker:693a2609 has started in 61.6295 ms
+2020-08-15 16:08:20.259 +08:00 [DBG] Execution loop Worker:1201391a has started in 66.285 ms
+2020-08-15 16:08:20.263 +08:00 [DBG] Execution loop Worker:325c863e has started in 78.2474 ms
+2020-08-15 16:08:20.267 +08:00 [DBG] Execution loop Worker:d0aa1dbe has started in 74.2508 ms
+2020-08-15 16:08:20.273 +08:00 [DBG] Execution loop Worker:2a719ee4 has started in 87.664 ms
+2020-08-15 16:08:20.277 +08:00 [DBG] Execution loop Worker:43ba220d has started in 91.6832 ms
+2020-08-15 16:08:20.286 +08:00 [DBG] Execution loop Worker:d816acd3 has started in 93.4365 ms
+2020-08-15 16:08:20.286 +08:00 [DBG] Execution loop Worker:2979a525 has started in 93.4358 ms
+2020-08-15 16:08:20.291 +08:00 [DBG] Execution loop Worker:20b3cdab has started in 105.5928 ms
+2020-08-15 16:08:20.296 +08:00 [DBG] Execution loop Worker:ab41ac83 has started in 103.211 ms
+2020-08-15 16:08:20.304 +08:00 [DBG] Execution loop Worker:0a5594a5 has started in 119.1675 ms
+2020-08-15 16:08:20.309 +08:00 [DBG] Execution loop Worker:6d5a40a1 has started in 124.2551 ms
+2020-08-15 16:08:20.317 +08:00 [DBG] Execution loop Worker:84d2c127 has started in 131.9764 ms
+2020-08-15 16:08:20.317 +08:00 [DBG] Execution loop Worker:1d3cfe7e has started in 124.0945 ms
+2020-08-15 16:08:20.317 +08:00 [DBG] Execution loop Worker:65ab516b has started in 124.1697 ms
+2020-08-15 16:08:20.325 +08:00 [DBG] Execution loop Worker:fd2ab325 has started in 140.1655 ms
+2020-08-15 16:08:20.329 +08:00 [DBG] Execution loop Worker:77ae4831 has started in 136.3736 ms
+2020-08-15 16:08:20.333 +08:00 [DBG] Execution loop Worker:d4873641 has started in 139.8917 ms
+2020-08-15 16:08:20.339 +08:00 [DBG] Execution loop Worker:d5492de3 has started in 154.2197 ms
+2020-08-15 16:08:20.344 +08:00 [DBG] Execution loop Worker:a18d2b81 has started in 159.098 ms
+2020-08-15 16:08:20.350 +08:00 [DBG] Execution loop Worker:a7318e4b has started in 157.1085 ms
+2020-08-15 16:08:20.357 +08:00 [DBG] Execution loop Worker:09358fcd has started in 163.9908 ms
+2020-08-15 16:08:20.362 +08:00 [DBG] Execution loop Worker:03ead35d has started in 168.93 ms
+2020-08-15 16:08:20.367 +08:00 [DBG] Execution loop Worker:da4c28f3 has started in 181.8086 ms
+2020-08-15 16:08:20.371 +08:00 [DBG] Execution loop Worker:f658e26c has started in 185.9691 ms
+2020-08-15 16:08:20.382 +08:00 [DBG] Execution loop Worker:f58583a3 has started in 196.9046 ms
+2020-08-15 16:08:20.387 +08:00 [DBG] Execution loop Worker:8754ba47 has started in 194.0082 ms
+2020-08-15 16:08:20.387 +08:00 [DBG] Removing outdated records from the 'Job' table...
+2020-08-15 16:08:20.394 +08:00 [DBG] Removing outdated records from the 'Job' table...
+2020-08-15 16:08:20.395 +08:00 [DBG] Execution loop Worker:5a74ce1f has started in 202.0583 ms
+2020-08-15 16:08:20.395 +08:00 [DBG] Execution loop Worker:983e9d37 has started in 210.0708 ms
+2020-08-15 16:08:20.400 +08:00 [DBG] Execution loop Worker:0a198cba has started in 206.6546 ms
+2020-08-15 16:08:20.401 +08:00 [DBG] Removing outdated records from the 'List' table...
+2020-08-15 16:08:20.404 +08:00 [DBG] Removing outdated records from the 'List' table...
+2020-08-15 16:08:20.413 +08:00 [DBG] Execution loop DelayedJobScheduler:e8dc204b has started in 26.7547 ms
+2020-08-15 16:08:20.413 +08:00 [INF] Server desktop-rdf49fi:29424:0ae19451 all the dispatchers started
+2020-08-15 16:08:20.411 +08:00 [INF] Server desktop-rdf49fi:29424:9f6540ee all the dispatchers started
+2020-08-15 16:08:20.418 +08:00 [DBG] Execution loop DelayedJobScheduler:c458e469 has started in 23.5074 ms
+2020-08-15 16:08:20.422 +08:00 [DBG] Execution loop RecurringJobScheduler:bd2fde94 has started in 21.1925 ms
+2020-08-15 16:08:20.428 +08:00 [DBG] Execution loop RecurringJobScheduler:7017e594 has started in 26.2446 ms
+2020-08-15 16:08:20.432 +08:00 [DBG] Removing outdated records from the 'Set' table...
+2020-08-15 16:08:20.436 +08:00 [DBG] Removing outdated records from the 'Set' table...
+2020-08-15 16:08:20.443 +08:00 [DBG] Removing outdated records from the 'Hash' table...
+2020-08-15 16:08:20.447 +08:00 [DBG] Removing outdated records from the 'Hash' table...
+2020-08-15 16:08:20.634 +08:00 [INF] Initialized all ABP modules.
+2020-08-15 16:08:20.774 +08:00 [INF] Now listening on: https://localhost:44350
+2020-08-15 16:08:20.775 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-15 16:08:20.775 +08:00 [INF] Hosting environment: Development
+2020-08-15 16:08:20.775 +08:00 [INF] Content root path: E:\Blog\Aohost.Blog\src\Aohost.Blog.HttpApi.Hosting
+2020-08-15 16:08:21.858 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/index.html  
+2020-08-15 16:08:21.941 +08:00 [INF] Request finished in 85.3431ms 200 text/html;charset=utf-8
+2020-08-15 16:08:22.185 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/swagger/v1/swagger.json  
+2020-08-15 16:08:22.248 +08:00 [INF] Request finished in 62.7373ms 200 application/json;charset=utf-8
+2020-08-15 16:08:30.966 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire  
+2020-08-15 16:08:31.081 +08:00 [INF] Request finished in 115.0275ms 200 text/html
+2020-08-15 16:08:31.110 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/css17110  
+2020-08-15 16:08:31.121 +08:00 [INF] Request finished in 10.8425ms 200 text/css
+2020-08-15 16:08:31.127 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/js17110  
+2020-08-15 16:08:31.152 +08:00 [INF] Request finished in 25.2433ms 200 application/javascript
+2020-08-15 16:08:31.306 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/fonts/glyphicons-halflings-regular/woff2  
+2020-08-15 16:08:31.310 +08:00 [INF] Request finished in 4.1051ms 200 font/woff2
+2020-08-15 16:08:33.295 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 228
+2020-08-15 16:08:33.324 +08:00 [INF] Request finished in 29.6403ms 200 application/json
+2020-08-15 16:08:35.340 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 228
+2020-08-15 16:08:35.345 +08:00 [INF] Request finished in 5.6039ms 200 application/json
+2020-08-15 16:15:13.256 +08:00 [INF] Starting web host.
+2020-08-15 16:15:16.923 +08:00 [INF] User profile is available. Using 'C:\Users\aohost\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-15 16:15:17.005 +08:00 [INF] Loaded ABP modules:
+2020-08-15 16:15:17.005 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Aohost.Blog.Domain.Shared.BlogDomainSharedModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Aohost.Blog.Domain.BlogDomainModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Aohost.Blog.Caching.BlogApplicationCachingModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Aohost.Blog.Application.BlogApplicationModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Aohost.Blog.BlogHttpApiModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Aohost.Blog.Swagger.BlogSwaggerModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Aohost.Blog.EntityFrameworkCore.BlogFrameworkCoreModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Volo.Abp.Hangfire.AbpHangfireModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Volo.Abp.BackgroundJobs.Hangfire.AbpBackgroundJobsHangfireModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Aohost.Blog.BackgroundJobs.BlogBackgroundJobsModule
+2020-08-15 16:15:17.005 +08:00 [INF] - Aohost.Blog.HttpApi.Hosting.HttpApiHostingModule
+2020-08-15 16:15:17.198 +08:00 [INF] Start installing Hangfire SQL objects...
+2020-08-15 16:15:17.376 +08:00 [INF] Hangfire SQL objects installed.
+2020-08-15 16:15:17.390 +08:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: (LocalDb)\MSSQLLocalDB@Blog'
+2020-08-15 16:15:17.390 +08:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+2020-08-15 16:15:17.391 +08:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2020-08-15 16:15:17.410 +08:00 [DBG] Execution loop BackgroundServerProcess:61db4a0d has started in 10.5214 ms
+2020-08-15 16:15:17.424 +08:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: (LocalDb)\MSSQLLocalDB@Blog'
+2020-08-15 16:15:17.424 +08:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+2020-08-15 16:15:17.424 +08:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2020-08-15 16:15:17.428 +08:00 [DBG] Execution loop BackgroundServerProcess:2b963494 has started in 3.8976 ms
+2020-08-15 16:15:17.638 +08:00 [INF] Server desktop-rdf49fi:7684:5186de07 successfully announced in 213.1924 ms
+2020-08-15 16:15:17.638 +08:00 [INF] Server desktop-rdf49fi:7684:d58221af successfully announced in 208.997 ms
+2020-08-15 16:15:17.643 +08:00 [INF] Server desktop-rdf49fi:7684:5186de07 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2020-08-15 16:15:17.643 +08:00 [INF] Server desktop-rdf49fi:7684:d58221af is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2020-08-15 16:15:17.645 +08:00 [DBG] Execution loop ServerHeartbeatProcess:f368f5f8 has started in 7.047 ms
+2020-08-15 16:15:17.648 +08:00 [DBG] Execution loop ServerHeartbeatProcess:b898360b has started in 9.7444 ms
+2020-08-15 16:15:17.652 +08:00 [DBG] Execution loop ServerWatchdog:74137459 has started in 9.7527 ms
+2020-08-15 16:15:17.655 +08:00 [DBG] Execution loop ServerWatchdog:5b2660d6 has started in 12.6808 ms
+2020-08-15 16:15:17.660 +08:00 [DBG] Execution loop ServerJobCancellationWatcher:fd9f4d35 has started in 11.3964 ms
+2020-08-15 16:15:17.663 +08:00 [DBG] Execution loop ServerJobCancellationWatcher:5989e1de has started in 14.7628 ms
+2020-08-15 16:15:17.667 +08:00 [DBG] Execution loop ExpirationManager:a5cce5ba has started in 10.2303 ms
+2020-08-15 16:15:17.669 +08:00 [DBG] Execution loop ExpirationManager:f902dac5 has started in 12.6831 ms
+2020-08-15 16:15:17.674 +08:00 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2020-08-15 16:15:17.674 +08:00 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2020-08-15 16:15:17.674 +08:00 [DBG] Execution loop CountersAggregator:cc07ed4a has started in 11.0054 ms
+2020-08-15 16:15:17.674 +08:00 [INF] 2 servers were removed due to timeout
+2020-08-15 16:15:17.677 +08:00 [DBG] Execution loop CountersAggregator:8af9b3b3 has started in 12.9263 ms
+2020-08-15 16:15:17.678 +08:00 [DBG] Aggregating records in 'Counter' table...
+2020-08-15 16:15:17.678 +08:00 [DBG] Aggregating records in 'Counter' table...
+2020-08-15 16:15:17.684 +08:00 [DBG] Execution loop Worker:6189c6a8 has started in 13.7957 ms
+2020-08-15 16:15:17.688 +08:00 [DBG] Execution loop Worker:7a50794c has started in 18.0844 ms
+2020-08-15 16:15:17.692 +08:00 [DBG] Execution loop Worker:c715eabc has started in 21.7851 ms
+2020-08-15 16:15:17.696 +08:00 [DBG] Execution loop Worker:9ddf6df2 has started in 25.2514 ms
+2020-08-15 16:15:17.699 +08:00 [DBG] Execution loop Worker:00710946 has started in 29.2423 ms
+2020-08-15 16:15:17.703 +08:00 [DBG] Execution loop Worker:e551e046 has started in 33.1472 ms
+2020-08-15 16:15:17.708 +08:00 [DBG] Execution loop Worker:4ed3dc7b has started in 38.4358 ms
+2020-08-15 16:15:17.713 +08:00 [DBG] Execution loop Worker:192b5e70 has started in 43.0664 ms
+2020-08-15 16:15:17.716 +08:00 [DBG] Execution loop Worker:817fd48c has started in 46.2691 ms
+2020-08-15 16:15:17.722 +08:00 [DBG] Execution loop Worker:cd96f5ca has started in 52.2967 ms
+2020-08-15 16:15:17.727 +08:00 [DBG] Execution loop Worker:e6600ab3 has started in 57.6339 ms
+2020-08-15 16:15:17.731 +08:00 [DBG] Execution loop Worker:458068f8 has started in 61.32 ms
+2020-08-15 16:15:17.739 +08:00 [DBG] Execution loop Worker:a32b7e14 has started in 68.8914 ms
+2020-08-15 16:15:17.744 +08:00 [DBG] Execution loop Worker:a41de67f has started in 74.2342 ms
+2020-08-15 16:15:17.744 +08:00 [DBG] Execution loop Worker:06f411a0 has started in 65.3247 ms
+2020-08-15 16:15:17.748 +08:00 [DBG] Execution loop Worker:72180eb8 has started in 78.1354 ms
+2020-08-15 16:15:17.753 +08:00 [DBG] Execution loop Worker:9164b42f has started in 82.8642 ms
+2020-08-15 16:15:17.756 +08:00 [DBG] Execution loop Worker:280560e2 has started in 86.1584 ms
+2020-08-15 16:15:17.762 +08:00 [DBG] Execution loop Worker:48dae5db has started in 92.4275 ms
+2020-08-15 16:15:17.768 +08:00 [DBG] Execution loop Worker:7fec05b0 has started in 98.708 ms
+2020-08-15 16:15:17.768 +08:00 [DBG] Execution loop Worker:8ddb9f7f has started in 98.1921 ms
+2020-08-15 16:15:17.774 +08:00 [DBG] Execution loop Worker:f053fa91 has started in 103.2014 ms
+2020-08-15 16:15:17.778 +08:00 [DBG] Execution loop Worker:445de44f has started in 107.9958 ms
+2020-08-15 16:15:17.785 +08:00 [DBG] Execution loop Worker:d8ee71e2 has started in 114.7766 ms
+2020-08-15 16:15:17.785 +08:00 [DBG] Execution loop Worker:2b253f68 has started in 114.6092 ms
+2020-08-15 16:15:17.789 +08:00 [DBG] Execution loop Worker:c95c1eb4 has started in 119.0543 ms
+2020-08-15 16:15:17.794 +08:00 [DBG] Execution loop Worker:387db77a has started in 123.3004 ms
+2020-08-15 16:15:17.798 +08:00 [DBG] Execution loop Worker:da5aa6c5 has started in 128.9024 ms
+2020-08-15 16:15:17.804 +08:00 [DBG] Execution loop Worker:32254b3c has started in 134.0345 ms
+2020-08-15 16:15:17.808 +08:00 [DBG] Execution loop Worker:001f856d has started in 138.0948 ms
+2020-08-15 16:15:17.812 +08:00 [DBG] Execution loop Worker:bbe5d886 has started in 142.2059 ms
+2020-08-15 16:15:17.816 +08:00 [DBG] Execution loop Worker:b97e1baa has started in 146.3083 ms
+2020-08-15 16:15:17.820 +08:00 [DBG] Execution loop Worker:1b583871 has started in 150.0546 ms
+2020-08-15 16:15:17.827 +08:00 [DBG] Removing outdated records from the 'Job' table...
+2020-08-15 16:15:17.827 +08:00 [DBG] Execution loop Worker:6f1547ba has started in 157.1365 ms
+2020-08-15 16:15:17.832 +08:00 [DBG] Removing outdated records from the 'Job' table...
+2020-08-15 16:15:17.832 +08:00 [DBG] Execution loop Worker:325937d6 has started in 161.8073 ms
+2020-08-15 16:15:17.836 +08:00 [DBG] Execution loop Worker:3036b2d1 has started in 166.2563 ms
+2020-08-15 16:15:17.837 +08:00 [DBG] Removing outdated records from the 'List' table...
+2020-08-15 16:15:17.841 +08:00 [DBG] Removing outdated records from the 'List' table...
+2020-08-15 16:15:17.841 +08:00 [DBG] Execution loop Worker:5aa65b58 has started in 171.0311 ms
+2020-08-15 16:15:17.841 +08:00 [DBG] Removing outdated records from the 'Set' table...
+2020-08-15 16:15:17.844 +08:00 [DBG] Execution loop Worker:5dfd8b13 has started in 174.1741 ms
+2020-08-15 16:15:17.854 +08:00 [INF] Server desktop-rdf49fi:7684:5186de07 all the dispatchers started
+2020-08-15 16:15:17.855 +08:00 [DBG] Execution loop Worker:41d6da29 has started in 184.6796 ms
+2020-08-15 16:15:17.855 +08:00 [DBG] Execution loop DelayedJobScheduler:f4bcbb85 has started in 22.9885 ms
+2020-08-15 16:15:17.855 +08:00 [DBG] Execution loop Worker:2de262a5 has started in 184.7221 ms
+2020-08-15 16:15:17.860 +08:00 [DBG] Execution loop RecurringJobScheduler:107fa818 has started in 14.5857 ms
+2020-08-15 16:15:17.864 +08:00 [DBG] Execution loop DelayedJobScheduler:dca35354 has started in 18.5559 ms
+2020-08-15 16:15:17.864 +08:00 [INF] Server desktop-rdf49fi:7684:d58221af all the dispatchers started
+2020-08-15 16:15:17.869 +08:00 [DBG] Execution loop RecurringJobScheduler:1464380e has started in 15.3011 ms
+2020-08-15 16:15:17.870 +08:00 [DBG] Removing outdated records from the 'Hash' table...
+2020-08-15 16:15:17.872 +08:00 [DBG] Removing outdated records from the 'Set' table...
+2020-08-15 16:15:17.890 +08:00 [DBG] Removing outdated records from the 'Hash' table...
+2020-08-15 16:15:18.071 +08:00 [INF] Initialized all ABP modules.
+2020-08-15 16:15:18.199 +08:00 [INF] Now listening on: https://localhost:44350
+2020-08-15 16:15:18.199 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-15 16:15:18.199 +08:00 [INF] Hosting environment: Development
+2020-08-15 16:15:18.199 +08:00 [INF] Content root path: E:\Blog\Aohost.Blog\src\Aohost.Blog.HttpApi.Hosting
+2020-08-15 16:15:19.179 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/index.html  
+2020-08-15 16:15:19.260 +08:00 [INF] Request finished in 82.171ms 200 text/html;charset=utf-8
+2020-08-15 16:15:19.482 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/swagger/v1/swagger.json  
+2020-08-15 16:15:19.536 +08:00 [INF] Request finished in 54.1414ms 200 application/json;charset=utf-8
+2020-08-15 16:15:26.111 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire  
+2020-08-15 16:15:26.143 +08:00 [INF] Request finished in 31.467ms 401 
+2020-08-15 16:15:30.225 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire  
+2020-08-15 16:15:30.305 +08:00 [INF] Request finished in 80.3445ms 200 text/html
+2020-08-15 16:15:30.351 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/css17110  
+2020-08-15 16:15:30.357 +08:00 [INF] Request finished in 6.5166ms 200 text/css
+2020-08-15 16:15:30.365 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/js17110  
+2020-08-15 16:15:30.370 +08:00 [INF] Request finished in 5.3565ms 200 application/javascript
+2020-08-15 16:15:30.566 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/fonts/glyphicons-halflings-regular/woff2  
+2020-08-15 16:15:30.570 +08:00 [INF] Request finished in 3.8669ms 200 font/woff2
+2020-08-15 16:15:32.562 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 228
+2020-08-15 16:15:32.586 +08:00 [INF] Request finished in 25.0742ms 200 application/json
+2020-08-15 16:15:34.599 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 228
+2020-08-15 16:15:34.605 +08:00 [INF] Request finished in 6.369ms 200 application/json
+2020-08-15 16:15:36.616 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 228
+2020-08-15 16:15:36.621 +08:00 [INF] Request finished in 5.7049ms 200 application/json
+2020-08-15 16:15:37.947 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire?period=week  
+2020-08-15 16:15:37.954 +08:00 [INF] Request finished in 6.8117ms 200 text/html
+2020-08-15 16:15:37.976 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/css17110  
+2020-08-15 16:15:37.982 +08:00 [INF] Request finished in 6.4618ms 200 text/css
+2020-08-15 16:15:37.991 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/js17110  
+2020-08-15 16:15:38.008 +08:00 [INF] Request finished in 16.6687ms 200 application/javascript
+2020-08-15 16:15:38.097 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/fonts/glyphicons-halflings-regular/woff2  
+2020-08-15 16:15:38.098 +08:00 [INF] Request finished in 4.5694ms 200 font/woff2
+2020-08-15 16:34:34.067 +08:00 [INF] Starting web host.
+2020-08-15 16:34:38.090 +08:00 [INF] User profile is available. Using 'C:\Users\aohost\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-15 16:34:38.172 +08:00 [INF] Loaded ABP modules:
+2020-08-15 16:34:38.172 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Aohost.Blog.Domain.Shared.BlogDomainSharedModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Aohost.Blog.Domain.BlogDomainModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Aohost.Blog.Caching.BlogApplicationCachingModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Aohost.Blog.Application.BlogApplicationModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Aohost.Blog.BlogHttpApiModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Aohost.Blog.Swagger.BlogSwaggerModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Aohost.Blog.EntityFrameworkCore.BlogFrameworkCoreModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Volo.Abp.Hangfire.AbpHangfireModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Volo.Abp.BackgroundJobs.Hangfire.AbpBackgroundJobsHangfireModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Aohost.Blog.BackgroundJobs.BlogBackgroundJobsModule
+2020-08-15 16:34:38.172 +08:00 [INF] - Aohost.Blog.HttpApi.Hosting.HttpApiHostingModule
+2020-08-15 16:34:38.375 +08:00 [INF] Start installing Hangfire SQL objects...
+2020-08-15 16:34:38.556 +08:00 [INF] Hangfire SQL objects installed.
+2020-08-15 16:34:38.571 +08:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: (LocalDb)\MSSQLLocalDB@Blog'
+2020-08-15 16:34:38.571 +08:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+2020-08-15 16:34:38.571 +08:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2020-08-15 16:34:38.592 +08:00 [DBG] Execution loop BackgroundServerProcess:af7865b7 has started in 9.3797 ms
+2020-08-15 16:34:38.607 +08:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: (LocalDb)\MSSQLLocalDB@Blog'
+2020-08-15 16:34:38.607 +08:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+2020-08-15 16:34:38.607 +08:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2020-08-15 16:34:38.612 +08:00 [DBG] Execution loop BackgroundServerProcess:eb7aaf6c has started in 4.3155 ms
+2020-08-15 16:34:38.742 +08:00 [INF] Server desktop-rdf49fi:30240:12a5caf6 successfully announced in 134.1384 ms
+2020-08-15 16:34:38.742 +08:00 [INF] Server desktop-rdf49fi:30240:413651f2 successfully announced in 129.9099 ms
+2020-08-15 16:34:38.749 +08:00 [DBG] Execution loop ServerHeartbeatProcess:8eeb80af has started in 5.9475 ms
+2020-08-15 16:34:38.749 +08:00 [INF] Server desktop-rdf49fi:30240:413651f2 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2020-08-15 16:34:38.749 +08:00 [INF] Server desktop-rdf49fi:30240:12a5caf6 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2020-08-15 16:34:38.751 +08:00 [DBG] Execution loop ServerHeartbeatProcess:1ac9e225 has started in 8.1663 ms
+2020-08-15 16:34:38.757 +08:00 [DBG] Execution loop ServerWatchdog:093de4db has started in 7.1578 ms
+2020-08-15 16:34:38.760 +08:00 [DBG] Execution loop ServerWatchdog:b95ce0f3 has started in 10.4713 ms
+2020-08-15 16:34:38.762 +08:00 [DBG] Execution loop ServerJobCancellationWatcher:7a518c01 has started in 10.3854 ms
+2020-08-15 16:34:38.767 +08:00 [DBG] Execution loop ServerJobCancellationWatcher:4822162a has started in 15.0455 ms
+2020-08-15 16:34:38.769 +08:00 [DBG] Execution loop ExpirationManager:af12915f has started in 6.9162 ms
+2020-08-15 16:34:38.773 +08:00 [DBG] Execution loop ExpirationManager:28c9fb1c has started in 14.2114 ms
+2020-08-15 16:34:38.775 +08:00 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2020-08-15 16:34:38.775 +08:00 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2020-08-15 16:34:38.779 +08:00 [DBG] Execution loop CountersAggregator:c5ff8098 has started in 16.0838 ms
+2020-08-15 16:34:38.779 +08:00 [INF] 2 servers were removed due to timeout
+2020-08-15 16:34:38.783 +08:00 [DBG] Execution loop CountersAggregator:3fc39dd8 has started in 20.5384 ms
+2020-08-15 16:34:38.784 +08:00 [DBG] Aggregating records in 'Counter' table...
+2020-08-15 16:34:38.784 +08:00 [DBG] Aggregating records in 'Counter' table...
+2020-08-15 16:34:38.797 +08:00 [DBG] Execution loop Worker:9b0f8c4e has started in 23.9355 ms
+2020-08-15 16:34:38.801 +08:00 [DBG] Execution loop Worker:73c89cb5 has started in 27.8403 ms
+2020-08-15 16:34:38.805 +08:00 [DBG] Execution loop Worker:3ad9828f has started in 31.5506 ms
+2020-08-15 16:34:38.808 +08:00 [DBG] Execution loop Worker:6d076109 has started in 34.3731 ms
+2020-08-15 16:34:38.818 +08:00 [DBG] Execution loop Worker:4b4c2cc4 has started in 44.6752 ms
+2020-08-15 16:34:38.818 +08:00 [DBG] Removing outdated records from the 'Job' table...
+2020-08-15 16:34:38.820 +08:00 [DBG] Removing outdated records from the 'Job' table...
+2020-08-15 16:34:38.820 +08:00 [DBG] Execution loop Worker:314a2b7b has started in 46.9711 ms
+2020-08-15 16:34:38.823 +08:00 [DBG] Execution loop Worker:1df0cafd has started in 49.9954 ms
+2020-08-15 16:34:38.824 +08:00 [DBG] Removing outdated records from the 'List' table...
+2020-08-15 16:34:38.827 +08:00 [DBG] Execution loop Worker:0dc0ebab has started in 53.7896 ms
+2020-08-15 16:34:38.831 +08:00 [DBG] Removing outdated records from the 'List' table...
+2020-08-15 16:34:38.831 +08:00 [DBG] Execution loop Worker:d1c1c99a has started in 57.4452 ms
+2020-08-15 16:34:38.835 +08:00 [DBG] Removing outdated records from the 'Set' table...
+2020-08-15 16:34:38.836 +08:00 [DBG] Execution loop Worker:951d58ac has started in 62.159 ms
+2020-08-15 16:34:38.836 +08:00 [DBG] Execution loop Worker:2eee8416 has started in 62.2304 ms
+2020-08-15 16:34:38.837 +08:00 [DBG] Removing outdated records from the 'Set' table...
+2020-08-15 16:34:38.838 +08:00 [DBG] Removing outdated records from the 'Hash' table...
+2020-08-15 16:34:38.843 +08:00 [DBG] Execution loop Worker:c87c6806 has started in 69.0231 ms
+2020-08-15 16:34:38.843 +08:00 [DBG] Removing outdated records from the 'Hash' table...
+2020-08-15 16:34:38.847 +08:00 [DBG] Execution loop Worker:d08c0936 has started in 73.5282 ms
+2020-08-15 16:34:38.851 +08:00 [DBG] Execution loop Worker:5be0f642 has started in 77.1069 ms
+2020-08-15 16:34:38.859 +08:00 [DBG] Execution loop Worker:3409c5ef has started in 85.5054 ms
+2020-08-15 16:34:38.859 +08:00 [DBG] Execution loop Worker:aaf2ff79 has started in 85.594 ms
+2020-08-15 16:34:38.860 +08:00 [DBG] Execution loop Worker:8fe4dddd has started in 87.0259 ms
+2020-08-15 16:34:38.866 +08:00 [DBG] Execution loop Worker:5f71aadb has started in 93.059 ms
+2020-08-15 16:34:38.870 +08:00 [DBG] Execution loop Worker:064511b7 has started in 96.4429 ms
+2020-08-15 16:34:38.876 +08:00 [DBG] Execution loop Worker:f155ee20 has started in 101.7709 ms
+2020-08-15 16:34:38.880 +08:00 [DBG] Execution loop Worker:56572c30 has started in 106.4272 ms
+2020-08-15 16:34:38.884 +08:00 [DBG] Execution loop Worker:f49bceba has started in 110.9582 ms
+2020-08-15 16:34:38.888 +08:00 [DBG] Execution loop Worker:eb11573d has started in 114.7448 ms
+2020-08-15 16:34:38.893 +08:00 [DBG] Execution loop Worker:36761101 has started in 119.1961 ms
+2020-08-15 16:34:38.896 +08:00 [DBG] Execution loop Worker:08250f9b has started in 122.8356 ms
+2020-08-15 16:34:38.903 +08:00 [DBG] Execution loop Worker:1dde3ecf has started in 128.9642 ms
+2020-08-15 16:34:38.907 +08:00 [DBG] Execution loop Worker:1888aec8 has started in 133.132 ms
+2020-08-15 16:34:38.913 +08:00 [DBG] Execution loop Worker:5a8c928c has started in 138.8295 ms
+2020-08-15 16:34:38.918 +08:00 [DBG] Execution loop Worker:8aff1b8c has started in 144.148 ms
+2020-08-15 16:34:38.923 +08:00 [DBG] Execution loop Worker:844ba0b5 has started in 148.2845 ms
+2020-08-15 16:34:38.927 +08:00 [DBG] Execution loop Worker:3494be63 has started in 153.7728 ms
+2020-08-15 16:34:38.931 +08:00 [DBG] Execution loop Worker:582b56bb has started in 157.8155 ms
+2020-08-15 16:34:38.935 +08:00 [DBG] Execution loop Worker:db2eefe6 has started in 161.8877 ms
+2020-08-15 16:34:38.941 +08:00 [DBG] Execution loop Worker:854ce4fb has started in 166.8467 ms
+2020-08-15 16:34:38.945 +08:00 [DBG] Execution loop Worker:c7dc21bb has started in 171.0554 ms
+2020-08-15 16:34:38.950 +08:00 [DBG] Execution loop Worker:684d605e has started in 175.2123 ms
+2020-08-15 16:34:38.958 +08:00 [DBG] Execution loop Worker:080ca1d3 has started in 184.1381 ms
+2020-08-15 16:34:38.958 +08:00 [DBG] Execution loop Worker:ddd1d2eb has started in 184.213 ms
+2020-08-15 16:34:38.958 +08:00 [DBG] Execution loop Worker:c12f48fd has started in 184.1045 ms
+2020-08-15 16:34:38.961 +08:00 [DBG] Execution loop Worker:d6495ad6 has started in 187.7195 ms
+2020-08-15 16:34:38.962 +08:00 [INF] Server desktop-rdf49fi:30240:12a5caf6 all the dispatchers started
+2020-08-15 16:34:38.968 +08:00 [DBG] Execution loop DelayedJobScheduler:15ce956b has started in 11.4115 ms
+2020-08-15 16:34:38.973 +08:00 [DBG] Execution loop DelayedJobScheduler:1f7bf170 has started in 22.9458 ms
+2020-08-15 16:34:38.973 +08:00 [INF] Server desktop-rdf49fi:30240:413651f2 all the dispatchers started
+2020-08-15 16:34:38.977 +08:00 [DBG] Execution loop RecurringJobScheduler:6051fa32 has started in 15.3711 ms
+2020-08-15 16:34:38.981 +08:00 [DBG] Execution loop RecurringJobScheduler:a097dbb0 has started in 19.3351 ms
+2020-08-15 16:34:39.416 +08:00 [INF] Initialized all ABP modules.
+2020-08-15 16:34:39.555 +08:00 [INF] Now listening on: https://localhost:44350
+2020-08-15 16:34:39.555 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-15 16:34:39.555 +08:00 [INF] Hosting environment: Development
+2020-08-15 16:34:39.555 +08:00 [INF] Content root path: E:\Blog\Aohost.Blog\src\Aohost.Blog.HttpApi.Hosting
+2020-08-15 16:34:40.609 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/index.html  
+2020-08-15 16:34:40.686 +08:00 [INF] Request finished in 78.6023ms 200 text/html;charset=utf-8
+2020-08-15 16:34:40.909 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/swagger/v1/swagger.json  
+2020-08-15 16:34:40.961 +08:00 [INF] Request finished in 52.2292ms 200 application/json;charset=utf-8
+2020-08-15 16:34:52.081 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire  
+2020-08-15 16:34:52.190 +08:00 [INF] Request finished in 109.0326ms 200 text/html
+2020-08-15 16:34:52.211 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/css17110  
+2020-08-15 16:34:52.225 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/js17110  
+2020-08-15 16:34:52.225 +08:00 [INF] Request finished in 14.0154ms 200 text/css
+2020-08-15 16:34:52.240 +08:00 [INF] Request finished in 14.8728ms 200 application/javascript
+2020-08-15 16:34:52.459 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/fonts/glyphicons-halflings-regular/woff2  
+2020-08-15 16:34:52.465 +08:00 [INF] Request finished in 6.2228ms 200 font/woff2
+2020-08-15 16:34:54.445 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 228
+2020-08-15 16:34:54.479 +08:00 [INF] Request finished in 34.7899ms 200 application/json
+2020-08-15 16:34:56.501 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 228
+2020-08-15 16:34:56.510 +08:00 [INF] Request finished in 11.0771ms 200 application/json
+2020-08-15 16:34:58.529 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 228
+2020-08-15 16:34:58.536 +08:00 [INF] Request finished in 7.3231ms 200 application/json
+2020-08-15 16:35:00.553 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 228
+2020-08-15 16:35:00.566 +08:00 [INF] Request finished in 13.0961ms 200 application/json
+2020-08-15 16:35:02.584 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 228
+2020-08-15 16:35:02.587 +08:00 [INF] Request finished in 3.0704ms 200 application/json
+2020-08-15 16:35:02.639 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/recurring  
+2020-08-15 16:35:02.718 +08:00 [INF] Request finished in 78.8456ms 200 text/html
+2020-08-15 16:35:02.740 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/css17110  
+2020-08-15 16:35:02.742 +08:00 [INF] Request finished in 1.3879ms 200 text/css
+2020-08-15 16:35:02.753 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/js17110  
+2020-08-15 16:35:02.758 +08:00 [INF] Request finished in 5.2176ms 200 application/javascript
+2020-08-15 16:35:02.866 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/fonts/glyphicons-halflings-regular/woff2  
+2020-08-15 16:35:02.867 +08:00 [INF] Request finished in 1.0631ms 200 font/woff2
+2020-08-15 16:35:04.871 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:35:04.880 +08:00 [INF] Request finished in 10.2045ms 200 application/json
+2020-08-15 16:35:06.890 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:35:06.894 +08:00 [INF] Request finished in 3.9331ms 200 application/json
+2020-08-15 16:35:08.782 +08:00 [DBG] Server desktop-rdf49fi:30240:413651f2 heartbeat successfully sent
+2020-08-15 16:35:08.782 +08:00 [DBG] Server desktop-rdf49fi:30240:12a5caf6 heartbeat successfully sent
+2020-08-15 16:35:08.908 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:35:08.914 +08:00 [INF] Request finished in 5.9321ms 200 application/json
+2020-08-15 16:35:09.133 +08:00 [DBG] 1 recurring job(s) processed by scheduler.
+2020-08-15 16:35:10.928 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:35:10.940 +08:00 [INF] Request finished in 11.932ms 200 application/json
+2020-08-15 16:35:12.949 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:35:12.953 +08:00 [INF] Request finished in 3.8749ms 200 application/json
+2020-08-15 16:35:14.962 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:35:14.965 +08:00 [INF] Request finished in 3.3384ms 200 application/json
+2020-08-15 16:35:16.974 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:35:16.976 +08:00 [INF] Request finished in 2.3927ms 200 application/json
+2020-08-15 16:35:18.985 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:35:18.988 +08:00 [INF] Request finished in 3.4024ms 200 application/json
+2020-08-15 16:35:21.202 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:35:21.204 +08:00 [INF] Request finished in 2.8403ms 200 application/json
+2020-08-15 16:35:24.201 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:35:24.205 +08:00 [INF] Request finished in 3.5132ms 200 application/json
+2020-08-15 16:35:27.201 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:35:27.203 +08:00 [INF] Request finished in 2.7015ms 200 application/json
+2020-08-15 16:35:30.201 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:35:30.204 +08:00 [INF] Request finished in 2.5315ms 200 application/json
+2020-08-15 16:35:33.201 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:35:33.204 +08:00 [INF] Request finished in 2.4133ms 200 application/json
+2020-08-15 16:35:36.202 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:35:36.204 +08:00 [INF] Request finished in 2.0392ms 200 application/json
+2020-08-15 16:35:38.787 +08:00 [DBG] Server desktop-rdf49fi:30240:12a5caf6 heartbeat successfully sent
+2020-08-15 16:35:38.787 +08:00 [DBG] Server desktop-rdf49fi:30240:413651f2 heartbeat successfully sent
+2020-08-15 16:35:39.202 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:35:39.204 +08:00 [INF] Request finished in 2.3797ms 200 application/json
+2020-08-15 16:35:42.201 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:35:42.203 +08:00 [INF] Request finished in 2.4785ms 200 application/json
+2020-08-15 16:35:45.202 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:35:45.204 +08:00 [INF] Request finished in 2.2907ms 200 application/json
+2020-08-15 16:35:48.200 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:35:48.202 +08:00 [INF] Request finished in 2.1468ms 200 application/json
+2020-08-15 16:35:51.200 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:35:51.202 +08:00 [INF] Request finished in 1.9549ms 200 application/json
+2020-08-15 16:35:54.206 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:35:54.208 +08:00 [INF] Request finished in 2.3698ms 200 application/json
+2020-08-15 16:35:56.217 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:35:56.219 +08:00 [INF] Request finished in 2.2413ms 200 application/json
+2020-08-15 16:35:56.738 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/servers  
+2020-08-15 16:35:56.758 +08:00 [INF] Request finished in 20.5124ms 200 text/html
+2020-08-15 16:35:56.779 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/css17110  
+2020-08-15 16:35:56.783 +08:00 [INF] Request finished in 4.5967ms 200 text/css
+2020-08-15 16:35:56.797 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/js17110  
+2020-08-15 16:35:56.802 +08:00 [INF] Request finished in 5.5322ms 200 application/javascript
+2020-08-15 16:35:56.945 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/fonts/glyphicons-halflings-regular/woff2  
+2020-08-15 16:35:56.945 +08:00 [INF] Request finished in 0.7069ms 200 font/woff2
+2020-08-15 16:35:57.549 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/recurring  
+2020-08-15 16:35:57.563 +08:00 [INF] Request finished in 14.0322ms 200 text/html
+2020-08-15 16:35:57.583 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/css17110  
+2020-08-15 16:35:57.587 +08:00 [INF] Request finished in 4.2812ms 200 text/css
+2020-08-15 16:35:57.599 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/js17110  
+2020-08-15 16:35:57.604 +08:00 [INF] Request finished in 5.5353ms 200 application/javascript
+2020-08-15 16:35:57.690 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/fonts/glyphicons-halflings-regular/woff2  
+2020-08-15 16:35:57.691 +08:00 [INF] Request finished in 0.7568ms 200 font/woff2
+2020-08-15 16:35:59.666 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:35:59.668 +08:00 [INF] Request finished in 2.0413ms 200 application/json
+2020-08-15 16:36:00.988 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/servers  
+2020-08-15 16:36:00.992 +08:00 [INF] Request finished in 3.6512ms 200 text/html
+2020-08-15 16:36:01.013 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/css17110  
+2020-08-15 16:36:01.024 +08:00 [INF] Request finished in 11.6136ms 200 text/css
+2020-08-15 16:36:01.027 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/js17110  
+2020-08-15 16:36:01.041 +08:00 [INF] Request finished in 14.5184ms 200 application/javascript
+2020-08-15 16:36:01.121 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/fonts/glyphicons-halflings-regular/woff2  
+2020-08-15 16:36:01.121 +08:00 [INF] Request finished in 0.9753ms 200 font/woff2
+2020-08-15 16:36:03.103 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:36:03.106 +08:00 [INF] Request finished in 3.4091ms 200 application/json
+2020-08-15 16:36:05.117 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:36:05.119 +08:00 [INF] Request finished in 1.9885ms 200 application/json
+2020-08-15 16:36:06.229 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/recurring  
+2020-08-15 16:36:06.234 +08:00 [INF] Request finished in 4.9737ms 200 text/html
+2020-08-15 16:36:06.257 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/css17110  
+2020-08-15 16:36:06.260 +08:00 [INF] Request finished in 3.3679ms 200 text/css
+2020-08-15 16:36:06.273 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/js17110  
+2020-08-15 16:36:06.281 +08:00 [INF] Request finished in 8.0805ms 200 application/javascript
+2020-08-15 16:36:06.354 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/fonts/glyphicons-halflings-regular/woff2  
+2020-08-15 16:36:06.354 +08:00 [INF] Request finished in 0.7501ms 200 font/woff2
+2020-08-15 16:36:08.352 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:36:08.354 +08:00 [INF] Request finished in 2.1802ms 200 application/json
+2020-08-15 16:36:08.793 +08:00 [DBG] Server desktop-rdf49fi:30240:413651f2 heartbeat successfully sent
+2020-08-15 16:36:08.793 +08:00 [DBG] Server desktop-rdf49fi:30240:12a5caf6 heartbeat successfully sent
+2020-08-15 16:36:09.157 +08:00 [DBG] 1 recurring job(s) processed by scheduler.
+2020-08-15 16:36:10.362 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:36:10.364 +08:00 [INF] Request finished in 2.0812ms 200 application/json
+2020-08-15 16:36:13.201 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:36:13.202 +08:00 [INF] Request finished in 1.8232ms 200 application/json
+2020-08-15 16:36:16.202 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:36:16.203 +08:00 [INF] Request finished in 1.5872ms 200 application/json
+2020-08-15 16:36:19.200 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:36:19.202 +08:00 [INF] Request finished in 1.9391ms 200 application/json
+2020-08-15 16:36:22.202 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:36:22.204 +08:00 [INF] Request finished in 2.3309ms 200 application/json
+2020-08-15 16:36:25.204 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:36:25.207 +08:00 [INF] Request finished in 2.7647ms 200 application/json
+2020-08-15 16:36:28.201 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:36:28.203 +08:00 [INF] Request finished in 1.6035ms 200 application/json
+2020-08-15 16:36:31.201 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:36:31.203 +08:00 [INF] Request finished in 1.4674ms 200 application/json
+2020-08-15 16:36:34.211 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:36:34.214 +08:00 [INF] Request finished in 3.1414ms 200 application/json
+2020-08-15 16:36:37.201 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:36:37.203 +08:00 [INF] Request finished in 2.0076ms 200 application/json
+2020-08-15 16:36:38.793 +08:00 [DBG] Server desktop-rdf49fi:30240:12a5caf6 heartbeat successfully sent
+2020-08-15 16:36:38.793 +08:00 [DBG] Server desktop-rdf49fi:30240:413651f2 heartbeat successfully sent
+2020-08-15 16:36:40.201 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:36:40.202 +08:00 [INF] Request finished in 1.5623ms 200 application/json
+2020-08-15 16:36:43.203 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:36:43.205 +08:00 [INF] Request finished in 2.6946ms 200 application/json
+2020-08-15 16:36:46.212 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:36:46.214 +08:00 [INF] Request finished in 1.9264ms 200 application/json
+2020-08-15 16:36:49.206 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:36:49.208 +08:00 [INF] Request finished in 1.7144ms 200 application/json
+2020-08-15 16:36:52.200 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:36:52.202 +08:00 [INF] Request finished in 1.8841ms 200 application/json
+2020-08-15 16:36:55.201 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:36:55.203 +08:00 [INF] Request finished in 2.0434ms 200 application/json
+2020-08-15 16:36:58.207 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:36:58.210 +08:00 [INF] Request finished in 3.4178ms 200 application/json
+2020-08-15 16:37:01.206 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:37:01.209 +08:00 [INF] Request finished in 3.1253ms 200 application/json
+2020-08-15 16:37:04.204 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:37:04.207 +08:00 [INF] Request finished in 3.0763ms 200 application/json
+2020-08-15 16:37:07.201 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:37:07.203 +08:00 [INF] Request finished in 1.893ms 200 application/json
+2020-08-15 16:37:08.797 +08:00 [DBG] Server desktop-rdf49fi:30240:413651f2 heartbeat successfully sent
+2020-08-15 16:37:08.797 +08:00 [DBG] Server desktop-rdf49fi:30240:12a5caf6 heartbeat successfully sent
+2020-08-15 16:37:09.175 +08:00 [DBG] 1 recurring job(s) processed by scheduler.
+2020-08-15 16:37:10.200 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:37:10.201 +08:00 [INF] Request finished in 1.5848ms 200 application/json
+2020-08-15 16:37:13.201 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:37:13.203 +08:00 [INF] Request finished in 2.1458ms 200 application/json
+2020-08-15 16:37:16.201 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:37:16.202 +08:00 [INF] Request finished in 1.5401ms 200 application/json
+2020-08-15 16:37:19.201 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:37:19.203 +08:00 [INF] Request finished in 1.861ms 200 application/json
+2020-08-15 16:37:22.206 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:37:22.209 +08:00 [INF] Request finished in 3.2127ms 200 application/json
+2020-08-15 16:37:25.201 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:37:25.203 +08:00 [INF] Request finished in 1.9927ms 200 application/json
+2020-08-15 16:37:28.201 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:37:28.202 +08:00 [INF] Request finished in 1.2278ms 200 application/json
+2020-08-15 16:37:31.201 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:37:31.202 +08:00 [INF] Request finished in 1.8481ms 200 application/json
+2020-08-15 16:37:34.201 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:37:34.203 +08:00 [INF] Request finished in 2.0987ms 200 application/json
+2020-08-15 16:37:37.213 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:37:37.216 +08:00 [INF] Request finished in 3.6414ms 200 application/json
+2020-08-15 16:37:38.801 +08:00 [DBG] Server desktop-rdf49fi:30240:413651f2 heartbeat successfully sent
+2020-08-15 16:37:38.801 +08:00 [DBG] Server desktop-rdf49fi:30240:12a5caf6 heartbeat successfully sent
+2020-08-15 16:37:40.201 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:37:40.203 +08:00 [INF] Request finished in 1.8494ms 200 application/json
+2020-08-15 16:37:43.204 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:37:43.207 +08:00 [INF] Request finished in 2.7999ms 200 application/json
+2020-08-15 16:37:46.200 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:37:46.202 +08:00 [INF] Request finished in 1.5295ms 200 application/json
+2020-08-15 16:37:49.205 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:37:49.206 +08:00 [INF] Request finished in 1.3059ms 200 application/json
+2020-08-15 16:37:52.217 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:37:52.220 +08:00 [INF] Request finished in 2.6163ms 200 application/json
+2020-08-15 16:37:55.767 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:37:55.768 +08:00 [INF] Request finished in 1.6751ms 200 application/json
+2020-08-15 16:37:58.201 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:37:58.202 +08:00 [INF] Request finished in 1.6664ms 200 application/json
+2020-08-15 16:38:01.201 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:38:01.203 +08:00 [INF] Request finished in 1.6974ms 200 application/json
+2020-08-15 16:38:04.202 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:38:04.203 +08:00 [INF] Request finished in 1.8338ms 200 application/json
+2020-08-15 16:38:07.201 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-15 16:38:07.203 +08:00 [INF] Request finished in 1.6813ms 200 application/json

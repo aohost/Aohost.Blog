@@ -10,7 +10,7 @@
 	  <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.7" />
 	  <PackageReference Include="Volo.Abp.Identity.Application" Version="3.0.5" />
 	  <ProjectReference Include="..\Aohost.Blog.Application.Contracts\Aohost.Blog.Application.Contracts.csproj" />
-	  <ProjectReference Include="..\Aohost.Blog.Caching\Aohost.Blog.Caching.csproj" />
+	  <ProjectReference Include="..\Aohost.Blog.Caching\Aohost.BlogApplication.Caching.csproj" />
 	  <ProjectReference Include="..\Aohost.Blog.ToolKits\Aohost.Blog.ToolKits.csproj" />
   </ItemGroup>
 
