@@ -1,4 +1,5 @@
 ﻿using Aohost.Blog.Application.Contracts.Blog;
+using Aohost.Blog.Application.Contracts.Wallpaper;
 using Aohost.Blog.Domain.Blog;
 using AutoMapper;
 
@@ -11,6 +12,10 @@ namespace Aohost.Blog.Application
             CreateMap<Post, PostDto>();
 
             CreateMap<PostDto, Post>().ForMember(x => x.Id, opt => opt.Ignore());
+
+            CreateMap<Domain.Wallpaper.Wallpaper, WallpaperDto>();
+
+            CreateMap<WallpaperDto, Domain.Wallpaper.Wallpaper>().ForMember(x => x.Type, opt => opt.Ignore());
         }
     }
 }

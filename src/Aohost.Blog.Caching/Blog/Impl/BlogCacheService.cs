@@ -1,9 +1,6 @@
-﻿using System;
-using System.Threading.Tasks;
-using Aohost.Blog.Application.Contracts.Blog;
-using Aohost.Blog.ToolKits;
+﻿using Aohost.Blog.Caching;
 
-namespace Aohost.Blog.Caching.Blog.Impl
+namespace Aohost.BlogApplication.Caching.Blog.Impl
 {
     public class BlogCacheService:CachingServiceBase, IBlogCacheService
     {
