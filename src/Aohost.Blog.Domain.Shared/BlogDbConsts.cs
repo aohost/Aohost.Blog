@@ -15,6 +15,8 @@
             public const string FriendLinks = "Friendlinks";
 
             public const string Wallpapers = "Wallpapers";
+
+            public const string HotNews = "Hotnews";
         }
     }
 }

@@ -13,9 +13,12 @@ namespace Aohost.Blog.Application
 
             CreateMap<PostDto, Post>().ForMember(x => x.Id, opt => opt.Ignore());
 
+
             CreateMap<Domain.Wallpaper.Wallpaper, WallpaperDto>();
 
-            CreateMap<WallpaperDto, Domain.Wallpaper.Wallpaper>().ForMember(x => x.Type, opt => opt.Ignore());
+            CreateMap<WallpaperDto, Domain.Wallpaper.Wallpaper>().ForMember(x => x.Type, opt => opt.Ignore())
+                .ForMember(x => x.Id, opt => opt.Ignore())
+                .ForMember(x => x.CreateTime, opt => opt.Ignore());
         }
     }
 }

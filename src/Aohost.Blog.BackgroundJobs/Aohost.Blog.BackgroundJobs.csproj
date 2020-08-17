@@ -13,6 +13,8 @@
     <ProjectReference Include="..\Aohost.Blog.Application.Contracts\Aohost.Blog.Application.Contracts.csproj" />
 
     <ProjectReference Include="..\Aohost.Blog.Domain\Aohost.Blog.Domain.csproj" />
+
+    <ProjectReference Include="..\Aohost.Blog.ToolKits\Aohost.Blog.ToolKits.csproj" />
   </ItemGroup>
 
 </Project>

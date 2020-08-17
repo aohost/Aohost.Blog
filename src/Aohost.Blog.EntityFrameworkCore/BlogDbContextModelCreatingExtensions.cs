@@ -1,4 +1,5 @@
 ﻿using Aohost.Blog.Domain.Blog;
+using Aohost.Blog.Domain.HotNews;
 using Aohost.Blog.Domain.Shared;
 using Aohost.Blog.Domain.Wallpaper;
 using Microsoft.EntityFrameworkCore;
@@ -68,9 +69,22 @@ namespace Aohost.Blog.EntityFrameworkCore
                 b.ToTable(BlogConsts.DbTablePrefix + DbTableName.Wallpapers);
 
                 b.HasKey(x => x.Id);
+                b.Property(x => x.Id).ValueGeneratedOnAdd();
                 b.Property(x => x.Id).HasMaxLength(50);
-                b.Property(x => x.Title).HasMaxLength(50).IsRequired();
-                b.Property(x => x.Type).HasMaxLength(20).IsRequired();
+                b.Property(x => x.Title).HasMaxLength(200).IsRequired();
+                b.Property(x => x.Url).HasMaxLength(250).IsRequired();
+            });
+
+            builder.Entity<HotNews>(b =>
+            {
+                b.ToTable(BlogConsts.DbTablePrefix + DbTableName.HotNews);
+
+                b.HasKey(x => x.Id);
+                b.Property(x => x.Id).ValueGeneratedOnAdd();
+                b.Property(x => x.Title).HasMaxLength(200).IsRequired();
+                b.Property(x => x.Url).HasMaxLength(250).IsRequired();
+                b.Property(x => x.SourceId).IsRequired();
+                b.Property(x => x.CreateTime).IsRequired();
             });
         }
     }

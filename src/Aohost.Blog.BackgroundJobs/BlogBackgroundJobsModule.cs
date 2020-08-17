@@ -44,7 +44,7 @@ namespace Aohost.Blog.BackgroundJobs
             });
 
             var service = context.ServiceProvider;
-            service.UseHangFireTest();
+            service.UseWallpaperJob();
         }
     }
 }

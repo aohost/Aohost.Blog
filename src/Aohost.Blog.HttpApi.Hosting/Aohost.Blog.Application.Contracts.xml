@@ -4,5 +4,56 @@
         <name>Aohost.Blog.Application.Contracts</name>
     </assembly>
     <members>
+        <member name="T:Aohost.Blog.Application.Contracts.PagingInput">
+            <summary>
+            分页输入参数
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Application.Contracts.PagingInput.Page">
+            <summary>
+            页码
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Application.Contracts.PagingInput.Limit">
+            <summary>
+            每页限制条数
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Application.Contracts.Wallpaper.Params.BulkInsertWallpaperInput.Type">
+            <summary>
+            类型
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Application.Contracts.Wallpaper.Params.QueryWallpapersInput.Type">
+            <summary>
+            类型
+            <see cref="T:Aohost.Blog.Domain.Shared.Enum.WallpaperEnum"/>
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Application.Contracts.Wallpaper.Params.QueryWallpapersInput.KeysWords">
+            <summary>
+            关键字
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Application.Contracts.Wallpaper.WallpaperDto.Url">
+            <summary>
+            Url
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Application.Contracts.Wallpaper.WallpaperDto.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Application.Contracts.Wallpaper.WallpaperJobItem`1.Result">
+            <summary>
+            <see cref="P:Aohost.Blog.Application.Contracts.Wallpaper.WallpaperJobItem`1.Result"/>
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Application.Contracts.Wallpaper.WallpaperJobItem`1.Type">
+            <summary>
+            类型
+            </summary>
+        </member>
     </members>
 </doc>

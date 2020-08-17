@@ -1,29 +1,28 @@
 ﻿using System;
 using Volo.Abp.Domain.Entities;
 
-namespace Aohost.Blog.Domain.Wallpaper
+namespace Aohost.Blog.Domain.HotNews
 {
-    public class Wallpaper:Entity<Guid>
+    public class HotNews:Entity<Guid>
     {
-        /// <summary>
-        /// Url
-        /// </summary>
-        public string Url { get; set; }
-
         /// <summary>
         /// 标题
         /// </summary>
         public string Title { get; set; }
 
         /// <summary>
-        /// 类型
+        /// 链接
         /// </summary>
-        public int Type { get; set; }
+        public string Url { get; set; }
+
+        /// <summary>
+        /// SourceId
+        /// </summary>
+        public int SourceId { get; set; }
 
         /// <summary>
         /// 创建时间
         /// </summary>
         public DateTime CreateTime { get; set; }
-
     }
 }

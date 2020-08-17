@@ -1,13 +1,24 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using Aohost.Blog.Application.Contracts.Wallpaper;
 using Aohost.Blog.Domain.Shared.Enum;
+using Aohost.Blog.Domain.Wallpaper.Repositories;
+using Aohost.Blog.ToolKits.Extensions;
 using HtmlAgilityPack;
 
 namespace Aohost.Blog.BackgroundJobs.Jobs.Wallpaper
 {
     public class WallpaperJob : IBackgroundJob
     {
+        private readonly IWallpaperRepository _wallpaperRepository;
+
+        public WallpaperJob(IWallpaperRepository wallpaperRepository)
+        {
+            _wallpaperRepository = wallpaperRepository;
+        }
+
         public async Task ExecuteAsync()
         {
             var wallpaperUrls = new List<WallpaperJobItem<string>>
@@ -72,7 +83,31 @@ namespace Aohost.Blog.BackgroundJobs.Jobs.Wallpaper
             });
             Task.WaitAll(listTask.ToArray());
 
-            //var wallpapers = new List<Wallpaper>();
+            var wallpapers = new List<Domain.Wallpaper.Wallpaper>();
+            foreach (var list in listTask)
+            {
+                var item = await list;
+
+                var imgs = item.Result.DocumentNode
+                    .SelectNodes("//article[@id='wper']/div[@class='jbox']/div[@class='kbox']/div/a/img[1]").ToList();
+                imgs.ForEach(x =>
+                {
+                    wallpapers.Add(new Domain.Wallpaper.Wallpaper
+                    {
+                        Url = x.GetAttributeValue("data-big", ""),
+                        Title = x.GetAttributeValue("title", ""),
+                        Type = (int)item.Type,
+                        CreateTime = x.Attributes["data-big"].Value.Split("/").Last().Split("_").First().TryToDatetime()
+                    });
+                });
+            }
+
+            var urls = (await _wallpaperRepository.GetListAsync()).Select(x => x.Url);
+            wallpapers = wallpapers.Where(x => !urls.Contains(x.Url)).ToList();
+            if (wallpapers.Any())
+            {
+                await _wallpaperRepository.BulkInsertAsync(wallpapers);
+            }
         }
     }
 }

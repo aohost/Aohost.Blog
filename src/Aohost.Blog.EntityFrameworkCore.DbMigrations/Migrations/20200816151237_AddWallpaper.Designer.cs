@@ -4,15 +4,17 @@ using Aohost.Blog.EntityFrameworkCore.DbMigrations;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Volo.Abp.EntityFrameworkCore;
 
 namespace Aohost.Blog.EntityFrameworkCore.DbMigrations.Migrations
 {
     [DbContext(typeof(BlogMigrationsDbContext))]
-    partial class BlogMigrationsDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200816151237_AddWallpaper")]
+    partial class AddWallpaper
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -157,16 +159,15 @@ namespace Aohost.Blog.EntityFrameworkCore.DbMigrations.Migrations
 
                     b.Property<string>("Title")
                         .IsRequired()
-                        .HasColumnType("nvarchar(200)")
-                        .HasMaxLength(200);
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
 
                     b.Property<int>("Type")
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasMaxLength(20);
 
                     b.Property<string>("Url")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(250)")
-                        .HasMaxLength(250);
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 

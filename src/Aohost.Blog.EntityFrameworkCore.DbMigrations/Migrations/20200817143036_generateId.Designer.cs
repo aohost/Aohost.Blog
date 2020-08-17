@@ -4,15 +4,17 @@ using Aohost.Blog.EntityFrameworkCore.DbMigrations;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Volo.Abp.EntityFrameworkCore;
 
 namespace Aohost.Blog.EntityFrameworkCore.DbMigrations.Migrations
 {
     [DbContext(typeof(BlogMigrationsDbContext))]
-    partial class BlogMigrationsDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200817143036_generateId")]
+    partial class generateId
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
