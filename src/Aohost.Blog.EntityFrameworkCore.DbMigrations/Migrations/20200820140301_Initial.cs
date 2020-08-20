@@ -36,6 +36,21 @@ namespace Aohost.Blog.EntityFrameworkCore.DbMigrations.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "aohost_Hotnews",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(nullable: false),
+                    Title = table.Column<string>(maxLength: 200, nullable: false),
+                    Url = table.Column<string>(maxLength: 250, nullable: false),
+                    SourceId = table.Column<int>(nullable: false),
+                    CreateTime = table.Column<DateTime>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_aohost_Hotnews", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "aohost_Posts",
                 columns: table => new
                 {
@@ -81,6 +96,21 @@ namespace Aohost.Blog.EntityFrameworkCore.DbMigrations.Migrations
                 {
                     table.PrimaryKey("PK_aohost_Tags", x => x.Id);
                 });
+
+            migrationBuilder.CreateTable(
+                name: "aohost_Wallpapers",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(maxLength: 50, nullable: false),
+                    Url = table.Column<string>(maxLength: 250, nullable: false),
+                    Title = table.Column<string>(maxLength: 200, nullable: false),
+                    Type = table.Column<int>(nullable: false),
+                    CreateTime = table.Column<DateTime>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_aohost_Wallpapers", x => x.Id);
+                });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -92,6 +122,9 @@ namespace Aohost.Blog.EntityFrameworkCore.DbMigrations.Migrations
                 name: "aohost_Friendlinks");
 
             migrationBuilder.DropTable(
+                name: "aohost_Hotnews");
+
+            migrationBuilder.DropTable(
                 name: "aohost_Posts");
 
             migrationBuilder.DropTable(
@@ -99,6 +132,9 @@ namespace Aohost.Blog.EntityFrameworkCore.DbMigrations.Migrations
 
             migrationBuilder.DropTable(
                 name: "aohost_Tags");
+
+            migrationBuilder.DropTable(
+                name: "aohost_Wallpapers");
         }
     }
 }

@@ -92,6 +92,8 @@ namespace Aohost.Blog.HttpApi.Hosting
                 options.AppendTrailingSlash = true;
             });
 
+            context.Services.AddHttpClient();
+
             base.ConfigureServices(context);
         }
 

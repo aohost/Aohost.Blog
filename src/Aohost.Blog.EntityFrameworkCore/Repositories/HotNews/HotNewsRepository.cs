@@ -7,9 +7,12 @@ using Volo.Abp.EntityFrameworkCore;
 
 namespace Aohost.Blog.EntityFrameworkCore.Repositories.HotNews
 {
-    public class HotNewRepository:EfCoreRepository<BlogDbContext, Domain.HotNews.HotNews, Guid>, IHotNewsRepository
+    /// <summary>
+    /// HotNewsRepository
+    /// </summary>
+    public class HotNewsRepository:EfCoreRepository<BlogDbContext, Domain.HotNews.HotNews, Guid>, IHotNewsRepository
     {
-        public HotNewRepository(IDbContextProvider<BlogDbContext> dbContextProvider) : base(dbContextProvider)
+        public HotNewsRepository(IDbContextProvider<BlogDbContext> dbContextProvider) : base(dbContextProvider)
         {
         }
 
@@ -20,8 +23,8 @@ namespace Aohost.Blog.EntityFrameworkCore.Repositories.HotNews
         /// <returns></returns>
         public async Task BulkInsertAsync(IEnumerable<Domain.HotNews.HotNews> hotNews)
         {
-            await this.DbContext.Set<Domain.HotNews.HotNews>().AddRangeAsync(hotNews);
-            await this.DbContext.SaveChangesAsync();
+            await DbContext.Set<Domain.HotNews.HotNews>().AddRangeAsync(hotNews);
+            await DbContext.SaveChangesAsync();
         }
     }
 }

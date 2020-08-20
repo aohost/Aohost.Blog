@@ -2,6 +2,7 @@
 using Hangfire;
 using Hangfire.Dashboard.BasicAuthorization;
 using Hangfire.SqlServer;
+using Microsoft.Extensions.DependencyInjection;
 using Volo.Abp;
 using Volo.Abp.BackgroundJobs.Hangfire;
 using Volo.Abp.Modularity;
@@ -14,6 +15,7 @@ namespace Aohost.Blog.BackgroundJobs
         public override void ConfigureServices(ServiceConfigurationContext context)
         {
             context.Services.AddHangfire(config => { config.UseSqlServerStorage(AppSettings.ConnectionStrings); });
+            //context.Services.AddHttpClient();
         }
 
         public override void OnApplicationInitialization(ApplicationInitializationContext context)
@@ -44,7 +46,9 @@ namespace Aohost.Blog.BackgroundJobs
             });
 
             var service = context.ServiceProvider;
+
             service.UseWallpaperJob();
+            service.UseHotNewsJob();
         }
     }
 }

@@ -168,6 +168,33 @@
             Application Name
             </summary>
         </member>
+        <member name="P:Aohost.Blog.Domain.HotNews.HotNews.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Domain.HotNews.HotNews.Url">
+            <summary>
+            链接
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Domain.HotNews.HotNews.SourceId">
+            <summary>
+            SourceId
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Domain.HotNews.HotNews.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="M:Aohost.Blog.Domain.HotNews.Repository.IHotNewsRepository.BulkInsertAsync(System.Collections.Generic.IEnumerable{Aohost.Blog.Domain.HotNews.HotNews})">
+            <summary>
+            批量插入
+            </summary>
+            <param name="hotNews"></param>
+            <returns></returns>
+        </member>
         <member name="M:Aohost.Blog.Domain.Wallpaper.Repositories.IWallpaperRepository.BulkInsertAsync(System.Collections.Generic.IEnumerable{Aohost.Blog.Domain.Wallpaper.Wallpaper})">
             <summary>
             批量插入

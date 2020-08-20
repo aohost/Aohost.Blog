@@ -33,7 +33,7 @@ namespace Aohost.Blog.Application.Wallpaper.Impl
                 var types = typeof(WallpaperEnum).TryToList();
                 result.IsSuccess(types);
 
-                return result;
+                return await Task.FromResult(result);
             });
         }
 

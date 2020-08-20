@@ -145,6 +145,33 @@ namespace Aohost.Blog.EntityFrameworkCore.DbMigrations.Migrations
                     b.ToTable("aohost_Tags");
                 });
 
+            modelBuilder.Entity("Aohost.Blog.Domain.HotNews.HotNews", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreateTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("SourceId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(200)")
+                        .HasMaxLength(200);
+
+                    b.Property<string>("Url")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(250)")
+                        .HasMaxLength(250);
+
+                    b.HasKey("Id");
+
+                    b.ToTable("aohost_Hotnews");
+                });
+
             modelBuilder.Entity("Aohost.Blog.Domain.Wallpaper.Wallpaper", b =>
                 {
                     b.Property<Guid>("Id")
