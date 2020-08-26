@@ -7645,3 +7645,564 @@ System.ArgumentNullException: Value cannot be null. (Parameter 'source')
    at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
 2020-08-20 22:57:06.917 +08:00 [DBG] Server desktop-rdf49fi:25320:aff8ed71 heartbeat successfully sent
 2020-08-20 22:57:08.085 +08:00 [DBG] Server desktop-rdf49fi:25320:a4ebad8e heartbeat successfully sent
+2020-08-24 10:49:26.937 +08:00 [INF] Starting web host.
+2020-08-24 10:49:30.596 +08:00 [INF] User profile is available. Using 'C:\Users\wyuntao\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-24 10:49:30.671 +08:00 [INF] Loaded ABP modules:
+2020-08-24 10:49:30.671 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Aohost.Blog.Domain.Shared.BlogDomainSharedModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Aohost.Blog.Domain.BlogDomainModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Aohost.Blog.Caching.BlogApplicationCachingModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Aohost.Blog.Application.BlogApplicationModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Aohost.Blog.BlogHttpApiModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Aohost.Blog.Swagger.BlogSwaggerModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Aohost.Blog.EntityFrameworkCore.BlogFrameworkCoreModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Volo.Abp.Hangfire.AbpHangfireModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Volo.Abp.BackgroundJobs.Hangfire.AbpBackgroundJobsHangfireModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Aohost.Blog.BackgroundJobs.BlogBackgroundJobsModule
+2020-08-24 10:49:30.671 +08:00 [INF] - Aohost.Blog.HttpApi.Hosting.HttpApiHostingModule
+2020-08-24 10:49:30.864 +08:00 [INF] Start installing Hangfire SQL objects...
+2020-08-24 10:49:31.231 +08:00 [INF] Hangfire SQL objects installed.
+2020-08-24 10:49:31.243 +08:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: (LocalDb)\MSSQLLocalDB@Blog'
+2020-08-24 10:49:31.243 +08:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+2020-08-24 10:49:31.243 +08:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2020-08-24 10:49:31.258 +08:00 [DBG] Execution loop BackgroundServerProcess:046238ef has started in 9.3291 ms
+2020-08-24 10:49:31.275 +08:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: (LocalDb)\MSSQLLocalDB@Blog'
+2020-08-24 10:49:31.275 +08:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+2020-08-24 10:49:31.275 +08:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2020-08-24 10:49:31.281 +08:00 [DBG] Execution loop BackgroundServerProcess:42ed922b has started in 6.0361 ms
+2020-08-24 10:49:31.483 +08:00 [INF] Server desktop-u0d95dr:824:594b8b3a successfully announced in 207.5269 ms
+2020-08-24 10:49:31.483 +08:00 [INF] Server desktop-u0d95dr:824:db92275f successfully announced in 201.365 ms
+2020-08-24 10:49:31.494 +08:00 [DBG] Execution loop ServerHeartbeatProcess:c9fe395b has started in 10.3474 ms
+2020-08-24 10:49:31.494 +08:00 [DBG] Execution loop ServerHeartbeatProcess:1a398571 has started in 10.3487 ms
+2020-08-24 10:49:31.494 +08:00 [INF] Server desktop-u0d95dr:824:594b8b3a is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2020-08-24 10:49:31.494 +08:00 [INF] Server desktop-u0d95dr:824:db92275f is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2020-08-24 10:49:31.518 +08:00 [DBG] Execution loop ServerWatchdog:bec32e8d has started in 23.4788 ms
+2020-08-24 10:49:31.524 +08:00 [DBG] Execution loop ServerWatchdog:957653d1 has started in 29.2889 ms
+2020-08-24 10:49:31.531 +08:00 [DBG] Execution loop ServerJobCancellationWatcher:80dc79ff has started in 19.0486 ms
+2020-08-24 10:49:31.538 +08:00 [DBG] Execution loop ServerJobCancellationWatcher:22114214 has started in 43.3845 ms
+2020-08-24 10:49:31.545 +08:00 [DBG] Execution loop ExpirationManager:ea88b00f has started in 20.0001 ms
+2020-08-24 10:49:31.551 +08:00 [DBG] Execution loop ExpirationManager:3fdaf17e has started in 19.9253 ms
+2020-08-24 10:49:31.556 +08:00 [DBG] Execution loop CountersAggregator:0055c1e8 has started in 18.4205 ms
+2020-08-24 10:49:31.557 +08:00 [DBG] Aggregating records in 'Counter' table...
+2020-08-24 10:49:31.563 +08:00 [DBG] Execution loop CountersAggregator:a2f81862 has started in 25.7082 ms
+2020-08-24 10:49:31.563 +08:00 [DBG] Aggregating records in 'Counter' table...
+2020-08-24 10:49:31.564 +08:00 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2020-08-24 10:49:31.564 +08:00 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2020-08-24 10:49:31.572 +08:00 [DBG] Execution loop Worker:5843bf8f has started in 15.1434 ms
+2020-08-24 10:49:31.578 +08:00 [DBG] Execution loop Worker:dc49f216 has started in 22.4118 ms
+2020-08-24 10:49:31.593 +08:00 [DBG] Execution loop Worker:d88f0130 has started in 36.7174 ms
+2020-08-24 10:49:31.598 +08:00 [DBG] Execution loop Worker:fcb798a7 has started in 53.4611 ms
+2020-08-24 10:49:31.611 +08:00 [DBG] Execution loop Worker:080d8ba4 has started in 66.4266 ms
+2020-08-24 10:49:31.617 +08:00 [DBG] Execution loop Worker:8a76ef1e has started in 71.9365 ms
+2020-08-24 10:49:31.633 +08:00 [DBG] Execution loop Worker:62b57a57 has started in 88.1485 ms
+2020-08-24 10:49:31.655 +08:00 [DBG] Execution loop Worker:e53138d0 has started in 99.0353 ms
+2020-08-24 10:49:31.673 +08:00 [DBG] Execution loop Worker:1c295744 has started in 116.2125 ms
+2020-08-24 10:49:31.673 +08:00 [DBG] Execution loop Worker:be98fa15 has started in 116.2125 ms
+2020-08-24 10:49:31.678 +08:00 [DBG] Execution loop Worker:7b4a39bd has started in 133.2788 ms
+2020-08-24 10:49:31.687 +08:00 [DBG] Execution loop Worker:5cf0fe05 has started in 130.4548 ms
+2020-08-24 10:49:31.693 +08:00 [DBG] Execution loop Worker:9fca6045 has started in 148.2553 ms
+2020-08-24 10:49:31.707 +08:00 [DBG] Execution loop Worker:f2627da3 has started in 151.3939 ms
+2020-08-24 10:49:31.714 +08:00 [DBG] Execution loop Worker:e0e291b8 has started in 158.325 ms
+2020-08-24 10:49:31.721 +08:00 [DBG] Execution loop Worker:50e52a5d has started in 164.7238 ms
+2020-08-24 10:49:31.727 +08:00 [DBG] Execution loop Worker:d9c2a7f1 has started in 182.3482 ms
+2020-08-24 10:49:31.745 +08:00 [DBG] Execution loop Worker:14fb4916 has started in 199.4984 ms
+2020-08-24 10:49:31.745 +08:00 [DBG] Removing outdated records from the 'Job' table...
+2020-08-24 10:49:31.753 +08:00 [DBG] Execution loop Worker:6a1793f4 has started in 196.0896 ms
+2020-08-24 10:49:31.753 +08:00 [DBG] Execution loop Worker:eab82c12 has started in 207.9134 ms
+2020-08-24 10:49:31.769 +08:00 [DBG] Execution loop Worker:1942d1ff has started in 224.0203 ms
+2020-08-24 10:49:31.769 +08:00 [DBG] Execution loop Worker:55576d90 has started in 212.6292 ms
+2020-08-24 10:49:31.778 +08:00 [DBG] Removing outdated records from the 'Job' table...
+2020-08-24 10:49:31.784 +08:00 [DBG] Execution loop Worker:aeba2c67 has started in 239.4116 ms
+2020-08-24 10:49:31.790 +08:00 [DBG] Execution loop Worker:bdd464d6 has started in 234.2472 ms
+2020-08-24 10:49:31.806 +08:00 [DBG] Execution loop Worker:914b9ef0 has started in 261.6465 ms
+2020-08-24 10:49:31.831 +08:00 [DBG] Execution loop Worker:95b5713c has started in 274.3126 ms
+2020-08-24 10:49:31.840 +08:00 [DBG] Removing outdated records from the 'List' table...
+2020-08-24 10:49:31.847 +08:00 [DBG] Execution loop Worker:81bdf192 has started in 302.1614 ms
+2020-08-24 10:49:31.864 +08:00 [DBG] Execution loop Worker:a05d8cb0 has started in 307.4861 ms
+2020-08-24 10:49:31.875 +08:00 [DBG] Execution loop Worker:f101b363 has started in 330.4656 ms
+2020-08-24 10:49:31.876 +08:00 [DBG] Removing outdated records from the 'List' table...
+2020-08-24 10:49:31.883 +08:00 [DBG] Execution loop Worker:aea16296 has started in 325.7665 ms
+2020-08-24 10:49:31.898 +08:00 [DBG] Execution loop Worker:84f16632 has started in 353.2723 ms
+2020-08-24 10:49:31.904 +08:00 [DBG] Execution loop Worker:29614b26 has started in 348.1974 ms
+2020-08-24 10:49:31.915 +08:00 [DBG] Execution loop Worker:0da11b53 has started in 359.106 ms
+2020-08-24 10:49:31.922 +08:00 [DBG] Execution loop Worker:82b45678 has started in 366.0563 ms
+2020-08-24 10:49:31.929 +08:00 [DBG] Execution loop Worker:4ebab956 has started in 384.0739 ms
+2020-08-24 10:49:31.947 +08:00 [DBG] Removing outdated records from the 'Set' table...
+2020-08-24 10:49:31.955 +08:00 [DBG] Execution loop Worker:f9ffe242 has started in 398.1936 ms
+2020-08-24 10:49:31.971 +08:00 [DBG] Execution loop DelayedJobScheduler:bfc4223a has started in 25.1213 ms
+2020-08-24 10:49:31.979 +08:00 [DBG] Execution loop Worker:d3339758 has started in 434.2366 ms
+2020-08-24 10:49:31.989 +08:00 [DBG] Removing outdated records from the 'Set' table...
+2020-08-24 10:49:31.995 +08:00 [DBG] Execution loop Worker:c7a77380 has started in 450.7271 ms
+2020-08-24 10:49:32.161 +08:00 [DBG] Execution loop Worker:807c9a71 has started in 616.5035 ms
+2020-08-24 10:49:32.226 +08:00 [DBG] Execution loop Worker:e8eab96e has started in 680.32 ms
+2020-08-24 10:49:32.306 +08:00 [INF] Server desktop-u0d95dr:824:594b8b3a all the dispatchers started
+2020-08-24 10:49:32.320 +08:00 [DBG] Removing outdated records from the 'Hash' table...
+2020-08-24 10:49:32.320 +08:00 [DBG] Execution loop RecurringJobScheduler:7f85fe52 has started in 365.2448 ms
+2020-08-24 10:49:32.369 +08:00 [DBG] Removing outdated records from the 'Hash' table...
+2020-08-24 10:49:32.376 +08:00 [DBG] Execution loop DelayedJobScheduler:ab6a4670 has started in 222.4572 ms
+2020-08-24 10:49:32.460 +08:00 [INF] Server desktop-u0d95dr:824:db92275f all the dispatchers started
+2020-08-24 10:49:32.460 +08:00 [DBG] Execution loop RecurringJobScheduler:1adfad2e has started in 91.8322 ms
+2020-08-24 10:49:33.461 +08:00 [INF] Initialized all ABP modules.
+2020-08-24 10:49:33.563 +08:00 [INF] Now listening on: https://localhost:44350
+2020-08-24 10:49:33.563 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-24 10:49:33.563 +08:00 [INF] Hosting environment: Development
+2020-08-24 10:49:33.563 +08:00 [INF] Content root path: E:\Aohost\Aohost.Blog\aspnet-core\src\Aohost.Blog.HttpApi.Hosting
+2020-08-24 10:49:34.341 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/index.html  
+2020-08-24 10:49:34.410 +08:00 [INF] Request finished in 69.6953ms 200 text/html;charset=utf-8
+2020-08-24 10:49:34.432 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/swagger-ui-bundle.js  
+2020-08-24 10:49:34.432 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/swagger-ui-standalone-preset.js  
+2020-08-24 10:49:34.432 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/swagger-ui.css  
+2020-08-24 10:49:34.453 +08:00 [INF] The file /swagger-ui.css was not modified
+2020-08-24 10:49:34.453 +08:00 [INF] The file /swagger-ui-bundle.js was not modified
+2020-08-24 10:49:34.453 +08:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2020-08-24 10:49:34.453 +08:00 [INF] Request finished in 21.3674ms 304 application/javascript
+2020-08-24 10:49:34.453 +08:00 [INF] Request finished in 21.3674ms 304 application/javascript
+2020-08-24 10:49:34.453 +08:00 [INF] Request finished in 21.411ms 304 text/css
+2020-08-24 10:49:34.672 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/swagger/v1/swagger.json  
+2020-08-24 10:49:34.702 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/favicon-32x32.png  
+2020-08-24 10:49:34.710 +08:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2020-08-24 10:49:34.710 +08:00 [INF] Request finished in 8.1799ms 200 image/png
+2020-08-24 10:49:34.830 +08:00 [INF] Request finished in 157.8238ms 200 application/json;charset=utf-8
+2020-08-24 10:50:36.200 +08:00 [INF] Starting web host.
+2020-08-24 10:50:40.004 +08:00 [INF] User profile is available. Using 'C:\Users\wyuntao\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-24 10:50:40.071 +08:00 [INF] Loaded ABP modules:
+2020-08-24 10:50:40.071 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Aohost.Blog.Domain.Shared.BlogDomainSharedModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Aohost.Blog.Domain.BlogDomainModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Aohost.Blog.Caching.BlogApplicationCachingModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Aohost.Blog.Application.BlogApplicationModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Aohost.Blog.BlogHttpApiModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Aohost.Blog.Swagger.BlogSwaggerModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Aohost.Blog.EntityFrameworkCore.BlogFrameworkCoreModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Volo.Abp.Hangfire.AbpHangfireModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Volo.Abp.BackgroundJobs.Hangfire.AbpBackgroundJobsHangfireModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Aohost.Blog.BackgroundJobs.BlogBackgroundJobsModule
+2020-08-24 10:50:40.071 +08:00 [INF] - Aohost.Blog.HttpApi.Hosting.HttpApiHostingModule
+2020-08-24 10:50:40.257 +08:00 [INF] Start installing Hangfire SQL objects...
+2020-08-24 10:50:40.583 +08:00 [INF] Hangfire SQL objects installed.
+2020-08-24 10:50:40.595 +08:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: (LocalDb)\MSSQLLocalDB@Blog'
+2020-08-24 10:50:40.595 +08:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+2020-08-24 10:50:40.595 +08:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2020-08-24 10:50:40.616 +08:00 [DBG] Execution loop BackgroundServerProcess:34115a80 has started in 15.8403 ms
+2020-08-24 10:50:40.634 +08:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: (LocalDb)\MSSQLLocalDB@Blog'
+2020-08-24 10:50:40.634 +08:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+2020-08-24 10:50:40.634 +08:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2020-08-24 10:50:40.640 +08:00 [DBG] Execution loop BackgroundServerProcess:32bbd8f0 has started in 6.236 ms
+2020-08-24 10:50:40.989 +08:00 [INF] Server desktop-u0d95dr:13028:219762e0 successfully announced in 354.7155 ms
+2020-08-24 10:50:40.989 +08:00 [INF] Server desktop-u0d95dr:13028:e54ac690 successfully announced in 348.2793 ms
+2020-08-24 10:50:40.998 +08:00 [DBG] Execution loop ServerHeartbeatProcess:90939cd3 has started in 7.999 ms
+2020-08-24 10:50:40.998 +08:00 [INF] Server desktop-u0d95dr:13028:e54ac690 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2020-08-24 10:50:40.998 +08:00 [INF] Server desktop-u0d95dr:13028:219762e0 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2020-08-24 10:50:41.003 +08:00 [DBG] Execution loop ServerHeartbeatProcess:4f1eb2ae has started in 13.3048 ms
+2020-08-24 10:50:41.011 +08:00 [DBG] Execution loop ServerWatchdog:7638dce6 has started in 12.181 ms
+2020-08-24 10:50:41.018 +08:00 [DBG] Execution loop ServerWatchdog:e198bb29 has started in 19.4049 ms
+2020-08-24 10:50:41.025 +08:00 [DBG] Execution loop ServerJobCancellationWatcher:b979eafd has started in 20.9592 ms
+2020-08-24 10:50:41.034 +08:00 [DBG] Execution loop ServerJobCancellationWatcher:2ec1dd94 has started in 30.4035 ms
+2020-08-24 10:50:41.034 +08:00 [DBG] Execution loop ExpirationManager:54772ef4 has started in 16.2272 ms
+2020-08-24 10:50:41.040 +08:00 [DBG] Execution loop ExpirationManager:65162fce has started in 28.2536 ms
+2020-08-24 10:50:41.041 +08:00 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2020-08-24 10:50:41.041 +08:00 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2020-08-24 10:50:41.048 +08:00 [DBG] Execution loop CountersAggregator:f5e5b017 has started in 14.1707 ms
+2020-08-24 10:50:41.048 +08:00 [DBG] Execution loop CountersAggregator:1d82403d has started in 14.1569 ms
+2020-08-24 10:50:41.067 +08:00 [DBG] Aggregating records in 'Counter' table...
+2020-08-24 10:50:41.067 +08:00 [DBG] Aggregating records in 'Counter' table...
+2020-08-24 10:50:41.072 +08:00 [DBG] Execution loop Worker:5b7e356d has started in 32.4435 ms
+2020-08-24 10:50:41.092 +08:00 [DBG] Execution loop Worker:46bf6d60 has started in 51.6173 ms
+2020-08-24 10:50:41.099 +08:00 [DBG] Execution loop Worker:04fe6795 has started in 59.1627 ms
+2020-08-24 10:50:41.105 +08:00 [DBG] Execution loop Worker:98a6da1c has started in 65.3217 ms
+2020-08-24 10:50:41.112 +08:00 [DBG] Execution loop Worker:fb91e0f7 has started in 71.0383 ms
+2020-08-24 10:50:41.118 +08:00 [DBG] Execution loop Worker:baa15ca6 has started in 78.3694 ms
+2020-08-24 10:50:41.126 +08:00 [DBG] Execution loop Worker:2b67ef72 has started in 84.4052 ms
+2020-08-24 10:50:41.146 +08:00 [DBG] Execution loop Worker:cddc9c19 has started in 104.8957 ms
+2020-08-24 10:50:41.153 +08:00 [DBG] Execution loop Worker:f1913dac has started in 112.7199 ms
+2020-08-24 10:50:41.166 +08:00 [DBG] Execution loop Worker:4f846994 has started in 125.4919 ms
+2020-08-24 10:50:41.175 +08:00 [DBG] Execution loop Worker:9ee7cce8 has started in 133.933 ms
+2020-08-24 10:50:41.175 +08:00 [DBG] Execution loop Worker:aeb2f83b has started in 133.8081 ms
+2020-08-24 10:50:41.189 +08:00 [DBG] Execution loop Worker:c63437b6 has started in 148.4749 ms
+2020-08-24 10:50:41.205 +08:00 [DBG] Execution loop Worker:260319de has started in 164.8815 ms
+2020-08-24 10:50:41.205 +08:00 [DBG] Removing outdated records from the 'Job' table...
+2020-08-24 10:50:41.229 +08:00 [DBG] Execution loop Worker:6bccdb3d has started in 188.8357 ms
+2020-08-24 10:50:41.229 +08:00 [DBG] Execution loop Worker:5cda217c has started in 188.2522 ms
+2020-08-24 10:50:41.229 +08:00 [DBG] Execution loop Worker:41274476 has started in 188.6852 ms
+2020-08-24 10:50:41.229 +08:00 [DBG] Execution loop Worker:1f0ce609 has started in 188.944 ms
+2020-08-24 10:50:41.239 +08:00 [DBG] Execution loop Worker:153a57d1 has started in 197.9702 ms
+2020-08-24 10:50:41.239 +08:00 [DBG] Execution loop Worker:fdc6b784 has started in 198.0897 ms
+2020-08-24 10:50:41.255 +08:00 [DBG] Removing outdated records from the 'Job' table...
+2020-08-24 10:50:41.255 +08:00 [DBG] Execution loop Worker:1e503872 has started in 214.0507 ms
+2020-08-24 10:50:41.276 +08:00 [DBG] Execution loop Worker:ec6c67a8 has started in 234.61 ms
+2020-08-24 10:50:41.283 +08:00 [DBG] Execution loop Worker:3ec5c450 has started in 242.9358 ms
+2020-08-24 10:50:41.289 +08:00 [DBG] Execution loop Worker:8c8163cb has started in 249.097 ms
+2020-08-24 10:50:41.298 +08:00 [DBG] Execution loop Worker:4270eb6b has started in 256.835 ms
+2020-08-24 10:50:41.314 +08:00 [DBG] Execution loop Worker:f9c0c8af has started in 273.6882 ms
+2020-08-24 10:50:41.333 +08:00 [DBG] Removing outdated records from the 'List' table...
+2020-08-24 10:50:41.354 +08:00 [DBG] Execution loop Worker:de87edc0 has started in 313.922 ms
+2020-08-24 10:50:41.355 +08:00 [DBG] Execution loop Worker:9ec5cca5 has started in 314.8823 ms
+2020-08-24 10:50:41.356 +08:00 [DBG] Execution loop Worker:6aadf7da has started in 315.4507 ms
+2020-08-24 10:50:41.357 +08:00 [DBG] Execution loop Worker:b8d74af4 has started in 316.0985 ms
+2020-08-24 10:50:41.364 +08:00 [DBG] Execution loop Worker:2349251f has started in 323.4965 ms
+2020-08-24 10:50:41.383 +08:00 [DBG] Removing outdated records from the 'List' table...
+2020-08-24 10:50:41.390 +08:00 [DBG] Execution loop Worker:61ef44e2 has started in 349.1425 ms
+2020-08-24 10:50:41.396 +08:00 [DBG] Execution loop Worker:3e3650ce has started in 355.5552 ms
+2020-08-24 10:50:41.403 +08:00 [DBG] Execution loop Worker:97af9679 has started in 363.1117 ms
+2020-08-24 10:50:41.430 +08:00 [DBG] Execution loop Worker:6573af8b has started in 388.9957 ms
+2020-08-24 10:50:41.449 +08:00 [DBG] Execution loop Worker:359ce330 has started in 408.2886 ms
+2020-08-24 10:50:41.449 +08:00 [DBG] Execution loop Worker:da5cfdb2 has started in 408.1723 ms
+2020-08-24 10:50:41.457 +08:00 [DBG] Execution loop Worker:b3c49fad has started in 416.8919 ms
+2020-08-24 10:50:41.477 +08:00 [DBG] Removing outdated records from the 'Set' table...
+2020-08-24 10:50:41.521 +08:00 [DBG] Execution loop Worker:e3e78c7e has started in 480.4005 ms
+2020-08-24 10:50:41.716 +08:00 [DBG] Removing outdated records from the 'Set' table...
+2020-08-24 10:50:41.841 +08:00 [DBG] Execution loop DelayedJobScheduler:e355f190 has started in 384.7291 ms
+2020-08-24 10:50:41.841 +08:00 [DBG] Removing outdated records from the 'Hash' table...
+2020-08-24 10:50:41.848 +08:00 [DBG] Execution loop Worker:77298cf7 has started in 806.9042 ms
+2020-08-24 10:50:41.882 +08:00 [INF] Server desktop-u0d95dr:13028:219762e0 all the dispatchers started
+2020-08-24 10:50:41.883 +08:00 [DBG] Execution loop DelayedJobScheduler:7693165b has started in 90.8762 ms
+2020-08-24 10:50:41.890 +08:00 [DBG] Execution loop RecurringJobScheduler:9c9b2253 has started in 98.1603 ms
+2020-08-24 10:50:41.904 +08:00 [DBG] Removing outdated records from the 'Hash' table...
+2020-08-24 10:50:41.945 +08:00 [INF] Server desktop-u0d95dr:13028:e54ac690 all the dispatchers started
+2020-08-24 10:50:41.963 +08:00 [DBG] Execution loop RecurringJobScheduler:448faa42 has started in 121.8252 ms
+2020-08-24 10:50:42.627 +08:00 [INF] Initialized all ABP modules.
+2020-08-24 10:50:42.718 +08:00 [INF] Now listening on: https://localhost:44350
+2020-08-24 10:50:42.719 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-24 10:50:42.719 +08:00 [INF] Hosting environment: Development
+2020-08-24 10:50:42.719 +08:00 [INF] Content root path: E:\Aohost\Aohost.Blog\aspnet-core\src\Aohost.Blog.HttpApi.Hosting
+2020-08-24 10:50:43.657 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/index.html  
+2020-08-24 10:50:43.727 +08:00 [INF] Request finished in 71.0804ms 200 text/html;charset=utf-8
+2020-08-24 10:50:43.943 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/swagger/v1/swagger.json  
+2020-08-24 10:50:44.043 +08:00 [INF] Request finished in 100.549ms 200 application/json;charset=utf-8
+2020-08-24 10:51:11.100 +08:00 [DBG] Server desktop-u0d95dr:13028:e54ac690 heartbeat successfully sent
+2020-08-24 10:51:11.100 +08:00 [DBG] Server desktop-u0d95dr:13028:219762e0 heartbeat successfully sent
+2020-08-24 10:51:12.970 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire  
+2020-08-24 10:51:13.009 +08:00 [INF] Request finished in 38.4229ms 401 
+2020-08-24 10:51:18.498 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire  
+2020-08-24 10:51:18.663 +08:00 [INF] Request finished in 165.4273ms 200 text/html
+2020-08-24 10:51:18.706 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/css17110  
+2020-08-24 10:51:18.710 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/js17110  
+2020-08-24 10:51:18.714 +08:00 [INF] Request finished in 8.1051ms 200 text/css
+2020-08-24 10:51:18.727 +08:00 [INF] Request finished in 16.8857ms 200 application/javascript
+2020-08-24 10:51:18.869 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/fonts/glyphicons-halflings-regular/woff2  
+2020-08-24 10:51:18.870 +08:00 [INF] Request finished in 0.9686ms 200 font/woff2
+2020-08-24 10:51:18.900 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/favicon.ico  
+2020-08-24 10:51:19.006 +08:00 [INF] Request finished in 105.6829ms 404 application/json;charset=utf-8
+2020-08-24 10:51:20.864 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 228
+2020-08-24 10:51:20.929 +08:00 [INF] Request finished in 65.2378ms 200 application/json
+2020-08-24 10:51:22.015 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/recurring  
+2020-08-24 10:51:22.141 +08:00 [INF] Request finished in 126.1718ms 200 text/html
+2020-08-24 10:51:22.156 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/css17110  
+2020-08-24 10:51:22.156 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/js17110  
+2020-08-24 10:51:22.176 +08:00 [INF] Request finished in 19.2514ms 200 application/javascript
+2020-08-24 10:51:22.176 +08:00 [INF] Request finished in 19.2233ms 200 text/css
+2020-08-24 10:51:22.240 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/fonts/glyphicons-halflings-regular/woff2  
+2020-08-24 10:51:22.240 +08:00 [INF] Request finished in 0.5635ms 200 font/woff2
+2020-08-24 10:51:24.206 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+2020-08-24 10:51:24.246 +08:00 [INF] Request finished in 40.2627ms 200 application/json
+2020-08-24 10:51:24.680 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/recurring/trigger application/x-www-form-urlencoded; charset=UTF-8 65
+2020-08-24 10:51:24.975 +08:00 [INF] Request finished in 295.3211ms 204 
+2020-08-24 10:51:24.993 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/recurring  
+2020-08-24 10:51:25.168 +08:00 [INF] Request finished in 174.9269ms 200 text/html
+2020-08-24 10:51:25.197 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/css17110  
+2020-08-24 10:51:25.197 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/js17110  
+2020-08-24 10:51:25.201 +08:00 [INF] Request finished in 4.4454ms 200 text/css
+2020-08-24 10:51:25.203 +08:00 [INF] Request finished in 6.5711ms 200 application/javascript
+2020-08-24 10:51:25.296 +08:00 [INF] Start processing HTTP request POST "https://web-api.juejin.im/query"
+2020-08-24 10:51:25.297 +08:00 [INF] Sending HTTP request POST "https://web-api.juejin.im/query"
+2020-08-24 10:51:25.364 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/fonts/glyphicons-halflings-regular/woff2  
+2020-08-24 10:51:25.364 +08:00 [INF] Request finished in 0.4301ms 200 font/woff2
+2020-08-24 10:51:25.787 +08:00 [INF] Received HTTP response after 487.4438ms - "ServiceUnavailable"
+2020-08-24 10:51:25.788 +08:00 [INF] End processing HTTP request after 524.4433ms - "ServiceUnavailable"
+2020-08-24 10:51:26.811 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/retries  
+2020-08-24 10:51:26.889 +08:00 [INF] Request finished in 77.9876ms 200 text/html
+2020-08-24 10:51:26.906 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/css17110  
+2020-08-24 10:51:26.906 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/js17110  
+2020-08-24 10:51:26.913 +08:00 [INF] Request finished in 6.9109ms 200 text/css
+2020-08-24 10:51:26.915 +08:00 [INF] Request finished in 8.8319ms 200 application/javascript
+2020-08-24 10:51:26.971 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/fonts/glyphicons-halflings-regular/woff2  
+2020-08-24 10:51:26.972 +08:00 [INF] Request finished in 0.8688ms 200 font/woff2
+2020-08-24 10:51:28.235 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/jobs/enqueued  
+2020-08-24 10:51:28.323 +08:00 [INF] Request finished in 88.4483ms 200 text/html
+2020-08-24 10:51:28.340 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/css17110  
+2020-08-24 10:51:28.340 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/js17110  
+2020-08-24 10:51:28.349 +08:00 [INF] Request finished in 8.7118ms 200 text/css
+2020-08-24 10:51:28.350 +08:00 [INF] Request finished in 10.4504ms 200 application/javascript
+2020-08-24 10:51:28.404 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/fonts/glyphicons-halflings-regular/woff2  
+2020-08-24 10:51:28.404 +08:00 [INF] Request finished in 0.4922ms 200 font/woff2
+2020-08-24 10:51:29.372 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/jobs/processing  
+2020-08-24 10:51:29.506 +08:00 [INF] Request finished in 133.5841ms 200 text/html
+2020-08-24 10:51:29.521 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/js17110  
+2020-08-24 10:51:29.521 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/css17110  
+2020-08-24 10:51:29.526 +08:00 [INF] Request finished in 4.7917ms 200 text/css
+2020-08-24 10:51:29.529 +08:00 [INF] Request finished in 7.7915ms 200 application/javascript
+2020-08-24 10:51:29.589 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/fonts/glyphicons-halflings-regular/woff2  
+2020-08-24 10:51:29.590 +08:00 [INF] Request finished in 0.7085ms 200 font/woff2
+2020-08-24 10:51:31.606 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 392
+2020-08-24 10:51:31.627 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/jobs/details/1  
+2020-08-24 10:51:31.665 +08:00 [INF] Request finished in 59.2865ms 200 application/json
+2020-08-24 10:51:31.778 +08:00 [INF] Request finished in 151.8773ms 200 text/html
+2020-08-24 10:51:31.793 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/css17110  
+2020-08-24 10:51:31.793 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/js17110  
+2020-08-24 10:51:31.799 +08:00 [INF] Request finished in 5.6237ms 200 text/css
+2020-08-24 10:51:31.804 +08:00 [INF] Request finished in 10.3302ms 200 application/javascript
+2020-08-24 10:51:31.893 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/fonts/glyphicons-halflings-regular/woff2  
+2020-08-24 10:51:31.894 +08:00 [INF] Request finished in 0.6132ms 200 font/woff2
+2020-08-24 10:51:33.889 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 392
+2020-08-24 10:51:33.945 +08:00 [INF] Request finished in 56.2979ms 200 application/json
+2020-08-24 10:51:35.960 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 392
+2020-08-24 10:51:36.013 +08:00 [INF] Request finished in 53.44ms 200 application/json
+2020-08-24 10:51:38.028 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 392
+2020-08-24 10:51:38.082 +08:00 [INF] Request finished in 54.0235ms 200 application/json
+2020-08-24 10:51:40.095 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 392
+2020-08-24 10:51:40.149 +08:00 [INF] Request finished in 53.2093ms 200 application/json
+2020-08-24 10:51:41.121 +08:00 [DBG] Server desktop-u0d95dr:13028:219762e0 heartbeat successfully sent
+2020-08-24 10:51:41.122 +08:00 [DBG] Server desktop-u0d95dr:13028:e54ac690 heartbeat successfully sent
+2020-08-24 10:51:42.165 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 392
+2020-08-24 10:51:42.270 +08:00 [INF] Request finished in 105.3947ms 200 application/json
+2020-08-24 10:51:44.939 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 392
+2020-08-24 10:51:44.999 +08:00 [INF] Request finished in 59.8659ms 200 application/json
+2020-08-24 10:51:46.473 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/swagger/v2/swagger.json  
+2020-08-24 10:51:46.474 +08:00 [INF] Request finished in 1.0107ms 200 application/json;charset=utf-8
+2020-08-24 10:51:47.934 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 392
+2020-08-24 10:51:47.986 +08:00 [INF] Request finished in 52.5826ms 200 application/json
+2020-08-24 10:51:47.998 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/swagger/v3/swagger.json  
+2020-08-24 10:51:48.002 +08:00 [INF] Request finished in 3.3223ms 200 application/json;charset=utf-8
+2020-08-24 10:51:49.861 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/swagger/v4/swagger.json  
+2020-08-24 10:51:49.864 +08:00 [INF] Request finished in 3.3821ms 200 application/json;charset=utf-8
+2020-08-24 10:51:50.933 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 392
+2020-08-24 10:51:50.992 +08:00 [INF] Request finished in 58.2864ms 200 application/json
+2020-08-24 10:51:51.222 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/swagger/v1/swagger.json  
+2020-08-24 10:51:51.231 +08:00 [INF] Request finished in 8.8813ms 200 application/json;charset=utf-8
+2020-08-24 10:51:53.012 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 392
+2020-08-24 10:51:53.072 +08:00 [INF] Request finished in 59.7421ms 200 application/json
+2020-08-24 10:51:54.089 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/jobs/processing  
+2020-08-24 10:51:54.185 +08:00 [INF] Request finished in 96.1943ms 200 text/html
+2020-08-24 10:51:54.200 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/css17110  
+2020-08-24 10:51:54.200 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/js17110  
+2020-08-24 10:51:54.205 +08:00 [INF] Request finished in 4.9816ms 200 text/css
+2020-08-24 10:51:54.209 +08:00 [INF] Request finished in 8.3176ms 200 application/javascript
+2020-08-24 10:51:54.233 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/fonts/glyphicons-halflings-regular/woff2  
+2020-08-24 10:51:54.233 +08:00 [INF] Request finished in 0.6467ms 200 font/woff2
+2020-08-24 10:51:55.724 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/jobs/details/1  
+2020-08-24 10:51:55.807 +08:00 [INF] Request finished in 82.9695ms 200 text/html
+2020-08-24 10:51:55.832 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/css17110  
+2020-08-24 10:51:55.832 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/js17110  
+2020-08-24 10:51:55.841 +08:00 [INF] Request finished in 9.1092ms 200 text/css
+2020-08-24 10:51:55.860 +08:00 [INF] Request finished in 27.9814ms 200 application/javascript
+2020-08-24 10:51:55.905 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/fonts/glyphicons-halflings-regular/woff2  
+2020-08-24 10:51:55.906 +08:00 [INF] Request finished in 1.0016ms 200 font/woff2
+2020-08-24 10:51:57.901 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 392
+2020-08-24 10:51:57.951 +08:00 [INF] Request finished in 49.3152ms 200 application/json
+2020-08-24 10:51:58.667 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/jobs/enqueued  
+2020-08-24 10:51:58.733 +08:00 [INF] Request finished in 66.1468ms 200 text/html
+2020-08-24 10:51:58.747 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/css17110  
+2020-08-24 10:51:58.747 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/js17110  
+2020-08-24 10:51:58.752 +08:00 [INF] Request finished in 4.4431ms 200 text/css
+2020-08-24 10:51:58.755 +08:00 [INF] Request finished in 7.9012ms 200 application/javascript
+2020-08-24 10:51:58.820 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/fonts/glyphicons-halflings-regular/woff2  
+2020-08-24 10:51:58.820 +08:00 [INF] Request finished in 0.5189ms 200 font/woff2
+2020-08-24 10:51:59.545 +08:00 [WRN] Failed to process the job '1': an exception occurred. Retry attempt 1 of 10 will be performed in 00:00:28.
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Aohost.Blog.BackgroundJobs.Jobs.HotNews.HotNewsJob.ExecuteAsync() in E:\Aohost\Aohost.Blog\aspnet-core\src\Aohost.Blog.BackgroundJobs\Jobs\HotNews\HotNewsJob.cs:line 141
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+2020-08-24 10:52:00.940 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 392
+2020-08-24 10:52:00.991 +08:00 [INF] Request finished in 51.3915ms 200 application/json
+2020-08-24 10:52:03.940 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 392
+2020-08-24 10:52:03.992 +08:00 [INF] Request finished in 52.198ms 200 application/json
+2020-08-24 10:52:06.932 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 392
+2020-08-24 10:52:06.983 +08:00 [INF] Request finished in 51.7456ms 200 application/json
+2020-08-24 10:52:09.937 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 392
+2020-08-24 10:52:09.987 +08:00 [INF] Request finished in 49.9454ms 200 application/json
+2020-08-24 10:52:11.154 +08:00 [DBG] Server desktop-u0d95dr:13028:219762e0 heartbeat successfully sent
+2020-08-24 10:52:11.154 +08:00 [DBG] Server desktop-u0d95dr:13028:e54ac690 heartbeat successfully sent
+2020-08-24 10:52:12.933 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 392
+2020-08-24 10:52:12.984 +08:00 [INF] Request finished in 50.877ms 200 application/json
+2020-08-24 10:52:15.930 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 392
+2020-08-24 10:52:15.982 +08:00 [INF] Request finished in 52.188ms 200 application/json
+2020-08-24 10:52:18.941 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 392
+2020-08-24 10:52:18.993 +08:00 [INF] Request finished in 52.4714ms 200 application/json
+2020-08-24 10:52:21.937 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 392
+2020-08-24 10:52:21.993 +08:00 [INF] Request finished in 56.665ms 200 application/json
+2020-08-24 10:52:24.930 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 392
+2020-08-24 10:52:24.983 +08:00 [INF] Request finished in 53.4925ms 200 application/json
+2020-08-24 10:52:27.944 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 392
+2020-08-24 10:52:27.976 +08:00 [DBG] 1 scheduled job(s) processed by scheduler.
+2020-08-24 10:52:28.094 +08:00 [INF] Request finished in 149.9532ms 200 application/json
+2020-08-24 10:52:28.148 +08:00 [INF] Start processing HTTP request POST "https://web-api.juejin.im/query"
+2020-08-24 10:52:28.148 +08:00 [INF] Sending HTTP request POST "https://web-api.juejin.im/query"
+2020-08-24 10:52:28.657 +08:00 [INF] Received HTTP response after 507.9456ms - "ServiceUnavailable"
+2020-08-24 10:52:28.657 +08:00 [INF] End processing HTTP request after 509.8687ms - "ServiceUnavailable"
+2020-08-24 10:52:30.928 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 392
+2020-08-24 10:52:30.980 +08:00 [INF] Request finished in 51.6706ms 200 application/json
+2020-08-24 10:52:33.929 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 392
+2020-08-24 10:52:33.982 +08:00 [INF] Request finished in 52.6082ms 200 application/json
+2020-08-24 10:52:36.928 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 392
+2020-08-24 10:52:36.981 +08:00 [INF] Request finished in 52.459ms 200 application/json
+2020-08-24 10:52:39.942 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 392
+2020-08-24 10:52:39.995 +08:00 [INF] Request finished in 53.1311ms 200 application/json
+2020-08-24 10:52:41.183 +08:00 [DBG] Server desktop-u0d95dr:13028:e54ac690 heartbeat successfully sent
+2020-08-24 10:52:41.183 +08:00 [DBG] Server desktop-u0d95dr:13028:219762e0 heartbeat successfully sent
+2020-08-24 10:52:42.935 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 392
+2020-08-24 10:52:42.986 +08:00 [INF] Request finished in 51.678ms 200 application/json
+2020-08-24 10:52:45.930 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 392
+2020-08-24 10:52:45.983 +08:00 [INF] Request finished in 52.9164ms 200 application/json
+2020-08-24 10:52:47.942 +08:00 [WRN] Failed to process the job '1': an exception occurred. Retry attempt 2 of 10 will be performed in 00:00:32.
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Aohost.Blog.BackgroundJobs.Jobs.HotNews.HotNewsJob.ExecuteAsync() in E:\Aohost\Aohost.Blog\aspnet-core\src\Aohost.Blog.BackgroundJobs\Jobs\HotNews\HotNewsJob.cs:line 141
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+2020-08-24 10:52:48.935 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 392
+2020-08-24 10:52:48.984 +08:00 [INF] Request finished in 50.0906ms 200 application/json
+2020-08-24 10:52:51.000 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 392
+2020-08-24 10:52:51.052 +08:00 [INF] Request finished in 51.6167ms 200 application/json
+2020-08-24 10:52:51.492 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/jobs/scheduled  
+2020-08-24 10:52:51.583 +08:00 [INF] Request finished in 91.7161ms 200 text/html
+2020-08-24 10:52:51.599 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/css17110  
+2020-08-24 10:52:51.599 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/js17110  
+2020-08-24 10:52:51.604 +08:00 [INF] Request finished in 5.0792ms 200 text/css
+2020-08-24 10:52:51.605 +08:00 [INF] Request finished in 5.5883ms 200 application/javascript
+2020-08-24 10:52:51.671 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/fonts/glyphicons-halflings-regular/woff2  
+2020-08-24 10:52:51.671 +08:00 [INF] Request finished in 0.5699ms 200 font/woff2
+2020-08-24 10:52:52.997 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/jobs/details/1  
+2020-08-24 10:52:53.099 +08:00 [INF] Request finished in 101.9563ms 200 text/html
+2020-08-24 10:52:53.115 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/css17110  
+2020-08-24 10:52:53.115 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/js17110  
+2020-08-24 10:52:53.138 +08:00 [INF] Request finished in 22.8851ms 200 text/css
+2020-08-24 10:52:53.138 +08:00 [INF] Request finished in 23.0846ms 200 application/javascript
+2020-08-24 10:52:53.213 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/hangfire/fonts/glyphicons-halflings-regular/woff2  
+2020-08-24 10:52:53.213 +08:00 [INF] Request finished in 0.909ms 200 font/woff2
+2020-08-24 10:52:55.206 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 392
+2020-08-24 10:52:55.257 +08:00 [INF] Request finished in 50.3199ms 200 application/json
+2020-08-24 10:52:57.273 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 392
+2020-08-24 10:52:57.334 +08:00 [INF] Request finished in 61.8866ms 200 application/json
+2020-08-24 10:52:59.338 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 392
+2020-08-24 10:52:59.390 +08:00 [INF] Request finished in 51.4733ms 200 application/json
+2020-08-24 10:53:01.396 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 392
+2020-08-24 10:53:01.444 +08:00 [INF] Request finished in 48.4948ms 200 application/json
+2020-08-24 10:53:03.456 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 392
+2020-08-24 10:53:03.527 +08:00 [INF] Request finished in 71.8068ms 200 application/json
+2020-08-24 10:53:05.552 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 392
+2020-08-24 10:53:05.606 +08:00 [INF] Request finished in 54.778ms 200 application/json
+2020-08-24 10:53:07.626 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 392
+2020-08-24 10:53:07.676 +08:00 [INF] Request finished in 50.1827ms 200 application/json
+2020-08-24 10:53:09.687 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 392
+2020-08-24 10:53:09.735 +08:00 [INF] Request finished in 48.9731ms 200 application/json
+2020-08-24 10:53:11.216 +08:00 [DBG] Server desktop-u0d95dr:13028:e54ac690 heartbeat successfully sent
+2020-08-24 10:53:11.217 +08:00 [DBG] Server desktop-u0d95dr:13028:219762e0 heartbeat successfully sent
+2020-08-24 10:53:11.749 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 392
+2020-08-24 10:53:11.801 +08:00 [INF] Request finished in 52.4324ms 200 application/json

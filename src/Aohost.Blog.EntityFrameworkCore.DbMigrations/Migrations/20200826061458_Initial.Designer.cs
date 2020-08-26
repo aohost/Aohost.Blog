@@ -11,7 +11,7 @@ using Volo.Abp.EntityFrameworkCore;
 namespace Aohost.Blog.EntityFrameworkCore.DbMigrations.Migrations
 {
     [DbContext(typeof(BlogMigrationsDbContext))]
-    [Migration("20200820140301_Initial")]
+    [Migration("20200826061458_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

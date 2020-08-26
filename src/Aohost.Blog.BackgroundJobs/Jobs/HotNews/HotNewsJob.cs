@@ -120,20 +120,20 @@ namespace Aohost.Blog.BackgroundJobs.Jobs.HotNews
                 var item = await task;
                 var sourceId = (int) item.Source;
                 // 博客园
-                //if (item.Source == HotNewsEnum.CnBlogs)
-                //{
-                //    var nodes = ((HtmlDocument)item.Result).DocumentNode.SelectNodes("//div[@class='post_item_body']/h3/a").ToList();
-                //    nodes.ForEach(x =>
-                //    {
-                //        hotNews.Add(new Domain.HotNews.HotNews
-                //        {
-                //            Title = x.InnerText,
-                //            Url = x.GetAttributeValue("href", ""),
-                //            SourceId = sourceId,
-                //            CreateTime = DateTime.Now
-                //        });
-                //    });
-                //}
+                if (item.Source == HotNewsEnum.CnBlogs)
+                {
+                    var nodes = ((HtmlDocument)item.Result).DocumentNode.SelectNodes("//div[@class='post_item_body']/h3/a").ToList();
+                    nodes.ForEach(x =>
+                    {
+                        hotNews.Add(new Domain.HotNews.HotNews
+                        {
+                            Title = x.InnerText,
+                            Url = x.GetAttributeValue("href", ""),
+                            SourceId = sourceId,
+                            CreateTime = DateTime.Now
+                        });
+                    });
+                }
 
                 // V2EX
                 if (item.Source == HotNewsEnum.V2EX)

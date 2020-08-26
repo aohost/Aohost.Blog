@@ -1,83 +1,29 @@
-﻿using System.Threading.Tasks;
-using Aohost.Blog.Application.Contracts.Blog;
-using Aohost.Blog.Domain.Blog;
-using Aohost.Blog.Domain.Blog.Repositories;
-using Aohost.Blog.ToolKits;
+﻿using Aohost.Blog.Domain.Blog.Repositories;
+using Aohost.BlogApplication.Caching.Blog;
 
 namespace Aohost.Blog.Application.Blog.Impl
 {
-    public class BlogService:ServiceBase, IBlogService
+    public partial class BlogService:ServiceBase, IBlogService
     {
+        private readonly IBlogCacheService _blogCacheService;
         private readonly IPostRepository _postRepository;
+        private readonly ICategoryRepository _categoryRepository;
+        private readonly ITagRepository _tagRepository;
+        private readonly IPostTagRepository _postTagRepository;
+        private readonly IFriendLinkRepository _friendLinkRepository;
 
-        public BlogService(IPostRepository postRepository)
+
+        public BlogService(IBlogCacheService blogCacheService, IPostRepository postRepository,
+            ICategoryRepository categoryRepository, ITagRepository tagRepository, IPostTagRepository postTagRepository,
+            IFriendLinkRepository friendLinkRepository)
         {
+            _blogCacheService = blogCacheService;
             _postRepository = postRepository;
+            _categoryRepository = categoryRepository;
+            _tagRepository = tagRepository;
+            _postTagRepository = postTagRepository;
+            _friendLinkRepository = friendLinkRepository;
         }
-
-        public async Task<ServiceResult<string>> InsertPostAsync(PostDto dto)
-        {
-            var result = new ServiceResult<string>();
-
-            var entity = ObjectMapper.Map<PostDto, Post>(dto);
-            var post = await _postRepository.InsertAsync(entity, true);
-            if (post == null)
-            {
-                result.IsFailed("添加失败");
-                return result;
-            }
-
-            result.IsSuccess("添加成功");
-            return result;
-        }
-
-        public async Task<ServiceResult> DeletePostAsync(int id)
-        {
-            var result = new ServiceResult();
-
-            await _postRepository.DeleteAsync(id);
-
-            return result;
-        }
-
-        public async Task<ServiceResult<string>> UpdatePostAsync(int id, PostDto dto)
-        {
-            var result = new ServiceResult<string>();
-
-            var post = await _postRepository.GetAsync(id);
-
-            post.Title = dto.Title;
-            post.Author = dto.Author;
-            post.CreationTime = dto.CreationTime;
-            post.Html = dto.Html;
-            post.Markdown = dto.Markdown;
-            post.CategoryId = dto.CategoryId;
-            post.Url = dto.Url;
-
-            await _postRepository.UpdateAsync(post);
-            result.IsSuccess("更新成功");
-            return result;
-        }
-
-        public async Task<ServiceResult<PostDto>> GetPostAsync(int id)
-        {
-            var entity = await _postRepository.GetAsync(id);
-            //var dto = new PostDto
-            //{
-            //    Title = entity.Title,
-            //    Author = entity.Author,
-            //    CategoryId = entity.Id,
-            //    CreationTime = entity.CreationTime,
-            //    Html = entity.Html,
-            //    Markdown = entity.Markdown
-            //};
-
-            var result = new ServiceResult<PostDto>();
-
-            var dto = ObjectMapper.Map<Post, PostDto>(entity);
-
-            result.IsSuccess(dto);
-            return result;
-        }
+      
     }
 }

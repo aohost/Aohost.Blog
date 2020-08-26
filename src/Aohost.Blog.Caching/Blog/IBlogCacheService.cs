@@ -1,6 +1,8 @@
-﻿namespace Aohost.BlogApplication.Caching.Blog
+﻿using Aohost.Blog.Caching;
+
+namespace Aohost.BlogApplication.Caching.Blog
 {
-    public interface IBlogCacheService
+    public partial interface IBlogCacheService:ICacheRemoveService
     {
     }
 }

@@ -30,4 +30,19 @@
         /// </summary>
         public const string GroupName_v4 = "v4";
     }
+
+    public static class CachePrefix
+    {
+        public const string Authorize = "Authorize";
+
+        public const string Blog = "Blog";
+
+        public const string BlogPost = Blog + ":Post";
+        
+        public const string BlogTag = Blog + ":Tag";
+
+        public const string BlogCategory = Blog + ":Category";
+
+        public const string BlogFriendLink = Blog + ":FriendLink";
+    }
 }

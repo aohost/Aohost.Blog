@@ -7,6 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Blog\IBlogService.Category.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Blog\IBlogService.Category.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
 	  <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.7" />
 	  <PackageReference Include="Volo.Abp.Identity.Application" Version="3.0.5" />
 	  <ProjectReference Include="..\Aohost.Blog.Application.Contracts\Aohost.Blog.Application.Contracts.csproj" />
