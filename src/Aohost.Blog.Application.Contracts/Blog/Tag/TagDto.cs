@@ -1,4 +1,4 @@
-﻿namespace Aohost.Blog.Application.Contracts.Blog
+﻿namespace Aohost.Blog.Application.Contracts.Blog.Tag
 {
     public class TagDto
     {

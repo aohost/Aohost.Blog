@@ -4,6 +4,121 @@
         <name>Aohost.Blog.Application.Contracts</name>
     </assembly>
     <members>
+        <member name="P:Aohost.Blog.Application.Contracts.Blog.Category.CategoryDto.CategoryName">
+            <summary>
+            分类名称
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Application.Contracts.Blog.Category.CategoryDto.DisplayName">
+            <summary>
+            显示名称
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Application.Contracts.Blog.Category.QueryCategoryDto.Count">
+            <summary>
+            该类别下文章数量
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Application.Contracts.Blog.Post.PostBriefDto.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Application.Contracts.Blog.Post.PostBriefDto.Url">
+            <summary>
+            链接
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Application.Contracts.Blog.Post.PostBriefDto.Year">
+            <summary>
+            年份
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Application.Contracts.Blog.Post.PostBriefDto.CreationTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Application.Contracts.Blog.Post.PostDetailDto.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Application.Contracts.Blog.Post.PostDetailDto.Author">
+            <summary>
+            作者
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Application.Contracts.Blog.Post.PostDetailDto.Url">
+            <summary>
+            链接
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Application.Contracts.Blog.Post.PostDetailDto.Html">
+            <summary>
+            HTML
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Application.Contracts.Blog.Post.PostDetailDto.MarkDown">
+            <summary>
+            MarkDown
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Application.Contracts.Blog.Post.PostDetailDto.CreationTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Application.Contracts.Blog.Post.PostDetailDto.Category">
+            <summary>
+            分类
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Application.Contracts.Blog.Post.PostDetailDto.Tags">
+            <summary>
+            标签列表
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Application.Contracts.Blog.Post.PostDetailDto.Previous">
+            <summary>
+            上一篇
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Application.Contracts.Blog.Post.PostDetailDto.Next">
+            <summary>
+            下一篇
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Application.Contracts.Blog.Post.PostForPagedDto.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Application.Contracts.Blog.Post.PostForPagedDto.Url">
+            <summary>
+            链接
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Application.Contracts.Blog.QueryPostDto.Year">
+            <summary>
+            年份
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Application.Contracts.Blog.QueryPostDto.Posts">
+            <summary>
+            Posts
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Application.Contracts.Blog.Tag.TagDto.TagName">
+            <summary>
+            标签名称
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Application.Contracts.Blog.Tag.TagDto.DisplayName">
+            <summary>
+            展示名称
+            </summary>
+        </member>
         <member name="P:Aohost.Blog.Application.Contracts.HotNews.HotNewsJobItem`1.Result">
             <summary>
             <see cref="P:Aohost.Blog.Application.Contracts.HotNews.HotNewsJobItem`1.Result"/>

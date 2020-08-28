@@ -8,10 +8,10 @@
         /// </summary>
         /// <param name="inputStr"></param>
         /// <returns></returns>
-        public static bool IsNullOrEmpty(this string inputStr)
-        {
-            return string.IsNullOrEmpty(inputStr);
-        }
+        //public static bool IsNullOrEmpty(this string inputStr)
+        //{
+        //    return string.IsNullOrEmpty(inputStr);
+        //}
 
         public static bool IsNullOrWhiteSpace(this string inputStr)
         {

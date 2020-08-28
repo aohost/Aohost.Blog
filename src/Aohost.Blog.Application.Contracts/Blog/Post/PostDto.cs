@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Aohost.Blog.Application.Contracts.Blog
+namespace Aohost.Blog.Application.Contracts.Blog.Post
 {
     public class PostDto
     {

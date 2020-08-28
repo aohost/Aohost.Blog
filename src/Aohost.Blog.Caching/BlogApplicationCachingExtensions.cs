@@ -26,12 +26,10 @@ namespace Aohost.Blog.Caching
                 }
 
                 await cache.SetStringAsync(key, cacheItem.ToJson(), options);
-                Console.WriteLine($"写入缓存:{result}");
             }
             else
             {
                 cacheItem = result.FromJson<TCacheItem>();
-                Console.WriteLine($"取得缓存:{result}");
             }
 
             return cacheItem;

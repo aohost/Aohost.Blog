@@ -1,4 +1,5 @@
 ﻿using Aohost.Blog.Application.Contracts.Blog;
+using Aohost.Blog.Application.Contracts.Blog.Post;
 using Aohost.Blog.Application.Contracts.Wallpaper;
 using Aohost.Blog.Domain.Blog;
 using AutoMapper;

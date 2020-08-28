@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
+using Aohost.Blog.Application.Contracts.Blog.Category;
+using Aohost.Blog.Application.Contracts.Blog.Tag;
 
-namespace Aohost.Blog.Application.Contracts.Blog
+namespace Aohost.Blog.Application.Contracts.Blog.Post
 {
     public class PostDetailDto
     {

@@ -4,6 +4,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Aohost.Blog.Application.Contracts;
 using Aohost.Blog.Application.Contracts.Blog;
+using Aohost.Blog.Application.Contracts.Blog.Post;
 using Aohost.Blog.Caching;
 using Aohost.Blog.Domain.Shared;
 using Aohost.Blog.ToolKits;

@@ -8206,3 +8206,455 @@ System.ArgumentNullException: Value cannot be null. (Parameter 'source')
 2020-08-24 10:53:11.217 +08:00 [DBG] Server desktop-u0d95dr:13028:219762e0 heartbeat successfully sent
 2020-08-24 10:53:11.749 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 392
 2020-08-24 10:53:11.801 +08:00 [INF] Request finished in 52.4324ms 200 application/json
+2020-08-27 09:40:24.681 +08:00 [INF] Starting web host.
+2020-08-27 09:40:37.086 +08:00 [INF] User profile is available. Using 'C:\Users\wyuntao\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-27 09:40:37.161 +08:00 [INF] Loaded ABP modules:
+2020-08-27 09:40:37.161 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Aohost.Blog.Domain.Shared.BlogDomainSharedModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Aohost.Blog.Domain.BlogDomainModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Aohost.Blog.Caching.BlogApplicationCachingModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Aohost.Blog.Application.BlogApplicationModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Aohost.Blog.BlogHttpApiModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Aohost.Blog.Swagger.BlogSwaggerModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Aohost.Blog.EntityFrameworkCore.BlogFrameworkCoreModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Volo.Abp.Hangfire.AbpHangfireModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Volo.Abp.BackgroundJobs.Hangfire.AbpBackgroundJobsHangfireModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Aohost.Blog.BackgroundJobs.BlogBackgroundJobsModule
+2020-08-27 09:40:37.161 +08:00 [INF] - Aohost.Blog.HttpApi.Hosting.HttpApiHostingModule
+2020-08-27 09:40:37.376 +08:00 [INF] Start installing Hangfire SQL objects...
+2020-08-27 09:40:39.654 +08:00 [INF] Hangfire SQL objects installed.
+2020-08-27 09:40:39.670 +08:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: (LocalDb)\MSSQLLocalDB@Blog'
+2020-08-27 09:40:39.670 +08:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+2020-08-27 09:40:39.670 +08:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2020-08-27 09:40:39.686 +08:00 [DBG] Execution loop BackgroundServerProcess:b6e69fdc has started in 10.0557 ms
+2020-08-27 09:40:39.704 +08:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: (LocalDb)\MSSQLLocalDB@Blog'
+2020-08-27 09:40:39.704 +08:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+2020-08-27 09:40:39.704 +08:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2020-08-27 09:40:39.710 +08:00 [DBG] Execution loop BackgroundServerProcess:f12e5eed has started in 6.0655 ms
+2020-08-27 09:40:39.950 +08:00 [INF] Server desktop-u0d95dr:18908:7cf0138b successfully announced in 245.1232 ms
+2020-08-27 09:40:39.950 +08:00 [INF] Server desktop-u0d95dr:18908:9d5438fb successfully announced in 238.8172 ms
+2020-08-27 09:40:39.974 +08:00 [DBG] Execution loop ServerHeartbeatProcess:e6b990df has started in 23.1063 ms
+2020-08-27 09:40:39.980 +08:00 [DBG] Execution loop ServerHeartbeatProcess:79595b4d has started in 28.914 ms
+2020-08-27 09:40:39.980 +08:00 [INF] Server desktop-u0d95dr:18908:9d5438fb is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2020-08-27 09:40:39.980 +08:00 [INF] Server desktop-u0d95dr:18908:7cf0138b is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2020-08-27 09:40:39.989 +08:00 [DBG] Execution loop ServerWatchdog:076f0e17 has started in 8.5714 ms
+2020-08-27 09:40:39.999 +08:00 [DBG] Execution loop ServerJobCancellationWatcher:7067e59a has started in 18.2821 ms
+2020-08-27 09:40:39.999 +08:00 [DBG] Execution loop ServerWatchdog:ee6b2d8d has started in 18.6431 ms
+2020-08-27 09:40:40.005 +08:00 [DBG] Execution loop ServerJobCancellationWatcher:edfe8493 has started in 24.4222 ms
+2020-08-27 09:40:40.014 +08:00 [DBG] Execution loop ExpirationManager:9aea8412 has started in 24.2956 ms
+2020-08-27 09:40:40.021 +08:00 [DBG] Execution loop ExpirationManager:1a1eac96 has started in 31.2718 ms
+2020-08-27 09:40:40.026 +08:00 [DBG] Execution loop CountersAggregator:28d0d899 has started in 20.709 ms
+2020-08-27 09:40:40.032 +08:00 [DBG] Execution loop CountersAggregator:041376b1 has started in 26.4158 ms
+2020-08-27 09:40:40.034 +08:00 [DBG] Aggregating records in 'Counter' table...
+2020-08-27 09:40:40.034 +08:00 [DBG] Aggregating records in 'Counter' table...
+2020-08-27 09:40:40.035 +08:00 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2020-08-27 09:40:40.035 +08:00 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2020-08-27 09:40:40.041 +08:00 [DBG] Execution loop Worker:cc0d908e has started in 26.9281 ms
+2020-08-27 09:40:40.047 +08:00 [DBG] Execution loop Worker:46fbe9ed has started in 33.0427 ms
+2020-08-27 09:40:40.057 +08:00 [DBG] Execution loop Worker:fcb5c160 has started in 43.256 ms
+2020-08-27 09:40:40.064 +08:00 [DBG] Execution loop Worker:5cdfeccf has started in 49.9421 ms
+2020-08-27 09:40:40.071 +08:00 [DBG] Execution loop Worker:71d66fe5 has started in 57.3791 ms
+2020-08-27 09:40:40.098 +08:00 [DBG] Execution loop Worker:ad7a50cb has started in 84.4561 ms
+2020-08-27 09:40:40.098 +08:00 [DBG] Execution loop Worker:0377bb83 has started in 84.4685 ms
+2020-08-27 09:40:40.098 +08:00 [DBG] Execution loop Worker:6288cf4b has started in 84.4596 ms
+2020-08-27 09:40:40.104 +08:00 [DBG] Execution loop Worker:a9422e3e has started in 89.8619 ms
+2020-08-27 09:40:40.113 +08:00 [DBG] Execution loop Worker:64c3eea0 has started in 99.0229 ms
+2020-08-27 09:40:40.119 +08:00 [DBG] Execution loop Worker:d4be7064 has started in 105.6286 ms
+2020-08-27 09:40:40.133 +08:00 [DBG] Execution loop Worker:074ccedd has started in 119.4575 ms
+2020-08-27 09:40:40.138 +08:00 [DBG] Execution loop Worker:cca4bc22 has started in 124.442 ms
+2020-08-27 09:40:40.156 +08:00 [DBG] Execution loop Worker:40ee7ed8 has started in 141.8676 ms
+2020-08-27 09:40:40.162 +08:00 [DBG] Execution loop Worker:a65aba20 has started in 148.3666 ms
+2020-08-27 09:40:40.167 +08:00 [DBG] Execution loop Worker:e06882ed has started in 153.5767 ms
+2020-08-27 09:40:40.173 +08:00 [DBG] Execution loop Worker:e1dcedba has started in 159.1701 ms
+2020-08-27 09:40:40.205 +08:00 [DBG] Execution loop Worker:acd3b10c has started in 190.8886 ms
+2020-08-27 09:40:40.212 +08:00 [DBG] Execution loop Worker:de12f795 has started in 197.5898 ms
+2020-08-27 09:40:40.217 +08:00 [DBG] Execution loop Worker:6e756dfb has started in 202.7494 ms
+2020-08-27 09:40:40.223 +08:00 [DBG] Execution loop Worker:6d330a19 has started in 208.4541 ms
+2020-08-27 09:40:40.239 +08:00 [DBG] Execution loop Worker:5329ed50 has started in 225.4032 ms
+2020-08-27 09:40:40.239 +08:00 [DBG] Removing outdated records from the 'Job' table...
+2020-08-27 09:40:40.245 +08:00 [DBG] Execution loop Worker:f541b2f7 has started in 231.5444 ms
+2020-08-27 09:40:40.262 +08:00 [DBG] Execution loop Worker:70995f4a has started in 247.7664 ms
+2020-08-27 09:40:40.288 +08:00 [DBG] Execution loop Worker:e6cb2386 has started in 274.3181 ms
+2020-08-27 09:40:40.288 +08:00 [DBG] Execution loop Worker:eac117fa has started in 274.332 ms
+2020-08-27 09:40:40.294 +08:00 [DBG] Execution loop Worker:8abab603 has started in 280.8291 ms
+2020-08-27 09:40:40.301 +08:00 [DBG] Removing outdated records from the 'Job' table...
+2020-08-27 09:40:40.301 +08:00 [DBG] Execution loop Worker:a235cdb0 has started in 287.8931 ms
+2020-08-27 09:40:40.308 +08:00 [DBG] Execution loop Worker:90e0ae4d has started in 293.5595 ms
+2020-08-27 09:40:40.315 +08:00 [DBG] Execution loop Worker:bde1fbfc has started in 301.8969 ms
+2020-08-27 09:40:40.334 +08:00 [DBG] Execution loop Worker:92ce4be1 has started in 320.2303 ms
+2020-08-27 09:40:40.341 +08:00 [DBG] Execution loop Worker:04b21f51 has started in 327.0419 ms
+2020-08-27 09:40:40.347 +08:00 [DBG] Execution loop Worker:a484339b has started in 333.4078 ms
+2020-08-27 09:40:40.360 +08:00 [DBG] Execution loop Worker:30d9570c has started in 345.9089 ms
+2020-08-27 09:40:40.366 +08:00 [DBG] Execution loop Worker:b061ef0c has started in 352.6925 ms
+2020-08-27 09:40:40.372 +08:00 [DBG] Execution loop Worker:cd65cd11 has started in 358.0828 ms
+2020-08-27 09:40:40.386 +08:00 [DBG] Execution loop Worker:6fa6dda8 has started in 372.2454 ms
+2020-08-27 09:40:40.403 +08:00 [DBG] Removing outdated records from the 'List' table...
+2020-08-27 09:40:40.403 +08:00 [DBG] Execution loop Worker:71f2614a has started in 389.5919 ms
+2020-08-27 09:40:40.409 +08:00 [DBG] Execution loop Worker:072ed377 has started in 395.7014 ms
+2020-08-27 09:40:40.416 +08:00 [DBG] Execution loop DelayedJobScheduler:1fa48a8d has started in 68.0608 ms
+2020-08-27 09:40:40.433 +08:00 [DBG] Execution loop Worker:715375a2 has started in 418.6767 ms
+2020-08-27 09:40:40.448 +08:00 [DBG] Execution loop DelayedJobScheduler:1718c0a6 has started in 24.5793 ms
+2020-08-27 09:40:40.448 +08:00 [DBG] Removing outdated records from the 'List' table...
+2020-08-27 09:40:40.474 +08:00 [INF] Server desktop-u0d95dr:18908:7cf0138b all the dispatchers started
+2020-08-27 09:40:40.554 +08:00 [INF] Server desktop-u0d95dr:18908:9d5438fb all the dispatchers started
+2020-08-27 09:40:40.555 +08:00 [DBG] Execution loop RecurringJobScheduler:15044d3a has started in 158.398 ms
+2020-08-27 09:40:40.562 +08:00 [DBG] Execution loop RecurringJobScheduler:666aff1c has started in 129.8742 ms
+2020-08-27 09:40:40.600 +08:00 [DBG] Removing outdated records from the 'Set' table...
+2020-08-27 09:40:40.637 +08:00 [DBG] Removing outdated records from the 'Set' table...
+2020-08-27 09:40:40.690 +08:00 [DBG] Removing outdated records from the 'Hash' table...
+2020-08-27 09:40:40.742 +08:00 [DBG] Removing outdated records from the 'Hash' table...
+2020-08-27 09:40:42.124 +08:00 [INF] Initialized all ABP modules.
+2020-08-27 09:40:42.233 +08:00 [INF] Now listening on: https://localhost:44350
+2020-08-27 09:40:42.234 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-27 09:40:42.234 +08:00 [INF] Hosting environment: Development
+2020-08-27 09:40:42.234 +08:00 [INF] Content root path: E:\Aohost\Aohost.Blog\aspnet-core\src\Aohost.Blog.HttpApi.Hosting
+2020-08-27 09:40:43.187 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/index.html  
+2020-08-27 09:40:43.271 +08:00 [INF] Request finished in 85.4701ms 200 text/html;charset=utf-8
+2020-08-27 09:40:43.430 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/swagger/v1/swagger.json  
+2020-08-27 09:40:43.554 +08:00 [INF] Request finished in 124.2646ms 200 application/json;charset=utf-8
+2020-08-27 09:40:57.526 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/blog/posts?Page=1&Limit=10  0
+2020-08-27 09:40:57.533 +08:00 [INF] No CORS policy found for the specified request.
+2020-08-27 09:40:57.639 +08:00 [INF] Executing endpoint 'Aohost.Blog.HttpApi.Controllers.BlogController.QueryPostsAsync (Aohost.Blog.HttpApi)'
+2020-08-27 09:40:57.711 +08:00 [INF] Route matched with {action = "QueryPosts", controller = "Blog", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Aohost.Blog.ToolKits.ServiceResult`1[Aohost.Blog.ToolKits.PagedList`1[Aohost.Blog.Application.Contracts.Blog.QueryPostDto]]] QueryPostsAsync(Aohost.Blog.Application.Contracts.PagingInput) on controller Aohost.Blog.HttpApi.Controllers.BlogController (Aohost.Blog.HttpApi).
+2020-08-27 09:40:58.227 +08:00 [INF] Executing action method Aohost.Blog.HttpApi.Controllers.BlogController.QueryPostsAsync (Aohost.Blog.HttpApi) - Validation state: "Valid"
+2020-08-27 09:40:58.551 +08:00 [INF] Executed action Aohost.Blog.HttpApi.Controllers.BlogController.QueryPostsAsync (Aohost.Blog.HttpApi) in 836.99ms
+2020-08-27 09:40:58.552 +08:00 [INF] Executed endpoint 'Aohost.Blog.HttpApi.Controllers.BlogController.QueryPostsAsync (Aohost.Blog.HttpApi)'
+2020-08-27 09:40:58.585 +08:00 [INF] Request finished in 1059.7179ms 200 application/json;charset=utf-8
+2020-08-27 09:41:10.116 +08:00 [DBG] Server desktop-u0d95dr:18908:9d5438fb heartbeat successfully sent
+2020-08-27 09:41:10.117 +08:00 [DBG] Server desktop-u0d95dr:18908:7cf0138b heartbeat successfully sent
+2020-08-27 09:41:40.150 +08:00 [DBG] Server desktop-u0d95dr:18908:7cf0138b heartbeat successfully sent
+2020-08-27 09:41:40.151 +08:00 [DBG] Server desktop-u0d95dr:18908:9d5438fb heartbeat successfully sent
+2020-08-27 09:41:47.234 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/blog/posts?Page=1&Limit=10  0
+2020-08-27 09:41:47.235 +08:00 [INF] No CORS policy found for the specified request.
+2020-08-27 09:41:47.236 +08:00 [INF] Executing endpoint 'Aohost.Blog.HttpApi.Controllers.BlogController.QueryPostsAsync (Aohost.Blog.HttpApi)'
+2020-08-27 09:41:47.237 +08:00 [INF] Route matched with {action = "QueryPosts", controller = "Blog", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Aohost.Blog.ToolKits.ServiceResult`1[Aohost.Blog.ToolKits.PagedList`1[Aohost.Blog.Application.Contracts.Blog.QueryPostDto]]] QueryPostsAsync(Aohost.Blog.Application.Contracts.PagingInput) on controller Aohost.Blog.HttpApi.Controllers.BlogController (Aohost.Blog.HttpApi).
+2020-08-27 09:41:47.261 +08:00 [INF] Executing action method Aohost.Blog.HttpApi.Controllers.BlogController.QueryPostsAsync (Aohost.Blog.HttpApi) - Validation state: "Valid"
+2020-08-27 09:41:48.338 +08:00 [INF] Executed action method Aohost.Blog.HttpApi.Controllers.BlogController.QueryPostsAsync (Aohost.Blog.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1073.3598ms.
+2020-08-27 09:41:48.391 +08:00 [INF] Executing ObjectResult, writing value of type 'Aohost.Blog.ToolKits.ServiceResult`1[[Aohost.Blog.ToolKits.PagedList`1[[Aohost.Blog.Application.Contracts.Blog.QueryPostDto, Aohost.Blog.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Aohost.Blog.ToolKits, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-27 09:41:48.407 +08:00 [INF] Executed action Aohost.Blog.HttpApi.Controllers.BlogController.QueryPostsAsync (Aohost.Blog.HttpApi) in 1169.8298ms
+2020-08-27 09:41:48.407 +08:00 [INF] Executed endpoint 'Aohost.Blog.HttpApi.Controllers.BlogController.QueryPostsAsync (Aohost.Blog.HttpApi)'
+2020-08-27 09:41:48.412 +08:00 [INF] Request finished in 1178.5311ms 200 application/json; charset=utf-8
+2020-08-27 09:42:10.187 +08:00 [DBG] Server desktop-u0d95dr:18908:9d5438fb heartbeat successfully sent
+2020-08-27 09:42:10.187 +08:00 [DBG] Server desktop-u0d95dr:18908:7cf0138b heartbeat successfully sent
+2020-08-27 09:42:40.215 +08:00 [DBG] Server desktop-u0d95dr:18908:7cf0138b heartbeat successfully sent
+2020-08-27 09:42:40.216 +08:00 [DBG] Server desktop-u0d95dr:18908:9d5438fb heartbeat successfully sent
+2020-08-27 09:42:44.511 +08:00 [DBG] Hangfire Server is stopping...
+2020-08-27 09:42:44.511 +08:00 [INF] Server desktop-u0d95dr:18908:9d5438fb caught stopping signal...
+2020-08-27 09:42:44.514 +08:00 [DBG] Execution loop Worker:5329ed50 stopped in 1.9101 ms
+2020-08-27 09:42:44.514 +08:00 [DBG] Execution loop Worker:072ed377 stopped in 1.9257 ms
+2020-08-27 09:42:44.514 +08:00 [DBG] Execution loop RecurringJobScheduler:666aff1c stopped in 1.8083 ms
+2020-08-27 09:42:44.514 +08:00 [DBG] Execution loop Worker:a484339b stopped in 1.8543 ms
+2020-08-27 09:42:44.514 +08:00 [DBG] Execution loop ExpirationManager:1a1eac96 stopped in 1.803 ms
+2020-08-27 09:42:44.514 +08:00 [DBG] Execution loop Worker:bde1fbfc stopped in 1.8643 ms
+2020-08-27 09:42:44.514 +08:00 [DBG] Execution loop ServerJobCancellationWatcher:7067e59a stopped in 1.8019 ms
+2020-08-27 09:42:44.514 +08:00 [DBG] Execution loop DelayedJobScheduler:1718c0a6 stopped in 1.809 ms
+2020-08-27 09:42:44.514 +08:00 [DBG] Execution loop Worker:cd65cd11 stopped in 2.0577 ms
+2020-08-27 09:42:44.514 +08:00 [DBG] Execution loop Worker:04b21f51 stopped in 2.0646 ms
+2020-08-27 09:42:44.514 +08:00 [DBG] Execution loop Worker:6fa6dda8 stopped in 1.8807 ms
+2020-08-27 09:42:44.514 +08:00 [DBG] Execution loop Worker:70995f4a stopped in 2.1449 ms
+2020-08-27 09:42:44.514 +08:00 [DBG] Execution loop Worker:6e756dfb stopped in 2.158 ms
+2020-08-27 09:42:44.514 +08:00 [DBG] Execution loop ServerWatchdog:076f0e17 stopped in 2.2695 ms
+2020-08-27 09:42:44.514 +08:00 [DBG] Execution loop CountersAggregator:041376b1 stopped in 2.3149 ms
+2020-08-27 09:42:44.514 +08:00 [DBG] Execution loop Worker:cca4bc22 stopped in 2.3278 ms
+2020-08-27 09:42:44.514 +08:00 [INF] Server desktop-u0d95dr:18908:9d5438fb caught stopped signal...
+2020-08-27 09:42:44.514 +08:00 [DBG] Execution loop Worker:e6cb2386 stopped in 2.7162 ms
+2020-08-27 09:42:44.515 +08:00 [DBG] Execution loop Worker:64c3eea0 stopped in 3.3145 ms
+2020-08-27 09:42:44.515 +08:00 [DBG] Execution loop Worker:a235cdb0 stopped in 2.8709 ms
+2020-08-27 09:42:44.515 +08:00 [DBG] Execution loop Worker:ad7a50cb stopped in 3.7017 ms
+2020-08-27 09:42:44.515 +08:00 [DBG] Execution loop Worker:46fbe9ed stopped in 3.7128 ms
+2020-08-27 09:42:44.515 +08:00 [DBG] Execution loop Worker:715375a2 stopped in 3.7288 ms
+2020-08-27 09:42:44.515 +08:00 [DBG] Execution loop Worker:d4be7064 stopped in 3.735 ms
+2020-08-27 09:42:44.515 +08:00 [DBG] Execution loop Worker:e1dcedba stopped in 3.735 ms
+2020-08-27 09:42:44.515 +08:00 [DBG] Execution loop Worker:5cdfeccf stopped in 3.7338 ms
+2020-08-27 09:42:44.515 +08:00 [DBG] Execution loop Worker:71f2614a stopped in 3.7433 ms
+2020-08-27 09:42:44.559 +08:00 [INF] Server desktop-u0d95dr:18908:9d5438fb All dispatchers stopped
+2020-08-27 09:42:44.560 +08:00 [DBG] Execution loop ServerHeartbeatProcess:e6b990df stopped in 47.7481 ms
+2020-08-27 09:42:44.567 +08:00 [DBG] Hangfire Server is stopping...
+2020-08-27 09:42:44.567 +08:00 [INF] Server desktop-u0d95dr:18908:7cf0138b caught stopping signal...
+2020-08-27 09:42:44.567 +08:00 [DBG] Execution loop ServerJobCancellationWatcher:edfe8493 stopped in 0 ms
+2020-08-27 09:42:44.567 +08:00 [DBG] Execution loop RecurringJobScheduler:15044d3a stopped in 0 ms
+2020-08-27 09:42:44.567 +08:00 [DBG] Execution loop ExpirationManager:9aea8412 stopped in 0 ms
+2020-08-27 09:42:44.567 +08:00 [DBG] Execution loop DelayedJobScheduler:1fa48a8d stopped in 0.3933 ms
+2020-08-27 09:42:44.568 +08:00 [DBG] Execution loop CountersAggregator:28d0d899 stopped in 0.5657 ms
+2020-08-27 09:42:44.568 +08:00 [DBG] Execution loop ServerWatchdog:ee6b2d8d stopped in 0.5792 ms
+2020-08-27 09:42:44.568 +08:00 [INF] Server desktop-u0d95dr:18908:7cf0138b caught stopped signal...
+2020-08-27 09:42:44.575 +08:00 [DBG] Execution loop Worker:6288cf4b stopped in 7.6588 ms
+2020-08-27 09:42:44.575 +08:00 [DBG] Execution loop Worker:6d330a19 stopped in 7.6399 ms
+2020-08-27 09:42:44.575 +08:00 [DBG] Execution loop Worker:cc0d908e stopped in 7.6287 ms
+2020-08-27 09:42:44.575 +08:00 [DBG] Execution loop Worker:0377bb83 stopped in 7.6482 ms
+2020-08-27 09:42:44.575 +08:00 [DBG] Execution loop Worker:f541b2f7 stopped in 7.6799 ms
+2020-08-27 09:42:44.575 +08:00 [DBG] Execution loop Worker:90e0ae4d stopped in 7.6799 ms
+2020-08-27 09:42:44.575 +08:00 [DBG] Execution loop Worker:30d9570c stopped in 7.6906 ms
+2020-08-27 09:42:44.575 +08:00 [DBG] Execution loop Worker:92ce4be1 stopped in 7.7008 ms
+2020-08-27 09:42:44.575 +08:00 [DBG] Execution loop Worker:eac117fa stopped in 7.7457 ms
+2020-08-27 09:42:44.575 +08:00 [DBG] Execution loop Worker:acd3b10c stopped in 7.7578 ms
+2020-08-27 09:42:44.575 +08:00 [DBG] Execution loop Worker:40ee7ed8 stopped in 7.7723 ms
+2020-08-27 09:42:44.575 +08:00 [DBG] Execution loop Worker:fcb5c160 stopped in 7.7738 ms
+2020-08-27 09:42:44.575 +08:00 [DBG] Execution loop Worker:a65aba20 stopped in 8.099 ms
+2020-08-27 09:42:44.581 +08:00 [DBG] Execution loop Worker:e06882ed stopped in 13.7763 ms
+2020-08-27 09:42:44.581 +08:00 [DBG] Execution loop Worker:de12f795 stopped in 14.0631 ms
+2020-08-27 09:42:44.581 +08:00 [DBG] Execution loop Worker:074ccedd stopped in 7.7742 ms
+2020-08-27 09:42:44.581 +08:00 [DBG] Execution loop Worker:b061ef0c stopped in 14.1085 ms
+2020-08-27 09:42:44.581 +08:00 [DBG] Execution loop Worker:71d66fe5 stopped in 14.1124 ms
+2020-08-27 09:42:44.581 +08:00 [DBG] Execution loop Worker:a9422e3e stopped in 14.3297 ms
+2020-08-27 09:42:44.581 +08:00 [DBG] Execution loop Worker:8abab603 stopped in 14.3414 ms
+2020-08-27 09:42:44.587 +08:00 [INF] Server desktop-u0d95dr:18908:7cf0138b All dispatchers stopped
+2020-08-27 09:42:44.588 +08:00 [DBG] Execution loop ServerHeartbeatProcess:79595b4d stopped in 20.7055 ms
+2020-08-27 09:42:44.601 +08:00 [INF] Server desktop-u0d95dr:18908:7cf0138b successfully reported itself as stopped in 13.4131 ms
+2020-08-27 09:42:44.601 +08:00 [INF] Server desktop-u0d95dr:18908:9d5438fb successfully reported itself as stopped in 19.8508 ms
+2020-08-27 09:42:44.602 +08:00 [INF] Server desktop-u0d95dr:18908:7cf0138b has been stopped in total 34.4267 ms
+2020-08-27 09:42:44.602 +08:00 [INF] Server desktop-u0d95dr:18908:9d5438fb has been stopped in total 89.8277 ms
+2020-08-27 09:42:44.602 +08:00 [DBG] Execution loop BackgroundServerProcess:f12e5eed stopped in 90.2491 ms
+2020-08-27 09:42:44.602 +08:00 [DBG] Execution loop BackgroundServerProcess:b6e69fdc stopped in 35.0208 ms
+2020-08-27 09:42:44.602 +08:00 [INF] Application is shutting down...
+2020-08-27 10:22:54.002 +08:00 [INF] Starting web host.
+2020-08-27 10:22:57.757 +08:00 [INF] User profile is available. Using 'C:\Users\wyuntao\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-27 10:22:57.829 +08:00 [INF] Loaded ABP modules:
+2020-08-27 10:22:57.829 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Aohost.Blog.Domain.Shared.BlogDomainSharedModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Aohost.Blog.Domain.BlogDomainModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Aohost.Blog.Caching.BlogApplicationCachingModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Aohost.Blog.Application.BlogApplicationModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Aohost.Blog.BlogHttpApiModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Aohost.Blog.Swagger.BlogSwaggerModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Aohost.Blog.EntityFrameworkCore.BlogFrameworkCoreModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Volo.Abp.Hangfire.AbpHangfireModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Volo.Abp.BackgroundJobs.Hangfire.AbpBackgroundJobsHangfireModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Aohost.Blog.BackgroundJobs.BlogBackgroundJobsModule
+2020-08-27 10:22:57.829 +08:00 [INF] - Aohost.Blog.HttpApi.Hosting.HttpApiHostingModule
+2020-08-27 10:22:58.038 +08:00 [INF] Start installing Hangfire SQL objects...
+2020-08-27 10:22:59.260 +08:00 [INF] Hangfire SQL objects installed.
+2020-08-27 10:22:59.273 +08:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: (LocalDb)\MSSQLLocalDB@Blog'
+2020-08-27 10:22:59.274 +08:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+2020-08-27 10:22:59.274 +08:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2020-08-27 10:22:59.295 +08:00 [DBG] Execution loop BackgroundServerProcess:cb0519a8 has started in 10.4406 ms
+2020-08-27 10:22:59.317 +08:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: (LocalDb)\MSSQLLocalDB@Blog'
+2020-08-27 10:22:59.317 +08:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+2020-08-27 10:22:59.317 +08:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2020-08-27 10:22:59.325 +08:00 [DBG] Execution loop BackgroundServerProcess:d0a6f2c3 has started in 7.4768 ms
+2020-08-27 10:22:59.655 +08:00 [INF] Server desktop-u0d95dr:1748:e86fed6d successfully announced in 329.9436 ms
+2020-08-27 10:22:59.655 +08:00 [INF] Server desktop-u0d95dr:1748:e7e9ff34 successfully announced in 337.4003 ms
+2020-08-27 10:22:59.664 +08:00 [DBG] Execution loop ServerHeartbeatProcess:76c1f656 has started in 8.3239 ms
+2020-08-27 10:22:59.664 +08:00 [INF] Server desktop-u0d95dr:1748:e86fed6d is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2020-08-27 10:22:59.664 +08:00 [INF] Server desktop-u0d95dr:1748:e7e9ff34 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2020-08-27 10:22:59.670 +08:00 [DBG] Execution loop ServerHeartbeatProcess:20fa0cc7 has started in 14.01 ms
+2020-08-27 10:22:59.694 +08:00 [DBG] Execution loop ServerWatchdog:eb3edfd3 has started in 29.538 ms
+2020-08-27 10:22:59.702 +08:00 [DBG] Execution loop ServerWatchdog:d58c0499 has started in 37.9467 ms
+2020-08-27 10:22:59.724 +08:00 [DBG] Execution loop ServerJobCancellationWatcher:393e4dca has started in 37.7703 ms
+2020-08-27 10:22:59.724 +08:00 [DBG] Execution loop ServerJobCancellationWatcher:6690224c has started in 37.7969 ms
+2020-08-27 10:22:59.733 +08:00 [DBG] Execution loop ExpirationManager:a3a5517b has started in 30.3183 ms
+2020-08-27 10:22:59.742 +08:00 [DBG] Execution loop CountersAggregator:3ba807e7 has started in 17.5142 ms
+2020-08-27 10:22:59.742 +08:00 [DBG] Execution loop CountersAggregator:bf4f5536 has started in 17.4839 ms
+2020-08-27 10:22:59.742 +08:00 [DBG] Execution loop ExpirationManager:9e169647 has started in 46.5772 ms
+2020-08-27 10:22:59.744 +08:00 [DBG] Aggregating records in 'Counter' table...
+2020-08-27 10:22:59.744 +08:00 [DBG] Aggregating records in 'Counter' table...
+2020-08-27 10:22:59.744 +08:00 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2020-08-27 10:22:59.744 +08:00 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2020-08-27 10:22:59.750 +08:00 [DBG] Execution loop Worker:77c17497 has started in 17.4363 ms
+2020-08-27 10:22:59.756 +08:00 [DBG] Execution loop Worker:6eaab427 has started in 22.8078 ms
+2020-08-27 10:22:59.764 +08:00 [DBG] Execution loop Worker:20050b67 has started in 39.3711 ms
+2020-08-27 10:22:59.770 +08:00 [DBG] Execution loop Worker:74e0bbbd has started in 45.6757 ms
+2020-08-27 10:22:59.776 +08:00 [DBG] Execution loop Worker:f55f9823 has started in 51.7402 ms
+2020-08-27 10:22:59.782 +08:00 [DBG] Execution loop Worker:386745b4 has started in 50.0992 ms
+2020-08-27 10:22:59.788 +08:00 [DBG] Execution loop Worker:684015b4 has started in 56.0882 ms
+2020-08-27 10:22:59.818 +08:00 [DBG] Execution loop Worker:8f1b75d6 has started in 85.8163 ms
+2020-08-27 10:22:59.834 +08:00 [DBG] Execution loop Worker:5ee354f4 has started in 109.7926 ms
+2020-08-27 10:22:59.853 +08:00 [DBG] Execution loop Worker:019390e0 has started in 120.1958 ms
+2020-08-27 10:22:59.869 +08:00 [DBG] Execution loop Worker:b281d29e has started in 143.6363 ms
+2020-08-27 10:22:59.886 +08:00 [DBG] Removing outdated records from the 'Job' table...
+2020-08-27 10:22:59.894 +08:00 [DBG] Execution loop Worker:ecc41372 has started in 161.6371 ms
+2020-08-27 10:22:59.902 +08:00 [DBG] Execution loop Worker:88218800 has started in 176.7579 ms
+2020-08-27 10:22:59.908 +08:00 [DBG] Execution loop Worker:63445f12 has started in 175.4678 ms
+2020-08-27 10:22:59.915 +08:00 [DBG] Execution loop Worker:355b226d has started in 182.2168 ms
+2020-08-27 10:22:59.920 +08:00 [DBG] Execution loop Worker:7adf7982 has started in 196.0074 ms
+2020-08-27 10:22:59.931 +08:00 [DBG] Execution loop Worker:2fc3275f has started in 206.1641 ms
+2020-08-27 10:22:59.947 +08:00 [DBG] Execution loop Worker:2711c497 has started in 214.2547 ms
+2020-08-27 10:22:59.953 +08:00 [DBG] Execution loop Worker:acea3531 has started in 228.4805 ms
+2020-08-27 10:22:59.965 +08:00 [DBG] Removing outdated records from the 'Job' table...
+2020-08-27 10:22:59.971 +08:00 [DBG] Execution loop Worker:3608219b has started in 238.4711 ms
+2020-08-27 10:22:59.977 +08:00 [DBG] Execution loop Worker:6ddbda9a has started in 244.8546 ms
+2020-08-27 10:22:59.983 +08:00 [DBG] Execution loop Worker:19ee50d7 has started in 258.5669 ms
+2020-08-27 10:23:00.015 +08:00 [DBG] Execution loop Worker:14051770 has started in 290.5367 ms
+2020-08-27 10:23:00.016 +08:00 [DBG] Removing outdated records from the 'List' table...
+2020-08-27 10:23:00.023 +08:00 [DBG] Execution loop Worker:3c0a4722 has started in 297.4197 ms
+2020-08-27 10:23:00.036 +08:00 [DBG] Execution loop Worker:67ba5aa5 has started in 304.1233 ms
+2020-08-27 10:23:00.036 +08:00 [DBG] Execution loop Worker:c99810f5 has started in 311.4577 ms
+2020-08-27 10:23:00.051 +08:00 [DBG] Execution loop Worker:f0d9bf18 has started in 318.6568 ms
+2020-08-27 10:23:00.051 +08:00 [DBG] Execution loop Worker:435200f4 has started in 318.6634 ms
+2020-08-27 10:23:00.057 +08:00 [DBG] Removing outdated records from the 'List' table...
+2020-08-27 10:23:00.058 +08:00 [DBG] Execution loop Worker:fecc2bd0 has started in 325.1232 ms
+2020-08-27 10:23:00.064 +08:00 [DBG] Execution loop Worker:f9f967d5 has started in 339.0522 ms
+2020-08-27 10:23:00.071 +08:00 [DBG] Execution loop Worker:8972a8ee has started in 338.5652 ms
+2020-08-27 10:23:00.078 +08:00 [DBG] Execution loop Worker:d5775af5 has started in 353.0774 ms
+2020-08-27 10:23:00.105 +08:00 [DBG] Execution loop Worker:2a01b313 has started in 380.5205 ms
+2020-08-27 10:23:00.117 +08:00 [DBG] Execution loop Worker:cb2b32e3 has started in 384.6671 ms
+2020-08-27 10:23:00.126 +08:00 [DBG] Execution loop Worker:07c52c41 has started in 400.8906 ms
+2020-08-27 10:23:00.205 +08:00 [DBG] Removing outdated records from the 'Set' table...
+2020-08-27 10:23:00.212 +08:00 [DBG] Execution loop Worker:97ec3a20 has started in 479.1008 ms
+2020-08-27 10:23:00.388 +08:00 [DBG] Execution loop Worker:4e8a7fdb has started in 663.2107 ms
+2020-08-27 10:23:00.388 +08:00 [DBG] Execution loop Worker:c8dd32d2 has started in 655.3854 ms
+2020-08-27 10:23:00.388 +08:00 [DBG] Execution loop Worker:5bc78221 has started in 663.5349 ms
+2020-08-27 10:23:00.388 +08:00 [DBG] Removing outdated records from the 'Set' table...
+2020-08-27 10:23:00.399 +08:00 [DBG] Execution loop Worker:475ea32e has started in 674.5884 ms
+2020-08-27 10:23:00.413 +08:00 [INF] Server desktop-u0d95dr:1748:e7e9ff34 all the dispatchers started
+2020-08-27 10:23:00.420 +08:00 [DBG] Execution loop DelayedJobScheduler:0f454c7c has started in 143.8556 ms
+2020-08-27 10:23:00.427 +08:00 [DBG] Execution loop RecurringJobScheduler:09e8ef6a has started in 15.1832 ms
+2020-08-27 10:23:00.434 +08:00 [DBG] Execution loop DelayedJobScheduler:82f79c0f has started in 47.591 ms
+2020-08-27 10:23:00.456 +08:00 [DBG] Removing outdated records from the 'Hash' table...
+2020-08-27 10:23:00.519 +08:00 [DBG] Removing outdated records from the 'Hash' table...
+2020-08-27 10:23:00.532 +08:00 [INF] Server desktop-u0d95dr:1748:e86fed6d all the dispatchers started
+2020-08-27 10:23:00.548 +08:00 [DBG] Execution loop RecurringJobScheduler:ba756ba8 has started in 128.7844 ms
+2020-08-27 10:23:01.214 +08:00 [INF] Initialized all ABP modules.
+2020-08-27 10:23:01.306 +08:00 [INF] Now listening on: https://localhost:44350
+2020-08-27 10:23:01.306 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-27 10:23:01.306 +08:00 [INF] Hosting environment: Development
+2020-08-27 10:23:01.306 +08:00 [INF] Content root path: E:\Aohost\Aohost.Blog\aspnet-core\src\Aohost.Blog.HttpApi.Hosting
+2020-08-27 10:23:02.290 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/index.html  
+2020-08-27 10:23:02.362 +08:00 [INF] Request finished in 72.6281ms 200 text/html;charset=utf-8
+2020-08-27 10:23:02.500 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/swagger/v1/swagger.json  
+2020-08-27 10:23:02.643 +08:00 [INF] Request finished in 143.0617ms 200 application/json;charset=utf-8
+2020-08-27 10:23:14.263 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/blog/post?url=www.baidu.com  
+2020-08-27 10:23:14.358 +08:00 [INF] Executing endpoint 'Aohost.Blog.HttpApi.Controllers.BlogController.GetPostDetailAsync (Aohost.Blog.HttpApi)'
+2020-08-27 10:23:14.428 +08:00 [INF] Route matched with {action = "GetPostDetail", controller = "Blog", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Aohost.Blog.ToolKits.ServiceResult`1[Aohost.Blog.Application.Contracts.Blog.PostDetailDto]] GetPostDetailAsync(System.String) on controller Aohost.Blog.HttpApi.Controllers.BlogController (Aohost.Blog.HttpApi).
+2020-08-27 10:23:14.903 +08:00 [INF] Executing action method Aohost.Blog.HttpApi.Controllers.BlogController.GetPostDetailAsync (Aohost.Blog.HttpApi) - Validation state: "Valid"
+2020-08-27 10:23:16.413 +08:00 [INF] Executed action method Aohost.Blog.HttpApi.Controllers.BlogController.GetPostDetailAsync (Aohost.Blog.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1506.8168ms.
+2020-08-27 10:23:16.457 +08:00 [INF] Executing ObjectResult, writing value of type 'Aohost.Blog.ToolKits.ServiceResult`1[[Aohost.Blog.Application.Contracts.Blog.PostDetailDto, Aohost.Blog.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-27 10:23:16.478 +08:00 [INF] Executed action Aohost.Blog.HttpApi.Controllers.BlogController.GetPostDetailAsync (Aohost.Blog.HttpApi) in 2046.6818ms
+2020-08-27 10:23:16.479 +08:00 [INF] Executed endpoint 'Aohost.Blog.HttpApi.Controllers.BlogController.GetPostDetailAsync (Aohost.Blog.HttpApi)'
+2020-08-27 10:23:16.483 +08:00 [INF] Request finished in 2220.1291ms 200 application/json; charset=utf-8
+2020-08-27 10:23:29.798 +08:00 [DBG] Server desktop-u0d95dr:1748:e7e9ff34 heartbeat successfully sent
+2020-08-27 10:23:29.799 +08:00 [DBG] Server desktop-u0d95dr:1748:e86fed6d heartbeat successfully sent
+2020-08-27 10:23:43.669 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/swagger-ui-bundle.js.map  
+2020-08-27 10:23:43.669 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/swagger-ui-standalone-preset.js.map  
+2020-08-27 10:23:43.687 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44350/swagger-ui.css.map  
+2020-08-27 10:23:43.693 +08:00 [INF] Request finished in 23.5374ms 404 application/json;charset=utf-8
+2020-08-27 10:23:43.693 +08:00 [INF] Request finished in 5.7701ms 404 application/json;charset=utf-8
+2020-08-27 10:23:43.693 +08:00 [INF] Request finished in 24.5889ms 404 application/json;charset=utf-8
+2020-08-27 10:23:51.943 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44350/blog/posts?Page=1&Limit=12  0
+2020-08-27 10:23:51.946 +08:00 [INF] No CORS policy found for the specified request.
+2020-08-27 10:23:51.947 +08:00 [INF] Executing endpoint 'Aohost.Blog.HttpApi.Controllers.BlogController.QueryPostsAsync (Aohost.Blog.HttpApi)'
+2020-08-27 10:23:51.952 +08:00 [INF] Route matched with {action = "QueryPosts", controller = "Blog", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Aohost.Blog.ToolKits.ServiceResult`1[Aohost.Blog.ToolKits.PagedList`1[Aohost.Blog.Application.Contracts.Blog.QueryPostDto]]] QueryPostsAsync(Aohost.Blog.Application.Contracts.PagingInput) on controller Aohost.Blog.HttpApi.Controllers.BlogController (Aohost.Blog.HttpApi).
+2020-08-27 10:23:51.983 +08:00 [INF] Executing action method Aohost.Blog.HttpApi.Controllers.BlogController.QueryPostsAsync (Aohost.Blog.HttpApi) - Validation state: "Valid"
+2020-08-27 10:23:52.042 +08:00 [INF] Executed action method Aohost.Blog.HttpApi.Controllers.BlogController.QueryPostsAsync (Aohost.Blog.HttpApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 59.0806ms.
+2020-08-27 10:23:52.048 +08:00 [INF] Executing ObjectResult, writing value of type 'Aohost.Blog.ToolKits.ServiceResult`1[[Aohost.Blog.ToolKits.PagedList`1[[Aohost.Blog.Application.Contracts.Blog.QueryPostDto, Aohost.Blog.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Aohost.Blog.ToolKits, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-27 10:23:52.052 +08:00 [INF] Executed action Aohost.Blog.HttpApi.Controllers.BlogController.QueryPostsAsync (Aohost.Blog.HttpApi) in 100.7964ms
+2020-08-27 10:23:52.053 +08:00 [INF] Executed endpoint 'Aohost.Blog.HttpApi.Controllers.BlogController.QueryPostsAsync (Aohost.Blog.HttpApi)'
+2020-08-27 10:23:52.053 +08:00 [INF] Request finished in 110.4863ms 200 application/json; charset=utf-8
+2020-08-27 10:23:59.831 +08:00 [DBG] Server desktop-u0d95dr:1748:e7e9ff34 heartbeat successfully sent
+2020-08-27 10:23:59.832 +08:00 [DBG] Server desktop-u0d95dr:1748:e86fed6d heartbeat successfully sent
