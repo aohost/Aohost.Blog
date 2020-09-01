@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
-using Aohost.Blog.Application.Contracts.Blog.Post;
 
-namespace Aohost.Blog.Application.Contracts.Blog
+namespace Aohost.Blog.Application.Contracts.Blog.Post
 {
     public class QueryPostDto
     {

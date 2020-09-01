@@ -44,5 +44,6 @@
         public const string BlogCategory = Blog + ":Category";
 
         public const string BlogFriendLink = Blog + ":FriendLink";
+
     }
 }

@@ -5,6 +5,7 @@ using Aohost.Blog.Application.Blog;
 using Aohost.Blog.Application.Contracts;
 using Aohost.Blog.Application.Contracts.Blog;
 using Aohost.Blog.Application.Contracts.Blog.Category;
+using Aohost.Blog.Application.Contracts.Blog.FriendLink;
 using Aohost.Blog.Application.Contracts.Blog.Post;
 using Aohost.Blog.Domain.Shared;
 using Aohost.Blog.ToolKits;
@@ -86,6 +87,17 @@ namespace Aohost.Blog.HttpApi.Controllers
         public async Task<ServiceResult<IEnumerable<QueryCategoryDto>>> QueryCategoriesAsync()
         {
             return await _blogService.QueryCategoriesAsync();
+        }
+
+        /// <summary>
+        /// 获取FriendLink
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("friendlinks")]
+        public async Task<ServiceResult<IEnumerable<FriendLinkDto>>> QueryFriendLinksAsync()
+        {
+            return await _blogService.QueryFriendLinksAsync();
         }
     }
 }
