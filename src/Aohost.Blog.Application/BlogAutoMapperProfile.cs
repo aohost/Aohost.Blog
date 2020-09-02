@@ -1,4 +1,5 @@
 ﻿using Aohost.Blog.Application.Contracts.Blog;
+using Aohost.Blog.Application.Contracts.Blog.Category;
 using Aohost.Blog.Application.Contracts.Blog.FriendLink;
 using Aohost.Blog.Application.Contracts.Blog.Post;
 using Aohost.Blog.Application.Contracts.Wallpaper;
@@ -15,10 +16,12 @@ namespace Aohost.Blog.Application
 
             CreateMap<Post, PostDto>();
             CreateMap<PostDto, Post>().ForMember(x => x.Id, opt => opt.Ignore());
+            CreateMap<EditPostInput, Post>().ForMember(x => x.Id, opt => opt.Ignore());
 
             CreateMap<FriendLink, FriendLinkDto>();
 
             CreateMap<Category, QueryPostForAdminDto>();
+            CreateMap<EditCategoryInput, Category>().ForMember(x => x.Id, opt => opt.Ignore());
 
             #endregion
 

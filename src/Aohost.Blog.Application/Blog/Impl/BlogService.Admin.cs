@@ -7,6 +7,7 @@ using Aohost.Blog.Application.Contracts;
 using Aohost.Blog.Application.Contracts.Blog.Category;
 using Aohost.Blog.Application.Contracts.Blog.Post;
 using Aohost.Blog.Domain.Blog;
+using Aohost.Blog.Domain.Shared;
 using Aohost.Blog.ToolKits;
 using Aohost.Blog.ToolKits.Extensions;
 
@@ -46,6 +47,19 @@ namespace Aohost.Blog.Application.Blog.Impl
             });
         }
 
+        public async Task<ServiceResult> InsertPostAsync(EditPostInput input)
+        {
+            var result = new ServiceResult();
+
+            var post = ObjectMapper.Map<EditPostInput, Post>(input);
+            post.Url = $"{post.CreationTime.ToString("yyyy-MM-dd").Replace('-', '/')}/{post.Url}/";
+         
+            await _postRepository.InsertAsync(post);
+
+            result.IsSuccess(ResponseText.INSERT_SUCCESS);
+            return result;
+        }
+
         /// <summary>
         /// 管理后台获取分类信息
         /// </summary>
@@ -63,19 +77,50 @@ namespace Aohost.Blog.Application.Blog.Impl
             });
         }
 
-        public Task<ServiceResult> InsertCategoryAsync(EditCategoryInput input)
+        /// <summary>
+        /// 新增类别
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        public async Task<ServiceResult> InsertCategoryAsync(EditCategoryInput input)
         {
-            throw new NotImplementedException();
+            var result = new ServiceResult();
+            var category = ObjectMapper.Map<EditCategoryInput, Category>(input);
+            await _categoryRepository.InsertAsync(category);
+            result.IsSuccess(ResponseText.INSERT_SUCCESS);
+            return result;
         }
 
-        public Task<ServiceResult> UpdateCategoryAsync(int id, EditCategoryInput input)
+        /// <summary>
+        /// 更新类别信息
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        public async Task<ServiceResult> UpdateCategoryAsync(int id, EditCategoryInput input)
         {
-            throw new NotImplementedException();
+            var result = new ServiceResult();
+            var category = await _categoryRepository.GetAsync(id);
+            category.DisplayName = input.DisplayName;
+            category.CategoryName = input.CategoryName;
+
+            await _categoryRepository.UpdateAsync(category);
+
+            result.IsSuccess(ResponseText.UPDATE_SUCCESS);
+            return result;
         }
 
-        public Task<ServiceResult> DeleteCategoryAsync(int id)
+        /// <summary>
+        /// 删除类别信息
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public async Task<ServiceResult> DeleteCategoryAsync(int id)
         {
-            throw new NotImplementedException();
+            var result = new ServiceResult();
+            await _categoryRepository.DeleteAsync(id);
+            result.IsSuccess(ResponseText.DELETE_SUCCESS);
+            return result;
         }
     }
 }
