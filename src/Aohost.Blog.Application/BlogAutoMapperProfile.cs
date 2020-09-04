@@ -17,10 +17,10 @@ namespace Aohost.Blog.Application
             CreateMap<Post, PostDto>();
             CreateMap<PostDto, Post>().ForMember(x => x.Id, opt => opt.Ignore());
             CreateMap<EditPostInput, Post>().ForMember(x => x.Id, opt => opt.Ignore());
+            CreateMap<Post, PostForAdminDto>().ForMember(x => x.Tags, opt => opt.Ignore());
 
             CreateMap<FriendLink, FriendLinkDto>();
 
-            CreateMap<Category, QueryPostForAdminDto>();
             CreateMap<EditCategoryInput, Category>().ForMember(x => x.Id, opt => opt.Ignore());
 
             #endregion

@@ -19,6 +19,26 @@
             该类别下文章数量
             </summary>
         </member>
+        <member name="T:Aohost.Blog.Application.Contracts.Blog.Category.QueryCategoryForAdminDto">
+            <summary>
+            后台类别管理对象
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Application.Contracts.Blog.Category.QueryCategoryForAdminDto.Id">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Application.Contracts.Blog.FriendLink.FriendLinkDto.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Application.Contracts.Blog.FriendLink.FriendLinkDto.LinkUrl">
+            <summary>
+            链接
+            </summary>
+        </member>
         <member name="P:Aohost.Blog.Application.Contracts.Blog.Post.PostBriefDto.Title">
             <summary>
             标题
@@ -37,6 +57,11 @@
         <member name="P:Aohost.Blog.Application.Contracts.Blog.Post.PostBriefDto.CreationTime">
             <summary>
             创建时间
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Application.Contracts.Blog.Post.PostBriefForAdminDto.Id">
+            <summary>
+            主键
             </summary>
         </member>
         <member name="P:Aohost.Blog.Application.Contracts.Blog.Post.PostDetailDto.Title">
@@ -89,6 +114,11 @@
             下一篇
             </summary>
         </member>
+        <member name="P:Aohost.Blog.Application.Contracts.Blog.Post.PostForAdminDto.Tags">
+            <summary>
+            标签列表
+            </summary>
+        </member>
         <member name="P:Aohost.Blog.Application.Contracts.Blog.Post.PostForPagedDto.Title">
             <summary>
             标题
@@ -99,14 +129,24 @@
             链接
             </summary>
         </member>
-        <member name="P:Aohost.Blog.Application.Contracts.Blog.QueryPostDto.Year">
+        <member name="P:Aohost.Blog.Application.Contracts.Blog.Post.QueryPostDto.Year">
             <summary>
             年份
             </summary>
         </member>
-        <member name="P:Aohost.Blog.Application.Contracts.Blog.QueryPostDto.Posts">
+        <member name="P:Aohost.Blog.Application.Contracts.Blog.Post.QueryPostDto.Posts">
             <summary>
             Posts
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Application.Contracts.Blog.Post.QueryPostForAdminDto.Posts">
+            <summary>
+            Posts
+            </summary>
+        </member>
+        <member name="P:Aohost.Blog.Application.Contracts.Blog.Tag.QueryTagDto.Count">
+            <summary>
+            文章数量
             </summary>
         </member>
         <member name="P:Aohost.Blog.Application.Contracts.Blog.Tag.TagDto.TagName">

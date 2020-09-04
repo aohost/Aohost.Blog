@@ -7,6 +7,6 @@ namespace Aohost.Blog.Application.Contracts.Blog.Post
         /// <summary>
         /// Posts
         /// </summary>
-        public IEnumerable<PostBriefForAdminDto> Posts { get; set; }
+        public new IEnumerable<PostBriefForAdminDto> Posts { get; set; }
     }
 }

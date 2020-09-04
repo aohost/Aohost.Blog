@@ -16,6 +16,12 @@ namespace Aohost.BlogApplication.Caching.Blog.Impl
     {
         private const string KEY_AdminQueryPosts = "Admin:QueryTags-{0}-{1}";
         private const string KEY_AdminQueryCategory = "Admin:QueryCategories";
+        private const string KEY_AdminGetPost = "Admin:GetPost-{0}";
+
+        public async Task<ServiceResult<PostForAdminDto>> GetPostForAdminAsync(int id, Func<Task<ServiceResult<PostForAdminDto>>> factory)
+        {
+            return await Cache.GetOrAddAsync(KEY_AdminGetPost.FormatWith(id), factory, CacheStrategy.HALF_DAY);
+        }
 
         public async Task<ServiceResult<PagedList<QueryPostForAdminDto>>> QueryPostsForAdminAsync(PagingInput input, Func<Task<ServiceResult<PagedList<QueryPostForAdminDto>>>> factory)
         {

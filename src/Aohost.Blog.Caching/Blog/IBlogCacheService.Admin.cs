@@ -11,6 +11,8 @@ namespace Aohost.BlogApplication.Caching.Blog
 {
     public partial interface IBlogCacheService
     {
+        Task<ServiceResult<PostForAdminDto>> GetPostForAdminAsync(int id, Func<Task<ServiceResult<PostForAdminDto>>> factory);
+
         Task<ServiceResult<PagedList<QueryPostForAdminDto>>> QueryPostsForAdminAsync(PagingInput input,
             Func<Task<ServiceResult<PagedList<QueryPostForAdminDto>>>> factory);
 
@@ -19,5 +21,6 @@ namespace Aohost.BlogApplication.Caching.Blog
         /// </summary>
         /// <returns></returns>
         Task<ServiceResult<IEnumerable<QueryCategoryForAdminDto>>> QueryCategoriesForAdmin(Func<Task<ServiceResult<IEnumerable<QueryCategoryForAdminDto>>>> factory);
+
     }
 }
