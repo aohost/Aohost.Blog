@@ -5,7 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Aohost.Blog.Application.Contracts;
 using Aohost.Blog.Application.Contracts.Blog.Category;
+using Aohost.Blog.Application.Contracts.Blog.FriendLink;
 using Aohost.Blog.Application.Contracts.Blog.Post;
+using Aohost.Blog.Application.Contracts.Blog.Tag;
 using Aohost.Blog.Domain.Blog;
 using Aohost.Blog.Domain.Shared;
 using Aohost.Blog.ToolKits;
@@ -15,6 +17,8 @@ namespace Aohost.Blog.Application.Blog.Impl
 {
     public partial class BlogService
     {
+        #region Post
+
         /// <summary>
         /// 管理后台获取文章详情
         /// </summary>
@@ -69,7 +73,7 @@ namespace Aohost.Blog.Application.Blog.Impl
                     }).ToList();
 
                 result.IsSuccess(new PagedList<QueryPostForAdminDto>(count.TryToInt(), list));
-                return result;
+                return await Task.FromResult(result);
             });
         }
 
@@ -180,6 +184,10 @@ namespace Aohost.Blog.Application.Blog.Impl
             return result;
         }
 
+        #endregion
+
+        #region Category
+
         /// <summary>
         /// 管理后台获取分类信息
         /// </summary>
@@ -250,5 +258,160 @@ namespace Aohost.Blog.Application.Blog.Impl
             result.IsSuccess(ResponseText.DELETE_SUCCESS);
             return result;
         }
+
+        #endregion
+
+        #region Tag
+        
+        public async Task<ServiceResult<QueryTagForAdminDto>> GetTagForAdminAsync(int id)
+        {
+            return await _blogCacheService.GetTagForAdminAsync(id, async () =>
+            {
+                var result = new ServiceResult<QueryTagForAdminDto>();
+
+                var tag = await _tagRepository.GetAsync(id);
+                var detail = ObjectMapper.Map<Tag, QueryTagForAdminDto>(tag);
+
+                detail.Count = _postTagRepository.Count(x => x.TagId == tag.Id);
+                result.IsSuccess(detail);
+
+                return result;
+            });
+        }
+
+        public Task<ServiceResult<PagedList<QueryTagForAdminDto>>> QueryTagsForAdminAsync(PagingInput input)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<ServiceResult<IEnumerable<QueryTagForAdminDto>>> QueryTagsForAdminAsync()
+        {
+            throw new NotImplementedException();
+        }
+
+        /// <summary>
+        /// 新增标签
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        public async Task<ServiceResult> InsertTagAsync(EditTagDto input)
+        {
+            var result = new ServiceResult();
+            var tag = ObjectMapper.Map<EditTagDto, Tag>(input);
+
+            await _tagRepository.InsertAsync(tag);
+
+            result.IsSuccess(ResponseText.INSERT_SUCCESS);
+            return result;
+        }
+
+        /// <summary>
+        /// 更新标签
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        public async Task<ServiceResult> UpdateTagAsync(int id, EditTagDto input)
+        {
+            var result = new ServiceResult();
+
+            var tag = await _tagRepository.GetAsync(id);
+            tag.DisplayName = input.DisplayName;
+            tag.TagName = input.TagName;
+
+            await _tagRepository.UpdateAsync(tag);
+
+            result.IsSuccess(ResponseText.UPDATE_SUCCESS);
+            return result;
+        }
+
+        /// <summary>
+        /// 删除标签
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        public async Task<ServiceResult> DeleteTagAsync(int id)
+        {
+            var result = new ServiceResult();
+
+            await _tagRepository.DeleteAsync(id);
+            
+            result.IsSuccess(ResponseText.DELETE_SUCCESS);
+            return result;
+        }
+
+        #endregion
+
+        #region FriendLink
+        /// <summary>
+        /// 管理后台获取FriendLink列表
+        /// </summary>
+        /// <returns></returns>
+        public async Task<ServiceResult<IEnumerable<QueryFriendLinkForAdminDto>>> QueryFriendLinkForAdminAsync()
+        {
+            return await _blogCacheService.QueryFriendLinkForAdminAsync(async () =>
+            {
+                var result = new ServiceResult<IEnumerable<QueryFriendLinkForAdminDto>>();
+
+                var friendLinks = await _friendLinkRepository.GetListAsync();
+
+                result.IsSuccess(
+                    ObjectMapper.Map<IEnumerable<FriendLink>, IEnumerable<QueryFriendLinkForAdminDto>>(friendLinks));
+                return result;
+            });
+        }
+
+        /// <summary>
+        /// 新增FriendLink
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        public async Task<ServiceResult> InsertFriendLinkAsync(EditFriendLinkDto input)
+        {
+            var result = new ServiceResult();
+
+            var friendLink = ObjectMapper.Map<EditFriendLinkDto, FriendLink>(input);
+            await _friendLinkRepository.InsertAsync(friendLink);
+
+            result.IsSuccess(ResponseText.INSERT_SUCCESS);
+            return result;
+        }
+
+        /// <summary>
+        /// 更新FriendLink
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        public async Task<ServiceResult> UpdateFriendLinkAsync(int id, EditFriendLinkDto input)
+        {
+            var result = new ServiceResult();
+
+            var friendLink = await _friendLinkRepository.GetAsync(id);
+            friendLink.Title = input.Title;
+            friendLink.LinkUrl = input.LinkUrl;
+
+            await _friendLinkRepository.UpdateAsync(friendLink);
+
+            result.IsSuccess(ResponseText.UPDATE_SUCCESS);
+            return result;
+        }
+
+        /// <summary>
+        /// 删除FriendLink
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public async Task<ServiceResult> DeleteFriendLinkAsync(int id)
+        {
+            var result = new ServiceResult();
+
+            await _friendLinkRepository.DeleteAsync(id);
+
+            result.IsSuccess(ResponseText.DELETE_SUCCESS);
+            return result;
+        }
+
+        #endregion
     }
 }

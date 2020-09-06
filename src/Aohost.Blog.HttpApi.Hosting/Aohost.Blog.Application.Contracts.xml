@@ -39,6 +39,11 @@
             链接
             </summary>
         </member>
+        <member name="P:Aohost.Blog.Application.Contracts.Blog.FriendLink.QueryFriendLinkForAdminDto.Id">
+            <summary>
+            主键
+            </summary>
+        </member>
         <member name="P:Aohost.Blog.Application.Contracts.Blog.Post.PostBriefDto.Title">
             <summary>
             标题

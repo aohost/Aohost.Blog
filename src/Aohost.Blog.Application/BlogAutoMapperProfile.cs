@@ -2,6 +2,7 @@
 using Aohost.Blog.Application.Contracts.Blog.Category;
 using Aohost.Blog.Application.Contracts.Blog.FriendLink;
 using Aohost.Blog.Application.Contracts.Blog.Post;
+using Aohost.Blog.Application.Contracts.Blog.Tag;
 using Aohost.Blog.Application.Contracts.Wallpaper;
 using Aohost.Blog.Domain.Blog;
 using AutoMapper;
@@ -19,7 +20,12 @@ namespace Aohost.Blog.Application
             CreateMap<EditPostInput, Post>().ForMember(x => x.Id, opt => opt.Ignore());
             CreateMap<Post, PostForAdminDto>().ForMember(x => x.Tags, opt => opt.Ignore());
 
+            CreateMap<Tag, QueryTagForAdminDto>().ForMember(x => x.Count, opt => opt.Ignore());
+            CreateMap<EditTagDto, Tag>().ForMember(x => x.Id, opt => opt.Ignore());
+
             CreateMap<FriendLink, FriendLinkDto>();
+            CreateMap<FriendLink, QueryFriendLinkForAdminDto>();
+            CreateMap<EditFriendLinkDto, FriendLink>().ForMember(x => x.Id, opt => opt.Ignore());
 
             CreateMap<EditCategoryInput, Category>().ForMember(x => x.Id, opt => opt.Ignore());
 
