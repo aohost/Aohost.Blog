@@ -1,0 +1,12 @@
+﻿@page "/posts/"
+@*@page "/posts/page/{page:int}"*@
+@page "/posts/{page:int}"
+
+<Loading></Loading>
+
+@code{
+    /// <summary>
+    /// 当前页码
+    /// </summary>
+    public int? page { get; set; }
+}

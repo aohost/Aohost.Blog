@@ -45,11 +45,6 @@
     private string NavMenuCssClass => CollapseNavMenu ? "active" : null;
 
     /// <summary>
-    /// 当前主题
-    /// </summary>
-    private string currentTheme;
-
-    /// <summary>
     /// 显示/隐藏 菜单
     /// </summary>
     private void ToggleNavMenu()
@@ -58,18 +53,28 @@
     }
 
     /// <summary>
+    /// 当前主题
+    /// </summary>
+    private string currentTheme;
+
+    /// <summary>
     /// 初始化
     /// </summary>
     /// <returns></returns>
-    protected override Task OnInitializedAsync()
+    protected override async Task OnInitializedAsync()
     {
-        return base.OnInitializedAsync();
+        currentTheme = await Common.GetStorageAsync("theme") ?? "Light";
+
+        await Common.InvokeAsync("window.func.switchTheme");
     }
 
     private async Task SwitchTheme()
     {
         currentTheme = currentTheme == "Light" ? "Dark" : "Light";
 
+        await Common.SetStorageAsync("theme", currentTheme);
+
+        await Common.InvokeAsync("window.func.switchTheme");
     }
 
 }

@@ -59,20 +59,4 @@
     /// </summary>
     private void Hover() => IsHidden = !IsHidden;
 
-    /// <summary>
-    /// 当前主题
-    /// </summary>
-    private string CurrentTheme;
-
-    /// <summary>
-    /// 初始化
-    /// </summary>
-    /// <returns></returns>
-    protected override async Task OnInitializedAsync()
-    {
-        CurrentTheme = await JSRuntime.InvokeAsync<string>("windows.func.getStorage", "theme") ?? "Light";
-
-        await JSRuntime.InvokeVoidAsync("window.func.switchTheme");
-    }
-
 }
