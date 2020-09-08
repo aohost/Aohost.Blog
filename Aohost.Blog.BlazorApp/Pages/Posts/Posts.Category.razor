@@ -1,5 +1,11 @@
-﻿<h3>Posts.Category</h3>
+﻿@page "/category/{name}"
 
-@code {
+<Loading></Loading>
 
+@code{
+    /// <summary>
+    /// 分类名称参数
+    /// </summary>
+    [Parameter]
+    public string name { get; set; }
 }

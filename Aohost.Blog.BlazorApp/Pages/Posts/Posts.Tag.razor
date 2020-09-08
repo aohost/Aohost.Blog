@@ -1,5 +1,11 @@
-﻿<h3>Posts.Tag</h3>
+﻿@page "/tag/{name}"
 
-@code {
+<Loading></Loading>
 
+@code{
+    /// <summary>
+    /// 标签名称参数
+    /// </summary>
+    [Parameter]
+    public string name { get; set; }
 }

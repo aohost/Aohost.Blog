@@ -1,5 +1,17 @@
-﻿<h3>Post</h3>
+﻿@page "/post/{year:int}/{month:int}/{day:int}/{name}"
 
-@code {
+<Loading></Loading>
 
+@code{
+    [Parameter]
+    public int year { get; set; }
+
+    [Parameter]
+    public int month { get; set; }
+
+    [Parameter]
+    public int day { get; set; }
+
+    [Parameter]
+    public string name { get; set; }
 }
