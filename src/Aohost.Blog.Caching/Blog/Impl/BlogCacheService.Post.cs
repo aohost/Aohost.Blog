@@ -7,7 +7,7 @@ using Aohost.Blog.Application.Contracts.Blog;
 using Aohost.Blog.Application.Contracts.Blog.Post;
 using Aohost.Blog.Caching;
 using Aohost.Blog.Domain.Shared;
-using Aohost.Blog.ToolKits;
+using Aohost.Blog.ToolKits.Base;
 using Aohost.Blog.ToolKits.Extensions;
 
 namespace Aohost.BlogApplication.Caching.Blog.Impl

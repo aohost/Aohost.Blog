@@ -8,7 +8,7 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Aohost.Blog.Caching.Authorize;
 using Aohost.Blog.Domain.Configuration;
-using Aohost.Blog.ToolKits;
+using Aohost.Blog.ToolKits.Base;
 using Aohost.Blog.ToolKits.Extensions;
 using Aohost.Blog.ToolKits.GitHub;
 using Microsoft.IdentityModel.Tokens;

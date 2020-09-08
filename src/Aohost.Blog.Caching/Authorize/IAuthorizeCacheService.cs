@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
-using Aohost.Blog.ToolKits;
+using Aohost.Blog.ToolKits.Base;
 
 namespace Aohost.Blog.Caching.Authorize
 {

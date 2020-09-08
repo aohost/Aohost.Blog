@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Aohost.Blog.Application.Contracts.Wallpaper;
 using Aohost.Blog.Application.Contracts.Wallpaper.Params;
-using Aohost.Blog.Caching.Base;
-using Aohost.Blog.ToolKits;
+using Aohost.Blog.ToolKits.Base;
 
 namespace Aohost.Blog.Caching.Wallpaper
 {

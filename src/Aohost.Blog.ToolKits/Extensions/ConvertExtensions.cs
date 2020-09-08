@@ -4,7 +4,7 @@ using System.ComponentModel;
 using System.Globalization;
 using System.Linq;
 using System.Runtime.InteropServices;
-using Aohost.Blog.Caching.Base;
+using Aohost.Blog.ToolKits.Base;
 
 namespace Aohost.Blog.ToolKits.Extensions
 {

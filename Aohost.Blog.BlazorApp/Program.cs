@@ -18,7 +18,11 @@ namespace Aohost.Blog.BlazorApp
             var builder = WebAssemblyHostBuilder.CreateDefault(args);
             builder.RootComponents.Add<App>("app");
 
-            builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
+            var baseAddress = "https://localhost";
+            if (builder.HostEnvironment.IsProduction())
+                baseAddress = "https://api.aohost.com";
+
+            builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(baseAddress) });
 
             builder.Services.AddSingleton(typeof(Common));
 

@@ -1,4 +1,4 @@
-﻿namespace Aohost.Blog.Caching.Base
+﻿namespace Aohost.Blog.ToolKits.Base
 {
     public class EnumResponse
     {

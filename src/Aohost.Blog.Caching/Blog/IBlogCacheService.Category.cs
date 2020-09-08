@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using Aohost.Blog.Application.Contracts.Blog.Category;
-using Aohost.Blog.ToolKits;
+using Aohost.Blog.ToolKits.Base;
 
 namespace Aohost.BlogApplication.Caching.Blog
 {

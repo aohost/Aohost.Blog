@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Aohost.Blog.Application.Contracts;
 using Aohost.Blog.Application.Contracts.Blog;
 using Aohost.Blog.Application.Contracts.Blog.Post;
-using Aohost.Blog.ToolKits;
+using Aohost.Blog.ToolKits.Base;
 
 namespace Aohost.BlogApplication.Caching.Blog
 {

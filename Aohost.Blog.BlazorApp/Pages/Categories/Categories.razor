@@ -1,3 +1,51 @@
 ﻿@page "/categories"
 
-<Loading></Loading>
+@if (categories == null)
+{
+    <Loading></Loading>
+}
+else
+{
+    <div class="container">
+        <div class="post-warp categories">
+            <h2 class="post-title">-&nbsp;Categories&nbsp;-</h2>
+            <div class="categories-card">
+                @if(categories.Success && categories.Result.Any())
+                {
+                    @foreach(var item in categories.Result)
+                    {
+                        <div class="card-item">
+                            <div class="categories">
+                                <a href="/category/@item.DisplayName">
+                                    <h3>
+                                        <i class="iconfont iconcode" style="padding-right:3px"></i>
+                                        @item.CategoryName
+                                    </h3>
+                                    <small>@item.Count</small>
+                                </a>
+                            </div>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <ErrorTip></ErrorTip>
+                }
+            </div>
+        </div>
+    </div>
+}
+
+
+
+@code{
+    /// <summary>
+    /// Categories
+    /// </summary>
+    private ServiceResult<IEnumerable<Aohost.Blog.BlazorApp.Response.Blog.Category.QueryCategoryDto>> categories;
+
+    protected override async Task OnInitializedAsync()
+    {
+        categories = await Http.GetFromJsonAsync<ServiceResult<IEnumerable<QueryCategoryDto>>>("/blog/categories");
+    }
+}

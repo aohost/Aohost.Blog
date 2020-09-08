@@ -7,7 +7,7 @@ using Aohost.Blog.Application.Contracts.Blog.Category;
 using Aohost.Blog.Application.Contracts.Blog.FriendLink;
 using Aohost.Blog.Application.Contracts.Blog.Post;
 using Aohost.Blog.Application.Contracts.Blog.Tag;
-using Aohost.Blog.ToolKits;
+using Aohost.Blog.ToolKits.Base;
 
 namespace Aohost.Blog.Application.Blog
 {

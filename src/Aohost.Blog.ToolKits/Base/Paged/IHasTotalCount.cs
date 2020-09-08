@@ -1,4 +1,4 @@
-﻿namespace Aohost.Blog.ToolKits.Paged
+﻿namespace Aohost.Blog.ToolKits.Base.Paged
 {
     public interface IHasTotalCount
     {

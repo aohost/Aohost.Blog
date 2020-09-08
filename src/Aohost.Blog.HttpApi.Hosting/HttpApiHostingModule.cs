@@ -5,7 +5,7 @@ using Aohost.Blog.Domain.Configuration;
 using Aohost.Blog.EntityFrameworkCore;
 using Aohost.Blog.HttpApi.Hosting.Middleware;
 using Aohost.Blog.Swagger;
-using Aohost.Blog.ToolKits;
+using Aohost.Blog.ToolKits.Base;
 using Aohost.Blog.ToolKits.Extensions;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;

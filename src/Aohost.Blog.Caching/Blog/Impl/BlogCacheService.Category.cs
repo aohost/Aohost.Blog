@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Aohost.Blog.Application.Contracts.Blog.Category;
 using Aohost.Blog.Caching;
 using Aohost.Blog.Domain.Shared;
-using Aohost.Blog.ToolKits;
+using Aohost.Blog.ToolKits.Base;
 
 namespace Aohost.BlogApplication.Caching.Blog.Impl
 {

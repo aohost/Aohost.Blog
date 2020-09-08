@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Aohost.Blog.ToolKits.Paged
+namespace Aohost.Blog.ToolKits.Base.Paged
 {
     public interface IListResult<T>
     {

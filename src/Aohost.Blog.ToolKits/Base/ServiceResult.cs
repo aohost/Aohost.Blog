@@ -1,7 +1,7 @@
 ﻿using System;
-using Aohost.Blog.ToolKits.Enum;
+using Aohost.Blog.ToolKits.Base.Enum;
 
-namespace Aohost.Blog.ToolKits
+namespace Aohost.Blog.ToolKits.Base
 {
     public class ServiceResult
     {

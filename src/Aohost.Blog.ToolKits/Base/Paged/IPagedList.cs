@@ -1,7 +1,7 @@
-﻿namespace Aohost.Blog.ToolKits.Paged
+﻿namespace Aohost.Blog.ToolKits.Base.Paged
 {
-    public interface IPagedList<T>:IListResult<T>, IHasTotalCount
+    public interface IPagedList<T> : IListResult<T>, IHasTotalCount
     {
-        
+
     }
 }

@@ -3,12 +3,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using Aohost.Blog.Application.Contracts.Wallpaper;
 using Aohost.Blog.Application.Contracts.Wallpaper.Params;
-using Aohost.Blog.Caching.Base;
 using Aohost.Blog.Caching.Wallpaper;
 using Aohost.Blog.Domain.Shared;
 using Aohost.Blog.Domain.Shared.Enum;
 using Aohost.Blog.Domain.Wallpaper.Repositories;
-using Aohost.Blog.ToolKits;
+using Aohost.Blog.ToolKits.Base;
 using Aohost.Blog.ToolKits.Extensions;
 
 namespace Aohost.Blog.Application.Wallpaper.Impl

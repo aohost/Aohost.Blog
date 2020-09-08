@@ -4,12 +4,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using Aohost.Blog.Application.Contracts.HotNews;
 using Aohost.Blog.Application.Contracts.HotNews.Params;
-using Aohost.Blog.Caching.Base;
 using Aohost.Blog.Caching.HotNews;
 using Aohost.Blog.Domain.HotNews.Repository;
 using Aohost.Blog.Domain.Shared;
 using Aohost.Blog.Domain.Shared.Enum;
-using Aohost.Blog.ToolKits;
+using Aohost.Blog.ToolKits.Base;
 using Aohost.Blog.ToolKits.Extensions;
 
 namespace Aohost.Blog.Application.HotNews.Impl
