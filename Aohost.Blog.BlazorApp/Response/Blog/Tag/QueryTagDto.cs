@@ -1,6 +1,6 @@
-﻿namespace Aohost.Blog.Application.Contracts.Blog.Tag
+﻿namespace Aohost.Blog.BlazorApp.Response.Blog.Tag
 {
-    public class QueryTagDto:TagDto
+    public class QueryTagDto : TagDto
     {
         /// <summary>
         /// 文章数量

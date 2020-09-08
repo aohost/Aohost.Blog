@@ -1,7 +1,7 @@
-﻿namespace Aohost.Blog.Application.Contracts.Blog.Tag
+﻿namespace Aohost.Blog.BlazorApp.Response.Blog.Tag
 {
-    public class EditTagDto:TagDto
+    public class EditTagDto : TagDto
     {
-        
+
     }
 }

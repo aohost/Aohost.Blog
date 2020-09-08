@@ -1,4 +1,4 @@
-﻿namespace Aohost.Blog.Application.Contracts.Blog.Post
+﻿namespace Aohost.Blog.BlazorApp.Response.Blog.Post
 {
     public class PostForPagedDto
     {

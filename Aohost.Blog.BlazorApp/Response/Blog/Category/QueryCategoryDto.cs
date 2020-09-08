@@ -1,6 +1,6 @@
-﻿namespace Aohost.Blog.Application.Contracts.Blog.Category
+﻿namespace Aohost.Blog.BlazorApp.Response.Blog.Category
 {
-    public class QueryCategoryDto:CategoryDto
+    public class QueryCategoryDto : CategoryDto
     {
         /// <summary>
         /// 该类别下文章数量

@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 
-namespace Aohost.Blog.ToolKits.Paged
+namespace Aohost.Blog.BlazorApp.Response.Base.Paged
 {
-    public class ListResult<T>:IListResult<T>
+    public class ListResult<T> : IListResult<T>
     {
         private IReadOnlyList<T> _item;
 

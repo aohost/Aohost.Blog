@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Aohost.Blog.ToolKits.Paged
+namespace Aohost.Blog.BlazorApp.Response.Base.Paged
 {
     public interface IListResult<T>
     {

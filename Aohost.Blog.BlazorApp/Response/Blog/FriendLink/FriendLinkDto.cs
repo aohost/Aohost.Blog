@@ -1,4 +1,4 @@
-﻿namespace Aohost.Blog.Application.Contracts.Blog.FriendLink
+﻿namespace Aohost.Blog.BlazorApp.Response.Blog.FriendLink
 {
     public class FriendLinkDto
     {

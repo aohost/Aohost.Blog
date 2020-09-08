@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using Aohost.Blog.Application.Contracts.Blog.Category;
-using Aohost.Blog.Application.Contracts.Blog.Tag;
+using Aohost.Blog.BlazorApp.Response.Blog.Category;
+using Aohost.Blog.BlazorApp.Response.Blog.Tag;
 
-namespace Aohost.Blog.Application.Contracts.Blog.Post
+namespace Aohost.Blog.BlazorApp.Response.Blog.Post
 {
     public class PostDetailDto
     {

@@ -1,7 +1,7 @@
-﻿namespace Aohost.Blog.Application.Contracts.Blog.FriendLink
+﻿namespace Aohost.Blog.BlazorApp.Response.Blog.FriendLink
 {
-    public class EditFriendLinkDto:FriendLinkDto
+    public class EditFriendLinkDto : FriendLinkDto
     {
-        
+
     }
 }

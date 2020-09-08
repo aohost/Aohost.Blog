@@ -1,4 +1,4 @@
-﻿namespace Aohost.Blog.ToolKits.Enum
+﻿namespace Aohost.Blog.BlazorApp.Response.Base.Enum
 {
     public enum ServiceResultCode
     {

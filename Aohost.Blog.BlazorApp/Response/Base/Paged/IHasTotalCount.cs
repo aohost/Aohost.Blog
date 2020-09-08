@@ -1,4 +1,4 @@
-﻿namespace Aohost.Blog.ToolKits.Paged
+﻿namespace Aohost.Blog.BlazorApp.Response.Base.Paged
 {
     public interface IHasTotalCount
     {

@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 
-namespace Aohost.Blog.Application.Contracts.Blog.Post
+namespace Aohost.Blog.BlazorApp.Response.Blog.Post
 {
-    public class PostForAdminDto:PostDto
+    public class PostForAdminDto : PostDto
     {
         /// <summary>
         /// 标签列表

@@ -1,8 +1,8 @@
-﻿using Aohost.Blog.ToolKits.Enum;
+﻿using Aohost.Blog.BlazorApp.Response.Base.Enum;
 
-namespace Aohost.Blog.ToolKits
+namespace Aohost.Blog.BlazorApp.Response.Base
 {
-    public class ServiceResult<T>:ServiceResult where T : class
+    public class ServiceResult<T> : ServiceResult where T : class
     {
         public T Result { get; set; }
 

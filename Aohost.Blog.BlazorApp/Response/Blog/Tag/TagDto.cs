@@ -1,4 +1,4 @@
-﻿namespace Aohost.Blog.Application.Contracts.Blog.Tag
+﻿namespace Aohost.Blog.BlazorApp.Response.Blog.Tag
 {
     public class TagDto
     {

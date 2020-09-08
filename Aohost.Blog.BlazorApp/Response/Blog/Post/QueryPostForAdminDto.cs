@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 
-namespace Aohost.Blog.Application.Contracts.Blog.Post
+namespace Aohost.Blog.BlazorApp.Response.Blog.Post
 {
-    public class QueryPostForAdminDto:QueryPostDto
+    public class QueryPostForAdminDto : QueryPostDto
     {
         /// <summary>
         /// Posts
