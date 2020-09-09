@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Routing;
 using Microsoft.JSInterop;
@@ -80,6 +81,17 @@ namespace Aohost.Blog.BlazorApp.Commons
         public async Task BaskAsync()
         {
             await InvokeAsync("window.history.back");
+        }
+
+        /// <summary>
+        /// 获取当前uri对象
+        /// </summary>
+        /// <returns></returns>
+        public async Task<Uri> CurrentUri()
+        {
+            var uri = _navigationManager.ToAbsoluteUri(_navigationManager.Uri);
+
+            return await Task.FromResult(uri);
         }
     }
 }

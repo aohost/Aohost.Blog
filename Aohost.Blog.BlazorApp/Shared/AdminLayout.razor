@@ -1,0 +1,39 @@
+﻿@if (isLogin)
+{
+    <Loading></Loading>
+}
+else
+{
+    @ChildContent
+}
+
+
+@code
+{
+    /// <summary>
+    /// 展示内容
+    /// </summary>
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+    /// <summary>
+    /// 是否登录
+    /// </summary>
+    private bool isLogin { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        var token = await Common.GetStorageAsync("token");
+
+        if (string.IsNullOrEmpty(token))
+        {
+            isLogin = false;
+            await Common.NavigateTo("/");
+        }
+        else
+        {
+            // TODO, 判断token是否合法
+            isLogin = true;
+        }
+    }
+}
