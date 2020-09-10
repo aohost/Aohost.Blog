@@ -26,6 +26,15 @@ namespace Aohost.Blog.EntityFrameworkCore
                     case "SqlServer":
                         options.UseSqlServer();
                         break;
+                    case "Mysql":
+                        options.UseMySQL();
+                        break;
+                    case "PostgreSql":
+                        options.UseNpgsql();
+                        break;
+                    case "Sqlite":
+                        options.UseSqlite();
+                        break;
                     default:
                         options.UseSqlServer();
                         break;

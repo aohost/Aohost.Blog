@@ -50,6 +50,12 @@
     <None Update="Aohost.Blog.HttpApi.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+	<None Update="Aohost.Blog.Application.Contracts.xml">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+    <None Update="aohost_blog.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
   <ItemGroup>

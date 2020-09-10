@@ -1,6 +1,8 @@
 ﻿using Aohost.Blog.Domain.Configuration;
 using Hangfire;
 using Hangfire.Dashboard.BasicAuthorization;
+using Hangfire.MySql.Core;
+using Hangfire.SQLite;
 using Hangfire.SqlServer;
 using Microsoft.Extensions.DependencyInjection;
 using Volo.Abp;
@@ -14,7 +16,27 @@ namespace Aohost.Blog.BackgroundJobs
     {
         public override void ConfigureServices(ServiceConfigurationContext context)
         {
-            context.Services.AddHangfire(config => { config.UseSqlServerStorage(AppSettings.ConnectionStrings); });
+
+            context.Services.AddHangfire(config =>
+            {
+                switch (AppSettings.EnableDb)
+                {
+                    case "MySql":
+                        config.UseStorage(new MySqlStorage(AppSettings.ConnectionStrings));
+                        break;
+                    case "SqlServer":
+                        config.UseSqlServerStorage(AppSettings.ConnectionStrings);
+                        break;
+                    case "Sqlite":
+                        config.UseSQLiteStorage(AppSettings.ConnectionStrings);
+                        break;
+
+                    default:
+                        config.UseSqlServerStorage(AppSettings.ConnectionStrings);
+                        break;
+                }
+
+            });
             //context.Services.AddHttpClient();
         }
 

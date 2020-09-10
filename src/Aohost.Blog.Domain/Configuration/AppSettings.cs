@@ -21,7 +21,7 @@ namespace Aohost.Blog.Domain.Configuration
 
         public static string ApiVersion => _config["ApiVersion"];
 
-        public static string ConnectionStrings => _config.GetConnectionString("Default");
+        public static string ConnectionStrings => _config.GetConnectionString(EnableDb);
 
         /// <summary>
         /// GitHub 第三方登录相关配置

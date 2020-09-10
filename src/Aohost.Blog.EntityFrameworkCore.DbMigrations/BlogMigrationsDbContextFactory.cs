@@ -11,8 +11,28 @@ namespace Aohost.Blog.EntityFrameworkCore.DbMigrations
         {
             var config = BuildConfiguration();
 
-            var builder =
-                new DbContextOptionsBuilder<BlogMigrationsDbContext>().UseSqlServer("Server=(LocalDb)\\MSSQLLocalDB;Database=Blog;Trusted_Connection=True;MultipleActiveResultSets=true");
+            var enableDb = config["ConnectionStrings:Enable"];
+            var builder = new DbContextOptionsBuilder<BlogMigrationsDbContext>();
+            
+            switch (enableDb)
+            {
+                case "Mysql":
+                    builder.UseMySql(config.GetConnectionString(enableDb));
+                    break;
+                case "SqlServer":
+                    builder.UseSqlServer(config.GetConnectionString(enableDb));
+                    break;
+                case "Sqlite":
+                    builder.UseSqlite(config.GetConnectionString(enableDb));
+                    break;
+                case "PostgreSql":
+                    builder.UseNpgsql(config.GetConnectionString(enableDb));
+                    break;
+                default:
+                    builder.UseSqlServer(config.GetConnectionString(enableDb));
+                    break;
+            }
+
             return new BlogMigrationsDbContext(builder.Options);
         }
 

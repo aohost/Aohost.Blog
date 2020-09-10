@@ -4,12 +4,12 @@ using Volo.Abp.Modularity;
 
 namespace Aohost.Blog.EntityFrameworkCore.DbMigrations
 {
-    [DependsOn(typeof(BlogDomainModule))]
+    [DependsOn(typeof(BlogDomainModule), typeof(BlogFrameworkCoreModule))]
     public class BlogEntityFrameworkCoreDbMigrationsModule:AbpModule
     {
         public override void ConfigureServices(ServiceConfigurationContext context)
         {
-            context.Services.AddAbpDbContext<BlogDbContext>();
+            context.Services.AddAbpDbContext<BlogMigrationsDbContext>();
         }
     }
 }
