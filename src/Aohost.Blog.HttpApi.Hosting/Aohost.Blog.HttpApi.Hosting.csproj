@@ -15,7 +15,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Aohost.Blog.Application.Contracts.xml" />
 
     <PackageReference Include="Serilog.AspNetCore" Version="3.2.0" />
     <PackageReference Include="Serilog.Sinks.File" Version="4.1.0" />
@@ -37,10 +36,6 @@
     <ProjectReference Include="..\Aohost.Blog.EntityFrameworkCore\Aohost.Blog.EntityFrameworkCore.csproj" />
     <ProjectReference Include="..\Aohost.Blog.HttpApi\Aohost.Blog.HttpApi.csproj" />
     <ProjectReference Include="..\Aohost.Blog.Swagger\Aohost.Blog.Swagger.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Resource Include="Aohost.Blog.Application.Contracts.xml" />
   </ItemGroup>
 
   <ItemGroup>
