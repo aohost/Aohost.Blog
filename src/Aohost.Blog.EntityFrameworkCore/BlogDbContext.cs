@@ -28,5 +28,12 @@ namespace Aohost.Blog.EntityFrameworkCore
 
             builder.Configure();
         }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            base.OnConfiguring(optionsBuilder);
+
+            optionsBuilder.EnableSensitiveDataLogging();
+        }
     }
 }

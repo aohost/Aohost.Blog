@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Threading.Tasks;
 using Aohost.Blog.Application.Blog;
@@ -7,6 +8,7 @@ using Aohost.Blog.Application.Contracts.Blog;
 using Aohost.Blog.Application.Contracts.Blog.Category;
 using Aohost.Blog.Application.Contracts.Blog.FriendLink;
 using Aohost.Blog.Application.Contracts.Blog.Post;
+using Aohost.Blog.Domain.Configuration;
 using Aohost.Blog.Domain.Shared;
 using Aohost.Blog.ToolKits.Base;
 using Microsoft.AspNetCore.Authorization;
@@ -86,6 +88,7 @@ namespace Aohost.Blog.HttpApi.Controllers
         [Route("categories")]
         public async Task<ServiceResult<IEnumerable<QueryCategoryDto>>> QueryCategoriesAsync()
         {
+            Console.WriteLine(AppSettings.ConnectionStrings);
             return await _blogService.QueryCategoriesAsync();
         }
 
@@ -99,5 +102,7 @@ namespace Aohost.Blog.HttpApi.Controllers
         {
             return await _blogService.QueryFriendLinksAsync();
         }
+
+
     }
 }

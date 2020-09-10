@@ -2,6 +2,6 @@
 {
     public class QueryTagForAdminDto : QueryTagDto
     {
-
+        public int Id { get; set; }
     }
 }

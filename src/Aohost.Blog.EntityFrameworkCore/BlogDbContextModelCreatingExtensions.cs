@@ -31,31 +31,6 @@ namespace Aohost.Blog.EntityFrameworkCore
                 b.Property(x => x.CreationTime).HasColumnType("datetime");
             });
 
-            //builder.Entity<Post>().HasData(new List<Post>
-            //{
-            //    new Post
-            //    {
-            //        Title = "动感超人",
-            //        Author = "Aohost",
-            //        CategoryId = 1,
-            //        CreationTime = DateTime.Now,
-            //        Html = "<h1>动感超人</h1>",
-            //        Markdown = "# 动感超人",
-            //        Url = "www.baidu.com"
-            //    },
-            //    new Post
-            //    {
-            //        Title = "奥特曼",
-            //        Author = "Aohost",
-            //        CategoryId = 1,
-            //        CreationTime = DateTime.Now,
-            //        Html = "<h1>奥特曼</h1>",
-            //        Markdown = "# 奥特曼",
-            //        Url = "www.baidu.com"
-            //    }
-            //});
-
-
             builder.Entity<Category>(b =>
             {
                 b.ToTable(BlogConsts.DbTablePrefix + DbTableName.Categories);
@@ -65,12 +40,6 @@ namespace Aohost.Blog.EntityFrameworkCore
                 b.Property(x => x.CategoryName).HasMaxLength(50).IsRequired();
                 b.Property(x => x.DisplayName).HasMaxLength(50).IsRequired();
             });
-
-            //builder.Entity<Category>().HasData(new Category()
-            //{
-            //    CategoryName = "Monster",
-            //    DisplayName = "怪兽",
-            //});
 
             builder.Entity<Tag>(b =>
             {

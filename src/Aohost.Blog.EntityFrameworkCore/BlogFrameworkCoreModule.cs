@@ -36,7 +36,7 @@ namespace Aohost.Blog.EntityFrameworkCore
                         options.UseSqlite();
                         break;
                     default:
-                        options.UseSqlServer();
+                        options.UseSqlite();
                         break;
                 }
             });

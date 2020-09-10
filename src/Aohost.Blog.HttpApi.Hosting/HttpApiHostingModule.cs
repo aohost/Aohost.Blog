@@ -113,7 +113,9 @@ namespace Aohost.Blog.HttpApi.Hosting
             app.UseHsts();
 
             // 使用默认跨域配置
-            app.UseCors();
+            app.UseCors(x=> {
+                x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+            });
 
             // Http请求转Https
             app.UseHttpsRedirection();

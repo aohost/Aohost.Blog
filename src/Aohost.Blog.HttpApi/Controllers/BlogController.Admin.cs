@@ -89,6 +89,23 @@ namespace Aohost.Blog.HttpApi.Controllers
             return await _blogService.DeletePostAsync(id);
         }
 
+        #region Category
+
+        /// <summary>
+        /// 管理后台获取类别
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("/admin/categories")]
+        [Authorize]
+        [ApiExplorerSettings(GroupName = Grouping.GroupName_v2)]
+        public async Task<ServiceResult<IEnumerable<QueryCategoryForAdminDto>>> QueryCategories()
+        {
+            return await _blogService.QueryCategoriesForAdmin();
+        }
+
+        #endregion
+
         #region Tag
 
         /// <summary>
