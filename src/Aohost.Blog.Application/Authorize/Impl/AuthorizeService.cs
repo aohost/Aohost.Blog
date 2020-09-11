@@ -158,5 +158,25 @@ namespace Aohost.Blog.Application.Authorize.Impl
                 return await Task.FromResult(result);
             });
         }
+
+        /// <summary>
+        /// 验证token是否正确
+        /// </summary>
+        /// <param name="token"></param>
+        /// <returns></returns>
+        public async Task<ServiceResult> VerifyToken(string token)
+        {
+            var result = new ServiceResult();
+
+            var jwt = new JwtSecurityToken(token).Claims;
+
+            var name = jwt.FirstOrDefault(x => x.Type == ClaimTypes.Name).Value;
+            var email = jwt.FirstOrDefault(x => x.Type == ClaimTypes.Email).Value;
+
+            if (name != "Aohost")
+                result.IsFailed("token不正确");
+
+            return await Task.FromResult(result);
+        }
     }
 }

@@ -26,6 +26,7 @@ namespace Aohost.Blog.HttpApi.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
+        [Route("url")]
         public async Task<ServiceResult<string>> GetLoginAddressAsync()
         {
             return await _authorizeService.GetLoginAddressAsync();
@@ -48,6 +49,18 @@ namespace Aohost.Blog.HttpApi.Controllers
         public async Task<ServiceResult<string>> GenerateTokenAsync(string access_token)
         {
             return await _authorizeService.GenerateTokenAsync(access_token);
+        }
+
+        /// <summary>
+        /// 验证token是否合法
+        /// </summary>
+        /// <param name="token"></param>
+        /// <returns></returns>
+        [HttpGet]
+        [Authorize]
+        public async Task<ServiceResult> VerifyToken(string token)
+        {
+            return await _authorizeService.VerifyToken(token);
         }
     }
 }

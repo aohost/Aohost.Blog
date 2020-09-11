@@ -17,6 +17,13 @@
             <param name="access_token"></param>
             <returns></returns>
         </member>
+        <member name="M:Aohost.Blog.HttpApi.Controllers.AuthController.VerifyToken(System.String)">
+            <summary>
+            验证token是否合法
+            </summary>
+            <param name="token"></param>
+            <returns></returns>
+        </member>
         <member name="T:Aohost.Blog.HttpApi.Controllers.BlogController">
             <summary>
             博客
@@ -56,6 +63,12 @@
             删除文章
             </summary>
             <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Aohost.Blog.HttpApi.Controllers.BlogController.QueryCategories">
+            <summary>
+            管理后台获取类别
+            </summary>
             <returns></returns>
         </member>
         <member name="M:Aohost.Blog.HttpApi.Controllers.BlogController.GetTagForAdminAsync(System.Int32)">

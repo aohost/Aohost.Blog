@@ -23,5 +23,12 @@ namespace Aohost.Blog.Application.Authorize
         /// <param name="access_token"></param>
         /// <returns></returns>
         Task<ServiceResult<string>> GenerateTokenAsync(string access_token);
+
+        /// <summary>
+        /// 验证token是否正确
+        /// </summary>
+        /// <param name="token"></param>
+        /// <returns></returns>
+        Task<ServiceResult> VerifyToken(string token);
     }
 }
