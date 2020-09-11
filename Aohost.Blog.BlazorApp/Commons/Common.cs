@@ -93,5 +93,12 @@ namespace Aohost.Blog.BlazorApp.Commons
 
             return await Task.FromResult(uri);
         }
+
+        public async Task SwitchEditorTheme(string currentTheme)
+        {
+            var editorTheme = currentTheme == "Light" ? "default" : "dark";
+            await SetStorageAsync("editorThemt", editorTheme);
+            await InvokeAsync("window.func.switchEditorTheme");
+        }
     }
 }
