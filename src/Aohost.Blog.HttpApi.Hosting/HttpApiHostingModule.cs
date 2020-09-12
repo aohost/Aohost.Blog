@@ -3,6 +3,7 @@ using System.Linq;
 using Aohost.Blog.BackgroundJobs;
 using Aohost.Blog.Domain.Configuration;
 using Aohost.Blog.EntityFrameworkCore;
+using Aohost.Blog.HttpApi.Hosting.Filters;
 using Aohost.Blog.HttpApi.Hosting.Middleware;
 using Aohost.Blog.Swagger;
 using Aohost.Blog.ToolKits.Base;
@@ -28,8 +29,8 @@ namespace Aohost.Blog.HttpApi.Hosting
         typeof(AbpAutofacModule),
         typeof(BlogHttpApiModule),
         typeof(BlogSwaggerModule),
-        typeof(BlogFrameworkCoreModule),
-        typeof(BlogBackgroundJobsModule)
+        typeof(BlogFrameworkCoreModule)
+        //,typeof(BlogBackgroundJobsModule)
     )]
     public class HttpApiHostingModule:AbpModule
     {
@@ -41,11 +42,21 @@ namespace Aohost.Blog.HttpApi.Hosting
             {
                 var filterMetadata = options.Filters.FirstOrDefault(x =>
                     x is ServiceFilterAttribute attribute && attribute.ServiceType == typeof(AbpExceptionFilter));
+                
+                // 移除 AbpExceptionFilter
                 options.Filters.Remove(filterMetadata);
+
+                // 添加自己实现的Filter
+                options.Filters.Add(typeof(BlogExceptionFilter));
             });
 
             #endregion
 
+            // 跨域
+            context.Services.AddCors(options =>
+            {
+                options.AddDefaultPolicy(p => p.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
+            });
 
             // 身份验证
             context.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -82,8 +93,11 @@ namespace Aohost.Blog.HttpApi.Hosting
                 });
             // 认证授权
             context.Services.AddAuthorization();
+
+            // HTTP请求
             context.Services.AddHttpClient();
 
+            // 路由配置
             context.Services.AddRouting(options =>
             {
                 // 设置url为小写
@@ -92,9 +106,6 @@ namespace Aohost.Blog.HttpApi.Hosting
                 options.AppendTrailingSlash = true;
             });
 
-            context.Services.AddHttpClient();
-
-            base.ConfigureServices(context);
         }
 
         public override void OnApplicationInitialization(ApplicationInitializationContext context)
@@ -102,36 +113,44 @@ namespace Aohost.Blog.HttpApi.Hosting
             var app = context.GetApplicationBuilder();
             var env = context.GetEnvironment();
 
+            // 环境变量，开发环境
             if (env.IsDevelopment())
             {
+                // 生成异常页面
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseMiddleware<ExceptionHandlerMiddleware>();
 
             // 使用HSTS，添加严格传输安全头
             app.UseHsts();
 
-            // 使用默认跨域配置
-            app.UseCors(x=> {
-                x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
-            });
-
-            // Http请求转Https
-            app.UseHttpsRedirection();
-
-            // 转发将表头代理到当前请求，配合nginx使用，获取用户真实IP
+            // 转发将表头代理到当前请求，配合 nginx 使用，获取用户真实IP
             app.UseForwardedHeaders(new ForwardedHeadersOptions
             {
                 ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
             });
 
+            // 路由
             app.UseRouting();
 
+            // 跨域
+            app.UseCors(x=> {
+                x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+            });
+
+            // 异常处理中间件
+            app.UseMiddleware<ExceptionHandlerMiddleware>();
+
+            // 身份认证
             app.UseAuthentication();
 
+            // 认证授权
             app.UseAuthorization();
 
+            // Http请求转Https
+            app.UseHttpsRedirection();
+
+            // 路由映射
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
         }
     }

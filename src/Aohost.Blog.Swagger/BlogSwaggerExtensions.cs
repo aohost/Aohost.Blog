@@ -2,21 +2,32 @@
 using System.Collections.Generic;
 using System.IO;
 using Aohost.Blog.Domain.Configuration;
-using Aohost.Blog.Domain.Shared;
+using Aohost.Blog.Swagger.Filters;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
+using Swashbuckle.AspNetCore.Filters;
 using Swashbuckle.AspNetCore.SwaggerUI;
+using static Aohost.Blog.Domain.Shared.BlogConsts;
 
 namespace Aohost.Blog.Swagger
 {
     public static class BlogSwaggerExtensions
     {
+        /// <summary>
+        /// 当前API版本，从appsetting.json中获取
+        /// </summary>
         private static readonly string version = $"v{AppSettings.ApiVersion}";
 
+        /// <summary>
+        /// Swagger描述信息
+        /// </summary>
         private static readonly string description =
-            @"<b>Blog</b>：<a target=""_blank"" href=""https://meowv.com"">https://meowv.com</a> <b>GitHub</b>：<a target=""_blank"" href=""https://github.com/aohost/Aohost.Blog"">https://github.com/aohost/Aohost.Blog</a> <b>Hangfire</b>：<a target=""_blank"" href=""/hangfire"">任务调度中心</a> <code>Powered by .NET Core 3.1 on Linux</code>";
+            @"<b>Blog</b>：<a target=""_blank"" href=""https://aohost.top"">https://aohost.top</a> <b>GitHub</b>：<a target=""_blank"" href=""https://github.com/aohost/Aohost.Blog"">https://github.com/aohost/Aohost.Blog</a> <b>Hangfire</b>：<a target=""_blank"" href=""/hangfire"">任务调度中心</a> <code>Powered by .NET Core 3.1 on Linux</code>";
 
+        /// <summary>
+        /// Swagger分组信息，将进行遍历
+        /// </summary>
         private static readonly List<SwaggerApiInfo> ApiInfos = new List<SwaggerApiInfo>
         {
             new SwaggerApiInfo
@@ -26,7 +37,7 @@ namespace Aohost.Blog.Swagger
                 OpenApiInfo = new OpenApiInfo
                 {
                     Version = version,
-                    Title = "Ahost - 博客前台接口",
+                    Title = "Aohost - 博客前台接口",
                     Description = description
                 }
             },
@@ -65,18 +76,24 @@ namespace Aohost.Blog.Swagger
             }
         };
 
-
-
+        /// <summary>
+        /// AddSwagger
+        /// </summary>
+        /// <param name="services"></param>
+        /// <returns></returns>
         public static IServiceCollection AddSwagger(this IServiceCollection services)
         {
             return services.AddSwaggerGen(options =>
             {
-                ApiInfos.ForEach(x => { options.SwaggerDoc(x.UrlPrefix, x.OpenApiInfo); });
+                // 遍历并应用Swagger分组信息
+                ApiInfos.ForEach(x =>
+                {
+                    options.SwaggerDoc(x.UrlPrefix, x.OpenApiInfo);
+                });
 
-                options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "Aohost.Blog.HttpApi.xml"));
-                options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "Aohost.Blog.Domain.xml"));
-                options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory,
-                    "Aohost.Blog.Application.Contracts.xml"));
+                options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "Resources/Aohost.Blog.HttpApi.xml"));
+                options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "Resources/Aohost.Blog.Domain.xml"));
+                options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "Resources/Aohost.Blog.Application.Contracts.xml"));
 
                 #region 小绿锁
 
@@ -89,9 +106,12 @@ namespace Aohost.Blog.Swagger
                 };
                 options.AddSecurityDefinition("oauth2", security);
                 options.AddSecurityRequirement(new OpenApiSecurityRequirement {{security, new List<string>()}});
-
+                options.OperationFilter<AddResponseHeadersFilter>();
+                options.OperationFilter<AppendAuthorizeToSummaryOperationFilter>();
+                options.OperationFilter<SecurityRequirementsOperationFilter>();
                 #endregion
 
+                options.DocumentFilter<SwaggerDocumentFilter>();
             });
         }
 
@@ -99,7 +119,12 @@ namespace Aohost.Blog.Swagger
         {
             app.UseSwaggerUI(options =>
             {
-                ApiInfos.ForEach(x => options.SwaggerEndpoint($"/swagger/{x.UrlPrefix}/swagger.json", x.Name));
+                // 遍历分组信息，生成json
+                ApiInfos.ForEach(x =>
+                {
+                    Console.WriteLine($"{x.UrlPrefix}:{x.Name}");
+                    options.SwaggerEndpoint($"/swagger/{x.UrlPrefix}/swagger.json", x.Name);
+                });
 
                 // 模型的默认扩展深度，设置为-1 完全隐藏模型
                 options.DefaultModelExpandDepth(-1);
@@ -108,7 +133,7 @@ namespace Aohost.Blog.Swagger
                 // API前缀设置为空
                 options.RoutePrefix = string.Empty;
                 // API页面Title
-                options.DocumentTitle = "接口文档 - Aohost";
+                options.DocumentTitle = "😍接口文档 - Aohost⭐⭐⭐";
             });
         }
 

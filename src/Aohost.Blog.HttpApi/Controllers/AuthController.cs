@@ -1,10 +1,10 @@
 ﻿using System.Threading.Tasks;
 using Aohost.Blog.Application.Authorize;
-using Aohost.Blog.Domain.Shared;
 using Aohost.Blog.ToolKits.Base;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Volo.Abp.AspNetCore.Mvc;
+using static Aohost.Blog.Domain.Shared.BlogConsts;
 
 namespace Aohost.Blog.HttpApi.Controllers
 {

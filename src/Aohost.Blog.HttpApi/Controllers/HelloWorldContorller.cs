@@ -3,6 +3,7 @@ using Aohost.Blog.Application.HelloWorld;
 using Aohost.Blog.Domain.Shared;
 using Microsoft.AspNetCore.Mvc;
 using Volo.Abp.AspNetCore.Mvc;
+using static Aohost.Blog.Domain.Shared.BlogConsts;
 
 namespace Aohost.Blog.HttpApi.Controllers
 {

@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-	  <DocumentationFile>..\Aohost.Blog.HttpApi.Hosting\Aohost.Blog.Application.Contracts.xml</DocumentationFile>
+	  <DocumentationFile>..\Aohost.Blog.HttpApi.Hosting\Resources\Aohost.Blog.Application.Contracts.xml</DocumentationFile>
   </PropertyGroup>
 
 	<ItemGroup>

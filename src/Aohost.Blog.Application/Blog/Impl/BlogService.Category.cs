@@ -4,7 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Aohost.Blog.Application.Contracts.Blog.Category;
+using Aohost.Blog.Domain.Shared;
 using Aohost.Blog.ToolKits.Base;
+using Aohost.Blog.ToolKits.Extensions;
 
 namespace Aohost.Blog.Application.Blog.Impl
 {
@@ -36,6 +38,29 @@ namespace Aohost.Blog.Application.Blog.Impl
                     };
 
                 result.IsSuccess(list);
+                return result;
+            });
+        }
+
+        /// <summary>
+        /// 获取分类名称
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
+        public async Task<ServiceResult<string>> GetCategoryAsync(string name)
+        {
+            return await _blogCacheService.GetCategoryAsync(name, async () =>
+            {
+                var result = new ServiceResult<string>();
+
+                var category = await _categoryRepository.FindAsync(x => x.DisplayName.Equals(name));
+                if (null == category)
+                {
+                    result.IsFailed(ResponseText.WAHT_NOT_EXIST.FormatWith("分类", name));
+                    return result;
+                }
+
+                result.IsSuccess(category.CategoryName);
                 return result;
             });
         }

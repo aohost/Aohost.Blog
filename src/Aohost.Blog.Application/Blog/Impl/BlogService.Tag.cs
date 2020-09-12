@@ -4,7 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Aohost.Blog.Application.Contracts.Blog.Tag;
+using Aohost.Blog.Domain.Shared;
 using Aohost.Blog.ToolKits.Base;
+using Aohost.Blog.ToolKits.Extensions;
 
 namespace Aohost.Blog.Application.Blog.Impl
 {
@@ -36,6 +38,30 @@ namespace Aohost.Blog.Application.Blog.Impl
                     };
 
                 result.IsSuccess(list);
+                return result;
+            });
+        }
+
+        /// <summary>
+        /// 获取标签名称
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
+        public async Task<ServiceResult<string>> GetTagAsync(string name)
+        {
+            return await _blogCacheService.GetTagAsync(name, async () =>
+            {
+                var result = new ServiceResult<string>();
+
+                var tag = await _tagRepository.FindAsync(x => x.DisplayName == name);
+
+                if (tag == null)
+                {
+                    result.IsFailed(ResponseText.WAHT_NOT_EXIST.FormatWith("标签", name));
+                    return result;
+                }
+
+                result.IsSuccess(tag.TagName);
                 return result;
             });
         }

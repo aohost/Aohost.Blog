@@ -1,23 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Text;
 using System.Threading.Tasks;
 using Aohost.Blog.Application.Contracts;
 using Aohost.Blog.Application.Contracts.Blog.Category;
 using Aohost.Blog.Application.Contracts.Blog.FriendLink;
 using Aohost.Blog.Application.Contracts.Blog.Post;
 using Aohost.Blog.Application.Contracts.Blog.Tag;
-using Aohost.Blog.Domain.Blog;
-using Aohost.Blog.Domain.Shared;
 using Aohost.Blog.ToolKits.Base;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using static Aohost.Blog.Domain.Shared.BlogConsts;
 
 namespace Aohost.Blog.HttpApi.Controllers
 {
     public partial class BlogController
     {
+        #region Post
+
         /// <summary>
         /// 获取文章详情
         /// </summary>
@@ -26,12 +25,13 @@ namespace Aohost.Blog.HttpApi.Controllers
         [HttpGet]
         [Authorize]
         [Route("admin/post")]
+        [Route("post/admin")]
         [ApiExplorerSettings(GroupName = Grouping.GroupName_v2)]
         public async Task<ServiceResult<PostForAdminDto>> GetPostForAdminAsync([Required] int id)
         {
             return await _blogService.GetPostForAdminAsync(id);
         }
-
+        
         /// <summary>
         /// 管理后台获取文章列表
         /// </summary>
@@ -39,23 +39,24 @@ namespace Aohost.Blog.HttpApi.Controllers
         /// <returns></returns>
         [HttpPost]
         [Route("admin/posts")]
+        [Route("post/query/admin")]
         [Authorize]
         [ApiExplorerSettings(GroupName = Grouping.GroupName_v2)]
-        public async Task<ServiceResult<PagedList<QueryPostForAdminDto>>> QueryPostsForAdminAsync(PagingInput input)
+        public async Task<ServiceResult<PagedList<QueryPostForAdminDto>>> QueryPostsForAdminAsync([FromQuery] PagingInput input)
         {
             return await _blogService.QueryPostsForAdminAsync(input);
         }
-
+        
         /// <summary>
         /// 新增文章
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
         [HttpPost]
-        [Route("admin/post")]
+        [Route("post")]
         [Authorize]
         [ApiExplorerSettings(GroupName = Grouping.GroupName_v2)]
-        public async Task<ServiceResult> InsertPostAsync(EditPostInput input)
+        public async Task<ServiceResult> InsertPostAsync([FromBody] EditPostInput input)
         {
             return await _blogService.InsertPostAsync(input);
         }
@@ -67,10 +68,10 @@ namespace Aohost.Blog.HttpApi.Controllers
         /// <param name="input"></param>
         /// <returns></returns>
         [Route("post")]
-        [HttpPost]
+        [HttpPut]
         [Authorize]
         [ApiExplorerSettings(GroupName = Grouping.GroupName_v2)]
-        public async Task<ServiceResult> UpdatePostAsync(int id, EditPostInput input)
+        public async Task<ServiceResult> UpdatePostAsync([Required] int id, [FromBody] EditPostInput input)
         {
             return await _blogService.UpdatePostAsync(id, input);
         }
@@ -84,24 +85,70 @@ namespace Aohost.Blog.HttpApi.Controllers
         [Authorize]
         [Route("post")]
         [ApiExplorerSettings(GroupName = Grouping.GroupName_v2)]
-        public async Task<ServiceResult> DeletePostAsync(int id)
+        public async Task<ServiceResult> DeletePostAsync([Required] int id)
         {
             return await _blogService.DeletePostAsync(id);
         }
 
-        #region Category
+        #endregion
 
+        #region Category
+        
         /// <summary>
         /// 管理后台获取类别
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        [Route("/admin/categories")]
+        [Route("admin/categories")]
+        [Route("categories/admin")]
         [Authorize]
         [ApiExplorerSettings(GroupName = Grouping.GroupName_v2)]
         public async Task<ServiceResult<IEnumerable<QueryCategoryForAdminDto>>> QueryCategories()
         {
             return await _blogService.QueryCategoriesForAdmin();
+        }
+
+        /// <summary>
+        /// 新增分类
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        [HttpPost]
+        [Route("category")]
+        [Authorize]
+        [ApiExplorerSettings(GroupName = Grouping.GroupName_v2)]
+        public async Task<ServiceResult> InsertCategoryAsync([FromBody] EditCategoryInput input)
+        {
+            return await _blogService.InsertCategoryAsync(input);
+        }
+
+        /// <summary>
+        /// 更新分类信息
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        [HttpPut]
+        [Route("category")]
+        [Authorize]
+        [ApiExplorerSettings(GroupName = Grouping.GroupName_v2)]
+        public async Task<ServiceResult> UpdateCategoryAsync([Required] int id, [FromBody] EditCategoryInput input)
+        {
+            return await _blogService.UpdateCategoryAsync(id, input);
+        }
+
+        /// <summary>
+        /// 删除分类
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpDelete]
+        [Route("category")]
+        [Authorize]
+        [ApiExplorerSettings(GroupName = Grouping.GroupName_v2)]
+        public async Task<ServiceResult> DeleteCategoryAsync([Required] int id)
+        {
+            return await _blogService.DeleteCategoryAsync(id);
         }
 
         #endregion
@@ -115,11 +162,26 @@ namespace Aohost.Blog.HttpApi.Controllers
         /// <returns></returns>
         [HttpGet]
         [Route("admin/tag")]
+        [Route("tag/admin")]
         [ApiExplorerSettings(GroupName = Grouping.GroupName_v2)]
         [Authorize]
-        public async Task<ServiceResult<QueryTagForAdminDto>> GetTagForAdminAsync([Required]int id)
+        public async Task<ServiceResult<QueryTagForAdminDto>> GetTagForAdminAsync([Required] int id)
         {
             return await _blogService.GetTagForAdminAsync(id);
+        }
+
+        /// <summary>
+        /// 获取标签列表
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("admin/tags")]
+        [Route("tags/admin")]
+        [Authorize]
+        [ApiExplorerSettings(GroupName = Grouping.GroupName_v2)]
+        public async Task<ServiceResult<IEnumerable<QueryTagForAdminDto>>> QueryTagsForAdminAsync()
+        {
+            return await _blogService.QueryTagsForAdminAsync();
         }
 
         /// <summary>
@@ -131,7 +193,7 @@ namespace Aohost.Blog.HttpApi.Controllers
         [HttpPost]
         [Route("tag")]
         [ApiExplorerSettings(GroupName = Grouping.GroupName_v2)]
-        public async Task<ServiceResult> InsertTagAsync(EditTagDto input)
+        public async Task<ServiceResult> InsertTagAsync([FromBody] EditTagDto input)
         {
             return await _blogService.InsertTagAsync(input);
         }
@@ -143,10 +205,10 @@ namespace Aohost.Blog.HttpApi.Controllers
         /// <param name="input"></param>
         /// <returns></returns>
         [Authorize]
-        [HttpPost]
+        [HttpPut]
         [Route("tag")]
         [ApiExplorerSettings(GroupName = Grouping.GroupName_v2)]
-        public async Task<ServiceResult> UpgradeTagAsync(int id, EditTagDto input)
+        public async Task<ServiceResult> UpgradeTagAsync([Required] int id, [FromBody] EditTagDto input)
         {
             return await _blogService.UpdateTagAsync(id, input);
         }
@@ -160,7 +222,7 @@ namespace Aohost.Blog.HttpApi.Controllers
         [Route("tag")]
         [Authorize]
         [ApiExplorerSettings(GroupName = Grouping.GroupName_v2)]
-        public async Task<ServiceResult> DeleteTagAsync(int id)
+        public async Task<ServiceResult> DeleteTagAsync([Required] int id)
         {
             return await _blogService.DeleteTagAsync(id);
         }
@@ -190,7 +252,7 @@ namespace Aohost.Blog.HttpApi.Controllers
         [HttpPost]
         [Route("friendlink")]
         [ApiExplorerSettings(GroupName = Grouping.GroupName_v2)]
-        public async Task<ServiceResult> InsertFriendLinkAsync(EditFriendLinkDto input)
+        public async Task<ServiceResult> InsertFriendLinkAsync([FromBody] EditFriendLinkDto input)
         {
             return await _blogService.InsertFriendLinkAsync(input);
         }
@@ -202,10 +264,10 @@ namespace Aohost.Blog.HttpApi.Controllers
         /// <param name="input"></param>
         /// <returns></returns>
         [Authorize]
-        [HttpPost]
+        [HttpPut]
         [Route("friendlink")]
         [ApiExplorerSettings(GroupName = Grouping.GroupName_v2)]
-        public async Task<ServiceResult> UpdateFriendLinkAsync(int id, EditFriendLinkDto input)
+        public async Task<ServiceResult> UpdateFriendLinkAsync([Required] int id, [FromBody] EditFriendLinkDto input)
         {
             return await _blogService.UpdateFriendLinkAsync(id, input);
         }
@@ -219,7 +281,7 @@ namespace Aohost.Blog.HttpApi.Controllers
         [HttpDelete]
         [Route("friendlink")]
         [ApiExplorerSettings(GroupName = Grouping.GroupName_v2)]
-        public async Task<ServiceResult> DeleteFriendLinkAsync(int id)
+        public async Task<ServiceResult> DeleteFriendLinkAsync([Required] int id)
         {
             return await _blogService.DeleteFriendLinkAsync(id);
         }

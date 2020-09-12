@@ -284,9 +284,25 @@ namespace Aohost.Blog.Application.Blog.Impl
             throw new NotImplementedException();
         }
 
-        public Task<ServiceResult<IEnumerable<QueryTagForAdminDto>>> QueryTagsForAdminAsync()
+        public async Task<ServiceResult<IEnumerable<QueryTagForAdminDto>>> QueryTagsForAdminAsync()
         {
-            throw new NotImplementedException();
+            return await _blogCacheService.QueryTagsForAdminAsync(async () =>
+            {
+                var result = new ServiceResult<IEnumerable<QueryTagForAdminDto>>();
+
+                var postTags = await _postTagRepository.GetListAsync();
+
+                var tags = (await _tagRepository.GetListAsync()).Select(x => new QueryTagForAdminDto
+                {
+                    Id = x.Id,
+                    TagName = x.TagName,
+                    DisplayName = x.DisplayName,
+                    Count = postTags.Count(m => m.TagId == x.Id)
+                });
+
+                result.IsSuccess(tags);
+                return result;
+            });
         }
 
         /// <summary>
