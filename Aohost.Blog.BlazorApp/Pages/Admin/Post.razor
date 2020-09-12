@@ -182,7 +182,7 @@
         }
         else
         {
-            response = await Http.PutAsJsonAsync("/blog/post", input);
+            response = await Http.PostAsJsonAsync("/blog/post", input);
         }
 
         var result = await response.Content.ReadFromJsonAsync<ServiceResult>();

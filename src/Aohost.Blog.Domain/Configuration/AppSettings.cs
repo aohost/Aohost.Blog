@@ -13,6 +13,7 @@ namespace Aohost.Blog.Domain.Configuration
         {
             var builder = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("appsettings.json", true, true);
+                //.AddJsonFile($"appsettings.{}");
 
             _config = builder.Build();
         }
