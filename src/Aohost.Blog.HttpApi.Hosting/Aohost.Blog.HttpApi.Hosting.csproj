@@ -46,6 +46,9 @@
     <None Update="aohost_blog.db">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Update="Dockerfile">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Resources\Aohost.Blog.Application.Contracts.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
