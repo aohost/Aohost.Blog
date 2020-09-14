@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\common.props" />
+
+  <PropertyGroup>
+	  <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+	  <DocumentationFile>..\Aohost.Blog.HttpApi.Hosting\Resources\Aohost.Blog.Application.Contracts.xml</DocumentationFile>
+  </PropertyGroup>
+
+	<ItemGroup>
+    <ProjectReference Include="..\Aohost.Blog.Domain.Shared\Aohost.Blog.Domain.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.ObjectExtending" Version="3.0.5" />
+    <PackageReference Include="Volo.Abp.Account.Application.Contracts" Version="3.0.5" />
+    <PackageReference Include="Volo.Abp.Identity.Application.Contracts" Version="3.0.5" />
+    <PackageReference Include="Volo.Abp.PermissionManagement.Application.Contracts" Version="3.0.5" />
+    <PackageReference Include="Volo.Abp.TenantManagement.Application.Contracts" Version="3.0.5" />
+    <PackageReference Include="Volo.Abp.FeatureManagement.Application.Contracts" Version="3.0.5" />
+  </ItemGroup>
+
+</Project>

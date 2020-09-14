@@ -3,35 +3,29 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29020.237
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aohost.Blog.Domain", "src\Aohost.Blog.Domain\Aohost.Blog.Domain.csproj", "{554AD327-6DBA-4F8F-96F8-81CE7A0C863F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aohost.Blog.Domain", "Aohost.Blog.Domain\Aohost.Blog.Domain.csproj", "{554AD327-6DBA-4F8F-96F8-81CE7A0C863F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aohost.Blog.Application", "src\Aohost.Blog.Application\Aohost.Blog.Application.csproj", "{1A94A50E-06DC-43C1-80B5-B662820EC3EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aohost.Blog.Application", "Aohost.Blog.Application\Aohost.Blog.Application.csproj", "{1A94A50E-06DC-43C1-80B5-B662820EC3EB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aohost.Blog.EntityFrameworkCore", "src\Aohost.Blog.EntityFrameworkCore\Aohost.Blog.EntityFrameworkCore.csproj", "{C956DD76-69C8-4A9C-83EA-D17DF83340FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aohost.Blog.EntityFrameworkCore", "Aohost.Blog.EntityFrameworkCore\Aohost.Blog.EntityFrameworkCore.csproj", "{C956DD76-69C8-4A9C-83EA-D17DF83340FD}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CA9AC87F-097E-4F15-8393-4BC07735A5B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aohost.Blog.EntityFrameworkCore.DbMigrations", "Aohost.Blog.EntityFrameworkCore.DbMigrations\Aohost.Blog.EntityFrameworkCore.DbMigrations.csproj", "{0372FA84-C517-4EB3-9A9F-B9ACAC0CA5E0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aohost.Blog.EntityFrameworkCore.DbMigrations", "src\Aohost.Blog.EntityFrameworkCore.DbMigrations\Aohost.Blog.EntityFrameworkCore.DbMigrations.csproj", "{0372FA84-C517-4EB3-9A9F-B9ACAC0CA5E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aohost.Blog.Domain.Shared", "Aohost.Blog.Domain.Shared\Aohost.Blog.Domain.Shared.csproj", "{42F719ED-8413-4895-B5B4-5AB56079BC66}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aohost.Blog.Domain.Shared", "src\Aohost.Blog.Domain.Shared\Aohost.Blog.Domain.Shared.csproj", "{42F719ED-8413-4895-B5B4-5AB56079BC66}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aohost.Blog.Application.Contracts", "Aohost.Blog.Application.Contracts\Aohost.Blog.Application.Contracts.csproj", "{520659C8-C734-4298-A3DA-B539DB9DFC0B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aohost.Blog.Application.Contracts", "src\Aohost.Blog.Application.Contracts\Aohost.Blog.Application.Contracts.csproj", "{520659C8-C734-4298-A3DA-B539DB9DFC0B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aohost.Blog.HttpApi", "Aohost.Blog.HttpApi\Aohost.Blog.HttpApi.csproj", "{4164BDF7-F527-4E85-9CE6-E3C2D7426A27}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aohost.Blog.HttpApi", "src\Aohost.Blog.HttpApi\Aohost.Blog.HttpApi.csproj", "{4164BDF7-F527-4E85-9CE6-E3C2D7426A27}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aohost.Blog.HttpApi.Hosting", "Aohost.Blog.HttpApi.Hosting\Aohost.Blog.HttpApi.Hosting.csproj", "{AD9359AD-2F5D-41BF-96F6-6DDA00FE124C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aohost.Blog.HttpApi.Hosting", "src\Aohost.Blog.HttpApi.Hosting\Aohost.Blog.HttpApi.Hosting.csproj", "{AD9359AD-2F5D-41BF-96F6-6DDA00FE124C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aohost.Blog.BackgroundJobs", "Aohost.Blog.BackgroundJobs\Aohost.Blog.BackgroundJobs.csproj", "{C86B3B88-4C8F-4A54-A416-48550A026EF2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aohost.Blog.BackgroundJobs", "src\Aohost.Blog.BackgroundJobs\Aohost.Blog.BackgroundJobs.csproj", "{C86B3B88-4C8F-4A54-A416-48550A026EF2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aohost.BlogApplication.Caching", "Aohost.Blog.Caching\Aohost.BlogApplication.Caching.csproj", "{3BA17D0D-68CE-4E48-8C56-94D42A692051}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aohost.BlogApplication.Caching", "src\Aohost.Blog.Caching\Aohost.BlogApplication.Caching.csproj", "{3BA17D0D-68CE-4E48-8C56-94D42A692051}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aohost.Blog.Swagger", "Aohost.Blog.Swagger\Aohost.Blog.Swagger.csproj", "{2EBA1E05-9C94-427B-8984-E88C497EFDC8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aohost.Blog.Swagger", "src\Aohost.Blog.Swagger\Aohost.Blog.Swagger.csproj", "{2EBA1E05-9C94-427B-8984-E88C497EFDC8}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aohost.Blog.ToolKits", "src\Aohost.Blog.ToolKits\Aohost.Blog.ToolKits.csproj", "{1153F20A-BBC5-4CFA-833F-17DA3CBF4EDE}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "web", "web", "{E686128B-67EE-4E79-95A5-2FE758CB6F22}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aohost.Blog.BlazorApp", "Aohost.Blog.BlazorApp\Aohost.Blog.BlazorApp.csproj", "{ED9A8E29-4F82-444A-9E85-ACCE6B083A26}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aohost.Blog.ToolKits", "Aohost.Blog.ToolKits\Aohost.Blog.ToolKits.csproj", "{1153F20A-BBC5-4CFA-833F-17DA3CBF4EDE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,28 +81,9 @@ Global
 		{1153F20A-BBC5-4CFA-833F-17DA3CBF4EDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1153F20A-BBC5-4CFA-833F-17DA3CBF4EDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1153F20A-BBC5-4CFA-833F-17DA3CBF4EDE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{ED9A8E29-4F82-444A-9E85-ACCE6B083A26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ED9A8E29-4F82-444A-9E85-ACCE6B083A26}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ED9A8E29-4F82-444A-9E85-ACCE6B083A26}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ED9A8E29-4F82-444A-9E85-ACCE6B083A26}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{554AD327-6DBA-4F8F-96F8-81CE7A0C863F} = {CA9AC87F-097E-4F15-8393-4BC07735A5B0}
-		{1A94A50E-06DC-43C1-80B5-B662820EC3EB} = {CA9AC87F-097E-4F15-8393-4BC07735A5B0}
-		{C956DD76-69C8-4A9C-83EA-D17DF83340FD} = {CA9AC87F-097E-4F15-8393-4BC07735A5B0}
-		{0372FA84-C517-4EB3-9A9F-B9ACAC0CA5E0} = {CA9AC87F-097E-4F15-8393-4BC07735A5B0}
-		{42F719ED-8413-4895-B5B4-5AB56079BC66} = {CA9AC87F-097E-4F15-8393-4BC07735A5B0}
-		{520659C8-C734-4298-A3DA-B539DB9DFC0B} = {CA9AC87F-097E-4F15-8393-4BC07735A5B0}
-		{4164BDF7-F527-4E85-9CE6-E3C2D7426A27} = {CA9AC87F-097E-4F15-8393-4BC07735A5B0}
-		{AD9359AD-2F5D-41BF-96F6-6DDA00FE124C} = {CA9AC87F-097E-4F15-8393-4BC07735A5B0}
-		{C86B3B88-4C8F-4A54-A416-48550A026EF2} = {CA9AC87F-097E-4F15-8393-4BC07735A5B0}
-		{3BA17D0D-68CE-4E48-8C56-94D42A692051} = {CA9AC87F-097E-4F15-8393-4BC07735A5B0}
-		{2EBA1E05-9C94-427B-8984-E88C497EFDC8} = {CA9AC87F-097E-4F15-8393-4BC07735A5B0}
-		{1153F20A-BBC5-4CFA-833F-17DA3CBF4EDE} = {CA9AC87F-097E-4F15-8393-4BC07735A5B0}
-		{ED9A8E29-4F82-444A-9E85-ACCE6B083A26} = {E686128B-67EE-4E79-95A5-2FE758CB6F22}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {28315BFD-90E7-4E14-A2EA-F3D23AF4126F}
