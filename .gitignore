@@ -258,3 +258,4 @@ src/Aohost.Blog.IdentityServer/Logs/*
 src/Aohost.Blog.HttpApi.Host/Logs/*
 src/Aohost.Blog.HttpApi.HostWithIds/Logs/*
 src/Aohost.Blog.DbMigrator/Logs/*
+/Aohost.Blog.HttpApi.Hosting/Logs

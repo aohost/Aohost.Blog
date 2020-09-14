@@ -122,7 +122,6 @@ namespace Aohost.Blog.Swagger
                 // 遍历分组信息，生成json
                 ApiInfos.ForEach(x =>
                 {
-                    Console.WriteLine($"{x.UrlPrefix}:{x.Name}");
                     options.SwaggerEndpoint($"/swagger/{x.UrlPrefix}/swagger.json", x.Name);
                 });
 
