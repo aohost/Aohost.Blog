@@ -26,7 +26,8 @@ namespace Aohost.Blog.HttpApi.Controllers
         [HttpGet]
         public string HelloWorld()
         {
-            throw new Exception("This is a exception");
+
+            return "Hello world";
         }
     }
 }
