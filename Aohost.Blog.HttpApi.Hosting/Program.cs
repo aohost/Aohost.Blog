@@ -24,6 +24,7 @@ namespace Aohost.Blog.HttpApi.Hosting
             try
             {
                 Log.Information("Starting web host.");
+                Log.Information($"Date: {DateTime.Now:yyyy-MM-dd hh:mm:ss}");
                 CreateHostBuilder(args).Build().Run();
                 return 0;
             }
