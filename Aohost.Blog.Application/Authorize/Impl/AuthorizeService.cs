@@ -43,7 +43,7 @@ namespace Aohost.Blog.Application.Authorize.Impl
                     "?client_id=", request.ClientId,
                     "&scope=", request.Scope,
                     "&state=", request.State,
-                    "&redirect_uri", request.RedirectUri
+                    "&redirect_uri=", request.RedirectUri
                 });
 
                 result.IsSuccess(address);
