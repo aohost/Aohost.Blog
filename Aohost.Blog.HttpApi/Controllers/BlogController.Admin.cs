@@ -37,7 +37,7 @@ namespace Aohost.Blog.HttpApi.Controllers
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
-        [HttpPost]
+        [HttpGet]
         [Route("admin/posts")]
         [Route("post/query/admin")]
         [Authorize]
