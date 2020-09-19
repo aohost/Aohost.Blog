@@ -40,7 +40,7 @@ namespace Aohost.Blog.HttpApi.Controllers
         [HttpGet]
         [Route("admin/posts")]
         [Route("post/query/admin")]
-        [Authorize]
+//        [Authorize]
         [ApiExplorerSettings(GroupName = Grouping.GroupName_v2)]
         public async Task<ServiceResult<PagedList<QueryPostForAdminDto>>> QueryPostsForAdminAsync([FromQuery] PagingInput input)
         {
