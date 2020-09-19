@@ -45,7 +45,7 @@ namespace Aohost.Blog.HttpApi.Controllers
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
-        [HttpPost]
+        [HttpGet]
         [Route("posts")]
         [Route("post/query")]
         public async Task<ServiceResult<PagedList<QueryPostDto>>> QueryPostsAsync([FromQuery] PagingInput input)
