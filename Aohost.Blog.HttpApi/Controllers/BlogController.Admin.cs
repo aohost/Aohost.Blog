@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Threading.Tasks;
 using Aohost.Blog.Application.Contracts;
@@ -7,6 +8,7 @@ using Aohost.Blog.Application.Contracts.Blog.FriendLink;
 using Aohost.Blog.Application.Contracts.Blog.Post;
 using Aohost.Blog.Application.Contracts.Blog.Tag;
 using Aohost.Blog.ToolKits.Base;
+using Aohost.Blog.ToolKits.Extensions;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using static Aohost.Blog.Domain.Shared.BlogConsts;
@@ -40,11 +42,13 @@ namespace Aohost.Blog.HttpApi.Controllers
         [HttpGet]
         [Route("admin/posts")]
         [Route("post/query/admin")]
-//        [Authorize]
+        [Authorize]
         [ApiExplorerSettings(GroupName = Grouping.GroupName_v2)]
         public async Task<ServiceResult<PagedList<QueryPostForAdminDto>>> QueryPostsForAdminAsync([FromQuery] PagingInput input)
         {
-            return await _blogService.QueryPostsForAdminAsync(input);
+            var result = await _blogService.QueryPostsForAdminAsync(input);
+            Console.WriteLine(result.ToJson());
+            return result;
         }
         
         /// <summary>

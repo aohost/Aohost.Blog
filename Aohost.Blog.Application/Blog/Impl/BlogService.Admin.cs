@@ -56,7 +56,7 @@ namespace Aohost.Blog.Application.Blog.Impl
             {
                 var result = new ServiceResult<PagedList<QueryPostForAdminDto>>();
 
-                var count = _postRepository.GetCountAsync();
+                var count = await _postRepository.GetCountAsync();
                 var list = _postRepository.OrderByDescending(x => x.CreationTime).PageByIndex(input.Page, input.Limit)
                     .Select(x => new PostBriefForAdminDto
                     {
