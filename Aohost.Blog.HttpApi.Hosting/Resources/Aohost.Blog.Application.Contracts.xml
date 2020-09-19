@@ -179,6 +179,11 @@
             Posts
             </summary>
         </member>
+        <member name="P:Aohost.Blog.Application.Contracts.Blog.Post.QueryPostForAdminDto.Year">
+            <summary>
+            年份
+            </summary>
+        </member>
         <member name="P:Aohost.Blog.Application.Contracts.Blog.Post.QueryPostForAdminDto.Posts">
             <summary>
             Posts

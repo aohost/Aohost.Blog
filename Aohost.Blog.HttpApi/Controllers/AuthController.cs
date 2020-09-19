@@ -32,6 +32,11 @@ namespace Aohost.Blog.HttpApi.Controllers
             return await _authorizeService.GetLoginAddressAsync();
         }
 
+        /// <summary>
+        /// 获取access_token
+        /// </summary>
+        /// <param name="code"></param>
+        /// <returns></returns>
         [HttpGet]
         [Route("access_token")]
         public async Task<ServiceResult<string>> GetAccessTokenAsync(string code)

@@ -10,6 +10,13 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:Aohost.Blog.HttpApi.Controllers.AuthController.GetAccessTokenAsync(System.String)">
+            <summary>
+            获取access_token
+            </summary>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
         <member name="M:Aohost.Blog.HttpApi.Controllers.AuthController.GenerateTokenAsync(System.String)">
             <summary>
             登录成功，生成token
