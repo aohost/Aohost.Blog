@@ -106,6 +106,11 @@ namespace Aohost.Blog.HttpApi.Hosting
                 options.AppendTrailingSlash = true;
             });
 
+            context.Services.ConfigureApplicationCookie(option =>
+            {
+                option.Cookie.SameSite = SameSiteMode.None;
+            });
+
         }
 
         public override void OnApplicationInitialization(ApplicationInitializationContext context)
